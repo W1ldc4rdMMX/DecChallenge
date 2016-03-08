@@ -31,6 +31,7 @@
 				//Read picture metadata and store in array
 				$Picdata=exif_read_data($tempFile);
 				if (isset($Picdata)) {
+					print_r($Picdata);
 					foreach($Picdata as $key => $val){
 					//	foreach($section as $name => $val){
 							echo "$key = $val <br>";
