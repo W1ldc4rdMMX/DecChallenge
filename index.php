@@ -30,10 +30,8 @@
 				echo "Pictue Meta data <br>";
 				//echo exif_imagetype($tempFile);
 				//print_r(getimagesize($tempFile));
-				//$Picdata=exif_read_data($tempFile);
-				//print_r(exif_read_data("uploads/birthday-stag-678.JPG"));
-				$PicSize=getimagesize($tempFile);
-				foreach($Picsize as $key => $val){
+				$Picdata=exif_read_data($tempFile);
+				foreach($Picdata as $key => $val){
 				//	foreach($section as $name => $val){
 						echo "$key = $val <br>";
 				//	}
