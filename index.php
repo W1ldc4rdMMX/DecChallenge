@@ -41,7 +41,7 @@
 					$Picdata['FileDateTime']=filemtime($tempFile);
 					$Picdata['FileSize']=$_FILES['fileToRead']['size'];
 					$Picdata['MimeType']=$tmpFleTyp;
-					list($width, $height, $type, $attr) = getimagesize($tempFile);
+					list($width, $height, $type) = getimagesize($tempFile);
 					$Picdata['width']=$width;
 					$Picdata['height']=$height;
 					$Picdata['Filetype']=$type;
