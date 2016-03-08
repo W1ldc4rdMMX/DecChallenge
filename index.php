@@ -29,15 +29,15 @@
 		case "image": 
 				echo "Pictue Meta data <br>";
 				//echo exif_imagetype($tempFile);
-				print_r(getimagesize($tempFile));
+				//print_r(getimagesize($tempFile));
 				//$Picdata=exif_read_data($tempFile);
 				//print_r(exif_read_data("uploads/birthday-stag-678.JPG"));
-				echo "working";
-				//foreach($Picdata as $key => $section){
+				$PicSize=getimagesize($tempFile);
+				foreach($Picsize as $key => $val){
 				//	foreach($section as $name => $val){
-				//		echo "$key.$name = $val <br>";
+						echo "$key = $val <br>";
 				//	}
-				//}
+				}
 				break;
 		case "application":echo "Application";break;
 		case "text": echo "Text";break;
