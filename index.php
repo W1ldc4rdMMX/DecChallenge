@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-<?php
-	include("./functions.php");
-?>
 	
 <html>
 <body>
@@ -31,7 +28,7 @@
 	//Determine which function to use to get meta data
 	switch ($ftype) {
 		case "image": 
-				echo "<h2>Pictue Meta data</h2> <br>";
+				echo "<h2>Picture Meta data</h2> <br>";
 				//Check if image is jpeg
 				if ($tmpFleTyp=="image/jpeg") {
 					//Read picture metadata and store in array
@@ -41,30 +38,36 @@
 					}
 				} else {
 					//if not jpeg format, get data manually....this should probabley be in a function
-					$Picdata['FileName']=$_FILES['fileToRead']['name'];
+					$Picdata['FileName']= $_FILES['fileToRead']['name'];
 					$Picdata['FileDateTime']=filemtime($tempFile);
-					$Picdata['FileSize']=$_FILES['fileToRead']['size'];
+					$Picdata['FileSize']=filesize($tempFile);//$_FILES['fileToRead']['size'];
 					$Picdata['MimeType']=$tmpFleTyp;
 					list($width, $height, $type) = getimagesize($tempFile);
 					$Picdata['width']=$width;
 					$Picdata['height']=$height;
 					$Picdata['Filetype']=$type;
-					//echo "Attribute " .$attr;
-					//getimagesize($tempFile);
-					//echo date('d-M-Y :H:i:s',filemtime($tempFile))."<br>";
+					$Picdata['FileOwner']=fileowner($tempFile);
 					foreach($Picdata as $key => $val){
 						echo "$key = $val <br>";
 					}
 				}
 				break;
 		case "application":
-				echo "Application";
-				$appData=get_meta_tags($tempFile);
+				echo "<h2>Application</h2> <br>";
+				$appData=0;
+				
+				/*get_meta_tags($tempFile);
 				print_r($appData);
 				$appData=stream_get_meta_data($tempFile);
-				print_r($appData);
+				print_r($appData);*/
 				break;
-		case "text": echo "Text";break;
+		case "text": 
+			echo "<h2>Text</h2> <br>";
+			$textData=get_meta_tags($tempFile);
+			print_r($textData);
+			$appData=stream_get_meta_data($tempFile);
+			print_r($textData);
+			break;
 		case "object":echo "Object";break;
 		default: echo "Unknown file type";
 	}
