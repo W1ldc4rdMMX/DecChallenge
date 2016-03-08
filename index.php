@@ -61,6 +61,8 @@
 				echo "Application";
 				$appData=get_meta_tags($tempFile);
 				print_r($appData);
+				$appData=stream_get_meta_data($tempFile);
+				print_r($appData);
 				break;
 		case "text": echo "Text";break;
 		case "object":echo "Object";break;
