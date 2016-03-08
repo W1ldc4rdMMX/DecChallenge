@@ -28,8 +28,7 @@
 	switch ($ftype) {
 		case "image": 
 				echo "Pictue Meta data <br>";
-				//echo exif_imagetype($tempFile);
-				//print_r(getimagesize($tempFile));
+				//Read picture metadata and store in array
 				$Picdata=exif_read_data($tempFile);
 				foreach($Picdata as $key => $val){
 				//	foreach($section as $name => $val){
@@ -37,7 +36,10 @@
 				//	}
 				}
 				break;
-		case "application":echo "Application";break;
+		case "application":
+				echo "Application";
+				$Appdata=exif_read_data($tempFile);
+				break;
 		case "text": echo "Text";break;
 		case "object":echo "Object";break;
 		default: echo "Unknown file type";
