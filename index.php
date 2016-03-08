@@ -59,6 +59,8 @@
 				break;
 		case "application":
 				echo "Application";
+				$appData=get_meta_tags($tempFile);
+				print_r($appData);
 				break;
 		case "text": echo "Text";break;
 		case "object":echo "Object";break;
