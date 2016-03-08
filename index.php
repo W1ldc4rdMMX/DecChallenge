@@ -20,22 +20,20 @@
 		echo "<br>";
 	}
 	//Get file type
-	$tempFile=$_FILES['fileToRead']['type'];
-	$ftype=substr($tempFile,0,strpos($tempFile,"/"));
+	$tmpFleTyp=$_FILES['fileToRead']['type'];
+	$ftype=substr($tmpFleTyp,0,strpos($tmpFleTyp,"/"));
 	$tempFile=$_FILES['fileToRead']['tmp_name'];
 	
 	//Determine which function to use to get meta data
 	switch ($ftype) {
 		case "image": 
-				echo "Pictue Meta data <br>";
-				//Read picture metadata and store in array
-				$Picdata=exif_read_data($tempFile);
-				if (isset($Picdata)) {
-					print_r($Picdata);
+				echo "<h2>Pictue Meta data</h2> <br>";
+				//Check if image is jpeg
+				if ($tmpFleTyp=="image/jpeg") {
+					//Read picture metadata and store in array
+					$Picdata=exif_read_data($tempFile);
 					foreach($Picdata as $key => $val){
-					//	foreach($section as $name => $val){
-							echo "$key = $val <br>";
-					//	}
+						echo "$key = $val <br>";
 					}
 				}
 				break;
