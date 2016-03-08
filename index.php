@@ -38,7 +38,7 @@
 				} else {
 					//if not jpeg format, get data manually....this should probabley be in a function
 					$Picdata=getimagesize($tempFile);
-					echo filemtime($tempFile)."<br>";
+					echo date('d-M-Y :H:i:s',filemtime($tempFile))."<br>";
 					foreach($Picdata as $key => $val){
 						echo "$key = $val <br>";
 					}
