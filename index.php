@@ -41,7 +41,14 @@
 					$Picdata['FileDateTime']=filemtime($tempFile);
 					$Picdata['FileSize']=$_FILES['fileToRead']['size'];
 					$Picdata['MimeType']=$tmpFleTyp;
-					echo imagesx($tempFile)."<br>";
+					list($width, $height, $type, $attr) = getimagesize("image_name.jpg");
+					echo "Image width " .$width;
+					echo "<BR>";
+					echo "Image height " .$height;
+					echo "<BR>";
+					echo "Image type " .$type;
+					echo "<BR>";
+					echo "Attribute " .$attr;
 					//getimagesize($tempFile);
 					//echo date('d-M-Y :H:i:s',filemtime($tempFile))."<br>";
 					foreach($Picdata as $key => $val){
