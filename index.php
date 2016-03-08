@@ -37,8 +37,10 @@
 					}
 				} else {
 					//if not jpeg format, get data manually....this should probabley be in a function
-					print_r(getimagesize($tempFile));
-					
+					$Picdata=getimagesize($tempFile);
+					foreach($Picdata as $key => $val){
+						echo "$key = $val <br>";
+					}
 				}
 				break;
 		case "application":
