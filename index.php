@@ -23,17 +23,19 @@
 	$tempFile=$_FILES['fileToRead']['type'];
 	$ftype=substr($tempFile,0,strpos($tempFile,"/"));
 	$tempFile=$_FILES['fileToRead']['tmp_name'];
-
+	
 	//Determine which function to use to get meta data
 	switch ($ftype) {
 		case "image": 
 				echo "Pictue Meta data <br>";
 				//Read picture metadata and store in array
 				$Picdata=exif_read_data($tempFile);
-				foreach($Picdata as $key => $val){
-				//	foreach($section as $name => $val){
-						echo "$key = $val <br>";
-				//	}
+				if (isset($Picdata)) {
+					foreach($Picdata as $key => $val){
+					//	foreach($section as $name => $val){
+							echo "$key = $val <br>";
+					//	}
+					}
 				}
 				break;
 		case "application":
