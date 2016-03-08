@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php
+	include("./functions.php");
+?>
+	
 <html>
 <body>
 
