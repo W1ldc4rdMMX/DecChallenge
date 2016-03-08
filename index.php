@@ -37,8 +37,11 @@
 					}
 				} else {
 					//if not jpeg format, get data manually....this should probabley be in a function
-					$Picdata[]=$_FILES['fileToRead']['name'];
-					$Picdata[]=filemtime($tempFile);
+					$Picdata['FileName']=$_FILES['fileToRead']['name'];
+					$Picdata['FileDateTime']=filemtime($tempFile);
+					$Picdata['FileSize']=$_FILES['fileToRead']['size'];
+					$Picdata['MimeType']=$tmpFleTyp;
+					echo imagesx($tempFile)."<br>";
 					//getimagesize($tempFile);
 					//echo date('d-M-Y :H:i:s',filemtime($tempFile))."<br>";
 					foreach($Picdata as $key => $val){
@@ -48,7 +51,6 @@
 				break;
 		case "application":
 				echo "Application";
-				$Appdata=exif_read_data($tempFile);
 				break;
 		case "text": echo "Text";break;
 		case "object":echo "Object";break;
