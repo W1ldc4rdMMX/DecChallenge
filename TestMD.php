@@ -1,0 +1,127 @@
+<?php
+	$testfile1=("./Test_file/001.torrent");
+	$testfile2=("./Test_file/002.wpl");
+	$testfile3=("./Test_file/002.wpl");
+	$testfile4=("./Test_file/004.doctree");
+	$testfile5=("./Test_file/005.ott");
+	$testfile6=("./Test_file/006.exe");
+	$testfile7=("./Test_file/007.txt");
+	$testfile8=("./Test_file/008.xlsx");
+	$testfile9=("./Test_file/009.zip");
+	$testfile10=("./Test_file/010.pfx");
+	$testfile11=("./Test_file/011.csproj");
+	$testfile12=("./Test_file/012.exe.config");
+	$testfile13=("./Test_file/013.pdb");
+	$testfile14=("./Test_file/014.sln");
+	$testfile15=("./Test_file/015.exe.manifest");
+	$testfile16=("./Test_file/016.pdf");
+	$testfile17=("./Test_file/017.png");
+	$testfile18=("./Test_file/018.cs");
+	$testfile19=("./Test_file/019.xml");
+	$testfile20=("./Test_file/020.jpg");
+
+	//open file for reading
+	$fp=fopen($testfile1,'r');
+	echo "File <br>";
+	print_r($fp);
+	echo "<br>";
+	//echo "file size: ".filesize($testfile1)."<br>";
+	echo "stat: <br>";
+	for($i=1;$i<=20;$i++){
+		$tempvar="testfile".$i;
+		echo $$tempvar." <br>";
+		foreach(stat($$tempvar) as $key => $value){
+			echo "$key => $value <br>";
+		}
+	}
+	echo "<br>";
+	echo "file: <br>";
+	for($i=1;$i<=20;$i++){
+		$tempvar="testfile".$i;
+		echo $$tempvar." <br>";
+		foreach (file($$tempvar) as $key => $value){
+			echo "$key => $value <br>";
+		}
+	}
+	echo "<br>";
+	
+	$metadata2=stream_get_meta_data($fp);
+	echo "stream_get_meta_data <br>";
+	foreach($metadata2 as $key => $mdata){
+		echo "[$key] = $mdata <br>";
+	}	
+	
+	$metadata=get_meta_tags($testfile1);
+	echo "<br>";
+	echo "get_meta_tags <br>";
+	print_r($metadata);
+	echo "<br>";
+	/*foreach($metadata as $key => $value){
+		echo "[$key] = $value <br>";
+	}
+	*/	
+	
+	
+	
+	/*echo "<br>";
+	echo "file_get_contents <br>";
+	$section = file_get_contents($testfile1);
+	var_dump($section);*/
+	
+	/*echo "<br>";
+	echo "fgetss <br>";
+	$handle = $fp;
+	if ($handle) {
+		while (!feof($handle)) {
+			$buffer = fgets($handle, 4096);
+			echo $buffer;
+		}
+		fclose($handle);
+	}*/
+
+	//echo "<br>";
+	//echo "file <br>";	
+	//$lines = file($testfile1);
+	// Loop through our array, show HTML source as HTML source; and line numbers too.
+	//foreach ($lines as $line_num => $line) {
+	//	echo "Line #<b>{$line_num}</b> : " . htmlspecialchars($line) . "<br />\n";
+	//}
+	
+	echo "<br>";
+	echo "simplexml_load_file";
+	$xmlload=simplexml_load_file($testfile1);
+	print_r($xmlload);
+	
+	// Parse with sections
+	/*echo "<br>";
+	echo "parse_ini <br>";	
+	$ini_array = parse_ini_file($testfile1);
+	print_r($ini_array);*/
+	//make the array 
+	echo "<br>";
+	$TAarray = explode("\n", strip_tags($testfile1)); 
+	var_dump($TAarray);
+
+	//loop through the array 
+	foreach ($TAarray as $line) { 
+			$line = htmlspecialchars(trim($line)); 
+	}      
+
+    foreach ($TAarray as $url) {
+            // get the meta data for each url
+            $tags = get_meta_tags($url);
+
+			/*unset($tags["content-type"]);
+			unset($tags["page-type"]);
+			unset($tags["page-topic"]);
+			unset($tags["audience"]);
+
+                echo '<tr>';*/
+                foreach ($tags as $meta)         
+            {
+                        echo '<td>' . $meta . '</td>';
+                }
+                echo '</tr>';
+        }
+
+?>
