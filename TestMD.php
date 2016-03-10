@@ -20,6 +20,8 @@
 	$testfile19=("./Test_file/019.xml");
 	$testfile20=("./Test_file/020.mp4");
 
+	SplFileInfo::getATime(
+
 	//Check if image is jpeg
 				/*if ($tmpFleTyp=="image/jpeg") {
 					//Read picture metadata and store in array

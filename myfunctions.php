@@ -9,15 +9,16 @@
 		$base_file_info['Filetype']=$type;
 		$base_file_info['FileOwner']=fileowner($tempFile);	
 	}
-  /*function get_dpi($filename){
-      $a = fopen($filename,'r');
-      $string = fread($a,20);
-      fclose($a);
+  function get_dpi($filename){
+	//get_png_imageinfo();
+    $a = fopen($filename,'rb');
+    $string = fread($a,filesize($filename));
+    fclose($a);
+	
+    $data = bin2hex(substr($string,14,4));
+    $x = substr($data,0,4);
+    $y = substr($data,4,4);
 
-      $data = bin2hex(substr($string,14,4));
-      $x = substr($data,0,4);
-      $y = substr($data,4,4);
-
-      return array(hexdec($x),hexdec($y));*/
+      return array(hexdec($x),hexdec($y));
   }
 ?>

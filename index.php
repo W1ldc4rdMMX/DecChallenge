@@ -2,7 +2,6 @@
 	
 <html>
 <body>
-
 <form action="" method="post" enctype="multipart/form-data">
 <fieldset>
     Select a file to upload:
@@ -14,6 +13,7 @@
 
 <?php
 	//Read basic file info
+	include('./myfunctions.php');
 	echo "Basic file info <br>";
 	echo "<fieldset>";
 	foreach($_FILES['fileToRead'] as $key => $value) {
@@ -40,6 +40,7 @@
 				$picdata['height']=$height;
 				$picdata['Filetype']=$ftype;
 				$picdata['FileOwner']=fileowner($tempFile);
+				print_r(get_dpi($tempFile));
 				foreach($picdata as $key => $val){
 					echo "$key = $val <br>";
 				}
@@ -85,6 +86,32 @@
 			}
 			
 			foreach($txtdata as $key => $val){
+				echo "$key = $val <br>";
+			}
+			break;
+		case "video":
+			echo "<h2>Video</h2>";
+			echo "<br>";
+			$viddata['FileName']=$_FILES['fileToRead']['name'];
+			$viddata['FileDateTime']=filemtime($tempFile);
+			$viddata['FileSize']=filesize($tempFile);
+			$viddata['MimeType']=$tmpFleTyp;
+			$viddata['Filetype']=$ftype;
+			$viddata['FileOwner']=fileowner($tempFile);				
+			foreach($viddata as $key => $val){
+				echo "$key = $val <br>";
+			}
+			break;
+		case "audio":
+			echo "<h2>Audio</h2>";
+			echo "<br>";
+			$auddata['FileName']=$_FILES['fileToRead']['name'];
+			$auddata['FileDateTime']=filemtime($tempFile);
+			$auddata['FileSize']=filesize($tempFile);
+			$auddata['MimeType']=$tmpFleTyp;
+			$auddata['Filetype']=$ftype;
+			$auddata['FileOwner']=fileowner($tempFile);				
+			foreach($auddata as $key => $val){
 				echo "$key = $val <br>";
 			}
 			break;
