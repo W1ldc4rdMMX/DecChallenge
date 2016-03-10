@@ -28,92 +28,72 @@
 	//Determine which function to use to get meta data
 	switch ($ftype) {
 		case "image": 
-				echo "<h2>Picture Meta data</h2> <br>";
-				//Check if image is jpeg
-				if ($tmpFleTyp=="image/jpeg") {
-					//Read picture metadata and store in array
-					$Picdata=exif_read_data($tempFile);
-					foreach($Picdata as $key => $val){
-						echo "$key = $val <br>";
-					}
-				} else {
-					//if not jpeg format, get data manually....this should probabley be in a function
-					$Picdata['FileName']= $_FILES['fileToRead']['name'];
-					$Picdata['FileDateTime']=filemtime($tempFile);
-					$Picdata['FileSize']=filesize($tempFile);//$_FILES['fileToRead']['size'];
-					$Picdata['MimeType']=$tmpFleTyp;
-					list($width, $height, $type) = getimagesize($tempFile);
-					$Picdata['width']=$width;
-					$Picdata['height']=$height;
-					$Picdata['Filetype']=$type;
-					$Picdata['FileOwner']=fileowner($tempFile);
-					foreach($Picdata as $key => $val){
-						echo "$key = $val <br>";
-					}
+				echo "<h2>Picture Meta data</h2> "; 
+				echo "<br>";
+				//if not jpeg format, get data manually....this should probabley be in a function
+				$picdata['FileName']=$_FILES['fileToRead']['name'];
+				$picdata['FileDateTime']=filemtime($tempFile);
+				$picdata['FileSize']=filesize($tempFile);
+				$picdata['MimeType']=$tmpFleTyp;
+				list($width, $height, $type) = getimagesize($tempFile);
+				$picdata['width']=$width;
+				$picdata['height']=$height;
+				$picdata['Filetype']=$ftype;
+				$picdata['FileOwner']=fileowner($tempFile);
+				foreach($picdata as $key => $val){
+					echo "$key = $val <br>";
 				}
 				break;
 		case "application":
-				echo "<h2>Application</h2> <br>";
-				$appData=0;
-				
+				echo "<h2>Application</h2>";
+				echo "<br>";
+				$appdata['FileName']=$_FILES['fileToRead']['name'];
+				$appdata['FileDateTime']=filemtime($tempFile);
+				$appdata['FileSize']=filesize($tempFile);
+				$appdata['MimeType']=$tmpFleTyp;
+				$appdata['Filetype']=$ftype;
+				$appdata['FileOwner']=fileowner($tempFile);				
+				foreach($appdata as $key => $val){
+					echo "$key = $val <br>";
+				}
 				/*get_meta_tags($tempFile);
 				print_r($appData);
 				$appData=stream_get_meta_data($tempFile);
 				print_r($appData);*/
 				break;
 		case "text": 
-			echo "<h2>Text</h2> <br>";
-			$textData=get_meta_tags($tempFile);
-			print_r($textData);
-			$appData=stream_get_meta_data($tempFile);
-			print_r($textData);
+			echo "<h2>Text</h2>";
+			echo "<br>";
+			$txtdata['FileName']=$_FILES['fileToRead']['name'];
+			$txtdata['FileDateTime']=filemtime($tempFile);
+			$txtdata['FileSize']=filesize($tempFile);
+			$txtdata['MimeType']=$tmpFleTyp;
+			$txtdata['Filetype']=$ftype;
+			$txtdata['FileOwner']=fileowner($tempFile);
+			$txtdata['WrdCnt']=0;
+			$txtdata['LineCnt']=0;
+			//get number of lines and words in file
+			$fp=fopen($tempFile,'r');
+			$handle = $fp;
+			if ($handle) {
+				while (!feof($handle)) {
+					$lines = fgets($handle);	
+					$txtdata['WrdCnt'] += str_word_count($lines);
+					$txtdata['LineCnt']++;
+				}
+				fclose($handle);				
+			}
+			
+			foreach($txtdata as $key => $val){
+				echo "$key = $val <br>";
+			}
 			break;
 		case "object":echo "Object";break;
 		default: echo "Unknown file type";
 	}
-	
-//	echo "file size: ".filesize($_FILES['fileToRead']['tmp_name'])."<br>";
-//	echo "stat: ".print_r(stat($_FILES['fileToRead']['tmp_name']))."<br>";
-//	echo "file: ";
-//	foreach (file($_FILES['fileToRead']['tmp_name']) as $key => $value){
-//		echo "$key => $value <br>";
-//	}
 	echo "</fieldset>";
 
-	//Store file for reading addtional meta data
-	//$uploaddir = "./uploads/";
-	//$uploadfile = $uploaddir.basename($_FILES['fileToRead']['name']);
-	//Check if file was successfully uploaded
-	//if(move_uploaded_file($_FILES['fileToRead']['tmp_name'],$uploadfile)){
-	//	echo "file uploaded";
-	//}//else{
-		//need a new error message here
-	//	echo "an error has occured";
-//	}
-//	echo "<br>";
-
-	//open file for reading
-//	$fp=fopen($uploadfile,'r');
-//	$metadata=get_meta_tags($fp);
-//	$metadata2=stream_get_meta_data($fp);
 	
-//	echo "file size: ".filesize($uploadfile);
-//	echo "<br>";
-//	echo "stream_get_meta_data <br>";
-
-//	foreach($metadata2 as $key => $mdata){
-//		echo "[$key] = $mdata <br>";
-//	}	
-//	echo "<br>";
-//	echo "get_meta_tags <br>";
-//	foreach($metadata as $key => $value){
-//		echo "[$key] = $value <br>";
-//	}
-
-//	$fileAttr=xattr_list($fp);
-//	foreach($fileAttr as $key => $value){
-//		 echo "[$key] = $value <br>";
-//	}	
 ?>
 
 </body>

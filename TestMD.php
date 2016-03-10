@@ -20,8 +20,16 @@
 	$testfile19=("./Test_file/019.xml");
 	$testfile20=("./Test_file/020.mp4");
 
+	//Check if image is jpeg
+				/*if ($tmpFleTyp=="image/jpeg") {
+					//Read picture metadata and store in array
+					$Picdata=exif_read_data($tempFile);
+					foreach($Picdata as $key => $val){
+						echo "[$key] = $val <br>";
+					}
+				} else {*/
 	
-	/*/echo "file size: ".filesize($testfile1)."<br>";
+	/*echo "file size: ".filesize($testfile1)."<br>";
 	echo "stat: <br>";
 	for($i=1;$i<=20;$i++){
 		$tempvar="testfile".$i;
