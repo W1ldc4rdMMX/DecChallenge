@@ -46,22 +46,18 @@
 				}
 				break;
 		case "application":
-				echo "<h2>Application</h2>";
-				echo "<br>";
-				$appdata['FileName']=$_FILES['fileToRead']['name'];
-				$appdata['FileDateTime']=filemtime($tempFile);
-				$appdata['FileSize']=filesize($tempFile);
-				$appdata['MimeType']=$tmpFleTyp;
-				$appdata['Filetype']=$ftype;
-				$appdata['FileOwner']=fileowner($tempFile);				
-				foreach($appdata as $key => $val){
-					echo "$key = $val <br>";
-				}
-				/*get_meta_tags($tempFile);
-				print_r($appData);
-				$appData=stream_get_meta_data($tempFile);
-				print_r($appData);*/
-				break;
+			echo "<h2>Application</h2>";
+			echo "<br>";
+			$appdata['FileName']=$_FILES['fileToRead']['name'];
+			$appdata['FileDateTime']=filemtime($tempFile);
+			$appdata['FileSize']=filesize($tempFile);
+			$appdata['MimeType']=$tmpFleTyp;
+			$appdata['Filetype']=$ftype;
+			$appdata['FileOwner']=fileowner($tempFile);				
+			foreach($appdata as $key => $val){
+				echo "$key = $val <br>";
+			}
+			break;
 		case "text": 
 			echo "<h2>Text</h2>";
 			echo "<br>";
@@ -118,9 +114,7 @@
 		case "object":echo "Object";break;
 		default: echo "Unknown file type";
 	}
-	echo "</fieldset>";
-
-	
+	echo "</fieldset>";	
 ?>
 
 </body>
