@@ -14,104 +14,79 @@
 <?php
 	//Read basic file info
 	include('./myfunctions.php');
+	include('./config/config.php');
 	echo "Basic file info <br>";
 	echo "<fieldset>";
-	foreach($_FILES['fileToRead'] as $key => $value) {
+	/* foreach($_FILES['fileToRead'] as $key => $value) {
+		echo "[$key] = $value";
+		echo "<br>";
+	} */
+	
+	$tempFile=$_FILES['fileToRead']['tmp_name'];
+	$array=get_meta_tags($_FILES['fileToRead']['tmp_name']);
+	foreach($array as $key => $value) {
 		echo "[$key] = $value";
 		echo "<br>";
 	}
-	//Get file type
-	$tmpFleTyp=$_FILES['fileToRead']['type'];
-	$ftype=substr($tmpFleTyp,0,strpos($tmpFleTyp,"/"));
-	$tempFile=$_FILES['fileToRead']['tmp_name'];
 	
+	//Store base data and get file type
+	$file_meta=get_base_file_info($tempFile);
 	//Determine which function to use to get meta data
-	switch ($ftype) {
+	$addMeta=get_meta_tags($tempFile);
+	display_file_meta($addMeta);
+	switch ($file_meta['Filetype']) {
 		case "image": 
-				echo "<h2>Picture Meta data</h2> "; 
-				echo "<br>";
-				//if not jpeg format, get data manually....this should probabley be in a function
-				$picdata['FileName']=$_FILES['fileToRead']['name'];
-				$picdata['FileDateTime']=filemtime($tempFile);
-				$picdata['FileSize']=filesize($tempFile);
-				$picdata['MimeType']=$tmpFleTyp;
-				list($width, $height, $type) = getimagesize($tempFile);
-				$picdata['width']=$width;
-				$picdata['height']=$height;
-				$picdata['Filetype']=$ftype;
-				$picdata['FileOwner']=fileowner($tempFile);
-				print_r(get_dpi($tempFile));
-				foreach($picdata as $key => $val){
-					echo "$key = $val <br>";
-				}
-				break;
+			echo "<h2>Picture Meta data</h2> "; 
+			echo "<br>";
+			list($width, $height, $type) = getimagesize($tempFile);
+			$file_meta['width']=$width;
+			$file_meta['height']=$height;
+			//print_r(get_dpi($tempFile));
+			display_file_meta($file_meta);
+			
+			break;
+			
 		case "application":
 			echo "<h2>Application</h2>";
 			echo "<br>";
-			$appdata['FileName']=$_FILES['fileToRead']['name'];
-			$appdata['FileDateTime']=filemtime($tempFile);
-			$appdata['FileSize']=filesize($tempFile);
-			$appdata['MimeType']=$tmpFleTyp;
-			$appdata['Filetype']=$ftype;
-			$appdata['FileOwner']=fileowner($tempFile);				
-			foreach($appdata as $key => $val){
-				echo "$key = $val <br>";
-			}
+			display_file_meta($file_meta);
 			break;
+			
 		case "text": 
 			echo "<h2>Text</h2>";
 			echo "<br>";
-			$txtdata['FileName']=$_FILES['fileToRead']['name'];
-			$txtdata['FileDateTime']=filemtime($tempFile);
-			$txtdata['FileSize']=filesize($tempFile);
-			$txtdata['MimeType']=$tmpFleTyp;
-			$txtdata['Filetype']=$ftype;
-			$txtdata['FileOwner']=fileowner($tempFile);
-			$txtdata['WrdCnt']=0;
-			$txtdata['LineCnt']=0;
+			$file_meta['WrdCnt']=0;
+			$file_meta['LineCnt']=0;
 			//get number of lines and words in file
 			$fp=fopen($tempFile,'r');
 			$handle = $fp;
 			if ($handle) {
 				while (!feof($handle)) {
 					$lines = fgets($handle);	
-					$txtdata['WrdCnt'] += str_word_count($lines);
-					$txtdata['LineCnt']++;
+					$file_meta['WrdCnt'] += str_word_count($lines);
+					$file_meta['LineCnt']++;
 				}
 				fclose($handle);				
 			}
-			
-			foreach($txtdata as $key => $val){
-				echo "$key = $val <br>";
-			}
+			display_file_meta($file_meta);			
 			break;
+			
 		case "video":
 			echo "<h2>Video</h2>";
 			echo "<br>";
-			$viddata['FileName']=$_FILES['fileToRead']['name'];
-			$viddata['FileDateTime']=filemtime($tempFile);
-			$viddata['FileSize']=filesize($tempFile);
-			$viddata['MimeType']=$tmpFleTyp;
-			$viddata['Filetype']=$ftype;
-			$viddata['FileOwner']=fileowner($tempFile);				
-			foreach($viddata as $key => $val){
-				echo "$key = $val <br>";
-			}
+			display_file_meta($file_meta);	
 			break;
+			
 		case "audio":
 			echo "<h2>Audio</h2>";
 			echo "<br>";
-			$auddata['FileName']=$_FILES['fileToRead']['name'];
-			$auddata['FileDateTime']=filemtime($tempFile);
-			$auddata['FileSize']=filesize($tempFile);
-			$auddata['MimeType']=$tmpFleTyp;
-			$auddata['Filetype']=$ftype;
-			$auddata['FileOwner']=fileowner($tempFile);				
-			foreach($auddata as $key => $val){
-				echo "$key = $val <br>";
-			}
+			display_file_meta($file_meta);	
 			break;
-		case "object":echo "Object";break;
+			
+		case "object":
+			echo "<h2>Object</h2>";
+			
+			break;
 		default: echo "Unknown file type";
 	}
 	echo "</fieldset>";	
