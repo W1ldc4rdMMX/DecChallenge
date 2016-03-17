@@ -17,39 +17,45 @@
 	include('./config/config.php');
 	echo "Basic file info <br>";
 	echo "<fieldset>";
-	/* foreach($_FILES['fileToRead'] as $key => $value) {
-		echo "[$key] = $value";
-		echo "<br>";
-	} */
-	
+		
 	$tempFile=$_FILES['fileToRead']['tmp_name'];
-	$array=get_meta_tags($_FILES['fileToRead']['tmp_name']);
-	foreach($array as $key => $value) {
-		echo "[$key] = $value";
-		echo "<br>";
-	}
 	
 	//Store base data and get file type
 	$file_meta=get_base_file_info($tempFile);
-	//Determine which function to use to get meta data
-	$addMeta=get_meta_tags($tempFile);
-	display_file_meta($addMeta);
+	
+	//Determine which function to use to get meta data		
 	switch ($file_meta['Filetype']) {
 		case "image": 
 			echo "<h2>Picture Meta data</h2> "; 
 			echo "<br>";
+			$addPicMeta=exif_read_data($tempFile);
+			/*if(!empty($addPicMeta)) {
+				foreach ($addPicMeta as $key => $section) {
+					foreach ($section as $name => $val) {
+						echo "$key.$name: $val<br />\n";
+					}
+				}
+				/* foreach($addPicMeta as $key => $val){
+					if (!is_array($val)){
+						$file_meta["$key"] = $val;
+					}else{
+						foreach($val as $subkey => $subval){
+							$file_meta["$subkey"] = $subval;
+						}
+					}
+					
+					//print_r($addPicMeta);
+				} 
+			} */
 			list($width, $height, $type) = getimagesize($tempFile);
 			$file_meta['width']=$width;
 			$file_meta['height']=$height;
-			//print_r(get_dpi($tempFile));
-			display_file_meta($file_meta);
 			
 			break;
 			
 		case "application":
 			echo "<h2>Application</h2>";
-			echo "<br>";
-			display_file_meta($file_meta);
+			echo "<br>";			
 			break;
 			
 		case "text": 
@@ -67,20 +73,17 @@
 					$file_meta['LineCnt']++;
 				}
 				fclose($handle);				
-			}
-			display_file_meta($file_meta);			
+			}			
 			break;
 			
 		case "video":
 			echo "<h2>Video</h2>";
-			echo "<br>";
-			display_file_meta($file_meta);	
+			echo "<br>";			
 			break;
 			
 		case "audio":
 			echo "<h2>Audio</h2>";
-			echo "<br>";
-			display_file_meta($file_meta);	
+			echo "<br>";			
 			break;
 			
 		case "object":
@@ -89,6 +92,15 @@
 			break;
 		default: echo "Unknown file type";
 	}
+	//check for addtional meta data
+	$addMeta=get_meta_tags($tempFile);
+	if (!empty($addMeta)) {
+		foreach ($addMeta as $key => $val) {
+			$file_meta["$key"] = $val;
+		}
+	}			
+	//Display Metadata found
+	display_file_meta($file_meta);	
 	echo "</fieldset>";	
 ?>
 
