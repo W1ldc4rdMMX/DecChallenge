@@ -20,8 +20,26 @@
 	$testfile19=("./Test_file/019.xml");
 	$testfile20=("./Test_file/020.mp4");
 
-	SplFileInfo::getATime(
-
+	//SplFileInfo::getATime(
+	//$addPicMeta=exif_read_data($tempFile);
+			/*if(!empty($addPicMeta)) {
+				foreach ($addPicMeta as $key => $section) {
+					foreach ($section as $name => $val) {
+						echo "$key.$name: $val<br />\n";
+					}
+				}
+				/* foreach($addPicMeta as $key => $val){
+					if (!is_array($val)){
+						$file_meta["$key"] = $val;
+					}else{
+						foreach($val as $subkey => $subval){
+							$file_meta["$subkey"] = $subval;
+						}
+					}
+					
+					//print_r($addPicMeta);
+				} 
+			} */
 	//Check if image is jpeg
 				/*if ($tmpFleTyp=="image/jpeg") {
 					//Read picture metadata and store in array

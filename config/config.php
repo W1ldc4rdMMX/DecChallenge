@@ -11,6 +11,7 @@
 		echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
 	}
 	echo $mysqli->host_info . "<br>";
+	mysqli_query($mysqli,"Select * from 'tbltest'");
 	//Select working db
 	//$connection_string=mysql_select_db($db_name);
 	

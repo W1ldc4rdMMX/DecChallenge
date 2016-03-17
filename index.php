@@ -27,30 +27,10 @@
 	switch ($file_meta['Filetype']) {
 		case "image": 
 			echo "<h2>Picture Meta data</h2> "; 
-			echo "<br>";
-			$addPicMeta=exif_read_data($tempFile);
-			/*if(!empty($addPicMeta)) {
-				foreach ($addPicMeta as $key => $section) {
-					foreach ($section as $name => $val) {
-						echo "$key.$name: $val<br />\n";
-					}
-				}
-				/* foreach($addPicMeta as $key => $val){
-					if (!is_array($val)){
-						$file_meta["$key"] = $val;
-					}else{
-						foreach($val as $subkey => $subval){
-							$file_meta["$subkey"] = $subval;
-						}
-					}
-					
-					//print_r($addPicMeta);
-				} 
-			} */
+			echo "<br>";			
 			list($width, $height, $type) = getimagesize($tempFile);
 			$file_meta['width']=$width;
-			$file_meta['height']=$height;
-			
+			$file_meta['height']=$height;			
 			break;
 			
 		case "application":
@@ -87,9 +67,9 @@
 			break;
 			
 		case "object":
-			echo "<h2>Object</h2>";
-			
+			echo "<h2>Object</h2>";			
 			break;
+		
 		default: echo "Unknown file type";
 	}
 	//check for addtional meta data

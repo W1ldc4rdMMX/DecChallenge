@@ -22,7 +22,11 @@
 		}
 	}
 		
-  function get_dpi($filename){
+	function store_meta_data($arrayMetaD){
+		
+		
+	}
+  /* function get_dpi($filename){
 	//get_png_imageinfo();
     $a = fopen($filename,'rb');
     $string = fread($a,filesize($filename));
@@ -33,6 +37,6 @@
     $y = substr($data,4,4);
 
       return array(hexdec($x),hexdec($y));
-  }
+  } */
 
 ?>
