@@ -17,12 +17,9 @@
 	include('./config/config.php');
 	echo "Basic file info <br>";
 	echo "<fieldset>";
-		
 	$tempFile=$_FILES['fileToRead']['tmp_name'];
-	
 	//Store base data and get file type
 	$file_meta=get_base_file_info($tempFile);
-	
 	//Determine which function to use to get meta data		
 	switch ($file_meta['Filetype']) {
 		case "image": 
@@ -32,12 +29,10 @@
 			$file_meta['width']=$width;
 			$file_meta['height']=$height;			
 			break;
-			
 		case "application":
 			echo "<h2>Application</h2>";
 			echo "<br>";			
 			break;
-			
 		case "text": 
 			echo "<h2>Text</h2>";
 			echo "<br>";
@@ -55,21 +50,17 @@
 				fclose($handle);				
 			}			
 			break;
-			
 		case "video":
 			echo "<h2>Video</h2>";
 			echo "<br>";			
 			break;
-			
 		case "audio":
 			echo "<h2>Audio</h2>";
 			echo "<br>";			
 			break;
-			
 		case "object":
 			echo "<h2>Object</h2>";			
 			break;
-		
 		default: echo "Unknown file type";
 	}
 	//check for addtional meta data
