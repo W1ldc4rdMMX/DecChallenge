@@ -71,7 +71,7 @@
 		}
 	}			
 	//Display Metadata found
-	display_file_meta($file_meta);	
+	display_file_meta($file_meta);
 	echo "</fieldset>";	
 ?>
 
