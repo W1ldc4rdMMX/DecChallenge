@@ -7,7 +7,7 @@
 		$ftype=substr($tmpFleTyp,0,strpos($tmpFleTyp,"/"));
 		$base_file_info['FileName']= $_FILES['fileToRead']['name'];
 		$base_file_info['FileModDT']=date('jS-M-Y, H:i',filemtime($tmpFile));
-		$base_file_info['FileSize']=FileSizeConvert(filesize($tmpFile));
+		$base_file_info['FileSize']=filesize($tmpFile);
 		$base_file_info['MimeType']=$tmpFleTyp;
 		$base_file_info['Filetype']=$ftype;
 		$base_file_info['FileOwner']=fileowner($tmpFile);
@@ -18,6 +18,10 @@
 	function display_file_meta($metadata)
 	{
 		foreach($metadata as $key => $val){
+			if ($key=='FileSize'){
+				echo "$key = ".FileSizeConvert($val)." <br>";
+				continue;
+			}
 			echo "$key = $val <br>";
 		}
 	}

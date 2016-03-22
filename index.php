@@ -76,6 +76,7 @@
 	}			
 	//Display Metadata found
 	display_file_meta($file_meta);
+	AddMeta2DB($file_meta);
 	echo "</fieldset>";	
 	//chkDB();	
 	

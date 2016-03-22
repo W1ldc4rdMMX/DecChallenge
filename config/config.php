@@ -9,7 +9,6 @@
 	$conn = new mysqli($db_host, $db_user, $db_passwrd, $db_name);
 	if ($conn->connect_errno) {
 		echo "Failed to connect to MySQL: (" . $conn->connect_errno . ") " . $conn->connect_error;
-	}
-	//echo $mysqli->host_info . "<br>";	
+	}	
 	//$conn->close();	
 ?>
