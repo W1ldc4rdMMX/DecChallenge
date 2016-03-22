@@ -1,42 +1,12 @@
 <!DOCTYPE html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
+<?php include("header.html"); ?>
 </head>
-
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Metadata Webapp</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="#">Home </a></li>          
-        <li><a href="#">History</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-search"></span>Search</a></li>
-  </button>
-      </ul>
-      <!--<ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>-->
-    </div>
-  </div>
-</nav>
 
 <html>
 <div class="container">
   <div class="jumbotron">
-    <h2>Metadata web-app</h2>    
+    <h2>Metadata webapp Home page</h2>    
   </div>
 	<body>
 	<div class="well">
@@ -54,15 +24,15 @@
 					echo "<input type=\"submit\" class=\"btn btn-success btn-lg disabled\" value=\"Read file Metadata\" name=\"submit\">";
 				} else {
 					echo "<input type=\"submit\" class=\"btn btn-success btn-lg active\" value=\"Read file Metadata\" name=\"submit\">";
-				} */
+				}  */
 			?>
 			<input type="submit" class="btn btn-success btn-lg" value="Read file Metadata" name="submit">
 			</div>   
 		</div>    
 	</fieldset>
 	</form>
-	</div>
-	
+</div>
+
 <?php
 	//Read basic file info
 	include('./myfunctions.php');
@@ -130,9 +100,11 @@
 	AddMeta2DB($file_meta);
 	echo "</fieldset>";	
 	echo "</div>";
-	$_FILES['fileToRead']['name']="";
-	//chkDB();	
+	unset( $_FILES['fileToRead']['name'] );
+	unset( $_FILES['fileToRead']['tmp_name'] );
 	
+	//$_FILES['fileToRead']['name']="";
+	//chkDB();	
 	
 ?>
 </div>

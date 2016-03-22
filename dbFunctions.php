@@ -3,8 +3,7 @@
 	include('./config/config.php');
 	//see if table exsists, if not create
 	$mysqlquery ="SELECT * FROM `tblMetadata`";
-	//$check=mysql_query ("SELECT * FROM `people` LIMIT 0,1");
-    if (!($conn->query($mysqlquery))) {                 
+	if (!($conn->query($mysqlquery))) {                 
 		//Something went wrong; so
         //Create Table
 		$Metadata="CREATE TABLE tblMetadata (
@@ -56,6 +55,19 @@
 	function DelMeta2DB()
 	{
 		
+	}
+	
+	function GetMetaDB()
+	{
+		include("./config/config.php");
+		$mysqlquery = "SELECT * FROM tblMetadata";
+		$results = $conn->query($mysqlquery);
+		if (($results)) 
+		{
+				echo "begin loading table";
+				$rows=$results->fetch_assoc()
+				return $rows;
+		}
 	}
 		
 ?>

@@ -1,3 +1,10 @@
+base file data
+FileName	
+FileModDT
+FileSize 	
+MimeType	
+Filetype	
+FileOwner
 
 stream_get_meta_data
 [timed_out] =

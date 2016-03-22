@@ -42,6 +42,32 @@
 		echo "</div>";
 	}
 		
+	function display_DB_meta($metadata)
+	{
+		echo "<div class=\"table-responsive\">";
+		echo "<table class=\"table table-hover\">
+				<thead>
+					<tr>";
+		foreach ($metadata as $key => $val)
+		{
+				echo "<th>".$key."</th>";					
+		}
+		echo "</thead>";
+		echo "<tbody>";
+		
+		foreach($metadata as $key => $val){
+			echo "<tr>";
+			if ($key=='FileSize'){
+				echo "<td>".FileSizeConvert($val)."</td>";
+				continue;
+			}
+			echo "<td>$val</td>";
+			echo "</tr>";
+		}
+		echo "</tbody>";
+		echo "<table>";
+		echo "</div>";
+	}
 	/**
 	* Converts bytes into human readable file size.
 	*
