@@ -22,12 +22,13 @@
       <ul class="nav navbar-nav">
         <li><a href="#">Home </a></li>          
         <li><a href="#">History</a></li>
-        <li><a href="#">Search</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span>Search</a></li>
+  </button>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
+      <!--<ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
+      </ul>-->
     </div>
   </div>
 </nav>
