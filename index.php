@@ -22,6 +22,8 @@
 	//Read basic file info
 	include('./myfunctions.php');
 	include('./config/config.php');
+	include('./dbFunctions.php');
+	
 	echo "<h2>Basic file info</h2>";
 	echo "<fieldset>";
 	$tempFile=$_FILES['fileToRead']['tmp_name'];
@@ -75,6 +77,9 @@
 	//Display Metadata found
 	display_file_meta($file_meta);
 	echo "</fieldset>";	
+	//chkDB();	
+	
+	
 ?>
 
 </body>
