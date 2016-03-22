@@ -41,7 +41,10 @@
 		 //echo $UpdateDB;
 		 $results = $conn->query($UpdateDB);
 		 if($results) {
-			 echo "<br>Data saved!<br>";
+			 echo "<br>";
+			 echo "<div class=\"alert alert-success fade in\">
+					  <a href=\"#\" class=\"close\" data-dismiss=\"alert\" aria-label=\"close\">&times;</a>
+						<strong>Data saved: </strong> Meta data successfully stored</div>";
 		 }
 	}
 	

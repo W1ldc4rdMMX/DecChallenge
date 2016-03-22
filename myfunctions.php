@@ -17,13 +17,29 @@
 	//loop through array and print data
 	function display_file_meta($metadata)
 	{
+		echo "<div class=\"table-responsive\">";
+		echo "<table class=\"table table-striped table-hover\">
+				<thead>
+					<tr>
+						<th>Data Field</th>
+						<th>Value</th>        
+					</tr>
+				</thead>";
+		echo "<tbody>";
 		foreach($metadata as $key => $val){
+			echo "<tr>";
 			if ($key=='FileSize'){
-				echo "$key = ".FileSizeConvert($val)." <br>";
+				echo "<td>$key</td>";
+				echo "<td>".FileSizeConvert($val)."</td>";
 				continue;
 			}
-			echo "$key = $val <br>";
+			echo "<td>$key</td>"; 
+			echo "<td>$val</td>";
+			echo "</tr>";
 		}
+		echo "</tbody>";
+		echo "<table>";
+		echo "</div>";
 	}
 		
 	/**
