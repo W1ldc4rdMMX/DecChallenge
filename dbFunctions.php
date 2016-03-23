@@ -63,8 +63,7 @@
 		$mysqlquery = "SELECT * FROM tblMetadata";
 		$results = $conn->query($mysqlquery);
 		if (($results)) 
-		{
-			echo "begin loading table <br>";
+		{			
 			$rows=mysqli_fetch_all($results,MYSQLI_ASSOC);
 			//print_r($rows);
 			$i=0;
