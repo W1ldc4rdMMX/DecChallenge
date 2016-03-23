@@ -44,29 +44,41 @@
 		
 	function display_DB_meta($metadata)
 	{
+		//echo "<div class=\"well well-lg\">";
 		echo "<div class=\"table-responsive\">";
 		echo "<table class=\"table table-hover\">
 				<thead>
 					<tr>";
-		foreach ($metadata as $key => $val)
+		foreach ($metadata[0] as $key => $val)
 		{
 				echo "<th>".$key."</th>";					
 		}
 		echo "</thead>";
 		echo "<tbody>";
-		
-		foreach($metadata as $key => $val){
-			echo "<tr>";
-			if ($key=='FileSize'){
-				echo "<td>".FileSizeConvert($val)."</td>";
-				continue;
+		echo "<tr>";		
+		foreach($metadata as $val)
+		{
+			foreach($val as $subkey => $subval)
+			{		
+				if ($subkey=='filesize'){
+					echo "<td>".FileSizeConvert($subval)."</td>";
+					continue;
+				}
+				if ($subkey=='filedate'){
+					echo "<td>".date('jS-M-Y, H:i',$subval)."</td>";
+					continue;
+				}
+				if (strtolower($subkey)=='adddata'){
+					continue;
+				}
+				echo "<td>".$subval."</td>";				
 			}
-			echo "<td>$val</td>";
-			echo "</tr>";
+			echo "</tr>";			
 		}
 		echo "</tbody>";
-		echo "<table>";
+		echo "</table>";
 		echo "</div>";
+		//echo "</div>";
 	}
 	/**
 	* Converts bytes into human readable file size.

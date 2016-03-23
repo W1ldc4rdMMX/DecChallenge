@@ -64,10 +64,21 @@
 		$results = $conn->query($mysqlquery);
 		if (($results)) 
 		{
-				echo "begin loading table";
-				$rows=$results->fetch_assoc()
-				return $rows;
+			echo "begin loading table <br>";
+			$rows=mysqli_fetch_all($results,MYSQLI_ASSOC);
+			//print_r($rows);
+			$i=0;
+			foreach($rows as $key => $val){
+				foreach($val as $subkey => $subval){
+					//echo "[$subkey] -- $subval <br>";	
+					$mdkey=substr($subkey,(strpos($subkey,"_")+1),strlen($subkey));
+					$Metadata[$i]["$mdkey"]= $subval;
+				}
+				$i++;
+			}
+			
 		}
+		return($Metadata);
 	}
 		
 ?>
