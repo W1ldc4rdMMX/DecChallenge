@@ -12,12 +12,5 @@
 		include("./dbFunctions.php");
 		include('./myfunctions.php');
 		$metadata=GetMetaDB();
-		//print_r($DBmetadata);
-		/* foreach($metadata as $val){				
-			foreach($val as $subval)
-			{					
-				echo $subval."<br>";				
-			} 
-		} */
 		display_DB_meta($metadata);
 ?>

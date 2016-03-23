@@ -49,30 +49,78 @@
 		echo "<table class=\"table table-hover\">
 				<thead>
 					<tr>";
+		echo "<th>Click to Edit</th>";
 		foreach ($metadata[0] as $key => $val)
 		{
+				//Skip meta_id field
+				if ($key=='id'){					
+					continue;
+				}
 				echo "<th>".$key."</th>";					
 		}
 		echo "</thead>";
 		echo "<tbody>";
 		echo "<tr>";		
+		$i=0;
+		
+		//loop for each row of the array
 		foreach($metadata as $val)
 		{
+			//loop through each col of the current row of the array		
+			echo "<td><input type=\"submit\" class=\"btn btn-primary btn-xs\" value=\"Edit data\" name=\"editdata_".$val['id']."\"></td>";
 			foreach($val as $subkey => $subval)
 			{		
+				//Skip meta_id field
+				if ($subkey=='id'){					
+					continue;
+				}
+				//format to human readable filesize
 				if ($subkey=='filesize'){
 					echo "<td>".FileSizeConvert($subval)."</td>";
 					continue;
 				}
+				//format to human readable date
 				if ($subkey=='filedate'){
 					echo "<td>".date('jS-M-Y, H:i',$subval)."</td>";
 					continue;
 				}
+				//format add metadata for output
 				if (strtolower($subkey)=='adddata'){
-					continue;
+					//Check if addtional Meta data is avalible
+					if($subval <> "0" AND $subval <> "a:0:{}"){
+						//Format addtional meta data string to array
+						$addmeta=unserialize($subval);						
+						//set-up dynamic collapsable tables
+						echo "<td><button class=\"btn btn-info btn-sm\" data-toggle=\"collapse\" data-target=\"#demo".$i."\">View addtional data</button>";
+						echo "<div id=\"demo".$i."\" class=\"collapse\">
+								<div class=\"table-responsive\">
+								<table class=\"table table-hover\">
+									<thead>
+										<tr>
+										<th>Data</th>
+										<th>Value</th>
+										</tr>
+									</thead>
+									<tbody>";
+						//loop through addtional Meta array and output to sub table
+						foreach($addmeta as $metakey => $metaval){
+									echo "<tr><td>".$metakey."</td>";
+									echo "<td>".$metaval."</td></tr>";
+						}
+						echo "		</tbody>
+								</table>
+							</tr>
+						</div>
+						</div>
+						</td>";
+						//increment for Dynamic collapsable name
+						$i++;
+					}
+						continue;
 				}
-				echo "<td>".$subval."</td>";				
-			}
+				echo "<td>".$subval."</td>";	
+				
+			}			
 			echo "</tr>";			
 		}
 		echo "</tbody>";
