@@ -66,8 +66,55 @@
 		//loop for each row of the array
 		foreach($metadata as $val)
 		{
-			//loop through each col of the current row of the array		
-			echo "<td><input type=\"submit\" class=\"btn btn-primary btn-xs\" value=\"Edit data\" name=\"editdata_".$val['id']."\"></td>";
+			//loop through each col of the current row of the array	
+			
+			//insert edit button
+			echo "<td> <button type=\"button\" class=\"btn btn-info btn-sm\" data-toggle=\"modal\" data-target=\"#myModal".$val['id']."\">Edit data</button></td>";
+			//begin building and storing code for modal window
+			$addtomodal="";
+			$buildmodal="<div class=\"modal fade\" id=\"myModal".$val['id']."\">
+					<div class=\"modal-dialog\">
+						<div class=\"modal-content\">
+							<div class=\"modal-header\">
+								<button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">×</button>
+								<h4 class=\"modal-title\">Meta data for ".$val['filename']."</h4>
+							</div>
+							<div class=\"modal-body\">";
+			
+			//loop to get column names and data to be viewed in modal window
+			foreach($val as $subkey => $subval){
+				if (strtolower($subkey)=='adddata'){
+					//Check if addtional Meta data is avalible
+					if($subval <> "0" AND $subval <> "a:0:{}"){
+						//Format addtional meta data string to array
+						$addmeta=unserialize($subval);
+						foreach($addmeta as $metakey => $metaval){
+									$addtomodal.="<label for=\"txt".$metakey."\"><span class=\"label label-primary\">".$metakey."</span></label>";
+									$addtomodal.="<input type=\"text\" class=\"form-control\" id=\"txt".$metakey."\" value=\"".$metaval."\"><br>";
+									//echo "<td>".$metaval."</td></tr>";
+						}
+						continue;
+					}
+					continue;					
+				}
+				$addtomodal.="<label for=\"txt".$subkey."\"><span class=\"label label-primary\">".$subkey."</span></label>";
+				$addtomodal.="<input type=\"text\" class=\"form-control\" id=\"txt".$subkey."\" value=\"".$subval."\"><br>";
+			}
+							
+			//add generated string data to modal string builder
+			$buildmodal.=$addtomodal;
+			//add footer to modal string builder
+			$buildmodal.="</div>
+							<div class=\"modal-footer\">
+								<button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>
+								<button type=\"button\" class=\"btn btn-primary\">Save changes</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->";
+			
+			echo $buildmodal;
+				
 			foreach($val as $subkey => $subval)
 			{		
 				//Skip meta_id field
@@ -125,8 +172,7 @@
 		}
 		echo "</tbody>";
 		echo "</table>";
-		echo "</div>";
-		//echo "</div>";
+		echo "</div>";		
 	}
 	/**
 	* Converts bytes into human readable file size.
