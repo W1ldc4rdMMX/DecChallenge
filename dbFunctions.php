@@ -59,15 +59,23 @@
 	
 	function GetMetaDB()
 	{
-		include("./config/config.php");
+		//include("./config/config.php");
+		global $conn;
 		$mysqlquery = "SELECT * FROM tblMetadata";
 		$results = $conn->query($mysqlquery);
-		if (($results)) 
-		{			
-			$rows=mysqli_fetch_all($results,MYSQLI_ASSOC);
+		$results_array = array();
+		//$i=0;
+		
+		while ($row = $results->fetch_assoc()) {	
+			$results_array[] = $row;			
+		}
+		//print_r($results_array);
+		// if (($results)) 
+		//{			
+		//	$rows=$results->fetch_assoc()//mysqli_fetch_all($results,MYSQLI_ASSOC);
 			//print_r($rows);
 			$i=0;
-			foreach($rows as $key => $val){
+			foreach($results_array as $key => $val){
 				foreach($val as $subkey => $subval){
 					//echo "[$subkey] -- $subval <br>";	
 					$mdkey=substr($subkey,(strpos($subkey,"_")+1),strlen($subkey));
@@ -76,7 +84,7 @@
 				$i++;
 			}
 			
-		}
+		 
 		return($Metadata);
 	}
 		

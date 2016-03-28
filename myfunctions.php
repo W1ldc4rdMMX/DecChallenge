@@ -97,8 +97,11 @@
 					}
 					continue;					
 				}
-				$addtomodal.="<label for=\"txt".$subkey."\"><span class=\"label label-primary\">".$subkey."</span></label>";
-				$addtomodal.="<input type=\"text\" class=\"form-control\" id=\"txt".$subkey."\" value=\"".$subval."\"><br>";
+				if($subkey <> "id"){
+					$addtomodal.="<label for=\"txt".$subkey."\">".$subkey."</label>";
+					$addtomodal.="<input type=\"text\" class=\"form-control\" id=\"txt".$subkey."\" value=\"".$subval."\"><br>";
+				}
+				
 			}
 							
 			//add generated string data to modal string builder
@@ -107,7 +110,7 @@
 			$buildmodal.="</div>
 							<div class=\"modal-footer\">
 								<button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>
-								<button type=\"button\" class=\"btn btn-primary\">Save changes</button>
+								<button type=\"submit\" class=\"btn btn-primary\">Save changes</button>
 							</div>
 						</div><!-- /.modal-content -->
 					</div><!-- /.modal-dialog -->
