@@ -103,8 +103,6 @@
 	unset( $_FILES['fileToRead']['name'] );
 	unset( $_FILES['fileToRead']['tmp_name'] );
 	
-	//$_FILES['fileToRead']['name']="";
-	//chkDB();	
 	
 ?>
 </div>
