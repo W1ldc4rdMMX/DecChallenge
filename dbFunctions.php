@@ -59,13 +59,11 @@
 	
 	function GetMetaDB()
 	{
-		//include("./config/config.php");
 		global $conn;
 		$mysqlquery = "SELECT * FROM tblMetadata";
 		$results = $conn->query($mysqlquery);
 		$results_array = array();
-		//$i=0;
-		
+				
 		while ($row = $results->fetch_assoc()) {	
 			$results_array[] = $row;			
 		}
