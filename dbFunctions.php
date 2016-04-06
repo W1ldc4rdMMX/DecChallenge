@@ -66,8 +66,8 @@
 			 echo "<div class=\"alert alert-success fade in\">
 					  <a href=\"#\" class=\"close\" data-dismiss=\"alert\" aria-label=\"close\">&times;</a>
 						<strong>Data saved: </strong> Meta data successfully stored</div>";
+			header("refresh:2.5;url=view.php");
 		 }
-
 	}
 	
 	function DelMeta2DB()
