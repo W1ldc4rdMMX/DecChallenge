@@ -84,24 +84,29 @@
 			
 			//loop to get column names and data to be viewed in modal window
 			foreach($val as $subkey => $subval){
+				if (strtolower($subkey)=='id'){
+					$addtomodal.="<input type=\"hidden\" name=\"meta.".$subkey."\" value=\"".$subval."\"/>";
+
+				}
+				if($subkey <> "id" AND strtolower($subkey) <> "adddata"){
+					$addtomodal.="<label for=\"".$subkey."\">".$subkey."</label>";
+					$addtomodal.="<input type=\"text\" class=\"form-control\" name=\"".$subkey."\" id=\"".$subkey."\" value=\"".$subval."\"><br>";
+				}
 				if (strtolower($subkey)=='adddata'){
 					//Check if addtional Meta data is avalible
 					if($subval <> "0" AND $subval <> "a:0:{}"){
 						//Format addtional meta data string to array
 						$addmeta=unserialize($subval);
 						foreach($addmeta as $metakey => $metaval){
-									$addtomodal.="<label for=\"txt".$metakey."\"><span class=\"label label-primary\">".$metakey."</span></label>";
-									$addtomodal.="<input type=\"text\" class=\"form-control\" id=\"txt".$metakey."\" value=\"".$metaval."\"><br>";
+									$addtomodal.="<label for=\"".$metakey."\"><span class=\"label label-primary\">".$metakey."</span></label>";
+									$addtomodal.="<input type=\"text\" class=\"form-control\" name=\"".$metakey."\" id=\"".$metakey."\" value=\"".$metaval."\"><br>";
 									//echo "<td>".$metaval."</td></tr>";
 						}
 						continue;
 					}
 					continue;					
 				}
-				if($subkey <> "id"){
-					$addtomodal.="<label for=\"txt".$subkey."\">".$subkey."</label>";
-					$addtomodal.="<input type=\"text\" class=\"form-control\" id=\"txt".$subkey."\" value=\"".$subval."\"><br>";
-				}
+				
 				
 			}
 							

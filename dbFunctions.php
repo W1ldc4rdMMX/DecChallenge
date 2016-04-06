@@ -30,15 +30,15 @@
 		$strAddMetaData=serialize($addMetaData);
 		//echo "<br>";
 		//echo $strAddMetaData;
-        $UpdateDB="INSERT INTO tblMetadata (meta_filename, meta_filesize, meta_filedate,meta_filemime,meta_filetype,meta_addData)
-                  VALUES ('".$MetaData['FileName']."',
+      $InsertDB="INSERT INTO tblMetadata (meta_filename, meta_filesize, meta_filedate,meta_filemime,meta_filetype,meta_addData)
+                 VALUES ('".$MetaData['FileName']."',
 						".$MetaData['FileSize'].",
 						".strtotime($MetaData['FileModDT']).",		
 						'".$MetaData['MimeType']."',
 						'".$MetaData['Filetype']."',
 						'".$strAddMetaData."')";
 		 //echo $UpdateDB;
-		 $results = $conn->query($UpdateDB);
+		 $results = $conn->query($InsertDB);
 		 if($results) {
 			 echo "<br>";
 			 echo "<div class=\"alert alert-success fade in\">
@@ -47,9 +47,27 @@
 		 }
 	}
 	
-	function UpdateMeta2DB()
+	function UpdateMeta2DB($MetaData)
 	{
-		
+		include("./config/config.php");
+		$addMetaData=array_slice($MetaData,6);
+		$strAddMetaData=serialize($addMetaData);
+		$UpdateDB="UPDATE tblMetadata SET meta_filename='".$MetaData['filename']."',
+		meta_filesize='".$MetaData['filesize']."',
+		meta_filedate=".$MetaData['filedate'].",
+		meta_filemime='".$MetaData['filemime']."',
+		meta_filetype='".$MetaData['filetype']."',
+		meta_addData='".$strAddMetaData."' 
+		WHERE meta_id=".$MetaData['meta_id']."";
+		//echo $UpdateDB;
+		$results = $conn->query($UpdateDB);
+		  if($results) {
+			 echo "<br>";
+			 echo "<div class=\"alert alert-success fade in\">
+					  <a href=\"#\" class=\"close\" data-dismiss=\"alert\" aria-label=\"close\">&times;</a>
+						<strong>Data saved: </strong> Meta data successfully stored</div>";
+		 }
+
 	}
 	
 	function DelMeta2DB()
@@ -67,11 +85,6 @@
 		while ($row = $results->fetch_assoc()) {	
 			$results_array[] = $row;			
 		}
-		//print_r($results_array);
-		// if (($results)) 
-		//{			
-		//	$rows=$results->fetch_assoc()//mysqli_fetch_all($results,MYSQLI_ASSOC);
-			//print_r($rows);
 			$i=0;
 			foreach($results_array as $key => $val){
 				foreach($val as $subkey => $subval){
