@@ -72,16 +72,6 @@
 			echo "<td> <button type=\"button\" class=\"btn btn-info btn-sm\" data-toggle=\"modal\" data-target=\"#myModal".$val['id']."\">Edit data</button></td>";
 			//begin building and storing code for modal window
 			$addtomodal="";
-			$buildmodal="<div class=\"modal fade\" id=\"myModal".$val['id']."\">				
-					<div class=\"modal-dialog\">
-						<div class=\"modal-content\">
-						 <form action=\"save.php\" method=\"post\">
-							<div class=\"modal-header\">
-								<button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">×</button>
-								<h4 class=\"modal-title\">Meta data for ".$val['filename']."</h4>								
-							</div>
-							<div class=\"modal-body\">
-							<br>";
 			
 			//loop to get column names and data to be viewed in modal window
 			foreach($val as $subkey => $subval){
@@ -112,22 +102,9 @@
 			}
 							
 			//add generated string data to modal string builder
-			$buildmodal.=$addtomodal;
 			//add footer to modal string builder
-			$buildmodal.="</div>
-							<div class=\"modal-footer\">
-								<button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>
-								<a class=\"btn btn-default\" data-toggle=\"modal\" data-target=\"#mysubModal".$val['id']."\">
-									<i class=\"glyphicon glyphicon-plus\"></i>  Add additional MetaData
-								</a>
-								<button type=\"submit\" class=\"btn btn-primary\">Save changes</button>
-							</div>
-						</form>
-						</div><!-- /.modal-content -->
-					</div><!-- /.modal-dialog -->
-				</div><!-- /.modal -->";
-			
-			echo $buildmodal;
+
+			createMainModal($val['id'],$val['filename'],$addtomodal);
 			createSubModal($val['id']); 
 				
 			foreach($val as $subkey => $subval)
@@ -232,6 +209,33 @@
 			}
 		}
 		return $result;
+	}
+
+	function createMainModal($id, $mfilename, $addtoMain) {
+		$mainModal="<div class=\"modal fade\" id=\"myModal".$id."\">
+                    <div class=\"modal-dialog\">
+                       <div class=\"modal-content\">
+                        <form action=\"save.php\" method=\"post\">
+                          <div class=\"modal-header\">
+                             <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">×</button>
+                             <h4 class=\"modal-title\">Meta data for ".$mfilename."</h4>
+                          </div>
+                          <div class=\"modal-body\">
+                          <br>";
+		$mainModal.=$addtoMain;
+		$mainModal.="</div>
+                  	<div class=\"modal-footer\">
+                     	<button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>
+                         <a class=\"btn btn-default\" data-toggle=\"modal\" data-target=\"#mysubModal".$id."\">
+                        	 <i class=\"glyphicon glyphicon-plus\"></i>  Add additional MetaData
+                          </a>
+                          <button type=\"submit\" class=\"btn btn-primary\">Save changes</button>
+                       </div>
+                    </form>
+                   </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->";
+		echo $mainModal;
 	}
 
 	function createSubModal($id) {
