@@ -117,7 +117,7 @@
 			$buildmodal.="</div>
 							<div class=\"modal-footer\">
 								<button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>
-								<a class=\"btn btn-default\" data-toggle=\"modal\" data-target=\"#mysubModal\">
+								<a class=\"btn btn-default\" data-toggle=\"modal\" data-target=\"#mysubModal".$val['id']."\">
 									<i class=\"glyphicon glyphicon-plus\"></i>  Add additional MetaData
 								</a>
 								<button type=\"submit\" class=\"btn btn-primary\">Save changes</button>
@@ -128,7 +128,7 @@
 				</div><!-- /.modal -->";
 			
 			echo $buildmodal;
-			createSubModal(); 
+			createSubModal($val['id']); 
 				
 			foreach($val as $subkey => $subval)
 			{		
@@ -234,8 +234,8 @@
 		return $result;
 	}
 
-	function createSubModal() {
-		$submodal="<div class=\"modal fade\" id=\"mysubModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\" aria-hidden=\"true\">
+	function createSubModal($id) {
+		$submodal="<div class=\"modal fade\" id=\"mysubModal".$id."\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\" aria-hidden=\"true\">
     						<div class=\"modal-dialog\">
 		      				<div class=\"modal-content\">
 							      <div class=\"modal-header\">
