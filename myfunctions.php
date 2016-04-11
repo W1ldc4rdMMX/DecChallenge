@@ -72,15 +72,16 @@
 			echo "<td> <button type=\"button\" class=\"btn btn-info btn-sm\" data-toggle=\"modal\" data-target=\"#myModal".$val['id']."\">Edit data</button></td>";
 			//begin building and storing code for modal window
 			$addtomodal="";
-			$buildmodal="<div class=\"modal fade\" id=\"myModal".$val['id']."\">
+			$buildmodal="<div class=\"modal fade\" id=\"myModal".$val['id']."\">				
 					<div class=\"modal-dialog\">
 						<div class=\"modal-content\">
 						 <form action=\"save.php\" method=\"post\">
 							<div class=\"modal-header\">
 								<button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">×</button>
-								<h4 class=\"modal-title\">Meta data for ".$val['filename']."</h4>
+								<h4 class=\"modal-title\">Meta data for ".$val['filename']."</h4>								
 							</div>
-							<div class=\"modal-body\">";
+							<div class=\"modal-body\">
+							<br>";
 			
 			//loop to get column names and data to be viewed in modal window
 			foreach($val as $subkey => $subval){
@@ -116,6 +117,9 @@
 			$buildmodal.="</div>
 							<div class=\"modal-footer\">
 								<button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>
+								<a class=\"btn btn-default\" data-toggle=\"modal\" data-target=\"#mysubModal\">
+									<i class=\"glyphicon glyphicon-plus\"></i>  Add additional MetaData
+								</a>
 								<button type=\"submit\" class=\"btn btn-primary\">Save changes</button>
 							</div>
 						</form>
@@ -124,6 +128,7 @@
 				</div><!-- /.modal -->";
 			
 			echo $buildmodal;
+			createSubModal(); 
 				
 			foreach($val as $subkey => $subval)
 			{		
@@ -227,6 +232,30 @@
 			}
 		}
 		return $result;
+	}
+
+	function createSubModal() {
+		$submodal="<div class=\"modal fade\" id=\"mysubModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\" aria-hidden=\"true\">
+    						<div class=\"modal-dialog\">
+		      				<div class=\"modal-content\">
+							      <div class=\"modal-header\">
+							         <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">&times;</button>
+					   		      <h4 class=\"modal-title\">Modal title</h4>
+					        		</div>
+					        		<div class=\"modal-body\">
+										<label for=\"addUfield\"><span class=\"label label-primary\">Meta Field name</span></label>
+	                           <input type=\"text\" class=\"form-control\" name=\"addUfield\"><br>
+										<label for=\"addUdata\"><span class=\"label label-primary\">Meta Data</span></label>
+	                           <input type=\"text\" class=\"form-control\" name=\"addUdata\">
+									</div>
+			   			   	<div class=\"modal-footer\">
+         	 						<button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>
+	          						<button type=\"button\" class=\"btn btn-primary\">Save changes</button>
+       		 					</div>
+		     					</div><!-- /.modal-content -->
+			  				</div><!-- /.modal-dialog -->
+			  			</div><!-- /.modal -->";
+		echo $submodal;
 	}
 	
 	function store_meta_data($arrayMetaD){

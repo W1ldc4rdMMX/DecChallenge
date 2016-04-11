@@ -43,67 +43,67 @@
 	echo "<div class=\"well well-sm\"><h3>Basic file info</h3></div>";
 	echo "<div class=\"well well-lg\">";
 	echo "<fieldset>";
-	$tempFile=$_FILES['fileToRead']['tmp_name'];
-	//Store base data and get file type
-	$file_meta=get_base_file_info($tempFile);
-	//Determine which function to use to get meta data		
-	$filetype="unknown";
+	if (isset($_FILES['fileToRead'])) {
+		$tempFile=$_FILES['fileToRead']['tmp_name'];
+		//Store base data and get file type
+		$file_meta=get_base_file_info($tempFile);
+		//Determine which function to use to get meta data		
+		$filetype="unknown";
 	
-	switch ($file_meta['Filetype']) {
-		case "image": 
-			$filetype="Picture"; 
-			list($width, $height, $type) = getimagesize($tempFile);
-			$file_meta['width']=$width;
-			$file_meta['height']=$height;			
-			break;
-		case "application":
-			$filetype="Application";
-			break;
-		case "text": 
-			$filetype="Text";
-			$file_meta['WrdCnt']=0;
-			$file_meta['LineCnt']=0;
-			//get number of lines and words in file
-			$fp=fopen($tempFile,'r');
-			$handle = $fp;
-			if ($handle) {
-				while (!feof($handle)) {
-					$lines = fgets($handle);	
-					$file_meta['WrdCnt'] += str_word_count($lines);
-					$file_meta['LineCnt']++;
-				}
-				fclose($handle);				
-			}			
-			break;
-		case "video":
-			$filetype="Video";
-			break;
-		case "audio":
-			$filetype="Audio";
-			break;
-		case "object":
-			$filetype="Object";			
-			break;
-		default: echo "Unknown file type";
-	}
-	//check for addtional meta data
-	$addMeta=get_meta_tags($tempFile);
-	if (!empty($addMeta)) {
-		foreach ($addMeta as $key => $val) {
-			$file_meta["$key"] = $val;
+		switch ($file_meta['Filetype']) {
+			case "image": 
+				$filetype="Picture"; 
+				list($width, $height, $type) = getimagesize($tempFile);
+				$file_meta['width']=$width;
+				$file_meta['height']=$height;			
+				break;
+			case "application":
+				$filetype="Application";
+				break;
+			case "text": 
+				$filetype="Text";
+				$file_meta['WrdCnt']=0;
+				$file_meta['LineCnt']=0;
+				//get number of lines and words in file
+				$fp=fopen($tempFile,'r');
+				$handle = $fp;
+				if ($handle) {
+					while (!feof($handle)) {
+						$lines = fgets($handle);	
+						$file_meta['WrdCnt'] += str_word_count($lines);
+						$file_meta['LineCnt']++;
+					}
+					fclose($handle);				
+				}			
+				break;
+			case "video":
+				$filetype="Video";
+				break;
+			case "audio":
+				$filetype="Audio";
+				break;
+			case "object":
+				$filetype="Object";			
+				break;
+			default: echo "Unknown file type";
 		}
-	}			
+		//check for addtional meta data
+		$addMeta=get_meta_tags($tempFile);
+		if (!empty($addMeta)) {
+			foreach ($addMeta as $key => $val) {
+				$file_meta["$key"] = $val;
+			}
+		}			
 	
-	//Display Metadata found
-	echo "<h3><small>".$filetype."</small></h3> ";
-	display_file_meta($file_meta);
-	AddMeta2DB($file_meta);
-	echo "</fieldset>";	
-	echo "</div>";
-	unset( $_FILES['fileToRead']['name'] );
-	unset( $_FILES['fileToRead']['tmp_name'] );
-	
-	
+		//Display Metadata found
+		echo "<h3><small>".$filetype."</small></h3> ";
+		display_file_meta($file_meta);
+		AddMeta2DB($file_meta);
+		echo "</fieldset>";	
+		echo "</div>";
+		unset( $_FILES['fileToRead']['name'] );
+		unset( $_FILES['fileToRead']['tmp_name'] );
+	}	
 ?>
 </div>
 </body>
