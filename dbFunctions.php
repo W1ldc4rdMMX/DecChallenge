@@ -61,13 +61,40 @@
 		WHERE meta_id=".$MetaData['meta_id']."";
 		//echo $UpdateDB;
 		$results = $conn->query($UpdateDB);
-		  if($results) {
+		if($results) {
 			 echo "<br>";
 			 echo "<div class=\"alert alert-success fade in\">
 					  <a href=\"#\" class=\"close\" data-dismiss=\"alert\" aria-label=\"close\">&times;</a>
 						<strong>Data saved: </strong> Meta data successfully stored</div>";
 			header("refresh:2.5;url=view.php");
 		 }
+	}
+	
+	function addAddtionalMeta($id, $key, $val)
+	{
+		include("./config/config.php");
+		$getAddMeta="SELECT meta_addData FROM tblMetadata WHERE meta_id=".$id;
+		$results = $conn->query($getAddMeta);
+		$results_array = array();
+      while ($row = $results->fetch_assoc()) {
+     		$results_array[] = $row;
+      }
+		$currentMeta=unserialize($results_array[0]['meta_addData']);
+		//echo "$key => $val <br>";
+		//print_r($currentMeta);
+		$currentMeta[$key]=$val;
+		$strcurrentMeta=serialize($currentMeta);
+		$insertAddMeta="UPDATE tblMetadata SET meta_addData='".$strcurrentMeta."' WHERE meta_id=".$id."";
+		//echo $currentMeta."<br>";
+		//echo $insertAddMeta;
+		$results = $conn->query($insertAddMeta);
+      if($results) {
+         echo "<br>";
+       	echo "<div class=\"alert alert-success fade in\">
+         <a href=\"#\" class=\"close\" data-dismiss=\"alert\" aria-label=\"close\">&times;</a>
+	         <strong>Data saved: </strong> Meta data successfully stored</div>";
+   	   // header("refresh:0");
+    	 }
 	}
 	
 	function DelMeta2DB()

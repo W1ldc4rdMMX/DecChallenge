@@ -13,4 +13,10 @@
 		include('./myfunctions.php');
 		$metadata=GetMetaDB();
 		display_DB_meta($metadata);
+		if(isset($_POST["addUfield"]) && isset($_POST["addUdata"])) {
+			addAddtionalMeta($_POST["metaid"],$_POST["addUfield"],$_POST["addUdata"]);
+			echo "<meta http-equiv=\"Refresh\" content=\"10\">";
+			//header("refresh:0;url=view.php");
+		}
+
 ?>
