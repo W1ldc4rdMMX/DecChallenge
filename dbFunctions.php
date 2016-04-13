@@ -126,4 +126,30 @@
 		return($Metadata);
 	}
 		
+	function SearchDB($srchterm) {
+		global $conn;
+		$table = "tblMetadata";
+		$mysqlsrchqry = "SELECT * FROM ".$table." WHERE ";
+		$sqlCols = "SHOW COLUMNS FROM ".$table;
+		$results = $conn ->query($sqlCols);
+		while($r = $results->fetch_assoc()){
+			$results_array[]=$r;
+		}
+		foreach($results_array as $val){
+			foreach($val as $key => $subval) {			
+				if($key=='Field'){
+					$col = $subval;
+					$sql_srch_cols[] = $col." like('%".$srchterm.".%') ";
+				}
+			}
+		}
+		$mysqlsrchqry .= implode(" OR ", $sql_srch_cols);
+		
+		$srchresults = $conn ->query($mysqlsrchqry);
+		while($rs = $srchresults->fetch_assoc()){
+			$srch_results_array[]=$rs;
+		}
+		print_r($srch_results_array);
+		//echo $mysqlsrchqry;	
+	}
 ?>
