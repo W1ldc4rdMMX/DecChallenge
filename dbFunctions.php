@@ -146,10 +146,15 @@
 		$mysqlsrchqry .= implode(" OR ", $sql_srch_cols);
 		
 		$srchresults = $conn ->query($mysqlsrchqry);
+		$srch_results_array=array();
 		while($rs = $srchresults->fetch_assoc()){
 			$srch_results_array[]=$rs;
 		}
+		if (empty($srch_results_array)){
+			echo "NO RESULTS FOUND";
+			exit;
+		}
 		print_r($srch_results_array);
-		//echo $mysqlsrchqry;	
+		//echo$mysqlsrchqry;	
 	}
 ?>
