@@ -137,7 +137,7 @@
 			foreach($val as $key => $subval) {			
 				if($key=='Field'){
 					$col = $subval;
-					$sql_srch_cols[] = $col." like('%".$srchterm.".%') ";
+					$sql_srch_cols[] = $col." like('%".$srchterm."%') ";
 				}
 			}
 		}
