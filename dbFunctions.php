@@ -112,17 +112,15 @@
 		while ($row = $results->fetch_assoc()) {	
 			$results_array[] = $row;			
 		}
-			$i=0;
-			foreach($results_array as $key => $val){
-				foreach($val as $subkey => $subval){
-					//echo "[$subkey] -- $subval <br>";	
-					$mdkey=substr($subkey,(strpos($subkey,"_")+1),strlen($subkey));
-					$Metadata[$i]["$mdkey"]= $subval;
-				}
-				$i++;
+		$i=0;
+		foreach($results_array as $key => $val){
+			foreach($val as $subkey => $subval){
+				//echo "[$subkey] -- $subval <br>";	
+				$mdkey=substr($subkey,(strpos($subkey,"_")+1),strlen($subkey));
+				$Metadata[$i]["$mdkey"]= $subval;
 			}
-			
-		 
+			$i++;
+		}
 		return($Metadata);
 	}
 		
@@ -147,14 +145,25 @@
 		
 		$srchresults = $conn ->query($mysqlsrchqry);
 		$srch_results_array=array();
+		$results=array();
+
 		while($rs = $srchresults->fetch_assoc()){
-			$srch_results_array[]=$rs;
+			$results[]=$rs;
 		}
-		if (empty($srch_results_array)){
+		if (empty($results)){
 			echo "NO RESULTS FOUND";
 			exit;
 		}
-		print_r($srch_results_array);
+		$i=0;
+		foreach($results as $key => $val){
+			foreach($val as $subkey => $subval){
+				//echo "[$subkey] -- $subval <br>";	
+				$mdkey=substr($subkey,(strpos($subkey,"_")+1),strlen($subkey));
+				$srch_results_array[$i]["$mdkey"]= $subval;
+			}
+			$i++;
+		}
+		return $srch_results_array;
 		//echo$mysqlsrchqry;	
 	}
 ?>

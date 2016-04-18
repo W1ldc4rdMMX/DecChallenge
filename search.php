@@ -1,6 +1,7 @@
 <?php 
 	include("header.html"); 
 	include("dbFunctions.php");
+	include("myfunctions.php");
 ?>
 
 <html>
@@ -10,7 +11,11 @@
   		</div>
 		<body>
 			<div class="well">
-			<?php SearchDB($_POST['srch-term']); ?>
+			<?php 
+				$srch_results=SearchDB($_POST['srch-term']); 
+				//print_r($srch_results);
+				display_DB_meta($srch_results);				
+			?>
 		</body>
 		</div>
 	</div>

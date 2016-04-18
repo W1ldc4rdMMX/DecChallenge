@@ -12,6 +12,7 @@
 		include("./dbFunctions.php");
 		include('./myfunctions.php');
 		$metadata=GetMetaDB();
+		//print_r($metadata);
 		display_DB_meta($metadata);
 		if(isset($_POST["addUfield"]) && isset($_POST["addUdata"])) {
 			addAddtionalMeta($_POST["metaid"],$_POST["addUfield"],$_POST["addUdata"]);
