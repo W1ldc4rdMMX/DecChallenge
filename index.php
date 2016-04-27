@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-<?php include("header.html"); ?>
+	<?php include("header.html"); ?>
 </head>
 
 <html>
@@ -10,28 +10,31 @@
   </div>
 	<body>
 	<div class="well">
-	<form action="" method="post" enctype="multipart/form-data">	
-	<fieldset class="scheduler-border">
-		<legend class="scheduler-border">Select a file to upload:</legend>
-		<div class="row">
-			<div class="col-sm-8">
-				<input type="file" class="btn btn-info btn-lg" name="fileToRead" id="fileToRead">  
-			</div>   
+		<form action="" method="post" enctype="multipart/form-data">	
+		<fieldset class="scheduler-border">
+			<legend class="scheduler-border">Select a file to upload:</legend>
+			<div class="row">
+				<div class="col-sm-8">
+					<input type="file" class="btn btn-info btn-lg" 
+					name="fileToRead" id="fileToRead">
+				</div>   
 			<div class="col-sm-4">
-			<?php 
-				/* if($_FILES['fileToRead']['name']=="") 
-				{ 
-					echo "<input type=\"submit\" class=\"btn btn-success btn-lg disabled\" value=\"Read file Metadata\" name=\"submit\">";
-				} else {
-					echo "<input type=\"submit\" class=\"btn btn-success btn-lg active\" value=\"Read file Metadata\" name=\"submit\">";
-				}  */
-			?>
-			<input type="submit" class="btn btn-success btn-lg" value="Read file Metadata" name="submit">
+				<input type="submit" class="btn btn-success btn-lg" 
+				value="Read file Metadata" id="readMeta" onclick="chkForFile()"
+				name="submit">
 			</div>   
 		</div>    
-	</fieldset>
-	</form>
-</div>
+		</fieldset>
+		</form>
+	</div>
+
+<script>
+function chkForFile(){
+	//window.alert("function called");
+	var x = document.getElementById("readMeta");
+	x.disable = "active";
+}
+</script>
 
 <?php
 	//Read basic file info

@@ -69,19 +69,23 @@
 			//loop through each col of the current row of the array	
 			
 			//insert edit button
-			echo "<td> <button type=\"button\" class=\"btn btn-info btn-sm\" data-toggle=\"modal\" data-target=\"#myModal".$val['id']."\">Edit data</button></td>";
+			echo "<td> <button type=\"button\" class=\"btn btn-info btn-sm\" 
+			data-toggle=\"modal\" data-target=\"#myModal".$val['id']."\">
+			Edit data</button></td>";
 			//begin building and storing code for modal window
 			$addtomodal="";
 			
 			//loop to get column names and data to be viewed in modal window
 			foreach($val as $subkey => $subval){
 				if (strtolower($subkey)=='id'){
-					$addtomodal.="<input type=\"hidden\" name=\"meta.".$subkey."\" value=\"".$subval."\"/>";
-
+					$addtomodal.="<input type=\"hidden\" name=\"meta.".$subkey."\"
+					value=\"".$subval."\"/>";
 				}
 				if($subkey <> "id" AND strtolower($subkey) <> "adddata"){
 					$addtomodal.="<label for=\"".$subkey."\">".$subkey."</label>";
-					$addtomodal.="<input type=\"text\" class=\"form-control\" name=\"".$subkey."\" id=\"".$subkey."\" value=\"".$subval."\"><br>";
+					$addtomodal.="<input type=\"text\" class=\"form-control\" 
+					name=\"".$subkey."\" id=\"".$subkey."\" value=\"".$subval."\">
+					<br>";
 				}
 				if (strtolower($subkey)=='adddata'){
 					//Check if addtional Meta data is avalible
@@ -89,16 +93,17 @@
 						//Format addtional meta data string to array
 						$addmeta=unserialize($subval);
 						foreach($addmeta as $metakey => $metaval){
-									$addtomodal.="<label for=\"".$metakey."\"><span class=\"label label-primary\">".$metakey."</span></label>";
-									$addtomodal.="<input type=\"text\" class=\"form-control\" name=\"".$metakey."\" id=\"".$metakey."\" value=\"".$metaval."\"><br>";
-									//echo "<td>".$metaval."</td></tr>";
+									$addtomodal.="<label for=\"".$metakey."\">
+									<span class=\"label label-primary\">".$metakey."
+									</span></label>";
+									$addtomodal.="<input type=\"text\" 
+									class=\"form-control\" name=\"".$metakey."\" 
+									id=\"".$metakey."\" value=\"".$metaval."\"><br>";
 						}
 						continue;
 					}
 					continue;					
 				}
-				
-				
 			}
 							
 			//add generated string data to modal string builder
@@ -130,7 +135,9 @@
 						//Format addtional meta data string to array
 						$addmeta=unserialize($subval);						
 						//set-up dynamic collapsable tables
-						echo "<td><button class=\"btn btn-info btn-sm\" data-toggle=\"collapse\" data-target=\"#demo".$i."\">View addtional data</button>";
+						echo "<td><button class=\"btn btn-info btn-sm\" 
+						data-toggle=\"collapse\" data-target=\"#demo".$i."\">
+						View addtional data</button>";
 						echo "<div id=\"demo".$i."\" class=\"collapse\">
 								<div class=\"table-responsive\">
 								<table class=\"table table-hover\">
@@ -204,7 +211,8 @@
 			if($bytes >= $arItem["VALUE"])
 			{
 				$result = $bytes / $arItem["VALUE"];
-				$result = str_replace(".", "," , strval(round($result, 2)))." ".$arItem["UNIT"];
+				$result = str_replace(".", "," , strval(round($result, 2)))." ".
+				$arItem["UNIT"];
 				break;
 			}
 		}
@@ -217,19 +225,26 @@
                        <div class=\"modal-content\">
                         <form action=\"save.php\" method=\"post\">
                           <div class=\"modal-header\">
-                             <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">×</button>
-                             <h4 class=\"modal-title\">Meta data for ".$mfilename."</h4>
+                             <button type=\"button\" class=\"close\" 
+										data-dismiss=\"modal\" aria-hidden=\"true\">×
+										</button>
+                             <h4 class=\"modal-title\">Meta data for ".
+										$mfilename."</h4>
                           </div>
                           <div class=\"modal-body\">
                           <br>";
 		$mainModal.=$addtoMain;
 		$mainModal.="</div>
                   	<div class=\"modal-footer\">
-                     	<button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>
-                         <a class=\"btn btn-default\" data-toggle=\"modal\" data-target=\"#mysubModal".$id."\">
-                        	 <i class=\"glyphicon glyphicon-plus\"></i>  Add additional MetaData
+                     	<button type=\"button\" class=\"btn btn-default\" 
+								data-dismiss=\"modal\">Close</button>
+                         <a class=\"btn btn-default\" data-toggle=\"modal\" 
+								data-target=\"#mysubModal".$id."\">
+                        	 <i class=\"glyphicon glyphicon-plus\"></i>  
+									Add additional MetaData
                           </a>
-                          <button type=\"submit\" class=\"btn btn-primary\">Save changes</button>
+                          <button type=\"submit\" class=\"btn btn-primary\">
+									Save changes</button>
                        </div>
                     </form>
                    </div><!-- /.modal-content -->
@@ -239,24 +254,40 @@
 	}
 
 	function createSubModal($id) {
-		$submodal="<div class=\"modal fade\" id=\"mysubModal".$id."\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\" aria-hidden=\"true\">
+		$submodal="<div class=\"modal fade\" id=\"mysubModal".$id."\" 
+		tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\" 
+		aria-hidden=\"true\">
     						<div class=\"modal-dialog\">
 		      				<div class=\"modal-content\">
-								<form action=\"".htmlspecialchars($_SERVER["PHP_SELF"])."\" method=\"post\">
+								<form action=\"".
+								htmlspecialchars($_SERVER["PHP_SELF"])."\" 
+								method=\"post\">
 							      <div class=\"modal-header\">
-							         <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">&times;</button>
+							         <button type=\"button\" class=\"close\" 
+										data-dismiss=\"modal\" aria-hidden=\"true\">
+										&times;</button>
 					   		      <h4 class=\"modal-title\">Modal title</h4>
 					        		</div>
 					        		<div class=\"modal-body\">
-										<input type=\"hidden\" name=\"metaid\" value=\"".$id."\"/>
-										<label for=\"addUfield\"><span class=\"label label-primary\">Meta Field name</span></label>
-	                           <input type=\"text\" class=\"form-control\" name=\"addUfield\"><br>
-										<label for=\"addUdata\"><span class=\"label label-primary\">Meta Data</span></label>
-	                           <input type=\"text\" class=\"form-control\" name=\"addUdata\">
+										<input type=\"hidden\" name=\"metaid\" 
+										value=\"".$id."\"/>
+										<label for=\"addUfield\"><span 
+										class=\"label label-primary\">
+										Meta Field name</span></label>
+	                           <input type=\"text\" class=\"form-control\" 
+										name=\"addUfield\"><br>
+										<label for=\"addUdata\"><span 
+										class=\"label label-primary\">Meta Data</span>
+										</label>
+	                           <input type=\"text\" class=\"form-control\" 
+										name=\"addUdata\">
 									</div>
 			   			   	<div class=\"modal-footer\">
-         	 						<button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>
-	          						<button type=\"submit\" class=\"btn btn-primary\">Save changes</button>
+         	 						<button type=\"button\" 
+										class=\"btn btn-default\" 
+										data-dismiss=\"modal\">Close</button>
+	          						<button type=\"submit\" 
+										class=\"btn btn-primary\">Save changes</button>
        		 					</div>
 								</form>
 		     					</div><!-- /.modal-content -->
