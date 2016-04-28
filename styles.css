@@ -1,0 +1,12 @@
+body {
+    background-color: lightblue;
+	 background-image: url("pics/background5.jpg");
+	 background-repeat: no-repeat;
+	 background-position: center;
+	 background-size: cover;
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+}

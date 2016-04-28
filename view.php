@@ -21,6 +21,9 @@
 					echo "<meta http-equiv=\"Refresh\" content=\"10\">";
 					//header("refresh:0;url=view.php");
 				}
+				if(isset($_POST["delFieldName"]) && isset($_POST["delmetaid"])) {
+					DelMetaData($_POST["delmetaid"],$_POST["delFieldName"]);
+				}
 			?>
 			</div>
 		</body>

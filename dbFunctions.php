@@ -178,9 +178,14 @@
     	 }
 	}
 	
-	function DelMeta2DB()
+	function DelMetaData($metaid,$fieldname)
 	{
-		
+		global $conn;
+		$oldMetaData = getCurrMeta($metaid);
+		$currentMetaData = unserialize($oldMetaData);
+		print_r($currentMetaData);
+		unset($currentMetaData[$fieldname]);
+		print_r($currentMetaData);
 	}
 	
 	function GetMetaDB()

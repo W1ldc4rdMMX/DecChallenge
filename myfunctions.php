@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <?php
 	
 	//get basic data of all files and store to array
@@ -74,7 +75,7 @@
 			Edit data</button></td>";
 			//begin building and storing code for modal window
 			$addtomodal="";
-			
+
 			//loop to get column names and data to be viewed in modal window
 			foreach($val as $subkey => $subval){
 				if (strtolower($subkey)=='id'){
@@ -82,24 +83,40 @@
 					value=\"".$subval."\"/>";
 				}
 				if($subkey <> "id" AND strtolower($subkey) <> "adddata"){
-					$addtomodal.="<label for=\"".$subkey."\">".$subkey."</label>";
-					$addtomodal.="<input type=\"text\" class=\"form-control\" 
+					$addtomodal.="<label class=\"control-label col-sm-2\"
+					for=\"".$subkey."\">".$subkey."</label>";
+					$addtomodal.="<div class=col-sm-10>
+					<input type=\"text\" class=\"form-control\" 
 					name=\"".$subkey."\" id=\"".$subkey."\" value=\"".$subval."\">
-					<br>";
+					</div><br>";
 				}
 				if (strtolower($subkey)=='adddata'){
 					//Check if addtional Meta data is avalible
 					if($subval <> "0" AND $subval <> "a:0:{}"){
 						//Format addtional meta data string to array
 						$addmeta=unserialize($subval);
+						$addtomodal.="<hr><fieldset>";
 						foreach($addmeta as $metakey => $metaval){
-									$addtomodal.="<label for=\"".$metakey."\">
-									<span class=\"label label-primary\">".$metakey."
-									</span></label>";
-									$addtomodal.="<input type=\"text\" 
+									$addtomodal.="<h4><label 
+									class=\"control-label col-sm-5\"
+									for=\"".$metakey."\">
+									<span class=\"label label-pill label-info\">"
+									.$metakey."</span></label></h4>";
+									$addtomodal.="<div class=\"col-sm-5\">
+									<input type=\"text\" 
 									class=\"form-control\" name=\"".$metakey."\" 
-									id=\"".$metakey."\" value=\"".$metaval."\"><br>";
+									id=\"".$metakey."\" value=\"".$metaval."\">
+									</div>
+									<div class=\"col-sm-2\">
+									<a class=\"btn btn-danger btn-xs open-delModal\" 
+									data-toggle=\"modal\"
+									data-field-id = \"".$metakey."\" 
+									data-target=\"#delModal\">
+                        	<i class=\"glyphicon glyphicon-minus\"></i>  
+									Remove<br>Data
+                          </a></div><br>";
 						}
+						$addtomodal.="</fieldset><br>";
 						continue;
 					}
 					continue;					
@@ -111,7 +128,8 @@
 
 			createMainModal($val['id'],$val['filename'],$addtomodal);
 			createSubModal($val['id']); 
-				
+			delModal($val['id']); 
+			
 			foreach($val as $subkey => $subval)
 			{		
 				//Skip meta_id field
@@ -223,7 +241,8 @@
 		$mainModal="<div class=\"modal fade\" id=\"myModal".$id."\">
                     <div class=\"modal-dialog\">
                        <div class=\"modal-content\">
-                        <form action=\"save.php\" method=\"post\">
+                        <form class=\"form-horizontal\" 
+								action=\"save.php\" method=\"post\">
                           <div class=\"modal-header\">
                              <button type=\"button\" class=\"close\" 
 										data-dismiss=\"modal\" aria-hidden=\"true\">×
@@ -295,11 +314,52 @@
 			  			</div><!-- /.modal -->";
 		echo $submodal;
 	}
+
+	function delModal($id){
+		$delmodal="<div class=\"modal fade\" id=\"delModal\" 
+		tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\" 
+		aria-hidden=\"true\">
+    						<div class=\"modal-dialog\">
+		      				<div class=\"modal-content\">
+								<form action=\"".
+								htmlspecialchars($_SERVER["PHP_SELF"])."\" 
+								method=\"post\">
+							      <div class=\"modal-header\">
+							         <button type=\"button\" class=\"close\" 
+										data-dismiss=\"modal\" aria-hidden=\"true\">
+										&times;</button>
+					   		      <h4 class=\"modal-title\">Modal title</h4>
+					        		</div>
+					        		<div class=\"modal-body\">
+										<input type=\"hidden\" name=\"delmetaid\" 
+										 id=\"delmetaid\" value=\"".$id."\"/>
+										<p>Are you sure you to remove this field?</p>
+										<label for=\"fieldname\" 
+										name=\"fieldname\"><strong>
+										</strong></label>
+										<input type=\"hidden\" id=\"delFieldName\" 
+										 name=\"delFieldName\" value=\"\"/>
+									</div>
+			   			   	<div class=\"modal-footer\">
+         	 						<button type=\"button\" 
+										class=\"btn btn-default\" 
+										data-dismiss=\"modal\">Close</button>
+	          						<button type=\"submit\" 
+										class=\"btn btn-danger\">Delete field</button>
+       		 					</div>
+								</form>
+		     					</div><!-- /.modal-content -->
+			  				</div><!-- /.modal-dialog -->
+			  			</div><!-- /.modal -->";
+		echo $delmodal;	
+	}
+
 	
 	function store_meta_data($arrayMetaD){
 		
 		
 	}
+
   /* function get_dpi($filename){
 	//get_png_imageinfo();
     $a = fopen($filename,'rb');
@@ -314,3 +374,13 @@
   } */
 
 ?>
+<html>
+<script>
+$(document).on("click", ".open-delModal", function () {
+		var myFieldId = $(this).data('field-id');
+		alert(myFieldId);
+		$("label[for='fieldname']").text(myFieldId);
+	 	$(".modal-body #delFieldName").val(myFieldId);
+});
+</script>
+</html>
