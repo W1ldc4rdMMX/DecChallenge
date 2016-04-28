@@ -183,9 +183,35 @@
 		global $conn;
 		$oldMetaData = getCurrMeta($metaid);
 		$currentMetaData = unserialize($oldMetaData);
-		print_r($currentMetaData);
 		unset($currentMetaData[$fieldname]);
-		print_r($currentMetaData);
+		$strcurrentMeta = serialize($currentMetaData);
+		$insertAddMeta="UPDATE tblMetadata 
+							SET meta_addData='".$strcurrentMeta."' 
+							WHERE meta_id=".$metaid."";
+
+		$UpdateChangesDB="INSERT INTO tblMetaChanges(
+      change_date,change_addData,meta_id)
+      VALUES (".strtotime('now').",'".$oldMetaData."'
+      ,".$metaid.")";
+    
+		// Set autocommit to off
+	    mysqli_autocommit($conn,FALSE);
+	    mysqli_query($conn,$insertAddMeta);
+	    mysqli_query($conn,$UpdateChangesDB);
+	    // Commit transaction
+	    $results = mysqli_commit($conn);
+	    // Close connection
+	    mysqli_close($conn);
+
+      if($results) {
+         echo "<br>";
+       	echo "<div class=\"alert alert-success fade in\">
+         <a href=\"#\" class=\"close\" data-dismiss=\"alert\" 
+			aria-label=\"close\">&times;</a>
+	         <strong>Data saved: </strong> Meta data successfully stored --
+				</div>";
+		}
+ 
 	}
 	
 	function GetMetaDB()
