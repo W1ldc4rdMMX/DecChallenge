@@ -88,9 +88,32 @@ function chkForFile(){
 			case "object":
 				$filetype="Object";			
 				break;
-			default: echo "Unknown file type";
+			default: 
+				$filetype = "Other";
+				//echo "Unknown file type";
 		}
+		//----------------------------------------------------------------------
 		//check for addtional meta data
+
+		$filedata = file_get_contents($tempFile); 
+		$data = json_decode($filedata,true);
+		
+		//check if array was formed
+		if (!empty($data)) {
+			foreach ($data as $key => $val) {
+				if (is_array($val)) {
+					loopthrudata($val,$key);
+					continue;
+				}
+				$file_meta["$key"] = $val;
+			}
+			if (!empty($tempArr)) {
+				foreach ($tempArr as $key => $val){
+					$file_meta[$key] = $val;
+				}
+			}
+		}
+
 		$addMeta=get_meta_tags($tempFile);
 		if (!empty($addMeta)) {
 			foreach ($addMeta as $key => $val) {
@@ -106,8 +129,22 @@ function chkForFile(){
 		echo "</div>";
 		unset( $_FILES['fileToRead']['name'] );
 		unset( $_FILES['fileToRead']['tmp_name'] );
+
 	}	
+
+	function loopthrudata($arrData,$keyval) {
+		global $tempArr;
+		foreach ($arrData as $k => $v) {
+			if (is_array($v)) {
+				loopthrudata($v,$keyval.".".$k);	
+				continue;
+			}
+			$tempArr[$keyval.".".$k] = $v;
+		}
+		
+	}
 ?>
+
 </div>
 </body>
 </html> 
