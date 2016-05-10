@@ -97,8 +97,8 @@
 					if($subval <> "0" AND $subval <> "a:0:{}"){
 						//Format addtional meta data string to array
 						$addmeta=unserialize($subval);
-						$addtomodal.="</div><fieldset>";/*<div class=\"well well-sm\">
-						<fieldset>";*/
+						$addtomodal.="</div><div class=\"well well-sm\">
+						<fieldset>";
 						foreach($addmeta as $metakey => $metaval){
 									$addtomodal.="<h4><label 
 									class=\"control-label col-sm-5\"
