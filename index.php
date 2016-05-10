@@ -20,21 +20,17 @@
 				</div>   
 			<div class="col-sm-4">
 				<input type="submit" class="btn btn-success btn-lg" 
-				value="Read file Metadata" id="readMeta" onclick="chkForFile()"
+				value="Read file Metadata" id="readMeta" onclick="showDetails()"
 				name="submit">
 			</div>   
 		</div>    
 		</fieldset>
 		</form>
 	</div>
-
-<script>
-function chkForFile(){
-	//window.alert("function called");
-	var x = document.getElementById("readMeta");
-	x.disable = "active";
-}
-</script>
+<!--div id="DisDets" class="hidden"-->
+	<div class="well well-sm"><h3>Basic file info</h3></div>
+	<div class="well well-lg">
+		<fieldset>
 
 <?php
 	//Read basic file info
@@ -42,10 +38,6 @@ function chkForFile(){
 	include('./config/config.php');
 	include('./dbFunctions.php');
 	
-	
-	echo "<div class=\"well well-sm\"><h3>Basic file info</h3></div>";
-	echo "<div class=\"well well-lg\">";
-	echo "<fieldset>";
 	if (isset($_FILES['fileToRead'])) {
 		$tempFile=$_FILES['fileToRead']['tmp_name'];
 		//Store base data and get file type
@@ -56,6 +48,18 @@ function chkForFile(){
 		switch ($file_meta['Filetype']) {
 			case "image": 
 				$filetype="Picture"; 
+				/*try {	
+					$exif = $exif_read_data($tempFile);
+					if ($exif != false) {
+						foreach ($exif as $key => $val){
+							$file_meta[$key] = $val;
+						}
+					}
+				} 
+				catch(Exception $e) {
+					echo "Message: ".$e->getMessage();
+				}*/
+		
 				list($width, $height, $type) = getimagesize($tempFile);
 				$file_meta['width']=$width;
 				$file_meta['height']=$height;			
@@ -144,7 +148,19 @@ function chkForFile(){
 		
 	}
 ?>
-
+<!--/div-->
 </div>
+<script>
+function showDetails(){
+	window.alert("function called");
+	$("DisDets").removeClass("hidden");
+}
+
+//function hideDetails(){
+//	window.alert("function called");
+//	$("DisplayDetails").addClass('hidden');
+//}
+</script>
+
 </body>
 </html> 

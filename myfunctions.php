@@ -74,8 +74,8 @@
 			data-toggle=\"modal\" data-target=\"#myModal".$val['id']."\">
 			Edit data</button></td>";
 			//begin building and storing code for modal window
-			$addtomodal="";
-
+			$addtomodal="<div class = \"first-row\">
+			<div class=\"well\">";
 			//loop to get column names and data to be viewed in modal window
 			foreach($val as $subkey => $subval){
 				if (strtolower($subkey)=='id'){
@@ -87,15 +87,18 @@
 					for=\"".$subkey."\">".$subkey."</label>";
 					$addtomodal.="<div class=col-sm-10>
 					<input type=\"text\" class=\"form-control\" 
-					name=\"".$subkey."\" id=\"".$subkey."\" value=\"".$subval."\">
-					</div><br>";
+					name=\"".$subkey."\" id=\"".$subkey."\" value=\""
+					.formatDispVal($subkey,$subval)."\">
+					</div><br><br>";					
 				}
+				//$addtomodal="</div>";
 				if (strtolower($subkey)=='adddata'){
 					//Check if addtional Meta data is avalible
 					if($subval <> "0" AND $subval <> "a:0:{}"){
 						//Format addtional meta data string to array
 						$addmeta=unserialize($subval);
-						$addtomodal.="<hr><fieldset>";
+						$addtomodal.="</div><fieldset>";/*<div class=\"well well-sm\">
+						<fieldset>";*/
 						foreach($addmeta as $metakey => $metaval){
 									$addtomodal.="<h4><label 
 									class=\"control-label col-sm-5\"
@@ -360,6 +363,15 @@
 		
 	}
 
+	function formatDispVal($key,$val) {
+		if ($key == "filesize") {
+			return FileSizeConvert($val);	
+		}
+		if ($key == "filedate") {
+			return date('jS-M-Y, H:i',$val);
+		}
+		return $val;
+	}
   /* function get_dpi($filename){
 	//get_png_imageinfo();
     $a = fopen($filename,'rb');
