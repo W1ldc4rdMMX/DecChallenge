@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" 
+href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script 
+src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
+</script>
+<script 
+src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+</script>
+<!--link rel="stylesheet" type="text/css" href="myStyles.css"-->
+<style>
+	.navbar-default {
+		background-color: #3763f7;
+		border-color: #0048e4;
+	}
+	.navbar-default .navbar-brand {
+		color: #fbfeff;
+	}
+	.navbar-default .navbar-brand:hover,
+	.navbar-default .navbar-brand:focus {
+		color: #ecdbff;
+	}
+	.navbar-default .navbar-text {
+		color: #fbfeff;
+	}
+	.navbar-default .navbar-nav > li > a {
+		color: #fbfeff;
+	}
+	.navbar-default .navbar-nav > li > a:hover,
+	.navbar-default .navbar-nav > li > a:focus {
+		color: #ecdbff;
+	}
+	.navbar-default .navbar-nav > .active > a,
+	.navbar-default .navbar-nav > .active > a:hover,
+	.navbar-default .navbar-nav > .active > a:focus {
+		color: #ecdbff;
+		background-color: #0048e4;
+	}
+	.navbar-default .navbar-nav > .open > a,
+	.navbar-default .navbar-nav > .open > a:hover,
+	.navbar-default .navbar-nav > .open > a:focus {
+		color: #ecdbff;
+		background-color: #0048e4;
+	}
+	.navbar-default .navbar-toggle {
+		border-color: #0048e4;
+	}
+	.navbar-default .navbar-toggle:hover,
+	.navbar-default .navbar-toggle:focus {
+		background-color: #0048e4;
+	}
+	.navbar-default .navbar-toggle .icon-bar {
+		background-color: #fbfeff;
+	}
+	.navbar-default .navbar-collapse,
+	.navbar-default .navbar-form {
+		border-color: #fbfeff;
+	}
+	.navbar-default .navbar-link {
+		color: #fbfeff;
+	}
+	.navbar-default .navbar-link:hover {
+		color: #ecdbff;
+	}
+
+	@media (max-width: 767px) {
+		.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+			color: #fbfeff;
+		}
+		.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+		.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+			color: #ecdbff;
+		}
+		.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+		.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+		.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+			color: #ecdbff;
+			background-color: #0048e4;
+		}
+	}
+</style>
+</head>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="/"> Stock-Webs </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        	<li><a href="home"><span class = "glyphicon glyphicon-home">
+			</span> Home </a></li>
+			<li><a href="#"><span class = "glyphicon glyphicon-list-alt">
+			</span> View\Edit stored data </a></li>		
+        	<li><a href="#"><span class = "glyphicon glyphicon-time">
+			</span> History </a></li>
+        	<!--li>
+				<a href="#"><span class="glyphicon glyphicon-search"></span></a>
+			</li-->
+					<div class="col-sm-3 col-md-5 pull-left">
+		        	<form action="search.php" method="post" class="navbar-form" 
+					role="search">
+      		  		<div class="input-group">
+            			<input type="text" class="form-control" 
+							placeholder="Search" name="srch-term" id="srch-term">
+            				<div class="input-group-btn">
+ 		               		<button class="btn btn-default" type="submit">
+									<i class="glyphicon glyphicon-search"></i></button>
+      		      		</div>
+		        		</div>
+      		  </form>
+        	</div>
+
+  </button>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up
+			</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login
+			</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br><br><br><br>

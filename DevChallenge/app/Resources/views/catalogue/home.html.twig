@@ -1,0 +1,75 @@
+{% include 'header.html' %}
+<head>
+<title>{{ someText }}</title>
+</head>
+<body>
+<!--h1>Text Here</h1-->
+
+    <div class="top_box">
+        {% block top %}
+            <div class="col-sm-12">
+                <div class="well">
+                <legend class="scheduler-border">Top selling products:</legend>
+
+                        <ul class="nav nav-pills nav-justified">
+                        {%  for key in stock|keys %}
+                            <li><a data-toggle="tab" href="#{{ key }}">{{ key }}</a></li>
+                        {% endfor %}
+                        </ul>
+                        <div class="tab-content">
+                            {%  for key in stock|keys %}
+                                <div id="{{ key }}" class="tab-pane fade in active">
+                                    <h3>{{ key|upper }}</h3>
+                                    <p>Some content.</p>
+                                </div>
+                            {%  endfor %}
+                        </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        {% endblock %}
+    </div>
+
+    <div class="bottom_box_left">
+        {% block bottomLeft %}
+            <div class="col-sm-4">
+                <div class="well">
+                    <legend class="scheduler-border">Current Stock Items:</legend>
+                    <div class="row">
+
+                    </div>
+                </div>
+            </div>
+        {% endblock %}
+    </div>
+
+    <div class="bottom_box_mid">
+        {% block bottomMid %}
+            <div class="col-sm-4">
+                <div class="well">
+                    <legend class="scheduler-border">Current Orders:</legend>
+                    <div class="row">
+
+                    </div>
+                </div>
+            </div>
+        {% endblock %}
+    </div>
+
+    <div class="bottom_box_right">
+        {% block bottomRight %}
+            <div class="col-sm-4">
+                <div class="well">
+                    <legend class="scheduler-border">Latest Additions:</legend>
+                    <div class="row">
+
+                    </div>
+                </div>
+            </div>
+        {% endblock %}
+    </div>
+
+</body>
