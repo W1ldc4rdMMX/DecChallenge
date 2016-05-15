@@ -1,7 +1,9 @@
-{% include 'header.html' %}
-<head>
-    <title>WebApp Name</title>
-</head>
-<body>
-<h1>About App</h1>
-</body>
+{% extends 'base.html.twig' %}
+{% block title %}
+    WebApp Name here
+{% endblock %}
+
+{% block body %}
+    <h1>About App</h1>
+    <p>Details and description of App here</p>
+{% endblock %}

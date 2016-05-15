@@ -1,10 +1,9 @@
-{% include 'header.html' %}
-<head>
-<title>{{ someText }}</title>
-</head>
-<body>
-<!--h1>Text Here</h1-->
+{% extends 'base.html.twig' %}
+{% block title %}
+    {{ someText }}
+{% endblock %}
 
+{% block body %}
     <div class="top_box">
         {% block top %}
             <div class="col-sm-12">
@@ -71,5 +70,4 @@
             </div>
         {% endblock %}
     </div>
-
-</body>
+{% endblock %}
