@@ -114,6 +114,16 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'AppBundle\\Controller\\catalogueController::showAction',  '_route' => 'app_catalogue_show',);
         }
 
+        // app_update_show
+        if ($pathinfo === '/update') {
+            return array (  '_controller' => 'AppBundle\\Controller\\updateController::showAction',  '_route' => 'app_update_show',);
+        }
+
+        // app_view_show
+        if ($pathinfo === '/view') {
+            return array (  '_controller' => 'AppBundle\\Controller\\viewController::showAction',  '_route' => 'app_view_show',);
+        }
+
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
     }
 }

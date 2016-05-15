@@ -12,7 +12,11 @@
 
                         <ul class="nav nav-pills nav-justified">
                         {%  for key in stock|keys %}
-                            <li><a data-toggle="tab" href="#{{ key }}">{{ key }}</a></li>
+                            {% if loop.index == 1 %}
+                                <li class="active"><a data-toggle="tab" href="#{{ key }}">{{ key }}</a></li>
+                            {% else %}
+                                <li><a data-toggle="tab" href="#{{ key }}">{{ key }}</a></li>
+                            {% endif %}
                         {% endfor %}
                         </ul>
                         <div class="tab-content">
@@ -23,11 +27,8 @@
                                 </div>
                             {%  endfor %}
                         </div>
-
                 </div>
             </div>
-
-
         </div>
         {% endblock %}
     </div>

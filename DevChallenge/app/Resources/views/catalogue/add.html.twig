@@ -3,14 +3,74 @@
     Add items
 {% endblock %}
 
+{% block stylesheets %}
+<style>
+    form  { display: table;      }
+    p     { display: table-row;  }
+    select{ display: table-cell; }
+    label { display: table-cell; vertical-align: top; }
+    input { display: table-cell; }
+    textarea{ display: table-cell; style:"width: 330px; height: 167px;";}
+</style>
+{% endblock %}
+
 {% block body %}
-    <div class="bottom_box_left">
-        {% block bottomLeft %}
-            <div class="col-sm-8">
+    <div class="box_left">
+        {% block boxLeft %}
+            <div class="col-sm-4">
                 <div class="well">
                     <legend class="scheduler-border">Capture Item details</legend>
                     <div class="row">
-
+                    <form>
+                        <div class="well well-sm">
+                        <fieldset>
+                            <p>
+                                <label for="productType">Product Type </label>
+                                <select name="productType" id="productType">
+                                    <option value="Router">Router</option>
+                                    <option value="Mobile" selected="selected">Mobile</option>
+                                    <option value="Sims">Sims</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="productName">Product Name </label>
+                                <input type="text" name="productName" id="fn" size="50" />
+                            </p>
+                            <p>
+                                <label for="productSerial">Serial no. </label>
+                                <input type="text" name="productSerial" id="fn" size="50"/>
+                            </p>
+                            <p>
+                                <label for="productCount">Number of items </label>
+                                <input type="text" name="productCount" id="fn" size="50"/>
+                            </p>
+                            <p>
+                                <label for="productBase">Base Features </label>
+                                <textarea name="productBase" id="productBase" rows="5" cols="47"
+                                >Please separate features with a coma(,)
+                                </textarea>
+                            </p>
+                            <p>
+                                <label for="productSpecs">Device Specifications </label>
+                                <textarea name="productSpecs" id="productSpecs" rows="5" cols="47"
+                                >Please separate Specifications with a coma(,)
+                                </textarea>
+                            </p>
+                            <p>
+                                <label for="productContent">Package Contents </label>
+                                <textarea name="productContent" id="productContent" rows="5" cols="47"
+                                 >Please separate Contents with a coma(,)
+                                </textarea>
+                            </p>
+                            <p>
+                                <label for="productSysReq">System Requirements </label>
+                                <textarea name="productSysReq" id="productSysReq" rows="5" cols="47"
+                                >Please separate System Requirements with a coma(,)
+                                </textarea>
+                            </p>
+                        </fieldset>
+                    </form>
                     </div>
                 </div>
             </div>
@@ -18,7 +78,7 @@
     </div>
 
     <div class="bottom_box_right">
-        {% block bottomLeft %}
+        {% block boxRight %}
             <div class="col-sm-4">
                 <div class="well">
                     <legend class="scheduler-border">Import item details</legend>

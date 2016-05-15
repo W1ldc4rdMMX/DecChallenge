@@ -15,7 +15,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class aboutContorller extends Controller
 {
     /**
-     * @Route()
+     * @Route("")
      */
 
     public function showAction()
