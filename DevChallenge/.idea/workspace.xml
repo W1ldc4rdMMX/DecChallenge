@@ -2,189 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f80a4fc-4950-4953-9611-c3654dd5835d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/annotations/19/5b41707042756e646c655c436f6e74726f6c6c65725c76696577436f6e74726f6c6c65722373686f77416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/annotations/79/5b41707042756e646c655c436f6e74726f6c6c65725c61626f7574436f6e746f726c6c65722373686f77416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/annotations/d8/5b41707042756e646c655c436f6e74726f6c6c65725c757064617465436f6e74726f6c6c65722373686f77416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/annotations/e8/5b41707042756e646c655c436f6e74726f6c6c65725c636174616c6f677565436f6e74726f6c6c65722373686f77416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/catalogue/view.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/updateController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/viewController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/annotations/06/5b53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c657223676574506172616d65746572405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/annotations/0b/5b53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c657223676574405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/annotations/0d/5b53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c65722367656e657261746555726c405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/annotations/10/5b53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c6572237265646972656374405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/annotations/17/5b41707042756e646c655c436f6e74726f6c6c65725c636174616c6f677565436f6e74726f6c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/annotations/2c/_2c04d325b8886cc43a6d460f37df17cc47a876ec5ee728b62014eadb40f050d9.doctrinecache.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/annotations/34/5b41707042756e646c655c436f6e74726f6c6c65725c76696577436f6e74726f6c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/annotations/47/5b53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c65722372656e64657256696577405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/annotations/56/5b53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c657223616464466c617368405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/annotations/6a/5b41707042756e646c655c436f6e74726f6c6c65725c61626f7574436f6e746f726c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/annotations/6b/5b53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c657223686173405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/annotations/6f/5b53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c65722372656e646572405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/annotations/77/5b53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c65722369734772616e746564405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/annotations/99/5b53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c657223637265617465466f726d405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/annotations/9f/5b53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c657223697343737266546f6b656e56616c6964405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/annotations/a8/5b41707042756e646c655c436f6e74726f6c6c65725c757064617465436f6e74726f6c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/annotations/a8/5b53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c657223736574436f6e7461696e6572405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/annotations/af/5b53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c65722367657455736572405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/annotations/b1/_b1446613f30987d52c8a07cfee718597f75af989d5068915548680cab6211cd5.doctrinecache.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/annotations/c6/5b53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c65722373747265616d405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/annotations/cd/5b53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c657223676574446f637472696e65405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/annotations/d3/_d3131f8de1c2d8255f59ccd7ceb5de5b7f1f8ad24af5e0a8d701df590a9155de.doctrinecache.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/annotations/dc/5b53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c657223637265617465466f726d4275696c646572405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/annotations/eb/5b53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c657223666f7277617264405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/annotations/eb/5b53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c6572237265646972656374546f526f757465405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/appProdProjectContainer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/appProdProjectContainer.php.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/appProdUrlGenerator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/appProdUrlGenerator.php.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/appProdUrlMatcher.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/appProdUrlMatcher.php.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/classes.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/classes.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/templates.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/02/0224ccbb652f65466881f68a519a08572e7d18da4560d88c71f5418468279034.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/02/02baac994549067fd0079dcde5b56ecd08c7d05981693ce2828198ef92d34380.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/03/034549d07786c3e164ba7561e3f6952c119d05df151c7c8738ec0a491bae6c00.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/07/07138e93a4742b1bcef69ce3bea401e8afbf5fcd9b45ccd912d9ef6cb90703f7.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/07/0753c698e4b6ebfddb45236823f2ee05320e9a933f4f3de21c2c26da48cb1161.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/0a/0a1f87666a2be82cfbf1d995be36c30e606e1c914e822daa344ddb88f8969319.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/0a/0a21564005246218d4d1b4f0ce7eac95c846edff5b9c0fd52a337ed204c08b11.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/0b/0b2734559c3b1337d001ef6a85008b5e9d71978420f42ea4355f7a7be5ef1351.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/0c/0c41e41cb52825d908cfd4c0f785bf3bf0b8b9b08a3d85f2edb58afc69adf0dd.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/0d/0d4bcd4cd87363b294c5bfbe482eb90d7d55f6708ef566b3ff50c6698929988d.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/0e/0e5b4f5f17435a4ff3c711dece8954926e79b04ced091f4bb79de985212d59ef.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/16/16fae478ef474f3dfc8cf695d95bea886549d9bc8242667a74f53f9ebf34d1a9.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/17/170c0e34740c64d4abcb1934c06b49b579638d80979140747f93c3ed534f91d8.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/19/19c08fdde5191baceb696e869583269533a82657869c2622905698d51e0f2c7e.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/1c/1cd342aee23362ef6d6921219cc17d4c57e8ec8946586fb61d148d514ef92b5c.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/1e/1ebc16ae03d61ee3b3a61a3578ee4eac5217a8a51753a44856ac1ef2cb3544c2.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/1f/1f9c3080a58591309a579147d919f3ca0754a468626239676e23307b3030fc82.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/24/24be41ff5782b03ce8663c6b867b8a32246493cc6f4ffef00bcba9d9ecbfacb1.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/25/252333f295012955528edc800da7e41f2ceac9564795870b413e351d48a721ef.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/33/33ac8a156b5636dbc84a5da5451eee51510bbe470796365f4907d205f3ada729.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/34/34957edfeb93a9a9474d20821fdf93821ff951f59d0a5ff974ba8cd5d8a22b4c.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/35/35fe6b3555519da965d7310a54c69f63675a3fa793fa3117033782f00b455271.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/37/37051219f200c4eeb9e234dcb07e6f5a3793185e187388de0a8b7dd7de8aa355.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/37/37cab551f17fe23096637d1f7c41659a1d53f86f5f453e7a836ffe33ae0bd2dd.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/39/3929bc9611d35754d10fb64784a6e953c3a401eb0bf26fd5e06e3cc6b4ad92b8.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/3b/3bdfbf740e2b8e3b7a0a0e91de7919b644c072412bc81aa92fff9267b66a694f.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/3c/3c76836d12eaed3e14c00b4a8aeaa249646465c52445a3dee9141dfb2c164b54.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/3d/3d806a9f043b721866801430b72a905c6765fa3e28e49a14e8ea87710b76e974.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/41/410dce7fba9b490044b25fbc2412a41cfbb750a59a186c4dfab596b5932e517a.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/44/44846d716c4bc966f443cd8b47580c03e87ac6c846803729ca32542e59f75a43.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/44/44f39f3a57301c7301ff28aaacd0682c7d8d9f04edb94f7e1481a89fa8b1ff3a.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/47/47b1239fc179968318cb3bc5ed157cbb1d05d4cba0d639989d7ac5b89f82bc25.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/4a/4a60eccbdc181962d0d09b08d2519c43228ced46dc4fd8ef75200fe7f7657c23.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/4c/4c7efb1d14c67dfbd64e7cdeef3056d09acd88a260257475880d15b1438a7ac9.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/51/51bc8f4c04fb80fea6201d557c13452943097726a89f5c315dfec7f345eb58b0.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/56/5662faea45b4d25d7a754a55bbb322ed790ccdedbbb916f1a76e9c179455e1a5.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/59/5906abdbe2e1808c27d804020e042cb37f11d3542176d5cbf09efdc5ab870a03.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/5d/5d6fc73a65b603c631f09c6fa60f1d61cc44d2eecc9c83ab234c08026434aaea.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/62/62f41428d85ad03364d06813b01c59da1ba68f120e75c40d67869c13c69ffa75.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/63/63ede2da2a2b9b114a58ebb221d46ed02926886a1c3362774107692bc8b4c383.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/64/64086bc153e359c3b2b67d6303e33ca7ec00e24751384df140bd43fa718f65d3.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/64/64b35d4b58ea9d39896ab6ce1f13a88b8f0ea3669b52ae5cfbd29432445a7894.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/66/6665a4419800402308fb4015362d7729cbe9b986ac19573f4c6e01c3a3df946e.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/68/6809cdf101db46372cf350fb3bd86b6e0db22a080ea8e0a82a782421e8455781.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/68/683ac5781e0f34b98333e2920f823f9ac6b9c4c6a70af717afd5f39d2c557320.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/69/696856b4b2818df3e3e6f674dc55da423d3b994c9a928252fbd8421db4006d0a.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/69/69b67f17ee0b4ce080bed8571b3b1a50ed5cccea99269abbb647d9d90476abc1.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/6b/6badd1d9fe0dd13da313f8996fca2735bddca8bcdd3ab9f18c526a18921c5e08.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/6f/6f06c8a5c16e311e0ed911ef0e2263ff569494b33a095f48bcc3501bfaca4664.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/74/74904e56b04d3e0de92d24a67cc7852b83520f9c0f28d9574e02cb25ef9ff43f.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/75/75dc0d0b322fdfdda5d515dc7681428d4e05da14a75f4353fd8083fbbe932ee0.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/78/7880779f2943332540c9528adb6c11cf2f7c6d60a61d808eb9441a0306c0c9b0.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/79/79bfb306f8f3b3635bbd32fb18348278136f3b9df9cfe41bcb7468df9f3fff6b.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/7b/7b37c4916e521d5e41775b050700096f64475fcfdee5e002798e87b00e86d358.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/7b/7bd8a8a3fbc7db64ce129557cfc78a9838d1f2167d5541ecb82f5de035aeaff9.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/7c/7c2f6b2a63ac6eb60c92a0d3dbc8e110413d8f9f0d7b476188e41fc499ad04c7.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/7d/7da185367b7a6510b0b18d3d71bb55d714d35543d0e519c0f188069d334b2e3a.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/7e/7e862dd3b8aa5647d6b61fac28058bafcbef4f7f7f6091d4c255eb73ae9d5c70.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/81/81100ee3163d7c7766257f61c41c711890b1ee9ff65e8ecfac381992dad1e80e.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/84/84fda31ef1659931ed147527c103b418819e17adddf364a14d2fbae91bc35d46.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/85/858297d60f3fcb8253aaa41956282566c3ddcb31efdf326b491c79e9aa5b489e.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/85/85adcb6f0e64ac707888fe29386a7b79c3d9e74a4e6abf2f8ab10fa2cddeb630.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/85/85ff1107b19a2a890c36956ae5e93e383ba79968e52f0a44bdaba17e87b98319.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/86/866f3d2d0c21d57563bf0365158665a0efb8630185687f866d3d6aa965b41981.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/88/88d07184c889746026bf0fa9eda5af5e55e91ae078728f2316e3ac2513889c09.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/8c/8c9af85262156163e49818209f1f4fe60b43bc47d931c8b4d2dba47cda3a30ec.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/8f/8fa9330c2d936708eb45211ee3aa578d4feb698e4fe1c76468299d6051acadcb.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/91/91bd2cb4d1b9e077927a5b29faac205beb020228979410c1ec801acd7d1bf628.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/9e/9ed3e7a86cbac559df3d4fafa959798f9feb5c2d6c2d8c8f393614d5fa7a8dc5.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/a0/a030c719fb9db4ce9dcbb35f07dd3452276a8d2abe5a10e81994818079fb0138.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/a1/a18292dd1af75e5e6783b52c83cc09aa724750d2374f451ebe351cd7a9f5cbab.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/a3/a39d74e20fce50fedd2eeff09f91749a4250c70eb08cf0927f921433ed6f7f76.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/a3/a3c3a04dc1112c64a63ecc29da433259c246cbdf9fc5bbf462829ea78a3cf205.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/a8/a892813efbf9f77955fc53be0035f96de3dd97657f379a03194f2abf90c1dbe8.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/ab/abcf17d33b32d11585ab83d1259d379ab761d2666b1e6dad65de480ad97c3902.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/ae/ae2361b473c176f485a9abee740c0b7ca900e84525ae7237f508d46306ae8b12.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/b3/b372e8af228cf9b4c92d67a5578c990154b9e3f476ca8156415f3f2b01b0757a.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/b5/b52103aa0766c03717e6d1d65a7b4876c685a220cf8794fc31c94d705127ec38.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/b8/b89fa66803d68ee9b82e8a585c1b202d2cce08988a773468d493ba2cb43f986a.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/c0/c0dd0dbde5895236526b3d889cc53229c7cb0e25cdaee38725862af1fca87abd.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/c1/c16d2e7bbeefa2255c746a19796b0b928b1fccfe4c94ff0482cccc9fe8c4e153.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/c2/c2324e444836031a8c7fa0f25a8131853989d33b6664e7f5165533a7e3e866b5.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/c5/c572ed6e1f153aac5e083814fb60c3a5bc156b6d872b6aead1916d3ea33e41db.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/c9/c9ffe5307946061a0e86927468b116a276a2fe683b5579f3d5c4329e84161370.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/ca/ca4422d655f272d441b09a88c221dbd58ccc89e6ed3b2567f80206c83fe4ea2f.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/cc/cc6e35967db246e2e6f904a0cc66fc80b637db42961c4335d31df1af2c840b3b.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/cc/ccaff3f02e60eb8a5f878841180af26a7447fbd37e17492036d3bb01a8505b98.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/cc/cccc70e49ce70e744d62d8355856e93ab801542814c676b6785864d6d587768e.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/cd/cd023948947ea3840b5d37197964135127ccf21eed631b5b15ebc96621ed1dd9.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/d0/d0ae2a16a2b92be8ee45709038a66c05dcb83dac9816280fddc56af839d3e901.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/d1/d16487c38bddf4ef4baea66628f04f5b1659ad07e371ad5d16c796536342e561.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/d1/d1cbdc90680b5a22c2f9f515483f0779d6e9eee3aa7e3f96a8936303120d028d.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/d3/d3f3e288694d3355c09e2e898dc32209b9c9bd46d4641957d3a548833766f132.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/d5/d5d70fb6eb3611b2490a7eb8dcd3a6b2b0f4e4cc023400bea0fcdb9ce2a940ba.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/d5/d5db8f9ae1a3ddc81213d7b9453cf45a13908690e2aa469ba18a26b39918906f.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/d7/d738a9e9d5d63643c33b1091c9c82b624935b091f51d2de9672c66804f47e5e2.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/d8/d82005a612b37babe7236364d93736081a749b691d6c59b48913e148b68c1e9d.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/d9/d932659189253df0e1ae13187239f20478abf16c354c176a256cf415788ce1ce.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/db/dbdbc5bd5acfb1cc9ba31553105043b2d6abf8181d5e9ef15fc920ef86e8a430.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/dd/dd2860b7a73a7b58da8ca36412b484ba3fea88162ca100c542d6298f50aa3344.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/de/de286740aa9abe12f96da7b9211c1fd5fe6bff79b50d11934a89140c7b47a8f4.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/de/dec4c26e8e2c209c857dae9d5ef5830a0a48a958dbf6a95c2465e0757adfbd29.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/de/ded28b1d91e2d6d4d3a1fc09be410a72c1f5d1da5e1089e6c39c64f2f86c665b.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/e1/e158d9b3e7e63d0cad7e1ba85ec149351ee5b3a52ff0c809fd745a186263c9a3.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/e2/e2b5d9a8d20f36ebbb1e4e03c11a30741a2b5006061f5eb14f03d02ff217a7cc.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/e2/e2ee25d3c77b91ce6faaaf0ea5ceb044fb7c0a7619f78750c61227be6466c1f8.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/e5/e593e2471a50f7a73c024880aa725fd44f99f9fbb3553483a76af88460359567.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/e6/e668e05f5e5de58dc6039b6b567df90c5c2a900cb0813536254534ce10118b08.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/e8/e8473f812ab5ef5865f261c049f24565195f6be0698d44831db941c7e58d5810.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/e9/e94052d01b0fa21ca93f3a052e337cc772d631dafb440412a2982b8e8d83f7c3.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/ed/ed7cade08281d829ff0fa50b3444b4415123c688fcf5b49bb2859edae8194f39.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/ef/ef533a0878ceee8ee5c264ce7e59b2a097f8054dddc58f0be36cd091369bcc28.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/ef/efb792fe792bccc4c3f05a9c2988edb664b35eb275a4c9d66170b9c1b754db35.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/f3/f38f36d5f3527ece85c917ca1a3b7263acf31c197050eb4f8a0fcd2df2e192a8.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/f5/f5df6078ce7a6c71ccfc5e3daccb6fea9dcf37f1d1af62a18ea9bfa0fc9fcbbe.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/f7/f73c4f19ecea41c299990dcaa8935e31664ea02342a34fc98f42e94a6433b825.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/f7/f7c883c71b3a32164c8063b80c2ede2b7bfa9f92907c667a239696fc0e5b1a97.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/fc/fc4e7d8a6aa93bf79a37b135c8cf4a691865f54e7c9d71c2bd706ac66932ec85.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/fe/fe40a369609464b7f832acbc19e5528807b0927ded60f7767d08652291d5dd21.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/fe/fe6d3d374c26d77d7588b5bc8d8d33dbbb0db72554c7a0e1bd6d3c7cfa2ef6eb.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/prod/twig/ff/ffede5501be230fba973181ee01bce3b6fb3c3ad9b4eb6cd15bab953901e8c85.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/addItem.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/79/5b41707042756e646c655c436f6e74726f6c6c65725c61626f7574436f6e746f726c6c65722373686f77416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/79/5b41707042756e646c655c436f6e74726f6c6c65725c61626f7574436f6e746f726c6c65722373686f77416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/catalogue/reports.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/reportsController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/catalogue/about.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/catalogue/about.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/catalogue/add.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/catalogue/add.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/catalogue/home.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/catalogue/home.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/catalogue/view.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/catalogue/view.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/header.html" afterPath="$PROJECT_DIR$/app/Resources/views/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/aboutContorller.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/aboutContorller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/catalogueController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/catalogueController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/38/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c61626f7574436f6e746f726c6c65722373686f77416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/38/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c61626f7574436f6e746f726c6c65722373686f77416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/55/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c636174616c6f677565436f6e74726f6c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/55/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c636174616c6f677565436f6e74726f6c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/8c/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c636174616c6f677565436f6e74726f6c6c65722373686f77416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/8c/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c636174616c6f677565436f6e74726f6c6c65722373686f77416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/af/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c61626f7574436f6e746f726c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/af/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c61626f7574436f6e746f726c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php.meta" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevUrlGenerator.php" afterPath="$PROJECT_DIR$/var/cache/dev/appDevUrlGenerator.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevUrlGenerator.php.meta" afterPath="$PROJECT_DIR$/var/cache/dev/appDevUrlGenerator.php.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevUrlMatcher.php" afterPath="$PROJECT_DIR$/var/cache/dev/appDevUrlMatcher.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevUrlMatcher.php.meta" afterPath="$PROJECT_DIR$/var/cache/dev/appDevUrlMatcher.php.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/classes.php" afterPath="$PROJECT_DIR$/var/cache/dev/classes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/classes.php.meta" afterPath="$PROJECT_DIR$/var/cache/dev/classes.php.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" />
     </list>
     <ignored path="DevChallenge.iws" />
@@ -232,12 +61,64 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/catalogue/add.html.twig">
+      <file leaf-file-name="home.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/catalogue/home.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+            <state relative-caret-position="153">
+              <caret line="9" column="20" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="35" />
+              <folding>
+                <element signature="e#12#26#0#Twig" expanded="true" />
+                <element signature="e#1678#1984#0#Twig" expanded="false" />
+                <element signature="e#2038#2338#0#Twig" expanded="false" />
+                <element signature="e#2394#2698#0#Twig" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/catalogue/about.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="33" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="14" />
+              <folding>
+                <element signature="e#12#26#0#Twig" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reportsController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/reportsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+              <folding>
+                <element signature="e#125#184#0#PHP" expanded="true" />
+                <element signature="e#403#432#1#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="104" column="26" selection-start-line="104" selection-start-column="22" selection-end-line="104" selection-end-column="29" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reports.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/catalogue/reports.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+              <folding>
+                <element signature="e#12#26#0#Twig" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -259,7 +140,6 @@
               <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
               <folding>
                 <element signature="e#125#184#0#PHP" expanded="true" />
-                <element signature="e#394#421#1#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -268,8 +148,8 @@
       <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+            <state relative-caret-position="187">
+              <caret line="11" column="45" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -319,17 +199,19 @@
       <list>
         <option value="$PROJECT_DIR$/app/Resources/views/catalouge/home.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/myStyles.css" />
-        <option value="$PROJECT_DIR$/app/Resources/views/catalogue/about.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/addItem.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/catalogue/view.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/aboutContorller.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/catalogueController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/viewController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/updateController.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/header.html" />
         <option value="$PROJECT_DIR$/app/Resources/views/catalogue/home.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/catalogue/add.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/header.html" />
+        <option value="$PROJECT_DIR$/app/Resources/views/catalogue/view.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/catalogue/about.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/reportsController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/catalogue/reports.html.twig" />
       </list>
     </option>
   </component>
@@ -374,7 +256,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -539,7 +421,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -603,7 +485,8 @@
       <workItem from="1463302539686" duration="3873000" />
       <workItem from="1463306549347" duration="3974000" />
       <workItem from="1463311078334" duration="1332000" />
-      <workItem from="1463313633004" duration="6545000" />
+      <workItem from="1463313633004" duration="8907000" />
+      <workItem from="1463419336317" duration="10793000" />
     </task>
     <task id="LOCAL-00001" summary="Added item capture page">
       <created>1463306918284</created>
@@ -612,11 +495,18 @@
       <option name="project" value="LOCAL" />
       <updated>1463306918284</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updated layout of add page">
+      <created>1463320905847</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1463320905847</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33557000" />
+    <option name="totallyTimeSpent" value="46712000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1612" height="876" extended-state="0" />
@@ -656,13 +546,32 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added item capture page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added item capture page" />
+    <MESSAGE value="Updated layout of add page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated layout of add page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/viewController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+          <folding>
+            <element signature="e#125#184#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/catalogueController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -688,7 +597,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
-          <folding />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+            <element signature="e#572#8122#0#HTML" expanded="false" />
+            <element signature="e#11570#12458#0#Twig" expanded="false" />
+            <marker date="1463427830261" expanded="false" signature="8153:10146" placeholder="..." />
+            <marker date="1463427830261" expanded="false" signature="10178:11528" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -706,7 +621,6 @@
           <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
           <folding>
             <element signature="e#125#184#0#PHP" expanded="true" />
-            <element signature="e#394#421#1#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -715,7 +629,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -752,7 +668,6 @@
           <caret line="20" column="58" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="58" />
           <folding>
             <element signature="e#125#184#0#PHP" expanded="true" />
-            <element signature="e#394#421#1#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -907,28 +822,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/addItem.php" />
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/catalogue/about.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/aboutContorller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/catalogueController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <element signature="e#6#88#0#PHP" expanded="true" />
-            <element signature="e#124#183#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -940,48 +837,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/catalogue/view.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/catalogue/home.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-          <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/viewController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
           <folding>
             <element signature="e#125#184#0#PHP" expanded="true" />
-            <element signature="e#394#421#1#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/header.html">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/catalogueController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1630">
-          <caret line="105" column="72" selection-start-line="105" selection-start-column="72" selection-end-line="105" selection-end-column="72" />
-          <folding />
+        <state relative-caret-position="17">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <element signature="e#6#88#0#PHP" expanded="true" />
+            <element signature="e#124#183#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -997,9 +870,85 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/catalogue/add.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+        <state relative-caret-position="344">
+          <caret line="233" column="8" selection-start-line="233" selection-start-column="8" selection-end-line="233" selection-end-column="8" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+            <element signature="e#572#8122#0#HTML" expanded="false" />
+            <element signature="e#11570#12458#0#Twig" expanded="false" />
+            <marker date="1463427830261" expanded="false" signature="8153:10146" placeholder="..." />
+            <marker date="1463427830261" expanded="false" signature="10178:11528" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="45" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/catalogue/view.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/catalogue/about.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="33" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="14" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="104" column="26" selection-start-line="104" selection-start-column="22" selection-end-line="104" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/reportsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="e#125#184#0#PHP" expanded="true" />
+            <element signature="e#403#432#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/catalogue/home.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="35" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+            <element signature="e#1678#1984#0#Twig" expanded="false" />
+            <element signature="e#2038#2338#0#Twig" expanded="false" />
+            <element signature="e#2394#2698#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/catalogue/reports.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
