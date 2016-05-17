@@ -4,19 +4,8 @@
 {% endblock %}
 
 {% block stylesheets %}
-<style>
-    form  { display: table;      }
-    p     { display: table-row;  }
-    select{ display: table-cell; }
-    label { display: table-cell; vertical-align: top; }
-    input { display: table-cell; }
-    textarea{ display: table-cell; style:"width: 330px; height: 167px;";}
-    .label-pill {
-        padding-right: .6em;
-        padding-left: .6em;
-        border-radius: 10rem;
-    }
-</style>
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset("css/formstyles.css") }}">
 {% endblock %}
 
 {% block body %}

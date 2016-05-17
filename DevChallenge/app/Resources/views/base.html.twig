@@ -1,14 +1,107 @@
-{% include 'header.html' %}
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/"> Stock-Webs </a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="home"><span class = "glyphicon glyphicon-home"></span> Home </a></li>
+                        <li><a href="update"><span class = "glyphicon glyphicon-plus"></span> Add Stock </a></li>
+                        <li><a href="view"><span class = "glyphicon glyphicon-list-alt"></span> View Stock </a></li>
+                        <li><a href="reports"><span class = "glyphicon glyphicon-stats"></span> Stock reports </a></li>
+                        <div class="pull-right">
+                            <form action="search.php" method="post" class="navbar-form" role="search">
+                                <div class="input-group">
+                                    <input type="text" class="form-control"
+                                           placeholder="Search" name="srch-term" id="srch-term">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default" type="submit">
+                                            <i class="glyphicon glyphicon-search"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </button>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br><br><br><br>
+
+
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('css/myStyles.css') }}">
+        {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
+
     <body>
+    {% block loginModal %}
+    <div class="modal fade" id="loginModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!--form class=\"form-horizontal\"
+                      action=\"save.php\" method=\"post\"-->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Please enter your login details</h4>
+                </div>
+                <div class="modal-body">
+                    <!--br>
+                    <label for="user">Username</label>
+                    <input type="text" name="user" id="user" placeholder="Username">
+                    <br>
+                    <label for="pass">Password</label>
+                    <input type="password" name="pass" id="pass" placeholder="Password"-->
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="uLogin" placeholder="Login">
+                            <label for="uLogin" class="input-group-addon glyphicon glyphicon-user"></label>
+                        </div>
+                    </div> <!-- /.form-group -->
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="uPassword" placeholder="Password">
+                            <label for="uPassword" class="input-group-addon glyphicon glyphicon-lock"></label>
+                        </div> <!-- /.input-group -->
+                    </div> <!-- /.form-group -->
+
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Remember me
+                        </label>
+                    </div> <!-- /.checkbox -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+                <!--/form-->
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        {% endblock %}
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block javascripts %}
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        {% endblock %}
     </body>
 </html>
