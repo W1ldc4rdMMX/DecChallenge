@@ -1,0 +1,65 @@
+{% extends 'base.html.twig' %}
+{% block title %}
+    Current Stock Items
+{% endblock %}
+
+{% block body %}
+    <div class="container-fluid">
+        <h1>Capture sales</h1>
+        <div class="col-sm-12">
+        <div class="well">
+            <form>
+                <label for="stockType">Stock type</label>
+                <select name="stockType" id="stockType">
+                    <option value="Router">Router</option>
+                    <option value="Mobile" selected="selected">Mobile</option>
+                    <option value="Sims">Sims</option>
+                    <option value="Other">Other</option>
+                </select>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>Place orders</th>
+                            <th>Product Name</th>
+                            <th>Quantity remaining</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><button type="button" class="btn btn-primary btn-sm"
+                                        data-toggle="modal" data-target="#myModal">
+                                    Place order</button></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </form>
+        </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="well">
+                <h1>Pending deliveries</h1>
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>Product Name</th>
+                                <th>Quantity ordered</th>
+                                <th>ETA</th>
+                                <th>Tracking number</th>
+                                <th>Mark as Completed</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
