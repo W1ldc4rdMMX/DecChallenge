@@ -20,7 +20,6 @@ class stockTypes
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      * @ORM\Column(type="integer")
-     * @ORM\OneToMany(targetEntity="stock_items", mappedBy="stock_types")
      */
     private $stockTypeid;
 
@@ -29,6 +28,22 @@ class stockTypes
      */
     private $stockTypeName;
 
+    /**
+     * @return mixed
+     */
+    public function getStockTypeName()
+    {
+        return $this->stockTypeName;
+    }
+
+    /**
+     * @param mixed $stockTypeName
+     */
+    public function setStockTypeName($stockTypeName)
+    {
+        $this->stockTypeName = $stockTypeName;
+    }
+    
 }
 
 

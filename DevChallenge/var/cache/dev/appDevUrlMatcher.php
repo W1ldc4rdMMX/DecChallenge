@@ -100,6 +100,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
+        // app_aboutcontorller_new
+        if ($pathinfo === '/new') {
+            return array (  '_controller' => 'AppBundle\\Controller\\aboutContorller::newAction',  '_route' => 'app_aboutcontorller_new',);
+        }
+
         // app_aboutcontorller_show
         if (rtrim($pathinfo, '/') === '') {
             if (substr($pathinfo, -1) !== '/') {

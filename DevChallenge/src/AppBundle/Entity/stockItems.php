@@ -54,11 +54,100 @@ class stockItems
     private $stockItemSerial;
 
     /**
-     * @ORM\Column(type="integer")
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\stockTypes", inversedBy="stock_items")
-     * @ORM\JoinColumn(name="stockTypeid", referencedColumnName="stockTypeid")
+     * @return mixed
      */
-    private $stockTypeid;
+    public function getStockItemName()
+    {
+        return $this->stockItemName;
+    }
 
+    /**
+     * @param mixed $stockItemName
+     */
+    public function setStockItemName($stockItemName)
+    {
+        $this->stockItemName = $stockItemName;
+    }
 
+    /**
+     * @return mixed
+     */
+    public function getStockItemBase()
+    {
+        return $this->stockItemBase;
+    }
+
+    /**
+     * @param mixed $stockItemBase
+     */
+    public function setStockItemBase($stockItemBase)
+    {
+        $this->stockItemBase = $stockItemBase;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getStockItemSpec()
+    {
+        return $this->stockItemSpec;
+    }
+
+    /**
+     * @param mixed $stockItemSpec
+     */
+    public function setStockItemSpec($stockItemSpec)
+    {
+        $this->stockItemSpec = $stockItemSpec;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getStockItemCont()
+    {
+        return $this->stockItemCont;
+    }
+
+    /**
+     * @param mixed $stockItemCont
+     */
+    public function setStockItemCont($stockItemCont)
+    {
+        $this->stockItemCont = $stockItemCont;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getStockItemReq()
+    {
+        return $this->stockItemReq;
+    }
+
+    /**
+     * @param mixed $stockItemReq
+     */
+    public function setStockItemReq($stockItemReq)
+    {
+        $this->stockItemReq = $stockItemReq;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getStockItemSerial()
+    {
+        return $this->stockItemSerial;
+    }
+
+    /**
+     * @param mixed $stockItemSerial
+     */
+    public function setStockItemSerial($stockItemSerial)
+    {
+        $this->stockItemSerial = $stockItemSerial;
+    }
+
+    
 }

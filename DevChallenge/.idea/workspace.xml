@@ -2,7 +2,779 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f80a4fc-4950-4953-9611-c3654dd5835d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/html-docs/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/html-docs/img/block.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/html-docs/img/enf.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/proxy-manager.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/bundles/framework/images/blue_picto_less.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/bundles/framework/images/blue_picto_more.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/bundles/framework/images/grey_magnifier.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/bundles/framework/images/logo_symfony.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/stockMeta.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/stockPermissions.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/stockSales.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/stockUsers.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bin/doctrine-migrations.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle/Changelog.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle/Command/DoctrineCommand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle/Command/Helper/DoctrineCommandHelper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle/Command/MigrationsDiffDoctrineCommand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle/Command/MigrationsExecuteDoctrineCommand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle/Command/MigrationsLatestDoctrineCommand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle/Command/MigrationsMigrateDoctrineCommand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle/Command/MigrationsStatusDoctrineCommand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle/Command/MigrationsVersionDoctrineCommand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle/DependencyInjection/Configuration.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle/DependencyInjection/DoctrineMigrationsExtension.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle/DoctrineMigrationsBundle.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle/README.markdown" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle/Resources/doc/index.rst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle/Resources/meta/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/.coveralls.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/UPGRADE-1.0.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/bin/doctrine-migrations.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/build-phar.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/AbortMigrationException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/AbstractMigration.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/Configuration/AbstractFileConfiguration.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/Configuration/ArrayConfiguration.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/Configuration/Connection/ConnectionLoaderInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/Configuration/Connection/Loader/ArrayConnectionConfigurationLoader.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/Configuration/Connection/Loader/ConnectionConfigurationChainLoader.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/Configuration/Connection/Loader/ConnectionConfigurationLoader.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/Configuration/Connection/Loader/ConnectionHelperLoader.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/Configuration/JsonConfiguration.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/Configuration/XML/configuration.xsd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/Configuration/XmlConfiguration.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/Configuration/YamlConfiguration.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/Finder/AbstractFinder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/Finder/GlobFinder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/Finder/MigrationFinderInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/Finder/RecursiveRegexFinder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/IrreversibleMigrationException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/Migration.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/MigrationException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/MigrationsVersion.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/OutputWriter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/Provider/OrmSchemaProvider.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/Provider/SchemaDiffProvider.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/Provider/SchemaProviderInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/Provider/StubSchemaProvider.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/SkipMigrationException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/SqlFileWriter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/Tools/Console/Command/AbstractCommand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/Tools/Console/Command/DiffCommand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/Tools/Console/Command/ExecuteCommand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/Tools/Console/Command/GenerateCommand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/Tools/Console/Command/LatestCommand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/Tools/Console/Command/MigrateCommand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/Tools/Console/Command/StatusCommand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/Tools/Console/Command/VersionCommand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/Tools/Console/Helper/ConfigurationHelper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/Tools/Console/Helper/MigrationDirectoryHelper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/Tools/Console/Helper/MigrationStatusInfosHelper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/lib/Doctrine/DBAL/Migrations/Version.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/migrations/phpunit.xml.dist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/.scrutinizer.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/.travis.install.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/STABILITY.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/UPGRADE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/docs/access-interceptor-scope-localizer.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/docs/access-interceptor-value-holder.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/docs/generator-strategies.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/docs/lazy-loading-ghost-object.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/docs/lazy-loading-value-holder.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/docs/null-object.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/docs/remote-object.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/docs/tuning-for-production.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/examples/access-interceptor-scope-localizer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/examples/ghost-object.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/examples/remote-proxy.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/examples/remote-proxy/remote-proxy-server.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/examples/smart-reference.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/html-docs/access-interceptor-scope-localizer-proxy.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/html-docs/access-interceptor-value-holder-proxy.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/html-docs/contributing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/html-docs/copyright.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/html-docs/credits.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/html-docs/css/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/html-docs/download.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/html-docs/ghost-object.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/html-docs/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/html-docs/null-object.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/html-docs/production.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/html-docs/virtual-proxy.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/phpdox.xml.dist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/phpmd.xml.dist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/proxy-manager.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Autoloader/Autoloader.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Autoloader/AutoloaderInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Configuration.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Exception/DisabledMethodException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Exception/FileNotWritableException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Exception/InvalidProxiedClassException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Exception/InvalidProxyDirectoryException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Exception/UnsupportedProxiedClassException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Factory/AbstractBaseFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Factory/AbstractLazyFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Factory/AccessInterceptorScopeLocalizerFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Factory/AccessInterceptorValueHolderFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Factory/LazyLoadingGhostFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Factory/NullObjectFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Factory/RemoteObject/Adapter/BaseAdapter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Factory/RemoteObject/Adapter/JsonRpc.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Factory/RemoteObject/Adapter/Soap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Factory/RemoteObject/Adapter/XmlRpc.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Factory/RemoteObject/AdapterInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Factory/RemoteObjectFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/FileLocator/FileLocator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/FileLocator/FileLocatorInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Generator/ClassGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Generator/MagicMethodGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Generator/MethodGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Generator/Util/ClassGeneratorUtils.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Generator/Util/UniqueIdentifierGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/GeneratorStrategy/BaseGeneratorStrategy.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/GeneratorStrategy/EvaluatingGeneratorStrategy.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/GeneratorStrategy/FileWriterGeneratorStrategy.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/GeneratorStrategy/GeneratorStrategyInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Inflector/ClassNameInflector.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Inflector/ClassNameInflectorInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Inflector/Util/ParameterEncoder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Inflector/Util/ParameterHasher.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Proxy/AccessInterceptorInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Proxy/Exception/RemoteObjectException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Proxy/FallbackValueHolderInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Proxy/GhostObjectInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Proxy/LazyLoadingInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Proxy/NullObjectInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Proxy/RemoteObjectInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Proxy/SmartReferenceInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Proxy/ValueHolderInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Proxy/VirtualProxyInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptor/MethodGenerator/MagicWakeup.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptor/MethodGenerator/SetMethodPrefixInterceptor.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptor/PropertyGenerator/MethodPrefixInterceptors.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptor/PropertyGenerator/MethodSuffixInterceptors.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorScopeLocalizer/MethodGenerator/Constructor.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorScopeLocalizer/MethodGenerator/InterceptedMethod.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorScopeLocalizer/MethodGenerator/MagicClone.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorScopeLocalizer/MethodGenerator/MagicGet.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorScopeLocalizer/MethodGenerator/MagicIsset.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorScopeLocalizer/MethodGenerator/MagicSleep.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorScopeLocalizer/MethodGenerator/MagicUnset.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorScopeLocalizer/MethodGenerator/Util/InterceptorGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorScopeLocalizerGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorValueHolder/MethodGenerator/Constructor.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorValueHolder/MethodGenerator/InterceptedMethod.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorValueHolder/MethodGenerator/MagicClone.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorValueHolder/MethodGenerator/MagicGet.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorValueHolder/MethodGenerator/MagicIsset.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorValueHolder/MethodGenerator/MagicSet.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorValueHolder/MethodGenerator/MagicUnset.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/AccessInterceptorValueHolderGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/Assertion/CanProxyAssertion.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoading/MethodGenerator/Constructor.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingGhost/MethodGenerator/CallInitializer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingGhost/MethodGenerator/InitializeProxy.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingGhost/MethodGenerator/IsProxyInitialized.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingGhost/MethodGenerator/LazyLoadingMethodInterceptor.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingGhost/MethodGenerator/MagicClone.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingGhost/MethodGenerator/MagicGet.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingGhost/MethodGenerator/MagicIsset.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingGhost/MethodGenerator/MagicSet.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingGhost/MethodGenerator/MagicSleep.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingGhost/MethodGenerator/MagicUnset.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingGhost/MethodGenerator/SetProxyInitializer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingGhost/PropertyGenerator/InitializerProperty.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingGhostGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingValueHolder/MethodGenerator/GetProxyInitializer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingValueHolder/MethodGenerator/InitializeProxy.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingValueHolder/MethodGenerator/IsProxyInitialized.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingValueHolder/MethodGenerator/LazyLoadingMethodInterceptor.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingValueHolder/MethodGenerator/MagicClone.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingValueHolder/MethodGenerator/MagicIsset.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingValueHolder/MethodGenerator/MagicSet.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingValueHolder/MethodGenerator/MagicSleep.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingValueHolder/MethodGenerator/MagicUnset.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingValueHolder/MethodGenerator/SetProxyInitializer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingValueHolder/PropertyGenerator/InitializerProperty.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingValueHolder/PropertyGenerator/ValueHolderProperty.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/LazyLoadingValueHolderGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/NullObject/MethodGenerator/Constructor.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/NullObject/MethodGenerator/NullObjectMethodInterceptor.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/NullObjectGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/PropertyGenerator/PublicPropertiesDefaults.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/PropertyGenerator/PublicPropertiesMap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/ProxyGeneratorInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/Constructor.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicGet.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicIsset.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicSet.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/MagicUnset.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/RemoteObject/MethodGenerator/RemoteObjectMethod.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/RemoteObject/PropertyGenerator/AdapterProperty.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/Util/ProxiedMethodsFilter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/ValueHolder/MethodGenerator/GetWrappedValueHolderValue.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/ProxyGenerator/ValueHolder/MethodGenerator/MagicSleep.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Signature/ClassSignatureGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Signature/Exception/ExceptionInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Signature/Exception/InvalidSignatureException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Signature/Exception/MissingSignatureException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Signature/SignatureChecker.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Signature/SignatureCheckerInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Signature/SignatureGeneratorInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/src/ProxyManager/Version.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Autoloader/AutoloaderTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ConfigurationTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Exception/DisabledMethodExceptionTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Exception/FileNotWritableExceptionTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Exception/InvalidProxiedClassExceptionTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Exception/InvalidProxyDirectoryExceptionTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Exception/UnsupportedProxiedClassExceptionTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Factory/AbstractBaseFactoryTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Factory/AccessInterceptorScopeLocalizerFactoryTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Factory/AccessInterceptorValueHolderFactoryTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Factory/LazyLoadingGhostFactoryTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Factory/LazyLoadingValueHolderFactoryTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Factory/NullObjectFactoryTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Factory/RemoteObject/Adapter/BaseAdapterTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Factory/RemoteObject/Adapter/JsonRpcTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Factory/RemoteObject/Adapter/SoapTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Factory/RemoteObject/Adapter/XmlRpcTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Factory/RemoteObjectFactoryTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/FileLocator/FileLocatorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Functional/AccessInterceptorScopeLocalizerFunctionalTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Functional/AccessInterceptorValueHolderFunctionalTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Functional/BaseLazyLoadingPerformanceTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Functional/BasePerformanceTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Functional/FatalPreventionFunctionalTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Functional/LazyLoadingGhostFunctionalTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Functional/LazyLoadingGhostPerformanceTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Functional/LazyLoadingValueHolderFunctionalTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Functional/LazyLoadingValueHolderPerformanceTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Functional/MultipleProxyGenerationTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Functional/NullObjectFunctionalTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Functional/RemoteObjectFunctionalTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Generator/ClassGeneratorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Generator/MagicMethodGeneratorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Generator/MethodGeneratorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Generator/Util/ClassGeneratorUtilsTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Generator/Util/UniqueIdentifierGeneratorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/GeneratorStrategy/BaseGeneratorStrategyTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/GeneratorStrategy/EvaluatingGeneratorStrategyTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/GeneratorStrategy/FileWriterGeneratorStrategyTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Inflector/ClassNameInflectorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Inflector/Util/ParameterHasherTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/AbstractProxyGeneratorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/AccessInterceptor/MethodGenerator/MagicWakeupTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/AccessInterceptor/MethodGenerator/SetMethodPrefixInterceptorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/AccessInterceptor/PropertyGenerator/MethodPrefixInterceptorsTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/AccessInterceptor/PropertyGenerator/MethodSuffixInterceptorsTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/AccessInterceptorScopeLocalizer/MethodGenerator/ConstructorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/AccessInterceptorScopeLocalizer/MethodGenerator/MagicCloneTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/AccessInterceptorScopeLocalizer/MethodGenerator/MagicGetTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/AccessInterceptorScopeLocalizer/MethodGenerator/MagicIssetTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/AccessInterceptorScopeLocalizer/MethodGenerator/MagicSetTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/AccessInterceptorScopeLocalizer/MethodGenerator/MagicSleepTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/AccessInterceptorScopeLocalizer/MethodGenerator/MagicUnsetTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/AccessInterceptorScopeLocalizer/MethodGenerator/Util/InterceptorGeneratorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/AccessInterceptorScopeLocalizerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/AccessInterceptorValueHolder/LazyLoading/MethodGenerator/ConstructorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/AccessInterceptorValueHolder/MethodGenerator/InterceptedMethodTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/AccessInterceptorValueHolder/MethodGenerator/MagicCloneTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/AccessInterceptorValueHolder/MethodGenerator/MagicGetTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/AccessInterceptorValueHolder/MethodGenerator/MagicIssetTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/AccessInterceptorValueHolder/MethodGenerator/MagicSetTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/AccessInterceptorValueHolder/MethodGenerator/MagicUnsetTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/AccessInterceptorValueHolder/MethodGenerator/Util/InterceptorGeneratorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/AccessInterceptorValueHolderTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/LazyLoadingGhost/MethodGenerator/CallInitializerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/LazyLoadingGhost/MethodGenerator/GetProxyInitializerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/LazyLoadingGhost/MethodGenerator/InitializeProxyTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/LazyLoadingGhost/MethodGenerator/IsProxyInitializedTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/LazyLoadingGhost/MethodGenerator/LazyLoadingMethodInterceptorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/LazyLoadingGhost/MethodGenerator/MagicCloneTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/LazyLoadingGhost/MethodGenerator/MagicGetTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/LazyLoadingGhost/MethodGenerator/MagicIssetTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/LazyLoadingGhost/MethodGenerator/MagicSetTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/LazyLoadingGhost/MethodGenerator/MagicSleepTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/LazyLoadingGhost/MethodGenerator/MagicUnsetTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/LazyLoadingGhost/MethodGenerator/SetProxyInitializerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/LazyLoadingGhost/PropertyGenerator/InitializationTrackerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/LazyLoadingGhost/PropertyGenerator/InitializerPropertyTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/LazyLoadingValueHolder/MethodGenerator/GetProxyInitializerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/LazyLoadingValueHolder/MethodGenerator/InitializeProxyTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/LazyLoadingValueHolder/MethodGenerator/IsProxyInitializedTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/LazyLoadingValueHolder/MethodGenerator/MagicCloneTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/LazyLoadingValueHolder/MethodGenerator/MagicGetTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/LazyLoadingValueHolder/MethodGenerator/MagicIssetTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/LazyLoadingValueHolder/MethodGenerator/MagicSetTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/LazyLoadingValueHolder/MethodGenerator/MagicUnsetTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/LazyLoadingValueHolder/MethodGenerator/SetProxyInitializerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/LazyLoadingValueHolder/PropertyGenerator/InitializerPropertyTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/LazyLoadingValueHolderGeneratorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/NullObject/MethodGenerator/ConstructorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/NullObject/MethodGenerator/NullObjectMethodInterceptorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/NullObjectGeneratorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/PropertyGenerator/AbstractUniquePropertyNameTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/PropertyGenerator/PublicPropertiesDefaultsTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/PropertyGenerator/PublicPropertiesMapTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/RemoteObject/MethodGenerator/ConstructorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/RemoteObject/MethodGenerator/MagicIssetTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/RemoteObject/MethodGenerator/MagicSetTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/RemoteObject/MethodGenerator/MagicUnsetTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/RemoteObject/MethodGenerator/RemoteObjectMethodTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/RemoteObject/PropertyGenerator/AdapterPropertyTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/RemoteObjectGeneratorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/Util/ProxiedMethodsFilterTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/Util/PublicScopeSimulatorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/ValueHolder/MethodGenerator/GetWrappedValueHolderValueTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/ProxyGenerator/ValueHolder/MethodGenerator/MagicSleepTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Signature/ClassSignatureGeneratorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Signature/Exception/InvalidSignatureExceptionTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Signature/Exception/MissingSignatureExceptionTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Signature/SignatureCheckerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/Signature/SignatureGeneratorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTest/VersionTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTestAsset/AccessInterceptorValueHolderMock.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTestAsset/BaseClass.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTestAsset/ClassWithAbstractProtectedMethod.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTestAsset/ClassWithByRefMagicMethods.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTestAsset/ClassWithFinalMagicMethods.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTestAsset/ClassWithMagicMethods.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTestAsset/ClassWithMethodWithDefaultParameters.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTestAsset/ClassWithMixedProperties.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTestAsset/ClassWithPrivateProperties.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTestAsset/ClassWithProtectedProperties.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTestAsset/ClassWithPublicArrayProperty.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTestAsset/ClassWithPublicProperties.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTestAsset/ClassWithSelfHint.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTestAsset/EmptyClass.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTestAsset/FinalClass.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTestAsset/LazyLoadingMock.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTestAsset/NullObjectMock.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTestAsset/ProxyGenerator/LazyLoading/MethodGenerator/ClassWithTwoPublicProperties.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTestAsset/RemoteProxy/BazServiceInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/ProxyManagerTestAsset/RemoteProxy/FooServiceInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/access-interceptor-denies-private-property-isset.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/access-interceptor-denies-private-property-read.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/access-interceptor-denies-private-property-unset.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/access-interceptor-denies-protected-property-isset.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/access-interceptor-denies-protected-property-read.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/access-interceptor-denies-protected-property-unset.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/access-interceptor-denies-protected-property-write.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/access-interceptor-scope-localizer-denies-private-property-isset.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/access-interceptor-scope-localizer-denies-private-property-unset.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/access-interceptor-scope-localizer-denies-private-property-write.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/access-interceptor-scope-localizer-denies-protected-property-isset.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/access-interceptor-scope-localizer-denies-protected-property-read.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/access-interceptor-scope-localizer-denies-protected-property-unset.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/access-interceptor-scope-localizer-denies-protected-property-write.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/access-interceptor-with-cache.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/cache/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/init.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/lazy-loading-ghost-allows-inexisting-magic-property-read.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/lazy-loading-ghost-denies-inexisting-property-read.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/lazy-loading-ghost-denies-private-property-isset.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/lazy-loading-ghost-denies-private-property-read.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/lazy-loading-ghost-denies-private-property-unset.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/lazy-loading-ghost-denies-private-property-write.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/lazy-loading-ghost-denies-protected-property-isset.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/lazy-loading-ghost-denies-protected-property-read.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/lazy-loading-ghost-denies-protected-property-unset.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/lazy-loading-ghost-with-cache.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/lazy-loading-value-holder-denies-private-property-read.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/lazy-loading-value-holder-denies-private-property-unset.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/lazy-loading-value-holder-denies-private-property-write.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/lazy-loading-value-holder-denies-protected-property-isset.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/lazy-loading-value-holder-denies-protected-property-read.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/lazy-loading-value-holder-denies-protected-property-unset.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/lazy-loading-value-holder-denies-protected-property-write.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/lazy-loading-value-holder-internal-php-classes.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/null-object-public-function-empty.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/null-object-public-property-empty.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ocramius/proxy-manager/tests/language-feature-scripts/remote-object-json-adapter-denies-unknow-method.phpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/doc/book/zend.code.generator.examples.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/doc/book/zend.code.generator.introduction.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/doc/book/zend.code.generator.reference.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/doc/bookdown.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Annotation/AnnotationInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Annotation/AnnotationManager.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Annotation/Parser/DoctrineAnnotationParser.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Annotation/Parser/GenericAnnotationParser.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Annotation/Parser/ParserInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Exception/BadMethodCallException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Exception/ExceptionInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Exception/InvalidArgumentException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Exception/RuntimeException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Generator/AbstractGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Generator/AbstractMemberGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Generator/BodyGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Generator/ClassGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Generator/DocBlock/Tag/AbstractTypeableTag.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Generator/DocBlock/Tag/AuthorTag.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Generator/DocBlock/Tag/GenericTag.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Generator/DocBlock/Tag/LicenseTag.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Generator/DocBlock/Tag/MethodTag.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Generator/DocBlock/Tag/ParamTag.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Generator/DocBlock/Tag/PropertyTag.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Generator/DocBlock/Tag/ReturnTag.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Generator/DocBlock/Tag/TagInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Generator/DocBlock/Tag/ThrowsTag.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Generator/DocBlock/TagManager.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Generator/DocBlockGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Generator/Exception/ExceptionInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Generator/Exception/RuntimeException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Generator/FileGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Generator/FileGeneratorRegistry.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Generator/GeneratorInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Generator/InterfaceGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Generator/MethodGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Generator/ParameterGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Generator/PropertyGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Generator/PropertyValueGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Generator/TraitGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Generator/TraitUsageGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Generator/TraitUsageInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Generator/ValueGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Generic/Prototype/PrototypeGenericInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Generic/Prototype/PrototypeInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/NameInformation.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Reflection/ClassReflection.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Reflection/DocBlock/Tag/AuthorTag.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Reflection/DocBlock/Tag/GenericTag.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Reflection/DocBlock/Tag/LicenseTag.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Reflection/DocBlock/Tag/MethodTag.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Reflection/DocBlock/Tag/ParamTag.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Reflection/DocBlock/Tag/PhpDocTypedTagInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Reflection/DocBlock/Tag/PropertyTag.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Reflection/DocBlock/Tag/ReturnTag.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Reflection/DocBlock/Tag/TagInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Reflection/DocBlock/Tag/ThrowsTag.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Reflection/DocBlock/TagManager.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Reflection/DocBlockReflection.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Reflection/Exception/BadMethodCallException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Reflection/Exception/ExceptionInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Reflection/Exception/InvalidArgumentException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Reflection/Exception/RuntimeException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Reflection/FileReflection.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Reflection/FunctionReflection.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Reflection/MethodReflection.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Reflection/ParameterReflection.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Reflection/ReflectionInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Scanner/AggregateDirectoryScanner.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Scanner/AnnotationScanner.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Scanner/CachingFileScanner.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Scanner/ClassScanner.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Scanner/DerivedClassScanner.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Scanner/DirectoryScanner.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Scanner/DocBlockScanner.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Scanner/FileScanner.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Scanner/FunctionScanner.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Scanner/MethodScanner.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Scanner/ParameterScanner.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Scanner/PropertyScanner.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Scanner/ScannerInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Scanner/TokenArrayScanner.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Scanner/Util.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-code/src/Scanner/ValueScanner.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager/src/AbstractListenerAggregate.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager/src/Event.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager/src/EventInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager/src/EventManager.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager/src/EventManagerAwareInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager/src/EventManagerAwareTrait.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager/src/EventManagerInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager/src/EventsCapableInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager/src/Exception/DomainException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager/src/Exception/ExceptionInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager/src/Exception/InvalidArgumentException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager/src/Exception/InvalidCallbackException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager/src/Exception/RuntimeException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager/src/Filter/FilterInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager/src/Filter/FilterIterator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager/src/FilterChain.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager/src/LazyEventListener.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager/src/LazyListener.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager/src/LazyListenerAggregate.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager/src/ListenerAggregateInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager/src/ListenerAggregateTrait.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager/src/ResponseCollection.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager/src/SharedEventManager.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager/src/SharedEventManagerInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager/src/SharedEventsCapableInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager/src/Test/EventListenerIntrospectionTrait.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/bundles/framework/css/body.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/bundles/framework/css/exception.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/bundles/framework/css/structure.css" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/00/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c44656661756c74436f6e74726f6c6c657223696e646578416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/53/5b41707042756e646c655c436f6e74726f6c6c65725c44656661756c74436f6e74726f6c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/6a/5b41707042756e646c655c436f6e74726f6c6c65725c44656661756c74436f6e74726f6c6c657223696e646578416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/95/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c44656661756c74436f6e74726f6c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/01/d2/49d201" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/02/b2/2ab202" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/02/c7/59c702" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/03/1d/d01d03" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/03/8b/3d8b03" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/05/96/569605" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/07/92/719207" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/0a/5b/155b0a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/0a/de/14de0a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/0c/7c/577c0c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/0d/18/f3180d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/0d/5c/5e5c0d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/0d/ff/9bff0d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/11/ce/a4ce11" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/11/da/60da11" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/13/30/c63013" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/14/d1/1cd114" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/15/3d/753d15" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/1b/17/ae171b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/1b/97/a9971b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/1c/ff/b5ff1c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/1d/59/87591d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/1d/d4/b6d41d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/1e/4f/7e4f1e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/1f/be/86be1f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/21/62/926221" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/23/6b/316b23" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/23/77/e27723" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/24/89/858924" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/24/b6/bcb624" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/27/22/c82227" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/29/19/fe1929" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/2d/0d/150d2d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/30/12/a61230" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/34/f0/42f034" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/35/eb/eaeb35" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/36/b3/beb336" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/37/07/230737" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/37/0e/110e37" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/37/4d/834d37" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/3a/6d/0d6d3a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/3c/2a/592a3c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/3c/4f/544f3c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/40/07/bf0740" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/40/98/729840" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/41/29/252941" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/41/38/1f3841" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/41/46/104641" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/45/0e/950e45" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/47/2b/3b2b47" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/4a/6b/aa6b4a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/4a/bc/34bc4a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/4b/35/c6354b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/4b/fd/aefd4b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/4c/98/87984c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/4e/10/28104e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/4e/6d/1a6d4e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/51/b1/40b151" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/51/d8/23d851" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/52/07/580752" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/54/2d/132d54" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/54/73/777354" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/58/e7/4ae758" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/5e/8c/708c5e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/5e/b1/2cb15e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/5f/3b/803b5f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/5f/c8/fec85f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/5f/f6/6af65f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/60/ee/13ee60" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/66/7b/b27b66" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/66/c7/edc766" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/67/04/1c0467" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/6b/84/47846b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/6d/fb/97fb6d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/6f/74/dd746f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/6f/c2/7ec26f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/74/e8/59e874" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/75/18/521875" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/75/bd/32bd75" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/75/de/07de75" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/77/9c/e59c77" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/7f/07/d4077f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/80/50/5f5080" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/81/22/132281" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/84/12/531284" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/8a/62/5d628a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/8c/03/29038c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/8e/84/bd848e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/93/bd/9bbd93" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/93/e6/cfe693" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/99/00/110099" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/9a/30/bd309a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/9b/73/67739b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/9b/9d/869d9b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/9d/6a/036a9d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/9f/06/67069f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/a0/bc/1bbca0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/a1/62/df62a1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/a2/1a/8d1aa2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/a3/46/3646a3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/a4/29/9429a4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/a7/4e/fc4ea7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/a8/c7/15c7a8" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/ab/d3/0fd3ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/ac/d6/d8d6ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/b0/41/4941b0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/b0/73/db73b0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/b1/00/a700b1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/b7/0a/5e0ab7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/ba/cb/3bcbba" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/ba/e9/04e9ba" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/c0/7e/527ec0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/c2/71/0e71c2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/c5/a6/d7a6c5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/c8/8b/c58bc8" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/c9/bc/ffbcc9" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/ca/79/1779ca" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/cb/14/a114cb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/ce/73/3373ce" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/cf/49/5649cf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/d0/aa/1caad0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/d4/16/ba16d4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/d7/91/7c91d7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/d7/9a/9b9ad7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/d9/39/d639d9" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/db/25/5c25db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/dc/23/0d23dc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/dc/86/0b86dc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/dc/9a/d79adc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/e1/c7/aac7e1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/e2/28/b228e2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/e2/d8/afd8e2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/e6/25/9525e6" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/e7/b4/84b4e7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/e7/c2/50c2e7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/e7/f1/d7f1e7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/e9/af/c1afe9" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/eb/9b/939beb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/eb/e2/b7e2eb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/ed/b3/8ab3ed" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/ef/a8/e8a8ef" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/f0/38/4538f0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/f1/a4/d4a4f1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/f3/05/6905f3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/f5/a2/98a2f5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/f8/e4/cae4f8" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/f9/2e/052ef9" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/f9/74/9e74f9" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/f9/bd/c9bdf9" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/f9/ee/59eef9" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/fa/0a/e40afa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/fa/c6/2ac6fa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/fc/93/f693fc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/fe/ab/a8abfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/ff/52/5e52ff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/ff/56/af56ff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/ff/c6/54c6ff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/01/01a4992073a2c5b8db75cbd2c05c1e9ccc4b72bd2b9a98ce1b484f6fc7f70863.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/15/15c3769befeac60808f89870ae6bb7cf94683d0b48e38607843fc5ba32b96c3e.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/1e/1e2149ef29447ffd5b02ee525021e8a9d2fb342a0f842982b7fc886a46e66957.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/1e/1efa2db669aa176e9d807dc72c306b420e5088ddc741da76824806467779cdc0.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/20/2050501a0eb329838ad408d9f73546447a382d23f9b397209bba10c2aba2c20b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/20/206a094e189b75516ad1f17cf422963fdb270325fd6472af6a9f16deca3b0cb9.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/23/234c42353580744a92f6c22cc7d31556b5dbb14bf7ffa8c49f40623755612828.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/29/29f5be5a94027a448dc79eb42fd66d703711bb672a7c9b2a6f95fe97deebb707.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/2d/2d64a33a2249c472750cd2a69c25222bea87206cbcc043936c636a1c2ea080b6.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/32/3257c4262b915e99fdc98fd9db8419ca34a1529cb0d6458beea0071005fae5a5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/32/32a4bb4b85a979fa4789a2129eb508d9392242722f03f7dedda0af442a6f336a.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/34/3448eb5cd07c435fac6ceb565d352622a76391faf8ad60f974b77f445c6e6614.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/36/36736ce20969d0dd78be089e638ea0bd5fedd930409426095e120c675fc944b5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/37/3710be3514dac12b57b39d7c3239fa236ed050388420f39c6a7c6639fbe5967c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/3d/3db496e9b0c5a6697d8474f68b46500509f9045a10fbd984a056bcd8b68f6076.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/4d/4d96637c371f11978313916cfd40d517629219e8a0cdc110d0f20d234616d0f5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/4d/4de05dbf8be37e3ca24e0052291a9b2f3af29e78523af4e23d4101713c9c8a43.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/4f/4fa31e139654f6394b4c09c9b34d3279b5bac1c88b6957fba5f3fece070c6855.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/5c/5ca5a4587e08f718e5e99db008c7f231f40895ed7186ed86d2ab47e5722cc6ee.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/69/69382e0c9841293007ca4c66b12237ac8448d9046b66efeaf40b9b2c77eb852a.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/81/818f2cd8d10afc68e0ee7b260dbae827fa8b156136fb774b263c8ebc4568cd43.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/93/93b1678f004ed2b8049ea4db26d698c2c6b36ec6c92cd82ca5735200a2a29351.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/9a/9a591372f4a371259d665942a2a3f0dbfe6c0bc2e348ebbcaaf9cb32e83d8a7e.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/a2/a24d92021d8b48044882d66255995f06efdf44f139a1472d92ed45086ac8a878.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/a3/a3680c9d9fac62738cd9315afc77cd4a846e3cd61755f8101085995bb3ccae40.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/a9/a94798b27d71c7118260306d26b50563e6e8a4267536486255bcc8f6cdadcc41.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/aa/aa7f0d4a57904ffc805ef79888c4094f7a09ddc37421baaf07ec3f736662b166.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/af/af4c7c712bd2ccb41a023ef7c5b043935a02210095093d8abd4cddcd95bd57d2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/b2/b277684a2685c7181172c8a118c00ce868e7e2bc8716837c9b15533aeb20a1fe.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/b3/b30cdac7cdf3cc9bf95aaba920707dcb7661b8c83fd472d6f90809ab6e88da16.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/bc/bc1b5f9eff44cc88adfb88f36149f1143fa0a73aa0e36a87daaf4965732bdb90.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/c0/c09178effe5825d10a3dd945069e80c69641d5f4a4bb3b4cc6236f6df79afad1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/ca/ca6902f111a52c75a24130c11fcbd31efeb09242c57d6a71d1bc08ce00987931.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/ca/ca8bcd2040c7e75335257ddd4a7e732dbdaace6fa6d2baeb82e05ff4fd36df6c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/cc/cc1114d8554dbfa2b6a461f807a2ae9e2beb297b40e7f143a0ddfd1c294f3fed.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/d1/d1732e394c37a7d64e7b97ca4e787200b23bd9514cad1b8306473cac64e6f919.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/d2/d2a4ef992c2f2bdd25678a3e2bed95be1d218b9afc5abe867100cad661c8e884.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/e1/e1e3af7791e50d954decb3a62caa0ff38346ed4a2a8ebac76d8f906e06c54417.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/e2/e20b45b6e8acb4d418a330b5d8562c89ec03b427f74ceb1fc63f1977bbc9b88c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/f0/f06c8bf617247631a5731895a6f4f530b4a4cc2c3c1db5a735849250886bbeca.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/f4/f449ef02b153e33063e359c0fc379d4bfea06c7fa2723377c708d40ba768cdb0.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/f8/f850adf31d6b0650efc0aceed40de8734adcb4fb7b8bd1fc9f0a52e76239094c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/framework" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/aboutContorller.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/aboutContorller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/StockTypes.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/StockTypes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/stockItems.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/stockItems.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/05/5b5b435d53796d666f6e795c42756e646c655c5477696742756e646c655c436f6e74726f6c6c65725c457863657074696f6e436f6e74726f6c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/05/5b5b435d53796d666f6e795c42756e646c655c5477696742756e646c655c436f6e74726f6c6c65725c457863657074696f6e436f6e74726f6c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/14/5b5b435d53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c65722372656e64657256696577405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/14/5b5b435d53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c65722372656e64657256696577405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/22/5b5b435d53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c657223676574506172616d65746572405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/22/5b5b435d53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c657223676574506172616d65746572405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/27/5b5b435d53796d666f6e795c42756e646c655c5477696742756e646c655c436f6e74726f6c6c65725c457863657074696f6e436f6e74726f6c6c65722373686f77416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/27/5b5b435d53796d666f6e795c42756e646c655c5477696742756e646c655c436f6e74726f6c6c65725c457863657074696f6e436f6e74726f6c6c65722373686f77416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/34/5b5b435d53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c65722367657455736572405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/34/5b5b435d53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c65722367657455736572405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/38/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c61626f7574436f6e746f726c6c65722373686f77416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/38/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c61626f7574436f6e746f726c6c65722373686f77416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/40/5b5b435d53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c65722369734772616e746564405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/40/5b5b435d53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c65722369734772616e746564405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/4a/5b5b435d53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c6572237265646972656374546f526f757465405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/4a/5b5b435d53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c6572237265646972656374546f526f757465405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/55/_55b65ae7e00ea5d475dd22e9573e66380afa10b625cad5f8893b04ca915a1e08.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/55/_55b65ae7e00ea5d475dd22e9573e66380afa10b625cad5f8893b04ca915a1e08.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/85/5b5b435d53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c6572237265646972656374405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/85/5b5b435d53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c6572237265646972656374405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/87/5b5b435d53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c65722372656e646572405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/87/5b5b435d53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c65722372656e646572405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/8c/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c636174616c6f677565436f6e74726f6c6c65722373686f77416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/8c/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c636174616c6f677565436f6e74726f6c6c65722373686f77416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/8c/5b5b435d53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c657223666f7277617264405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/8c/5b5b435d53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c657223666f7277617264405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/8d/5b5b435d53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c657223616464466c617368405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/8d/5b5b435d53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c657223616464466c617368405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/96/5b5b435d53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c65722373747265616d405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/96/5b5b435d53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c65722373747265616d405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/af/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c61626f7574436f6e746f726c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/af/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c61626f7574436f6e746f726c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/b0/5b5b435d53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c657223637265617465466f726d405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/b0/5b5b435d53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c657223637265617465466f726d405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/b0/5b5b435d53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c657223736574436f6e7461696e6572405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/b0/5b5b435d53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c657223736574436f6e7461696e6572405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/b8/5b5b435d53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c657223676574405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/b8/5b5b435d53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c657223676574405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/c7/5b5b435d53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c65722367656e657261746555726c405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/c7/5b5b435d53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c65722367656e657261746555726c405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/fe/5b5b435d53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c657223676574446f637472696e65405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/fe/5b5b435d53796d666f6e795c42756e646c655c4672616d65776f726b42756e646c655c436f6e74726f6c6c65725c436f6e74726f6c6c657223676574446f637472696e65405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php.meta" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevUrlGenerator.php" afterPath="$PROJECT_DIR$/var/cache/dev/appDevUrlGenerator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevUrlMatcher.php" afterPath="$PROJECT_DIR$/var/cache/dev/appDevUrlMatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/classes.php" afterPath="$PROJECT_DIR$/var/cache/dev/classes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/classes.php.meta" afterPath="$PROJECT_DIR$/var/cache/dev/classes.php.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" afterPath="$PROJECT_DIR$/vendor/composer/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
     </list>
     <ignored path="DevChallenge.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,101 +796,84 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="parameters.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-520">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="19" column="118" selection-start-line="19" selection-start-column="118" selection-end-line="19" selection-end-column="118" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reports.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/catalogue/reports.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
-              <folding>
-                <marker date="1463512145617" expanded="true" signature="8351:8365" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/catalogue/view.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="23" selection-start-line="12" selection-start-column="11" selection-end-line="32" selection-end-column="18" />
-              <folding>
-                <element signature="e#12#26#0#Twig" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stockTypes.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="stockTypes.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/stockTypes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="21" column="34" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="34" />
+            <state relative-caret-position="304">
+              <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stockItems.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="stockSales.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/stockSales.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1092">
+              <caret line="152" column="4" selection-start-line="152" selection-start-column="4" selection-end-line="152" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="aboutContorller.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/aboutContorller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding>
+                <element signature="e#124#156#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stockUsers.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/stockUsers.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stockPermissions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/stockPermissions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="131" column="4" selection-start-line="131" selection-start-column="4" selection-end-line="131" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stockMeta.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/stockMeta.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="344">
+              <caret line="109" column="4" selection-start-line="109" selection-start-column="4" selection-end-line="109" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stockItems.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/stockItems.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="57" column="7" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
+            <state relative-caret-position="429">
+              <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/catalogue/add.html.twig">
+      <file leaf-file-name="AppKernel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="31" column="87" selection-start-line="29" selection-start-column="38" selection-end-line="34" selection-end-column="49" />
-              <folding>
-                <element signature="e#11260#12148#0#Twig" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sales.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/catalogue/sales.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="47" column="57" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
-              <folding>
-                <element signature="e#12#26#0#Twig" expanded="true" />
-                <element signature="e#242#1447#0#HTML" expanded="false" />
-              </folding>
+            <state relative-caret-position="323">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -135,31 +890,31 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="php console\bin server:run" />
-      <command text="php console/bin server:run" />
-      <command text="php console\bin" />
-      <command text="php bin\console server:run" />
+      <command text="php bin/console doctrine:schema:update --dump-sql" />
+      <command text="php bin/console doctrine:schema:update --force" />
+      <command text="php bin/console doctrine:schema:update --dump-sql" />
+      <command text="php bin/console doctrine:schema:update --force" />
+      <command text="php bin/console doctrine:schema:update --dump-sql" />
+      <command text="php bin/console doctrine:schema:update --force" />
+      <command text="php bin/console doctrine:schema:update --dump-sql" />
+      <command text="php bin/console doctrine:schema:update --force" />
+      <command text="php bin/console doctrine:schema:update --dump-sql" />
+      <command text="php bin/console doctrine:schema:update --force" />
+      <command text="php bin/console doctrine:schema:update --dump-sql" />
+      <command text="php bin/console doctrine:schema:update --force" />
+      <command text="php bin/console doctrine:schema:update --dump-sql" />
+      <command text="php bin/console doctrine:schema:update --force" />
+      <command text="php bin/console doctrine:schema:update --dump-sql" />
+      <command text="php bin/console doctrine:schema:update --force" />
+      <command text="php bin/console doctrine:schema:update --dump-sql" />
+      <command text="php bin/console doctrine:schema:update --force" />
       <command text="php bin/console server:run" />
-      <command text="php bin\console server:run" />
-      <command text="php app/console cache:clear --env=prod --no-debug" />
-      <command text="php bin/console cache:clear --env=prod --no-debug" />
-      <command text="php bin\console server:run" />
-      <command text="bin/console doctrine:database:create" />
+      <command text="php bin/console doctrine:schema:update --dump-sql" />
+      <command text="php bin/console doctrine:schema:update --force" />
       <command text="php bin/console server:run" />
-      <command text="/bin/console doctrine:database:create" />
-      <command text="php bin/console doctrine:database:create" />
-      <command text="php bin/console doctrine:schema:update --dump-sql" />
-      <command text="php bin/console doctrine:schema:update --force" />
-      <command text="php bin/console server:rum" />
+      <command text="php bin/console doctrine:query:sql 'SELECT * FROM stock_users '" />
+      <command text="composer require doctrine/doctrine-migrations-bundle" />
       <command text="php bin/console server:run" />
-      <command text="php bin/console doctrine:database:create" />
-      <command text="php bin/console doctrine:schema:update --dump-sql" />
-      <command text="php bin/console doctrine:schema:update --force" />
-      <command text="php bin/console doctrine:schema:update --dump-sql" />
-      <command text="php bin/console doctrine:schema:update --force" />
-      <command text="php bin/console doctrine:schema:update --dump-sql" />
-      <command text="php bin/console doctrine:schema:update --force" />
-      <command text="php bin/console doctrine:schema:update --dump-sql" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -181,7 +936,6 @@
         <option value="$PROJECT_DIR$/app/Resources/views/catalouge/home.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/myStyles.css" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/addItem.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/aboutContorller.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/catalogueController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/viewController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/updateController.php" />
@@ -200,11 +954,17 @@
         <option value="$PROJECT_DIR$/app/Resources/views/catalogue/view.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/StockTypes.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/salesController.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/app/Resources/views/catalogue/sales.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/stockUsers.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/aboutContorller.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/stockTypes.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/stockSales.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/stockPermissions.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/stockMeta.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/stockItems.php" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
       </list>
     </option>
   </component>
@@ -249,6 +1009,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -489,14 +1250,13 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
@@ -566,7 +1326,9 @@
       <workItem from="1463313633004" duration="8907000" />
       <workItem from="1463419336317" duration="10980000" />
       <workItem from="1463503797621" duration="11473000" />
-      <workItem from="1463590490402" duration="12914000" />
+      <workItem from="1463590490402" duration="12985000" />
+      <workItem from="1463604768212" duration="994000" />
+      <workItem from="1463677209321" duration="10371000" />
     </task>
     <task id="LOCAL-00001" summary="Added item capture page">
       <created>1463306918284</created>
@@ -603,35 +1365,51 @@
       <option name="project" value="LOCAL" />
       <updated>1463604327916</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Began using Doctrine for DB, added sales page">
+      <created>1463604350677</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1463604350677</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71286000" />
+    <option name="totallyTimeSpent" value="82722000" />
+  </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32506528" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -651,58 +1429,20 @@
     <MESSAGE value="updated add stock page, inserted reports page" />
     <MESSAGE value="Outlined Graphs, added dummy login modal" />
     <MESSAGE value="Began using Doctrine for DB, added sales page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Began using Doctrine for DB, added sales page" />
+    <MESSAGE value="added all table with getters and setters. &#10;Got doctrine migrations bundle" />
+    <option name="LAST_COMMIT_MESSAGE" value="added all table with getters and setters. &#10;Got doctrine migrations bundle" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/addItem.php" />
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="101" column="36" selection-start-line="101" selection-start-column="36" selection-end-line="101" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/catalogue/about.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/aboutContorller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/catalogue/home.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="0" selection-start-line="34" selection-start-column="4" selection-end-line="45" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/catalogueController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#88#0#PHP" expanded="false" />
-            <element signature="e#124#183#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -717,10 +1457,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
-          <folding>
-            <element signature="e#6#88#0#PHP" expanded="false" />
-            <element signature="e#124#183#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -780,21 +1516,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/addItem.php" />
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/aboutContorller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/catalogueController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <element signature="e#6#88#0#PHP" expanded="false" />
-            <element signature="e#124#183#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -802,9 +1527,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-          <folding>
-            <element signature="e#6#88#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -826,9 +1548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-          <folding>
-            <element signature="e#125#184#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -836,9 +1555,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding>
-            <element signature="e#125#184#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -860,11 +1576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding>
-            <element signature="e#1678#1984#0#Twig" expanded="false" />
-            <element signature="e#2038#2338#0#Twig" expanded="false" />
-            <element signature="e#2394#2698#0#Twig" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -872,7 +1583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -894,7 +1604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
           <caret line="151" column="24" selection-start-line="151" selection-start-column="24" selection-end-line="151" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -916,7 +1625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="72" column="3" selection-start-line="72" selection-start-column="3" selection-end-line="72" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -924,16 +1632,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-          <folding>
-            <element signature="e#124#183#0#PHP" expanded="true" />
-            <element signature="e#398#425#1#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/catalogue/reports.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="221">
           <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
           <folding>
             <marker date="1463512145617" expanded="true" signature="8351:8365" placeholder="..." />
@@ -941,21 +1645,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="19" column="118" selection-start-line="19" selection-start-column="118" selection-end-line="19" selection-end-column="118" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/catalogue/view.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="23" selection-start-line="12" selection-start-column="11" selection-end-line="32" selection-end-column="18" />
-          <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -967,17 +1661,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/catalogue/sales.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-520">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="799">
+          <caret line="47" column="57" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/stockTypesRepository.php" />
     <entry file="file://$PROJECT_DIR$/app/Resources/views/catalogue/add.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="429">
           <caret line="31" column="87" selection-start-line="29" selection-start-column="38" selection-end-line="34" selection-end-column="49" />
           <folding>
             <element signature="e#11260#12148#0#Twig" expanded="false" />
@@ -985,37 +1680,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/catalogue/sales.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/aboutContorller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="47" column="57" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
+        <state relative-caret-position="374">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
-            <element signature="e#242#1447#0#HTML" expanded="false" />
+            <element signature="e#124#156#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/stockTypesRepository.php">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/stockUsers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/stockTypes.php">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/stockSales.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="21" column="34" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="34" />
+        <state relative-caret-position="1092">
+          <caret line="152" column="4" selection-start-line="152" selection-start-column="4" selection-end-line="152" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/stockPermissions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="131" column="4" selection-start-line="131" selection-start-column="4" selection-end-line="131" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/stockMeta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="109" column="4" selection-start-line="109" selection-start-column="4" selection-end-line="109" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/stockItems.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="57" column="7" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
+        <state relative-caret-position="429">
+          <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="37" column="60" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/zendframework/zend-code/src/Scanner/ValueScanner.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/stockTypes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
           <folding />
         </state>
       </provider>
