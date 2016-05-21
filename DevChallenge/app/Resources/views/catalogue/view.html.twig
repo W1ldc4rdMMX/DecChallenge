@@ -6,30 +6,53 @@
 {% block body %}
     <div class="container-fluid">
         <h1>Current Stock</h1>
-        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#Routers">
-            <span class="glyphicon glyphicon-collapse-down"></span> Routers <span class="badge">10</span>
+        {% for types in stockTypes%}
+
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#{{ types.stockTypeName }}">
+            <span class="glyphicon glyphicon-collapse-down"></span> {{ types.stockTypeName }} <span class="badge">10</span>
         </button>
-        <div id="Routers" class="collapse">
+
+        <div id="{{ types.stockTypeName }}" class="collapse">
             <div class="table-responsive">
             <table class="table table-hover">
                 <thead>
                     <tr>
                         <th>Click to Edit</th>
-                        <th>Product Type</th>
-                        <th>Column 1</th>
-                        <th>Column 2</th>
-                        <th>Column 3</th>
-                        <th>Column 4</th>
+                        <th>Product Name</th>
+                        <th>Base Features</th>
+                        <th>Device Specification</th>
+                        <th>Package Contents</th>
+                        <th>System Requirements</th>
+                        <th>Serial no.</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <!--tr>
                         <td><button type="button" class="btn btn-primary btn-sm"
                         data-toggle="modal" data-target="#myModal">
                         Edit data</button></td>
-                    </tr>
+                    </tr-->
+                    {% for items in stockItems %}
+                        {% if items.stockTypes.id == types.id %}
+                        <tr>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm"
+                                        data-toggle="modal" data-target="#myModal">Edit data
+                                </button>
+                            </td>
+                            <td>{{ items.stockItemName }}</td>
+                            <td>{{ items.stockItemBase }}</td>
+                            <td>{{ items.stockItemSpec }}</td>
+                            <td>{{ items.stockItemCont }}</td>
+                            <td>{{ items.stockItemReq }}</td>
+                            <td>{{ items.stockItemSerial }}</td>
+                        </tr>
+                        {% endif %}
+                    {% endfor %}
                 </tbody>
             </table>
             </div>
         </div>
+        <br><hr>
+        {% endfor %}
 {% endblock %}

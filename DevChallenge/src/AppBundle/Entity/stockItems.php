@@ -80,7 +80,7 @@ class stockItems
      */
     public function getStockItemid()
     {
-        return $this->stockItemid;
+        return $this->id;
     }
     
     
@@ -121,6 +121,9 @@ class stockItems
      */
     public function getStockItemSpec()
     {
+        if($this->stockItemSpec != ''){
+            return stream_get_contents($this->stockItemSpec);
+        }
         return $this->stockItemSpec;
     }
 
@@ -137,6 +140,10 @@ class stockItems
      */
     public function getStockItemCont()
     {
+        if ($this->stockItemCont != '')
+        {
+            return stream_get_contents($this->stockItemCont);
+        }
         return $this->stockItemCont;
     }
 
@@ -153,6 +160,10 @@ class stockItems
      */
     public function getStockItemReq()
     {
+        if($this->stockItemReq != '')
+        {
+            return stream_get_contents($this->stockItemReq);
+        }
         return $this->stockItemReq;
     }
 

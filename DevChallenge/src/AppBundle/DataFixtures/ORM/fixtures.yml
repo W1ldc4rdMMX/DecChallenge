@@ -1,17 +1,17 @@
 AppBundle\Entity\stockUsers:
-    users_{1..5}:
-        userFName: <usersFName()>
-        userLName: <usersLName()>
-        userEmail: <usersEmail()>
-        userPass: <usersPass()>
+    users_{1}:
+        userFName: Lear
+        userLName: Pather
+        userEmail: lear.pather@gmail.com
+        userPass: w1ldc4rd
 
 AppBundle\Entity\stockPermissions:
-    permissions_{1..5}:
-        permAdd: <boolean(75)>
-        permEdit: <boolean(75)>
-        permDel: <boolean(75)>
-        permOrder: <boolean(75)>
-        permSU: <boolean(75)>
+    permissions_{1}:
+        permAdd: true
+        permEdit: true
+        permDel: true
+        permOrder: true
+        permSU: true
         stockUsers: '@users_*'
 
 AppBundle\Entity\stockTypes:

@@ -51,7 +51,7 @@ class stockPermissions
 
 
     /**
-     * @ORM\ManyToOne(targetEntity="stockUsers")
+     * @ORM\OneToOne(targetEntity="stockUsers")
      * @ORM\JoinColumn(nullable=false)
     */
     private $stockUsers;

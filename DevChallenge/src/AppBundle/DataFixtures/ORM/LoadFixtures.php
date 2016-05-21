@@ -8,6 +8,7 @@
 
 namespace AppBundle\DataFixtures\ORM;
 
+use AppBundle\Entity\stockPermissions;
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 use AppBundle\Entity\stockUsers;
@@ -18,6 +19,7 @@ class LoadFixtures implements FixtureInterface
 {
     public function load(ObjectManager $manager)
     {
+               
         $objects = Fixtures::load(
             __DIR__.'/fixtures.yml',
             $manager,

@@ -20,7 +20,24 @@ class viewController extends Controller
      */
     public function showAction()
     {
-        return $this->render(':catalogue:view.html.twig');
+        return $this->render(':catalogue:view.html.twig',[
+            'stockItems' => $this->showAllItems(),
+             'stockTypes' => $this->getStockTypes()   
+        ]
+        );
+    }
+
+    public function showAllItems()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $items = $em->getRepository("AppBundle:stockItems")->findAll();
+        return $items;        
+    }
+    
+    public function getStockTypes()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $types = $em->getRepository("AppBundle:stockTypes")->findAll();
+        return $types;
     }
 }
-?>
