@@ -22,33 +22,65 @@ class stockPermissions
      * @ORM\GeneratedValue(strategy="AUTO")
      * @ORM\Column(type="integer")
      */
-    private $permId;
+    private $id;
 
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="boolean")
      */
-    private $permAdd;
+    private $permAdd=true;
 
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="boolean")
      */
-    private $permEdit;
+    private $permEdit=false;
 
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="boolean")
      */
-    private $permDel;
+    private $permDel=false;
 
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="boolean")
      */
-    private $permOrder;
+    private $permOrder=false;
 
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="boolean")
      */
-    private $permSU;
+    private $permSU=false;
 
+
+    /**
+     * @ORM\ManyToOne(targetEntity="stockUsers")
+     * @ORM\JoinColumn(nullable=false)
+    */
+    private $stockUsers;
+
+    /**
+     * @return mixed
+     */
+    public function getStockUsers()
+    {
+        return $this->stockUsers;
+    }
+
+    /**
+     * @param mixed $stockUsers
+     */
+    public function setStockUsers(stockUsers $stockUsers)
+    {
+        $this->stockUsers = $stockUsers;
+    }
+    
+    /**
+     * @return mixed
+     */
+    public function getPermId()
+    {
+        return $this->permId;
+    }
+    
+    
     /**
      * @return mixed
      */

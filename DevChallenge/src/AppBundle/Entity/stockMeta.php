@@ -45,6 +45,38 @@ class stockMeta
     private $metaDesc;
 
     /**
+     * @ORM\ManyToOne(targetEntity="stockUsers")
+     */
+    private $stockUsers;
+
+    /**
+     * @return mixed
+     */
+    public function getStockUsers()
+    {
+        return $this->stockUsers;
+    }
+
+    /**
+     * @param mixed $stockUsers
+     */
+    public function setStockUsers(stockUsers $stockUsers)
+    {
+        $this->stockUsers = $stockUsers;
+    }
+    
+    
+    
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+    
+    
+    /**
      * @return mixed
      */
     public function getMetaUser()

@@ -21,13 +21,22 @@ class stockTypes
      * @ORM\GeneratedValue(strategy="AUTO")
      * @ORM\Column(type="integer")
      */
-    private $stockTypeid;
+    private $id;
 
     /**
      * @ORM\Column(type="string")
      */
     private $stockTypeName;
 
+    /**
+     * @return mixed
+     */
+    public function getStockTypeid()
+    {
+        return $this->stockTypeid;
+    }
+    
+    
     /**
      * @return mixed
      */

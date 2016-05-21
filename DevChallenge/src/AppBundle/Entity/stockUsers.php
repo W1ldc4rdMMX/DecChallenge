@@ -22,7 +22,7 @@ class stockUsers
      * @ORM\GeneratedValue(strategy="AUTO")
      * @ORM\Column(type="integer")
      */
-    private $userId;
+    private $id;
 
     /**
      * @ORM\Column(type="string")
@@ -44,6 +44,14 @@ class stockUsers
      */
     private $userPass;
 
+    /**
+     * @return mixed
+     */
+    public function getUserId()
+    {
+        return $this->userId;
+    }
+    
     /**
      * @return mixed
      */

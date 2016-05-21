@@ -21,7 +21,7 @@ class stockItems
      * @ORM\GeneratedValue(strategy="AUTO")
      * @ORM\Column(type="integer")
      */
-    private $stockItemid;
+    private $id;
 
     /**
      * @ORM\Column(type="string")
@@ -34,25 +34,56 @@ class stockItems
     private $stockItemBase;
 
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="blob", nullable=true)
      */
     private $stockItemSpec;
 
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="blob",nullable=true)
      */
     private $stockItemCont;
 
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="blob",nullable=true)
      */
     private $stockItemReq;
 
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string",nullable=true)
      */
     private $stockItemSerial;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="stockTypes")
+     */
+    private $stockTypes;
+
+    /**
+     * @return mixed
+     */
+    public function getStockTypes()
+    {
+        return $this->stockTypes;
+    }
+
+    /**
+     * @param mixed $stockTypes
+     */
+    public function setStockTypes(stockTypes $stockTypes)
+    {
+        $this->stockTypes = $stockTypes;
+    }
+
+    
+    /**
+     * @return mixed
+     */
+    public function getStockItemid()
+    {
+        return $this->stockItemid;
+    }
+    
+    
     /**
      * @return mixed
      */

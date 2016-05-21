@@ -23,7 +23,7 @@ class stockSales
      * @ORM\GeneratedValue(strategy="AUTO")
      * @ORM\Column(type="integer")
      */
-    private $salesId;
+    private $id;
 
     /**
      * @ORM\Column(type="string")
@@ -55,6 +55,14 @@ class stockSales
      */
     private $salesDateDis;
 
+    /**
+     * @return mixed
+     */
+    public function getSalesId()
+    {
+        return $this->salesId;
+    }
+       
     /**
      * @return mixed
      */

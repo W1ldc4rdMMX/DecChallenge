@@ -1,10 +1,3 @@
-c25625,127.0.0.1,GET,http://localhost:8000/,1463688708,,200
-4737da,127.0.0.1,GET,http://localhost:8000/home,1463688718,,200
-a235c0,127.0.0.1,GET,http://localhost:8000/reports,1463688732,,200
-81b388,127.0.0.1,GET,http://localhost:8000/img/bars.png,1463688737,367f35,200
-367f35,127.0.0.1,GET,http://localhost:8000/img/bars.png,1463688737,,404
-a86a54,127.0.0.1,GET,http://localhost:8000/img/lines_active.png,1463688741,3ec4b4,200
-3ec4b4,127.0.0.1,GET,http://localhost:8000/img/lines_active.png,1463688741,,404
-674a6b,127.0.0.1,GET,http://localhost:8000/reports/new,1463688744,dd5c6d,200
-dd5c6d,127.0.0.1,GET,http://localhost:8000/reports/new,1463688744,,404
-b0ab57,127.0.0.1,GET,http://localhost:8000/new,1463688757,,200
+26f01a,127.0.0.1,GET,http://localhost:8000/,1463826182,,200
+c180b2,127.0.0.1,GET,http://localhost:8000/,1463832291,,200
+412880,127.0.0.1,GET,http://localhost:8000/new,1463832303,,200
