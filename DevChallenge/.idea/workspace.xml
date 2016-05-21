@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f80a4fc-4950-4953-9611-c3654dd5835d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160521170226.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/catalogue/view.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/catalogue/view.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/viewController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/viewController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/LoadFixtures.php" afterPath="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/LoadFixtures.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/fixtures.yml" afterPath="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/fixtures.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/stockItems.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/stockItems.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/stockPermissions.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/stockPermissions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/f8/5b5b435d41707042756e646c655c456e746974795c73746f636b5065726d697373696f6e73247065726d45646974405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/f8/5b5b435d41707042756e646c655c456e746974795c73746f636b5065726d697373696f6e73247065726d45646974405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/StockTypes.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/StockTypes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/27/5b5b435d41707042756e646c655c456e746974795c73746f636b4974656d732473746f636b4974656d42617365405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/27/5b5b435d41707042756e646c655c456e746974795c73746f636b4974656d732473746f636b4974656d42617365405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/2c/5b5b435d41707042756e646c655c456e746974795c73746f636b54797065732473746f636b547970654e616d65405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/2c/5b5b435d41707042756e646c655c456e746974795c73746f636b54797065732473746f636b547970654e616d65405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/7a/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c76696577436f6e74726f6c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/7a/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c76696577436f6e74726f6c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/b5/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c76696577436f6e74726f6c6c65722373686f77416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/b5/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c76696577436f6e74726f6c6c65722373686f77416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/b8/5b5b435d41707042756e646c655c456e746974795c73746f636b5479706573405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/b8/5b5b435d41707042756e646c655c456e746974795c73746f636b5479706573405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" />
     </list>
     <ignored path="DevChallenge.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -494,7 +493,7 @@
       <workItem from="1463770166944" duration="1513000" />
       <workItem from="1463812991139" duration="3498000" />
       <workItem from="1463817454571" duration="4933000" />
-      <workItem from="1463828062557" duration="19818000" />
+      <workItem from="1463828062557" duration="19858000" />
     </task>
     <task id="LOCAL-00001" summary="Added item capture page">
       <created>1463306918284</created>
@@ -545,11 +544,18 @@
       <option name="project" value="LOCAL" />
       <updated>1463840313416</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="updated view page">
+      <created>1463849978218</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1463849978218</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112484000" />
+    <option name="totallyTimeSpent" value="112524000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">

@@ -31,11 +31,10 @@ class stockTypes
     /**
      * @return mixed
      */
-    public function getStockTypeid()
+    public function getId()
     {
-        return $this->stockTypeid;
+        return $this->id;
     }
-    
     
     /**
      * @return mixed

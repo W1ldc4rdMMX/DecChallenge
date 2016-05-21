@@ -1,0 +1,139 @@
+.navbar-default {
+  background-color: #d5d5d5;
+  border-color: #8f8f8f;
+}
+.navbar-default .navbar-brand {
+  color: #000000;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ffffff;
+}
+.navbar-default .navbar-text {
+  color: #000000;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #000000;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #d5d5d5;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #000000;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #ffffff;
+  background-color: #8f8f8f;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: #8f8f8f;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #ffffff;
+  background-color: #8f8f8f;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: #8f8f8f;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #ffffff;
+  background-color: #8f8f8f;
+}
+.navbar-default .navbar-toggle {
+  border-color: #8f8f8f;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #8f8f8f;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #000000;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #000000;
+}
+.navbar-default .navbar-link {
+  color: #000000;
+}
+.navbar-default .navbar-link:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #000000;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffffff;
+    background-color: #8f8f8f;
+  }
+}
+
+
+.well {
+	background-color: rgba(128,128,128,0.95);
+	//color: #0066FF; //rgb(64,0,0);
+	//background-color:  #efefef !important;
+}
+
+body {
+    background-color: lightblue;
+	 background-image: url("pics/background5.jpg");
+	 background-repeat: no-repeat;
+	 background-position: center;
+	 background-size: cover;
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+
+.jumbotron {
+	background-image: url("pics/spider-man-black.jpg");
+	background-repeat:no-repeat;
+	background-color: rgba(255,255,255,0.4);
+	background-position:right center;
+	//background-size: 300px auto;
+	background-size:contain;
+	//background-size: cover;
+	//text-shadow: -23px -4px 3px rgba(202, 142, 152, 1);
+	color:#fff;
+	//background-color:#232323;
+	text-shadow:0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18, 0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18
+}
+
+hr {
+	border-top: 1px dotted #000000 !important;
+   margin-bottom:5px !important; 
+   margin-top:5px !important;
+}
+//.well {
+//  min-height: 20px;
+//  padding: 19px;
+//  margin-bottom: 20px;
+//  background-color: rgba(255,255,255,0.4) //#f5f5f5#f5f5f5#f5f5f5;
+//  border: 1px solid #e3e3e3;
+//  border-radius: 4px;
+//  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+//          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+//}
