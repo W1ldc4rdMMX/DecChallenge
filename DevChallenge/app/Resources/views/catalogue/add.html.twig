@@ -13,6 +13,7 @@
     <div class="box_left">
         {% block boxLeft %}
             <div class="col-sm-6">
+                {{ dump(currentItems) }}
                 <div class="well">
                     <legend class="scheduler-border">Stock Item details</legend>
                     <ul class="nav nav-tabs nav-pills nav-justified">
@@ -28,10 +29,9 @@
                                     <p>
                                         <label for="productAddType">Product Type </label>
                                         <select name="productAddType" id="productAddType">
-                                            <option value="Router">Router</option>
-                                            <option value="Mobile" selected="selected">Mobile</option>
-                                            <option value="Sims">Sims</option>
-                                            <option value="Other">Other</option>
+                                            {% for type in types %}
+                                                <option value="{{ type.stockTypeName }}" id="{{ type.id }}">{{ type.stockTypeName }}</option>
+                                            {%  endfor %}
                                         </select>
                                     </p>
                                     <p>
@@ -79,19 +79,18 @@
                                 <p>
                                     <label for="productUpType">Product Type </label>
                                     <select name="productUpType" id="productUpType">
-                                        <option value="Router">Router</option>
-                                        <option value="Mobile" selected="selected">Mobile</option>
-                                        <option value="Sims">Sims</option>
-                                        <option value="Other">Other</option>
+                                        {% for type in types %}
+                                            <option value="{{ type.stockTypeName }}" id="{{ type.id }}">{{ type.stockTypeName }}</option>
+                                        {%  endfor %}
                                      </select>
                                 </p>
                                 <p>
                                     <label for="productUpName">Product Type </label>
-                                    <select name="productUpName" id="productUpName">
-                                        <option value="Product1">Product1</option>
-                                        <option value="Product2" selected="selected">Product2</option>
-                                        <option value="Product3">Product3</option>
-                                        <option value="Product4">Product4</option>
+                                    <select name="productUpName" id="productUpName" onchange="loadItemData()">
+                                        {% for item in currentItems %}
+                                            <option value="{{ item.stockItemName }}" >{{ item.stockItemName }}</option>
+                                            {{ item.stockItemSpec }}
+                                        {%  endfor %}
                                     </select>
                                 </p>
                                 <p>
@@ -221,4 +220,26 @@
         {% endblock %}
     </div>
     </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script>
+    function loadItemData()
+    {
+
+        var opt = document.getElementById('productUpName');
+        var selVal = opt.options[opt.selectedIndex].value;
+        {% for items in currentItems %}
+        if(selVal == '{{ items.stockItemName }}')
+        {
+            window.alert("Ran");
+            document.getElementById('productUpBase').innerHTML = {{ items.stockItemBase|json_encode|raw  }};
+            document.getElementById('productUpSpecs').innerHTML = {{ items.stockItemSpec|json_encode|raw }};
+            document.getElementById('productUpContent').innerHTML = '{{ items.stockItemCont|json_encode|raw }}';
+            document.getElementById('productUpSysReq').innerHTML = '{{ items.stockItemReq|json_encode|raw }}';
+        }
+        {% endfor %}
+    }
+    </script>
 {% endblock %}

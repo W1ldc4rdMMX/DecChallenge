@@ -1,9 +1,10 @@
 AppBundle\Entity\stockUsers:
     users_{1}:
-        userFName: Lear
-        userLName: Pather
-        userEmail: lear.pather@gmail.com
-        userPass: w1ldc4rd
+        username: lear.pather
+        email: lear.pather@gmail.com
+        enabled: yes
+        password: w1ldc4rd
+
 
 AppBundle\Entity\stockPermissions:
     permissions_{1}:

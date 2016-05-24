@@ -9,6 +9,7 @@
 namespace AppBundle\Controller;
 
 
+use AppBundle\Entity\stockTypes;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
@@ -21,8 +22,8 @@ class viewController extends Controller
     public function showAction()
     {
         return $this->render(':catalogue:view.html.twig',[
-            'stockItems' => $this->showAllItems(),
-             'stockTypes' => $this->getStockTypes()   
+                'stockItems' => $this->showAllItems(),
+                'stockTypes' => $this->getStockTypes()
         ]
         );
     }
@@ -33,11 +34,13 @@ class viewController extends Controller
         $items = $em->getRepository("AppBundle:stockItems")->findAll();
         return $items;        
     }
-    
+
     public function getStockTypes()
     {
         $em = $this->getDoctrine()->getManager();
         $types = $em->getRepository("AppBundle:stockTypes")->findAll();
         return $types;
     }
+
+    
 }

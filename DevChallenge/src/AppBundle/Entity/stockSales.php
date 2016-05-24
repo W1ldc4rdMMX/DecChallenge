@@ -58,11 +58,11 @@ class stockSales
     /**
      * @return mixed
      */
-    public function getSalesId()
+    public function getId()
     {
-        return $this->salesId;
+        return $this->id;
     }
-       
+          
     /**
      * @return mixed
      */

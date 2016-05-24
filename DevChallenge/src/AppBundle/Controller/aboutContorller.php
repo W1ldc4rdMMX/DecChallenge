@@ -22,7 +22,8 @@ class aboutContorller extends Controller
      */
     public function newAction()
     {
-        $user = new stockUsers();
+        /*
+         $user = new stockUsers();
         $user->setUserFName("Lear");
         $user->setUserLName("Pather");
         $user->setUserEmail("lear.pather@gmail.com");
@@ -42,7 +43,7 @@ class aboutContorller extends Controller
         $em->persist($perm);
         $em->flush();
 
-        return new Response("<html><body>User created!</body></html>");
+        return new Response("<html><body>User created!</body></html>");*/
 
     }
 

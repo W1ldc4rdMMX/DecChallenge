@@ -64,10 +64,10 @@ class stockTypes extends \AppBundle\Entity\stockTypes implements \Doctrine\ORM\P
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', '' . "\0" . 'AppBundle\\Entity\\stockTypes' . "\0" . 'id', '' . "\0" . 'AppBundle\\Entity\\stockTypes' . "\0" . 'stockTypeName'];
+            return ['__isInitialized__', '' . "\0" . 'AppBundle\\Entity\\stockTypes' . "\0" . 'id', '' . "\0" . 'AppBundle\\Entity\\stockTypes' . "\0" . 'stockTypeName', '' . "\0" . 'AppBundle\\Entity\\stockTypes' . "\0" . 'stockItems'];
         }
 
-        return ['__isInitialized__', '' . "\0" . 'AppBundle\\Entity\\stockTypes' . "\0" . 'id', '' . "\0" . 'AppBundle\\Entity\\stockTypes' . "\0" . 'stockTypeName'];
+        return ['__isInitialized__', '' . "\0" . 'AppBundle\\Entity\\stockTypes' . "\0" . 'id', '' . "\0" . 'AppBundle\\Entity\\stockTypes' . "\0" . 'stockTypeName', '' . "\0" . 'AppBundle\\Entity\\stockTypes' . "\0" . 'stockItems'];
     }
 
     /**
@@ -176,6 +176,17 @@ class stockTypes extends \AppBundle\Entity\stockTypes implements \Doctrine\ORM\P
     /**
      * {@inheritDoc}
      */
+    public function _construct()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, '_construct', []);
+
+        return parent::_construct();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function getId()
     {
         if ($this->__isInitialized__ === false) {
@@ -208,6 +219,17 @@ class stockTypes extends \AppBundle\Entity\stockTypes implements \Doctrine\ORM\P
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'setStockTypeName', [$stockTypeName]);
 
         return parent::setStockTypeName($stockTypeName);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getStockItems()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getStockItems', []);
+
+        return parent::getStockItems();
     }
 
 }

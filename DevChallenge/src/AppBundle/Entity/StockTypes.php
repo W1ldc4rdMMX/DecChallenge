@@ -8,6 +8,7 @@
 
 namespace AppBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -27,6 +28,16 @@ class stockTypes
      * @ORM\Column(type="string")
      */
     private $stockTypeName;
+
+    /**
+     * @ORM\OneToMany(targetEntity="stockItems",mappedBy="stockTypes")
+     */
+    private $stockItems;
+
+    public function  _construct()
+    {
+        $this->stockItems = new ArrayCollection();
+    }
 
     /**
      * @return mixed
@@ -51,7 +62,16 @@ class stockTypes
     {
         $this->stockTypeName = $stockTypeName;
     }
-    
+
+    /**
+     * @return ArrayCollection|stockItems[]
+     */
+    public function getStockItems()
+    {
+        return $this->stockItems;
+    }
+
+
 }
 
 

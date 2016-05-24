@@ -11,7 +11,7 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\stockItemsRepository")
  * @ORM\Table(name="stock_items")
  */
 class stockItems
@@ -29,22 +29,22 @@ class stockItems
     private $stockItemName;
 
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="text")
      */
     private $stockItemBase;
 
     /**
-     * @ORM\Column(type="blob", nullable=true)
+     * @ORM\Column(type="text", nullable=true)
      */
     private $stockItemSpec;
 
     /**
-     * @ORM\Column(type="blob",nullable=true)
+     * @ORM\Column(type="text",nullable=true)
      */
     private $stockItemCont;
 
     /**
-     * @ORM\Column(type="blob",nullable=true)
+     * @ORM\Column(type="text",nullable=true)
      */
     private $stockItemReq;
 
@@ -55,6 +55,7 @@ class stockItems
 
     /**
      * @ORM\ManyToOne(targetEntity="stockTypes")
+     * @ORM\JoinColumn(nullable=false)
      */
     private $stockTypes;
 
@@ -121,9 +122,6 @@ class stockItems
      */
     public function getStockItemSpec()
     {
-        if($this->stockItemSpec != ''){
-            return stream_get_contents($this->stockItemSpec);
-        }
         return $this->stockItemSpec;
     }
 
@@ -140,10 +138,6 @@ class stockItems
      */
     public function getStockItemCont()
     {
-        if ($this->stockItemCont != '')
-        {
-            return stream_get_contents($this->stockItemCont);
-        }
         return $this->stockItemCont;
     }
 
@@ -160,10 +154,6 @@ class stockItems
      */
     public function getStockItemReq()
     {
-        if($this->stockItemReq != '')
-        {
-            return stream_get_contents($this->stockItemReq);
-        }
         return $this->stockItemReq;
     }
 
@@ -174,6 +164,8 @@ class stockItems
     {
         $this->stockItemReq = $stockItemReq;
     }
+
+    
 
     /**
      * @return mixed

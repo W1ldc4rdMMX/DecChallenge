@@ -7,9 +7,14 @@
     <div class="container-fluid">
         <h1>Current Stock</h1>
         {% for types in stockTypes%}
-
+            {%  set itemCount = 0 %}
+            {% for items in stockItems %}
+                {% if items.stockTypes.id == types.id %}
+                    {% set itemCount = itemCount + 1 %}
+                {% endif %}
+             {% endfor %}
         <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#{{ types.stockTypeName }}">
-            <span class="glyphicon glyphicon-collapse-down"></span> {{ types.stockTypeName }} <span class="badge">10</span>
+            <span class="glyphicon glyphicon-collapse-down"></span> {{ types.stockTypeName }} <span class="badge">{{ itemCount }}</span>
         </button>
 
         <div id="{{ types.stockTypeName }}" class="collapse">

@@ -46,6 +46,7 @@ class stockMeta
 
     /**
      * @ORM\ManyToOne(targetEntity="stockUsers")
+     * @ORM\JoinColumn(nullable=false)
      */
     private $stockUsers;
 

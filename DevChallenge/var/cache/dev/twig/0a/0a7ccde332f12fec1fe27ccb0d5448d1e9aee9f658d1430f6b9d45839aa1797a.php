@@ -22,34 +22,34 @@ class __TwigTemplate_e2ce1d8e6bba7b89f807427c20c593e03419365ce4c9fdcf28a8f9115fa
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_02476ca14bedc49cb92877ff676bc296d4c0f994146366a89f316c2f2643be15 = $this->env->getExtension("native_profiler");
-        $__internal_02476ca14bedc49cb92877ff676bc296d4c0f994146366a89f316c2f2643be15->enter($__internal_02476ca14bedc49cb92877ff676bc296d4c0f994146366a89f316c2f2643be15_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "catalogue/about.html.twig"));
+        $__internal_4525a9c4b2a30a900bad0e034a652a7b106c2723442245d65d1b27cbdfd22928 = $this->env->getExtension("native_profiler");
+        $__internal_4525a9c4b2a30a900bad0e034a652a7b106c2723442245d65d1b27cbdfd22928->enter($__internal_4525a9c4b2a30a900bad0e034a652a7b106c2723442245d65d1b27cbdfd22928_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "catalogue/about.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_02476ca14bedc49cb92877ff676bc296d4c0f994146366a89f316c2f2643be15->leave($__internal_02476ca14bedc49cb92877ff676bc296d4c0f994146366a89f316c2f2643be15_prof);
+        $__internal_4525a9c4b2a30a900bad0e034a652a7b106c2723442245d65d1b27cbdfd22928->leave($__internal_4525a9c4b2a30a900bad0e034a652a7b106c2723442245d65d1b27cbdfd22928_prof);
 
     }
 
     // line 2
     public function block_title($context, array $blocks = array())
     {
-        $__internal_ae66b5eea998f38b30ccd2ce0b375a09ab3c5cd6e7442ccc0605f593c4f5df5e = $this->env->getExtension("native_profiler");
-        $__internal_ae66b5eea998f38b30ccd2ce0b375a09ab3c5cd6e7442ccc0605f593c4f5df5e->enter($__internal_ae66b5eea998f38b30ccd2ce0b375a09ab3c5cd6e7442ccc0605f593c4f5df5e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_a5f135931878c1974c9d9cbd50c61ee37a0fad1d4d1364e23f83dde98eb13af4 = $this->env->getExtension("native_profiler");
+        $__internal_a5f135931878c1974c9d9cbd50c61ee37a0fad1d4d1364e23f83dde98eb13af4->enter($__internal_a5f135931878c1974c9d9cbd50c61ee37a0fad1d4d1364e23f83dde98eb13af4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         // line 3
         echo "    WebApp Name here
 ";
         
-        $__internal_ae66b5eea998f38b30ccd2ce0b375a09ab3c5cd6e7442ccc0605f593c4f5df5e->leave($__internal_ae66b5eea998f38b30ccd2ce0b375a09ab3c5cd6e7442ccc0605f593c4f5df5e_prof);
+        $__internal_a5f135931878c1974c9d9cbd50c61ee37a0fad1d4d1364e23f83dde98eb13af4->leave($__internal_a5f135931878c1974c9d9cbd50c61ee37a0fad1d4d1364e23f83dde98eb13af4_prof);
 
     }
 
     // line 6
     public function block_body($context, array $blocks = array())
     {
-        $__internal_d2a0afc58f77e1a75f469902abec95e88415225a9172dee19c3a620e0ca73296 = $this->env->getExtension("native_profiler");
-        $__internal_d2a0afc58f77e1a75f469902abec95e88415225a9172dee19c3a620e0ca73296->enter($__internal_d2a0afc58f77e1a75f469902abec95e88415225a9172dee19c3a620e0ca73296_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_efeed4f97522a2257e99474708452e006a2f46ed859e3c83b4bdc86282203682 = $this->env->getExtension("native_profiler");
+        $__internal_efeed4f97522a2257e99474708452e006a2f46ed859e3c83b4bdc86282203682->enter($__internal_efeed4f97522a2257e99474708452e006a2f46ed859e3c83b4bdc86282203682_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 7
         echo "    <div class=\"container-fluid\">
@@ -62,7 +62,7 @@ class __TwigTemplate_e2ce1d8e6bba7b89f807427c20c593e03419365ce4c9fdcf28a8f9115fa
         foreach ($context['_seq'] as $context["_key"] => $context["user"]) {
             // line 11
             echo "            <h2>Welcome back ";
-            echo twig_escape_filter($this->env, $this->getAttribute($context["user"], "userFName", array()), "html", null, true);
+            echo twig_escape_filter($this->env, $this->getAttribute($context["user"], "username", array()), "html", null, true);
             echo "</h2>
         ";
         }
@@ -74,7 +74,7 @@ class __TwigTemplate_e2ce1d8e6bba7b89f807427c20c593e03419365ce4c9fdcf28a8f9115fa
 
 ";
         
-        $__internal_d2a0afc58f77e1a75f469902abec95e88415225a9172dee19c3a620e0ca73296->leave($__internal_d2a0afc58f77e1a75f469902abec95e88415225a9172dee19c3a620e0ca73296_prof);
+        $__internal_efeed4f97522a2257e99474708452e006a2f46ed859e3c83b4bdc86282203682->leave($__internal_efeed4f97522a2257e99474708452e006a2f46ed859e3c83b4bdc86282203682_prof);
 
     }
 
@@ -103,7 +103,7 @@ class __TwigTemplate_e2ce1d8e6bba7b89f807427c20c593e03419365ce4c9fdcf28a8f9115fa
 /*     <h1>About App</h1>*/
 /*     <p>Details and description of App here</p>*/
 /*         {% for user in users %}*/
-/*             <h2>Welcome back {{ user.userFName }}</h2>*/
+/*             <h2>Welcome back {{ user.username }}</h2>*/
 /*         {% endfor %}*/
 /*     </div>*/
 /* */
