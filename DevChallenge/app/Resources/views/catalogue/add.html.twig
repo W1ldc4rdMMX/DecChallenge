@@ -233,7 +233,6 @@
         {% for items in currentItems %}
         if(selVal == '{{ items.stockItemName }}')
         {
-            window.alert("Ran");
             document.getElementById('productUpBase').innerHTML = {{ items.stockItemBase|json_encode|raw  }};
             document.getElementById('productUpSpecs').innerHTML = {{ items.stockItemSpec|json_encode|raw }};
             document.getElementById('productUpContent').innerHTML = '{{ items.stockItemCont|json_encode|raw }}';
