@@ -27,8 +27,7 @@ class updateController extends Controller
     public function doUpdate()
     {
         $checkKeys = array_keys($_POST);
-        switch ($checkKeys[0])
-        {
+        switch ($checkKeys[0]) {
             case 'productAddType':
                 $newItem = new stockItems();
 
@@ -37,7 +36,7 @@ class updateController extends Controller
                 $newItem->setStockItemSpec($_POST['productAddSpecs']);
                 $newItem->setStockItemCont($_POST['productAddContent']);
                 $newItem->setStockItemReq($_POST['productAddSysReq']);
-                $em =$this->getDoctrine()->getManager();
+                $em = $this->getDoctrine()->getManager();
                 $stockTypes = $em->getRepository('AppBundle:stockTypes')->find($_POST['productAddStockId']);
                 $newItem->setStockTypes($stockTypes);
 
@@ -45,17 +44,21 @@ class updateController extends Controller
                 $em->flush();
                 break;
             case 'productUpName':
-                /*$em = $this->getDoctrine()->getManager();
-                $upItem = $em->getRepository('AppBundle:stockItems')->($_POST['productUpName']);
-                $upItem->setStockItemBase($_POST['productUpBase']);
-                $upItem->setStockItemSpec($_POST['productUpSpecs']);
-                $upItem->setStockItemCont($_POST['productUpContent']);
-                $upItem->setStockItemReq($_POST['productUpSysReq']);
+                $em = $this->getDoctrine()->getManager();
+                $upItems = $em->getRepository('AppBundle:stockItems')->findBy(
+                    array('stockItemName' => $_POST['productUpName'])
+                );
+                foreach ($upItems as $item) {
+                    $item->setStockItemBase($_POST['productUpBase']);
+                    $item->setStockItemSpec($_POST['productUpSpecs']);
+                    $item->setStockItemCont($_POST['productUpContent']);
+                    $item->setStockItemReq($_POST['productUpSysReq']);
 
-                $em->persist($upItem);
-                $em->flush();*/
+                    $em->persist($item);
+                    $em->flush();
+                }
         }
-
+        
         return $this->render("catalogue/add.html.twig",[
             'types' => $this->getTypes(),
             'currentItems' => $this->getMainItems()

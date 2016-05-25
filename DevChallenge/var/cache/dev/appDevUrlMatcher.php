@@ -129,9 +129,23 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'AppBundle\\Controller\\salesController::showAction',  '_route' => 'app_sales_show',);
         }
 
-        // app_update_show
-        if ($pathinfo === '/update') {
-            return array (  '_controller' => 'AppBundle\\Controller\\updateController::showAction',  '_route' => 'app_update_show',);
+        if (0 === strpos($pathinfo, '/update')) {
+            // app_update_doupdate
+            if ($pathinfo === '/update') {
+                if ($this->context->getMethod() != 'POST') {
+                    $allow[] = 'POST';
+                    goto not_app_update_doupdate;
+                }
+
+                return array (  '_controller' => 'AppBundle\\Controller\\updateController::doUpdate',  '_route' => 'app_update_doupdate',);
+            }
+            not_app_update_doupdate:
+
+            // app_update_show
+            if ($pathinfo === '/update') {
+                return array (  '_controller' => 'AppBundle\\Controller\\updateController::showAction',  '_route' => 'app_update_show',);
+            }
+
         }
 
         // app_view_show
