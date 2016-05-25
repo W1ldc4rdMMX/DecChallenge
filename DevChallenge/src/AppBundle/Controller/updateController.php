@@ -10,13 +10,60 @@ namespace AppBundle\Controller;
 
 
 use AppBundle\Entity\itemsRepository;
+use AppBundle\Entity\stockItems;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Doctrine\ORM\Query;
+use Symfony\Component\HttpFoundation\Response;
 
 
 class updateController extends Controller
 {
+    /**
+     * @Route("/update")
+     * @Method("POST")
+     */
+    public function doUpdate()
+    {
+        $checkKeys = array_keys($_POST);
+        switch ($checkKeys[0])
+        {
+            case 'productAddType':
+                $newItem = new stockItems();
+
+                $newItem->setStockItemName($_POST['productAddName']);
+                $newItem->setStockItemBase($_POST['productAddBase']);
+                $newItem->setStockItemSpec($_POST['productAddSpecs']);
+                $newItem->setStockItemCont($_POST['productAddContent']);
+                $newItem->setStockItemReq($_POST['productAddSysReq']);
+                $em =$this->getDoctrine()->getManager();
+                $stockTypes = $em->getRepository('AppBundle:stockTypes')->find($_POST['productAddStockId']);
+                $newItem->setStockTypes($stockTypes);
+
+                $em->persist($newItem);
+                $em->flush();
+                break;
+            case 'productUpName':
+                /*$em = $this->getDoctrine()->getManager();
+                $upItem = $em->getRepository('AppBundle:stockItems')->($_POST['productUpName']);
+                $upItem->setStockItemBase($_POST['productUpBase']);
+                $upItem->setStockItemSpec($_POST['productUpSpecs']);
+                $upItem->setStockItemCont($_POST['productUpContent']);
+                $upItem->setStockItemReq($_POST['productUpSysReq']);
+
+                $em->persist($upItem);
+                $em->flush();*/
+        }
+
+        return $this->render("catalogue/add.html.twig",[
+            'types' => $this->getTypes(),
+            'currentItems' => $this->getMainItems()
+        ]);
+
+        //return new Response("<html><body>".$checkKeys[0]."</body></html>");
+    }
+    
     /**
      * @Route("/update")
      */
@@ -39,11 +86,9 @@ class updateController extends Controller
     public function getMainItems()
     {
         $em = $this->getDoctrine()->getManager();
-        $stockitems = $em->getRepository('AppBundle:stockTypes')
-            ->findOneBy(['id' => 5]);
-
+        
         $uniqItems = $em->getRepository('AppBundle:stockItems')
-            ->getUniqItems($stockitems);
+            ->getUniqItems();
         return $uniqItems;
     }
 }

@@ -24,11 +24,11 @@
                     <div class="tab-content">
                         <div id="Add" class="tab-pane fade in active">
                             <h3>Add Stock Item</h3>
-                            <form>
+                            <form method="post">
                                 <fieldset>
                                     <p>
                                         <label for="productAddType">Product Type </label>
-                                        <select name="productAddType" id="productAddType">
+                                        <select name="productAddType" id="productAddType" onchange="getStockID()">
                                             {% for type in types %}
                                                 <option value="{{ type.stockTypeName }}" id="{{ type.id }}">{{ type.stockTypeName }}</option>
                                             {%  endfor %}
@@ -66,6 +66,9 @@
                                 >Please separate System Requirements with a coma(,)
                                 </textarea>
                                     </p>
+                                    <p>
+                                        <input type="hidden" name="productAddStockId" id="productAddStockId" />
+                                    </p>
                                 </fieldset>
                                     <button type="submit" class="btn btn-primary">Save changes</button>
                             </form>
@@ -73,17 +76,9 @@
 
                         <div id="Update" class="tab-pane fade">
                             <h3>Update Stock Items</h3>
-                            <form>
+                            <form method="post">
                                 <fieldset>
                                 <!--div class="well well-sm"-->
-                                <p>
-                                    <label for="productUpType">Product Type </label>
-                                    <select name="productUpType" id="productUpType">
-                                        {% for type in types %}
-                                            <option value="{{ type.stockTypeName }}" id="{{ type.id }}">{{ type.stockTypeName }}</option>
-                                        {%  endfor %}
-                                     </select>
-                                </p>
                                 <p>
                                     <label for="productUpName">Product Type </label>
                                     <select name="productUpName" id="productUpName" onchange="loadItemData()">
@@ -227,7 +222,6 @@
     <script>
     function loadItemData()
     {
-
         var opt = document.getElementById('productUpName');
         var selVal = opt.options[opt.selectedIndex].value;
         {% for items in currentItems %}
@@ -239,6 +233,15 @@
             document.getElementById('productUpSysReq').innerHTML = '{{ items.stockItemReq|json_encode|raw }}';
         }
         {% endfor %}
+    }
+
+    function getStockID()
+    {
+
+        var opt = document.getElementById('productAddType');
+        var selVal = opt.options[opt.selectedIndex].id;
+        window.alert(selVal);
+        document.getElementById('productAddStockId').value=selVal;
     }
     </script>
 {% endblock %}

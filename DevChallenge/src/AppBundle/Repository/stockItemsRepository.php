@@ -15,10 +15,9 @@ use Doctrine\ORM\EntityRepository;
 class stockItemsRepository extends EntityRepository
 {
     /**
-     * @param stockTypes $stockTypes
      * @return stockItems[]
      */
-    public function getUniqItems(stockTypes $stockTypes)
+    public function getUniqItems()
     {
         return $this->createQueryBuilder('stock_items')
             ->select('DISTINCT(stock_items.stockItemName) AS stockItemName')
@@ -26,10 +25,7 @@ class stockItemsRepository extends EntityRepository
             ->addSelect('stock_items.stockItemCont')
             ->addSelect('stock_items.stockItemReq')
             ->addSelect('stock_items.stockItemSpec')
-            ->andWhere('stock_items.stockTypes = :stockTypes')
-            ->setParameter('stockTypes',$stockTypes)
-            //->distinct('true')
-            //->orderBy('stock_items.stockItemName','DESC')
+            ->orderBy('stock_items.stockItemName','DESC')
             ->getQuery()
             ->execute();
     }
