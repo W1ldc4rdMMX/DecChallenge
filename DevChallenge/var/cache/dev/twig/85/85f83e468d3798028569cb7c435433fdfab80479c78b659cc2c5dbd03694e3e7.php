@@ -22,34 +22,34 @@ class __TwigTemplate_10ed6eb191706ee84448d27e49baf94538ac81bea1a1d713b978c908a33
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_c02f363daddac4203f8f3015edd113763d3b9a7e3adb55ce65a0f31f4dea6500 = $this->env->getExtension("native_profiler");
-        $__internal_c02f363daddac4203f8f3015edd113763d3b9a7e3adb55ce65a0f31f4dea6500->enter($__internal_c02f363daddac4203f8f3015edd113763d3b9a7e3adb55ce65a0f31f4dea6500_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":catalogue:view.html.twig"));
+        $__internal_f110d3aa7b4239d57343b309b56c7823ddf6a1c152ae587595a89c62d231ac69 = $this->env->getExtension("native_profiler");
+        $__internal_f110d3aa7b4239d57343b309b56c7823ddf6a1c152ae587595a89c62d231ac69->enter($__internal_f110d3aa7b4239d57343b309b56c7823ddf6a1c152ae587595a89c62d231ac69_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":catalogue:view.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_c02f363daddac4203f8f3015edd113763d3b9a7e3adb55ce65a0f31f4dea6500->leave($__internal_c02f363daddac4203f8f3015edd113763d3b9a7e3adb55ce65a0f31f4dea6500_prof);
+        $__internal_f110d3aa7b4239d57343b309b56c7823ddf6a1c152ae587595a89c62d231ac69->leave($__internal_f110d3aa7b4239d57343b309b56c7823ddf6a1c152ae587595a89c62d231ac69_prof);
 
     }
 
     // line 2
     public function block_title($context, array $blocks = array())
     {
-        $__internal_32bafc31a8c3c8807fe7409dcc2c7317648aecd1842167bcfd3e3e5fda9cb91d = $this->env->getExtension("native_profiler");
-        $__internal_32bafc31a8c3c8807fe7409dcc2c7317648aecd1842167bcfd3e3e5fda9cb91d->enter($__internal_32bafc31a8c3c8807fe7409dcc2c7317648aecd1842167bcfd3e3e5fda9cb91d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_072e194a37d4743a81d2ab5032848fe66c58b374082af679578c4caf040bfb31 = $this->env->getExtension("native_profiler");
+        $__internal_072e194a37d4743a81d2ab5032848fe66c58b374082af679578c4caf040bfb31->enter($__internal_072e194a37d4743a81d2ab5032848fe66c58b374082af679578c4caf040bfb31_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         // line 3
         echo "    Current Stock Items
 ";
         
-        $__internal_32bafc31a8c3c8807fe7409dcc2c7317648aecd1842167bcfd3e3e5fda9cb91d->leave($__internal_32bafc31a8c3c8807fe7409dcc2c7317648aecd1842167bcfd3e3e5fda9cb91d_prof);
+        $__internal_072e194a37d4743a81d2ab5032848fe66c58b374082af679578c4caf040bfb31->leave($__internal_072e194a37d4743a81d2ab5032848fe66c58b374082af679578c4caf040bfb31_prof);
 
     }
 
     // line 6
     public function block_body($context, array $blocks = array())
     {
-        $__internal_1fb604daf28460109e691834d7c7fb96fb8a80124d6949e30c95b3c79fc45352 = $this->env->getExtension("native_profiler");
-        $__internal_1fb604daf28460109e691834d7c7fb96fb8a80124d6949e30c95b3c79fc45352->enter($__internal_1fb604daf28460109e691834d7c7fb96fb8a80124d6949e30c95b3c79fc45352_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_7bdd3196866a3ee916f3820cac9c3af956af0f91c239821e7fe500772fd6aacd = $this->env->getExtension("native_profiler");
+        $__internal_7bdd3196866a3ee916f3820cac9c3af956af0f91c239821e7fe500772fd6aacd->enter($__internal_7bdd3196866a3ee916f3820cac9c3af956af0f91c239821e7fe500772fd6aacd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 7
         echo "    <div class=\"container-fluid\">
@@ -108,7 +108,6 @@ class __TwigTemplate_10ed6eb191706ee84448d27e49baf94538ac81bea1a1d713b978c908a33
                         <th>Device Specification</th>
                         <th>Package Contents</th>
                         <th>System Requirements</th>
-                        <th>Serial no.</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -118,14 +117,14 @@ class __TwigTemplate_10ed6eb191706ee84448d27e49baf94538ac81bea1a1d713b978c908a33
                         Edit data</button></td>
                     </tr-->
                     ";
-            // line 40
+            // line 39
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable((isset($context["stockItems"]) ? $context["stockItems"] : $this->getContext($context, "stockItems")));
             foreach ($context['_seq'] as $context["_key"] => $context["items"]) {
-                // line 41
+                // line 40
                 echo "                        ";
                 if (($this->getAttribute($this->getAttribute($context["items"], "stockTypes", array()), "id", array()) == $this->getAttribute($context["types"], "id", array()))) {
-                    // line 42
+                    // line 41
                     echo "                        <tr>
                             <td>
                                 <button type=\"button\" class=\"btn btn-primary btn-sm\"
@@ -133,39 +132,35 @@ class __TwigTemplate_10ed6eb191706ee84448d27e49baf94538ac81bea1a1d713b978c908a33
                                 </button>
                             </td>
                             <td>";
-                    // line 48
+                    // line 47
                     echo twig_escape_filter($this->env, $this->getAttribute($context["items"], "stockItemName", array()), "html", null, true);
                     echo "</td>
                             <td>";
-                    // line 49
+                    // line 48
                     echo twig_escape_filter($this->env, $this->getAttribute($context["items"], "stockItemBase", array()), "html", null, true);
                     echo "</td>
                             <td>";
-                    // line 50
+                    // line 49
                     echo twig_escape_filter($this->env, $this->getAttribute($context["items"], "stockItemSpec", array()), "html", null, true);
                     echo "</td>
                             <td>";
-                    // line 51
+                    // line 50
                     echo twig_escape_filter($this->env, $this->getAttribute($context["items"], "stockItemCont", array()), "html", null, true);
                     echo "</td>
                             <td>";
-                    // line 52
+                    // line 51
                     echo twig_escape_filter($this->env, $this->getAttribute($context["items"], "stockItemReq", array()), "html", null, true);
-                    echo "</td>
-                            <td>";
-                    // line 53
-                    echo twig_escape_filter($this->env, $this->getAttribute($context["items"], "stockItemSerial", array()), "html", null, true);
                     echo "</td>
                         </tr>
                         ";
                 }
-                // line 56
+                // line 54
                 echo "                    ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['items'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 57
+            // line 55
             echo "                </tbody>
             </table>
             </div>
@@ -177,7 +172,7 @@ class __TwigTemplate_10ed6eb191706ee84448d27e49baf94538ac81bea1a1d713b978c908a33
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['types'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         
-        $__internal_1fb604daf28460109e691834d7c7fb96fb8a80124d6949e30c95b3c79fc45352->leave($__internal_1fb604daf28460109e691834d7c7fb96fb8a80124d6949e30c95b3c79fc45352_prof);
+        $__internal_7bdd3196866a3ee916f3820cac9c3af956af0f91c239821e7fe500772fd6aacd->leave($__internal_7bdd3196866a3ee916f3820cac9c3af956af0f91c239821e7fe500772fd6aacd_prof);
 
     }
 
@@ -193,7 +188,7 @@ class __TwigTemplate_10ed6eb191706ee84448d27e49baf94538ac81bea1a1d713b978c908a33
 
     public function getDebugInfo()
     {
-        return array (  169 => 57,  163 => 56,  157 => 53,  153 => 52,  149 => 51,  145 => 50,  141 => 49,  137 => 48,  129 => 42,  126 => 41,  122 => 40,  99 => 20,  91 => 17,  86 => 16,  80 => 15,  77 => 14,  74 => 13,  71 => 12,  66 => 11,  63 => 10,  59 => 9,  55 => 7,  49 => 6,  41 => 3,  35 => 2,  11 => 1,);
+        return array (  164 => 55,  158 => 54,  152 => 51,  148 => 50,  144 => 49,  140 => 48,  136 => 47,  128 => 41,  125 => 40,  121 => 39,  99 => 20,  91 => 17,  86 => 16,  80 => 15,  77 => 14,  74 => 13,  71 => 12,  66 => 11,  63 => 10,  59 => 9,  55 => 7,  49 => 6,  41 => 3,  35 => 2,  11 => 1,);
     }
 }
 /* {% extends 'base.html.twig' %}*/
@@ -226,7 +221,6 @@ class __TwigTemplate_10ed6eb191706ee84448d27e49baf94538ac81bea1a1d713b978c908a33
 /*                         <th>Device Specification</th>*/
 /*                         <th>Package Contents</th>*/
 /*                         <th>System Requirements</th>*/
-/*                         <th>Serial no.</th>*/
 /*                     </tr>*/
 /*                 </thead>*/
 /*                 <tbody>*/
@@ -248,7 +242,6 @@ class __TwigTemplate_10ed6eb191706ee84448d27e49baf94538ac81bea1a1d713b978c908a33
 /*                             <td>{{ items.stockItemSpec }}</td>*/
 /*                             <td>{{ items.stockItemCont }}</td>*/
 /*                             <td>{{ items.stockItemReq }}</td>*/
-/*                             <td>{{ items.stockItemSerial }}</td>*/
 /*                         </tr>*/
 /*                         {% endif %}*/
 /*                     {% endfor %}*/

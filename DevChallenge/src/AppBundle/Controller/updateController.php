@@ -9,8 +9,9 @@
 namespace AppBundle\Controller;
 
 
-use AppBundle\Entity\itemsRepository;
+
 use AppBundle\Entity\stockItems;
+use AppBundle\Entity\stockSerials;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -18,8 +19,10 @@ use Doctrine\ORM\Query;
 use Symfony\Component\HttpFoundation\Response;
 
 
+
 class updateController extends Controller
 {
+
     /**
      * @Route("/update")
      * @Method("POST")
@@ -57,11 +60,30 @@ class updateController extends Controller
                     $em->persist($item);
                     $em->flush();
                 }
+                break;
+            case 'productCountName':
+                //return new Response("<html><body>".print_r($checkKeys)."</body></html>");
+                $em = $this->getDoctrine()->getManager();
+                $stockItem = $em->getRepository('AppBundle:stockItems')->findOneBy(
+                    array('stockItemName' => $_POST['productCountName'])
+                );
+                $x = $_POST['productCountNum'];
+                for($i = 0;$i < $x;$i++)
+                {
+                    $stockSerial = new stockSerials();
+
+                    $stockSerial->setStockSerial('TBD');
+                    $stockSerial->setStockItems($stockItem);
+
+                    $em->persist($stockSerial);
+                    $em->flush();
+                }
         }
         
         return $this->render("catalogue/add.html.twig",[
             'types' => $this->getTypes(),
-            'currentItems' => $this->getMainItems()
+            'currentItems' => $this->getMainItems(),
+            'serials' => $this->getSerials()
         ]);
 
         //return new Response("<html><body>".$checkKeys[0]."</body></html>");
@@ -75,7 +97,8 @@ class updateController extends Controller
     {
         return $this->render("catalogue/add.html.twig",[
             'types' => $this->getTypes(),
-            'currentItems' => $this->getMainItems()
+            'currentItems' => $this->getMainItems(),
+            'serials' => $this->getSerials()
         ]);
     }
 
@@ -93,5 +116,13 @@ class updateController extends Controller
         $uniqItems = $em->getRepository('AppBundle:stockItems')
             ->getUniqItems();
         return $uniqItems;
+    }
+
+    public function getSerials()
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $serials = $em->getRepository('AppBundle:stockSerials')->findAll();
+        return $serials;
     }
 }

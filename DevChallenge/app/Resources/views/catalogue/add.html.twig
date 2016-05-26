@@ -10,10 +10,10 @@
 
 {% block body %}
     <div class="container-fluid">
+        {{ dump(serials) }}
     <div class="box_left">
         {% block boxLeft %}
             <div class="col-sm-6">
-                {{ dump(currentItems) }}
                 <div class="well">
                     <legend class="scheduler-border">Stock Item details</legend>
                     <ul class="nav nav-tabs nav-pills nav-justified">
@@ -38,10 +38,7 @@
                                         <label for="productAddName">Product Name </label>
                                         <input type="text" name="productAddName" id="fn" size="50" />
                                     </p>
-                                    <p>
-                                        <label for="productAddSerial">Serial no. </label>
-                                        <input type="text" name="productAddSerial" id="fn" size="50"/>
-                                    </p>
+
                                     <p>
                                         <label for="productAddBase">Base Features </label>
                                 <textarea name="productAddBase" id="productAddBase" rows="5" cols="47"
@@ -83,15 +80,16 @@
                                     <label for="productUpName">Product Type </label>
                                     <select name="productUpName" id="productUpName" onchange="loadItemData()">
                                         {% for item in currentItems %}
+                                            {% if loop.index == 1 %}
+                                                <option value="{{ item.stockItemName }}" selected="selected" >{{ item.stockItemName }}</option>
+                                                {{ item.stockItemSpec }}
+                                            {% endif %}
                                             <option value="{{ item.stockItemName }}" >{{ item.stockItemName }}</option>
                                             {{ item.stockItemSpec }}
                                         {%  endfor %}
                                     </select>
                                 </p>
-                                <p>
-                                    <label for="productUpSerial">Serial no. </label>
-                                    <input type="text" name="productUpSerial" id="fn" size="50"/>
-                                </p>
+
                                 <p>
                                     <label for="productUpBase">Base Features </label>
                                     <textarea name="productUpBase" id="productUpBase" rows="5" cols="47"
@@ -131,31 +129,27 @@
         {% block topBoxRight %}
             <div class="col-sm-4">
                 <div class="well">
-                    <legend class="scheduler-border">Update no. of Stock</legend>
+                    <legend class="scheduler-border">Update no. of Stock items</legend>
                     <div class="row">
-                        <form>
-                            <p>
-                                <label for="productCountType">Product Type </label>
-                                <select name="productCountType" id="productCountType">
-                                    <option value="Router">Router</option>
-                                    <option value="Mobile" selected="selected">Mobile</option>
-                                    <option value="Sims">Sims</option>
-                                    <option value="Other">Other</option>
-                                </select>
-                            </p>
+                        <form method="post">
                             <p>
                                 <label for="productCountName">Product Type </label>
                                 <select name="productCountName" id="productCountName">
-                                    <!--Pass from database-->
-                                    <option value="Product1">Product1</option>
-                                    <option value="Product2" selected="selected">Product2</option>
-                                    <option value="Product3">Product3</option>
-                                    <option value="Product4">Product4</option>
+                                    {% for item in currentItems %}
+                                        {#% set isFirst = {{ loop.first }} %}
+                                        {% if isFirst  %}
+                                            <option value="{{ item.stockItemName }}" selected="selected" >{{ item.stockItemName }}</option>
+                                            {{ item.stockItemSpec }}
+                                        {% elseif %#}
+                                            <option value="{{ item.stockItemName }}" selected="selected">{{ item.stockItemName }}</option>
+                                            {{ item.stockItemSpec }}
+                                        {#% endif %#}
+                                    {%  endfor %}
                                 </select>
                             </p>
                             <p>
                                 <label for="productCountNum">No. of Products </label>
-                                <input id="productCountNum" type="number" min="1" max="9999" />
+                                <input name="productCountNum" id="productCountNum" type="number" min="1" max="9999" />
                             </p>
                             <button type="submit" class="btn btn-primary">Update</button>
                         </form>
@@ -167,9 +161,15 @@
 
     <div class="mid_box_left">
         {% block midBoxRight %}
+            {%  set serialCount = 0 %}
+            {% for missing in serials %}
+                {% if missing.stockSerial == 'TBD' %}
+                   {% set serialCount = serialCount + 1 %}
+                {% endif %}
+            {% endfor %}
             <div class="col-sm-4">
                 <div class="well">
-                    <legend class="scheduler-border">Stock Pending serial no. <span class="badge">10</span></legend>
+                    <legend class="scheduler-border">Stock Pending serial no. <span class="badge">{{ serialCount }}</span></legend>
                     <div class="row">
                         <form>
                             <p>
@@ -222,15 +222,21 @@
     <script>
     function loadItemData()
     {
+        //document.activeElement.blur();
+        //document.getElementById('productUpBase').value = null;
+        //document.getElementById('productUpSpecs').value = null;
+        //document.getElementById('productUpContent').value = null;
+        //document.getElementById('productUpSysReq').value = null;
+        //document.getElementById('productUpName').focus();
         var opt = document.getElementById('productUpName');
         var selVal = opt.options[opt.selectedIndex].value;
         {% for items in currentItems %}
         if(selVal == '{{ items.stockItemName }}')
         {
-            document.getElementById('productUpBase').innerHTML = {{ items.stockItemBase|json_encode|raw  }};
-            document.getElementById('productUpSpecs').innerHTML = {{ items.stockItemSpec|json_encode|raw }};
-            document.getElementById('productUpContent').innerHTML = '{{ items.stockItemCont|json_encode|raw }}';
-            document.getElementById('productUpSysReq').innerHTML = '{{ items.stockItemReq|json_encode|raw }}';
+            document.getElementById('productUpBase').value = {{ items.stockItemBase|json_encode|raw  }};
+            document.getElementById('productUpSpecs').value = {{ items.stockItemSpec|json_encode|raw }};
+            document.getElementById('productUpContent').value = {{ items.stockItemCont|json_encode|raw }};
+            document.getElementById('productUpSysReq').innerHTML = {{ items.stockItemReq|json_encode|raw }};
         }
         {% endfor %}
     }

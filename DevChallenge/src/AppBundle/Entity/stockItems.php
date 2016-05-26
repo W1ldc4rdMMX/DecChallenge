@@ -47,11 +47,7 @@ class stockItems
      * @ORM\Column(type="text",nullable=true)
      */
     private $stockItemReq;
-
-    /**
-     * @ORM\Column(type="string",nullable=true)
-     */
-    private $stockItemSerial;
+  
 
     /**
      * @ORM\ManyToOne(targetEntity="stockTypes")
@@ -165,23 +161,7 @@ class stockItems
         $this->stockItemReq = $stockItemReq;
     }
 
-    
-
-    /**
-     * @return mixed
-     */
-    public function getStockItemSerial()
-    {
-        return $this->stockItemSerial;
-    }
-
-    /**
-     * @param mixed $stockItemSerial
-     */
-    public function setStockItemSerial($stockItemSerial)
-    {
-        $this->stockItemSerial = $stockItemSerial;
-    }
+       
 
     
 }
