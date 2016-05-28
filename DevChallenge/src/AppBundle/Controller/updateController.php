@@ -112,7 +112,7 @@ class updateController extends Controller
     public function getMainItems()
     {
         $em = $this->getDoctrine()->getManager();
-        
+
         $uniqItems = $em->getRepository('AppBundle:stockItems')
             ->getUniqItems();
         return $uniqItems;

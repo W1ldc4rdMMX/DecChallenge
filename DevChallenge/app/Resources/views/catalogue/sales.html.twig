@@ -10,14 +10,13 @@
         <div class="well">
             <form>
                 <label for="stockType">Stock type</label>
-                <select name="stockType" id="stockType">
-                    <option value="Router">Router</option>
-                    <option value="Mobile" selected="selected">Mobile</option>
-                    <option value="Sims">Sims</option>
-                    <option value="Other">Other</option>
+                <select name="stockType" id="stockType" onchange="loadItems()">
+                    {% for type in  types %}
+                        <option value="{{ type.StockTypeName }}" id="{{ type.id }}">{{ type.StockTypeName }}</option>
+                    {% endfor %}
                 </select>
                 <div class="table-responsive">
-                    <table class="table table-hover">
+                    <table class="table table-hover" id="itemsTable">
                         <thead>
                         <tr>
                             <th>Place orders</th>
@@ -25,16 +24,45 @@
                             <th>Quantity remaining</th>
                         </tr>
                         </thead>
-                        <tbody>
-                        <tr>
+                        <tbody id="tbodyid">
+                        <!--tr>
                             <td><button type="button" class="btn btn-primary btn-sm"
                                         data-toggle="modal" data-target="#myModal">
                                     Place order</button></td>
-                        </tr>
+                        </tr-->
                         </tbody>
                     </table>
                 </div>
             </form>
+            <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form class="form-horizontal" method="post">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title">Place order for "</h4>
+                        </div>
+                        <div class="modal-body"><br>
+                            <p>
+                                <label for="salesCountNum">No. of Products </label>
+                                <input name="salesCountNum" id="salesCountNum" type="number" min="1" max="9999" />
+                            </p>
+                            <p>
+                                <label for="saleTrackNo">Tracking no.</label>
+                                <input type="text" name="saleTrackNo" id="saleTrackNo" />
+                            </p>
+                            <p>
+                                <label for="salesETA">ETA</label>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Place order</button>
+                        </div>
+                    </form>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->";
         </div>
         </div>
         <div class="col-sm-12">
@@ -63,3 +91,49 @@
         </div>
     </div>
 {% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script>
+        function loadItems()
+        {
+
+            var itemTable = document.getElementById('itemsTable');
+            if (itemTable.rows.length > 1)
+            {
+                for(var i=itemTable.rows.length-1;i >= 1;i--)
+                {
+                    itemTable.deleteRow(i)
+                }
+
+            }
+
+            var opt = document.getElementById('stockType');
+            var selVal = opt.options[opt.selectedIndex].id;
+            //window.alert(selVal);
+            {% for item in items %}
+                if(selVal == {{ item.stockTypes.id }}) {
+                    var row = itemTable.insertRow(1);
+                    var cell1 = row.insertCell(0);
+                    var cell2 = row.insertCell(0);
+                    var cell3 = row.insertCell(0);
+
+                    var itemCount=0;
+                    {% for countItems in serials %}
+                        if({{ item.StockItemid }} == {{ countItems.stockItems.StockItemid }})
+                        {
+                            itemCount++;
+                        }
+                    {% endfor %}
+
+                    cell1.innerHTML = itemCount.toString();
+                    cell2.innerHTML = '{{ item.stockItemName }}';
+                    cell3.innerHTML = "<button type=\"button\" class=\"btn btn-primary btn-sm\" " +
+                            "data-toggle=\"modal\" data-target=\"#myModal\">Place order</button>";
+
+                }
+            {% endfor %}
+        }
+    </script>
+
+{%  endblock %}
