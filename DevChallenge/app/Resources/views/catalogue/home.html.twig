@@ -10,7 +10,7 @@
             <div class="col-sm-12">
                 <div class="well">
                 <legend class="scheduler-border">Top selling products:</legend>
-                        <ul class="nav nav-pills nav-justified">
+                        <ul class="nav nav-pills">
                         {%  for key in stock|keys %}
                             {% if loop.index == 1 %}
                                 <li class="active"><a data-toggle="tab" href="#{{ key }}">{{ key }}</a></li>

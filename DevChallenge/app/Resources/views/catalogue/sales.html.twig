@@ -15,6 +15,7 @@
                         <option value="{{ type.StockTypeName }}" id="{{ type.id }}">{{ type.StockTypeName }}</option>
                     {% endfor %}
                 </select>
+
                 <div class="table-responsive">
                     <table class="table table-hover" id="itemsTable">
                         <thead>
@@ -44,7 +45,7 @@
                         </div>
                         <div class="modal-body"><br>
                             <p>
-                                <label for="salesCountNum">No. of Products </label>
+                                <label for="salesCountNum">Quantity </label>
                                 <input name="salesCountNum" id="salesCountNum" type="number" min="1" max="9999" />
                             </p>
                             <p>
@@ -53,6 +54,13 @@
                             </p>
                             <p>
                                 <label for="salesETA">ETA</label>
+                            <div id="datetimepicker" class="input-append date">
+                                <input type="text">
+                                <span class="add-on">
+                                <i data-time-icon="icon-time" data-date-icon="icon-calendar glyphicon glyphicon-user"></i>
+                                </span>
+                                </input>
+                            </div>
                             </p>
                         </div>
                         <div class="modal-footer">
@@ -135,5 +143,6 @@
             {% endfor %}
         }
     </script>
+
 
 {%  endblock %}

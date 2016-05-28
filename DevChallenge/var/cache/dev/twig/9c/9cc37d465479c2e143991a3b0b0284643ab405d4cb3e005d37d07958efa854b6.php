@@ -20,8 +20,8 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_fef570945bd779c79f6cf307fb8b2f5d17fac38f6733a1c747a07eb16b49fc7e = $this->env->getExtension("native_profiler");
-        $__internal_fef570945bd779c79f6cf307fb8b2f5d17fac38f6733a1c747a07eb16b49fc7e->enter($__internal_fef570945bd779c79f6cf307fb8b2f5d17fac38f6733a1c747a07eb16b49fc7e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
+        $__internal_fdceb2152e4e4a9d7106768ad52bf56fba5c9b42c6391db03286eaeb42003804 = $this->env->getExtension("native_profiler");
+        $__internal_fdceb2152e4e4a9d7106768ad52bf56fba5c9b42c6391db03286eaeb42003804->enter($__internal_fdceb2152e4e4a9d7106768ad52bf56fba5c9b42c6391db03286eaeb42003804_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -30,6 +30,10 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
         <meta charset=\"UTF-8\" />
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
         <link rel=\"stylesheet\" href=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css\">
+
+        <!--link href=\"http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css\" rel=\"stylesheet\"-->
+        <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\"
+              href=\"http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css\">
         <nav class=\"navbar navbar-default navbar-fixed-top\">
             <div class=\"container-fluid\">
                 <div class=\"navbar-header\">
@@ -72,13 +76,13 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
 
 
         <title>";
-        // line 48
+        // line 52
         $this->displayBlock('title', $context, $blocks);
         echo "</title>
         ";
-        // line 49
+        // line 53
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 52
+        // line 56
         echo "        <link rel=\"icon\" type=\"image/x-icon\" href=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("favicon.ico"), "html", null, true);
         echo "\" />
@@ -86,58 +90,58 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
 
     <body>
     ";
-        // line 56
+        // line 60
         $this->displayBlock('loginModal', $context, $blocks);
-        // line 102
+        // line 106
         echo "        ";
         $this->displayBlock('body', $context, $blocks);
-        // line 103
+        // line 107
         echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 107
+        // line 130
         echo "    </body>
 </html>
 ";
         
-        $__internal_fef570945bd779c79f6cf307fb8b2f5d17fac38f6733a1c747a07eb16b49fc7e->leave($__internal_fef570945bd779c79f6cf307fb8b2f5d17fac38f6733a1c747a07eb16b49fc7e_prof);
+        $__internal_fdceb2152e4e4a9d7106768ad52bf56fba5c9b42c6391db03286eaeb42003804->leave($__internal_fdceb2152e4e4a9d7106768ad52bf56fba5c9b42c6391db03286eaeb42003804_prof);
 
     }
 
-    // line 48
+    // line 52
     public function block_title($context, array $blocks = array())
     {
-        $__internal_eb839b26fb0353566126284f14480bd1a6c01882c847c2bfb94e8207981e2b3c = $this->env->getExtension("native_profiler");
-        $__internal_eb839b26fb0353566126284f14480bd1a6c01882c847c2bfb94e8207981e2b3c->enter($__internal_eb839b26fb0353566126284f14480bd1a6c01882c847c2bfb94e8207981e2b3c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_7871acb5b0f28cf11709e7498dec8cdfe975a000dd7192eeb6cf6466e820e1ea = $this->env->getExtension("native_profiler");
+        $__internal_7871acb5b0f28cf11709e7498dec8cdfe975a000dd7192eeb6cf6466e820e1ea->enter($__internal_7871acb5b0f28cf11709e7498dec8cdfe975a000dd7192eeb6cf6466e820e1ea_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Welcome!";
         
-        $__internal_eb839b26fb0353566126284f14480bd1a6c01882c847c2bfb94e8207981e2b3c->leave($__internal_eb839b26fb0353566126284f14480bd1a6c01882c847c2bfb94e8207981e2b3c_prof);
+        $__internal_7871acb5b0f28cf11709e7498dec8cdfe975a000dd7192eeb6cf6466e820e1ea->leave($__internal_7871acb5b0f28cf11709e7498dec8cdfe975a000dd7192eeb6cf6466e820e1ea_prof);
 
     }
 
-    // line 49
+    // line 53
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_a729c2ba935b914217631c8c1613cb5a9c21aef327cc05bb211d63c0b0772476 = $this->env->getExtension("native_profiler");
-        $__internal_a729c2ba935b914217631c8c1613cb5a9c21aef327cc05bb211d63c0b0772476->enter($__internal_a729c2ba935b914217631c8c1613cb5a9c21aef327cc05bb211d63c0b0772476_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_d83dbb0ecb7619c80969225ea3cb2ca0ce1d80e2767a41cf02ac1dfc55163c42 = $this->env->getExtension("native_profiler");
+        $__internal_d83dbb0ecb7619c80969225ea3cb2ca0ce1d80e2767a41cf02ac1dfc55163c42->enter($__internal_d83dbb0ecb7619c80969225ea3cb2ca0ce1d80e2767a41cf02ac1dfc55163c42_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        // line 50
+        // line 54
         echo "            <link rel=\"stylesheet\" href=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("css/myStyles.css"), "html", null, true);
         echo "\">
         ";
         
-        $__internal_a729c2ba935b914217631c8c1613cb5a9c21aef327cc05bb211d63c0b0772476->leave($__internal_a729c2ba935b914217631c8c1613cb5a9c21aef327cc05bb211d63c0b0772476_prof);
+        $__internal_d83dbb0ecb7619c80969225ea3cb2ca0ce1d80e2767a41cf02ac1dfc55163c42->leave($__internal_d83dbb0ecb7619c80969225ea3cb2ca0ce1d80e2767a41cf02ac1dfc55163c42_prof);
 
     }
 
-    // line 56
+    // line 60
     public function block_loginModal($context, array $blocks = array())
     {
-        $__internal_f4c393e202ed93996d58edf2dad1b856e48b1b19c89f8da8129749b701326950 = $this->env->getExtension("native_profiler");
-        $__internal_f4c393e202ed93996d58edf2dad1b856e48b1b19c89f8da8129749b701326950->enter($__internal_f4c393e202ed93996d58edf2dad1b856e48b1b19c89f8da8129749b701326950_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "loginModal"));
+        $__internal_48538d6b9e20f18d8af72136e9ef28906f93c3179c19460146b0549f861797f3 = $this->env->getExtension("native_profiler");
+        $__internal_48538d6b9e20f18d8af72136e9ef28906f93c3179c19460146b0549f861797f3->enter($__internal_48538d6b9e20f18d8af72136e9ef28906f93c3179c19460146b0549f861797f3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "loginModal"));
 
-        // line 57
+        // line 61
         echo "    <div class=\"modal fade\" id=\"loginModal\">
         <div class=\"modal-dialog\">
             <div class=\"modal-content\">
@@ -184,33 +188,52 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
         </div><!-- /.modal -->
         ";
         
-        $__internal_f4c393e202ed93996d58edf2dad1b856e48b1b19c89f8da8129749b701326950->leave($__internal_f4c393e202ed93996d58edf2dad1b856e48b1b19c89f8da8129749b701326950_prof);
+        $__internal_48538d6b9e20f18d8af72136e9ef28906f93c3179c19460146b0549f861797f3->leave($__internal_48538d6b9e20f18d8af72136e9ef28906f93c3179c19460146b0549f861797f3_prof);
 
     }
 
-    // line 102
+    // line 106
     public function block_body($context, array $blocks = array())
     {
-        $__internal_e9fe2fa2d0b8e8f25c2837afe0d03ba9824a1d0fd4b362ee51ef760641a68ae7 = $this->env->getExtension("native_profiler");
-        $__internal_e9fe2fa2d0b8e8f25c2837afe0d03ba9824a1d0fd4b362ee51ef760641a68ae7->enter($__internal_e9fe2fa2d0b8e8f25c2837afe0d03ba9824a1d0fd4b362ee51ef760641a68ae7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_d2f9d35ffe48cc8a7934245ecf98667545a5d8adc9fffcc6f6b273001be815b6 = $this->env->getExtension("native_profiler");
+        $__internal_d2f9d35ffe48cc8a7934245ecf98667545a5d8adc9fffcc6f6b273001be815b6->enter($__internal_d2f9d35ffe48cc8a7934245ecf98667545a5d8adc9fffcc6f6b273001be815b6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         
-        $__internal_e9fe2fa2d0b8e8f25c2837afe0d03ba9824a1d0fd4b362ee51ef760641a68ae7->leave($__internal_e9fe2fa2d0b8e8f25c2837afe0d03ba9824a1d0fd4b362ee51ef760641a68ae7_prof);
+        $__internal_d2f9d35ffe48cc8a7934245ecf98667545a5d8adc9fffcc6f6b273001be815b6->leave($__internal_d2f9d35ffe48cc8a7934245ecf98667545a5d8adc9fffcc6f6b273001be815b6_prof);
 
     }
 
-    // line 103
+    // line 107
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_52e52671603e74e325a98573cc91c7912637c48dddfde6c76b3b31b281f1896d = $this->env->getExtension("native_profiler");
-        $__internal_52e52671603e74e325a98573cc91c7912637c48dddfde6c76b3b31b281f1896d->enter($__internal_52e52671603e74e325a98573cc91c7912637c48dddfde6c76b3b31b281f1896d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_260391d72d4f6942cf8d196f8c6e543d8fa7e4b9f41bff20e44e08f8dd133c5a = $this->env->getExtension("native_profiler");
+        $__internal_260391d72d4f6942cf8d196f8c6e543d8fa7e4b9f41bff20e44e08f8dd133c5a->enter($__internal_260391d72d4f6942cf8d196f8c6e543d8fa7e4b9f41bff20e44e08f8dd133c5a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 104
+        // line 108
         echo "            <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js\"></script>
             <script src=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js\"></script>
+
+            <!--script type=\"text/javascript\"
+                    src=\"http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js\">
+            </script>
+            <script type=\"text/javascript\"
+                    src=\"http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js\">
+            </script-->
+            <script type=\"text/javascript\"
+                    src=\"http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js\">
+            </script>
+            <script type=\"text/javascript\"
+                    src=\"http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js\">
+            </script>
+            <script type=\"text/javascript\">
+                \$('#datetimepicker').datetimepicker({
+                    format: 'dd/MM/yyyy hh:mm:ss'
+                    //language: 'pt-BR'
+                });
+            </script>
         ";
         
-        $__internal_52e52671603e74e325a98573cc91c7912637c48dddfde6c76b3b31b281f1896d->leave($__internal_52e52671603e74e325a98573cc91c7912637c48dddfde6c76b3b31b281f1896d_prof);
+        $__internal_260391d72d4f6942cf8d196f8c6e543d8fa7e4b9f41bff20e44e08f8dd133c5a->leave($__internal_260391d72d4f6942cf8d196f8c6e543d8fa7e4b9f41bff20e44e08f8dd133c5a_prof);
 
     }
 
@@ -226,7 +249,7 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
 
     public function getDebugInfo()
     {
-        return array (  209 => 104,  203 => 103,  192 => 102,  141 => 57,  135 => 56,  125 => 50,  119 => 49,  107 => 48,  98 => 107,  95 => 103,  92 => 102,  90 => 56,  82 => 52,  80 => 49,  76 => 48,  27 => 1,);
+        return array (  213 => 108,  207 => 107,  196 => 106,  145 => 61,  139 => 60,  129 => 54,  123 => 53,  111 => 52,  102 => 130,  99 => 107,  96 => 106,  94 => 60,  86 => 56,  84 => 53,  80 => 52,  27 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -235,6 +258,10 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
 /*         <meta charset="UTF-8" />*/
 /*         <meta name="viewport" content="width=device-width, initial-scale=1">*/
 /*         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">*/
+/* */
+/*         <!--link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet"-->*/
+/*         <link rel="stylesheet" type="text/css" media="screen"*/
+/*               href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">*/
 /*         <nav class="navbar navbar-default navbar-fixed-top">*/
 /*             <div class="container-fluid">*/
 /*                 <div class="navbar-header">*/
@@ -334,6 +361,25 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
 /*         {% block javascripts %}*/
 /*             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>*/
 /*             <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>*/
+/* */
+/*             <!--script type="text/javascript"*/
+/*                     src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js">*/
+/*             </script>*/
+/*             <script type="text/javascript"*/
+/*                     src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js">*/
+/*             </script-->*/
+/*             <script type="text/javascript"*/
+/*                     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">*/
+/*             </script>*/
+/*             <script type="text/javascript"*/
+/*                     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js">*/
+/*             </script>*/
+/*             <script type="text/javascript">*/
+/*                 $('#datetimepicker').datetimepicker({*/
+/*                     format: 'dd/MM/yyyy hh:mm:ss'*/
+/*                     //language: 'pt-BR'*/
+/*                 });*/
+/*             </script>*/
 /*         {% endblock %}*/
 /*     </body>*/
 /* </html>*/
