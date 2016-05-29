@@ -12,8 +12,10 @@ namespace AppBundle\Controller;
 use AppBundle\Entity\stockPermissions;
 use AppBundle\Entity\stockUsers;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
+
 
 class aboutContorller extends Controller
 {
@@ -48,12 +50,28 @@ class aboutContorller extends Controller
     }
 
 
+
     /**
      * @Route("")
+     *
      */
 
     public function showAction()
     {
+
+        $user = new stockUsers();
+        $user->setUsername('lear.pather');
+        $user->setEmail('lear.pather@gmail.com');
+        $plainpass='w1ldc4rd';
+        $encoder = $this->container->get('security.password_encoder');
+        $encoder = $encoder->encodePassword($user,$plainpass);
+        $user->setPassword($encoder);
+        $user->setIsActive(true);
+        $em =  $em = $this->getDoctrine()->getManager();
+
+        $em->persist($user);
+        $em->flush();
+
         return $this->render('catalogue/about.html.twig',[
             'users' => $this->showUser()
         ]);

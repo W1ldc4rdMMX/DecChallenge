@@ -1,9 +1,9 @@
-AppBundle\Entity\stockUsers:
-    users_{1}:
-        username: lear.pather
-        email: lear.pather@gmail.com
-        enabled: yes
-        password: w1ldc4rd
+#AppBundle\Entity\stockUsers:
+#    users_{1}:
+#        username: lear.pather
+#        email: lear.pather@gmail.com
+#        enabled: yes
+#        password: w1ldc4rd
 
 
 AppBundle\Entity\stockPermissions:
