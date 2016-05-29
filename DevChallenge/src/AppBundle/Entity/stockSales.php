@@ -56,6 +56,29 @@ class stockSales
     private $salesDateDis;
 
     /**
+     * @ORM\ManyToOne(targetEntity="stockItems")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $stockItems;
+
+    /**
+     * @return mixed
+     */
+    public function getStockItems()
+    {
+        return $this->stockItems;
+    }
+
+    /**
+     * @param mixed $stockItems
+     */
+    public function setStockItems(stockItems $stockItems)
+    {
+        $this->stockItems = $stockItems;
+    }
+    
+    
+    /**
      * @return mixed
      */
     public function getId()

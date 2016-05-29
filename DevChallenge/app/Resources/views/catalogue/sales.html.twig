@@ -3,6 +3,7 @@
     Current Stock Items
 {% endblock %}
 
+
 {% block body %}
     <div class="container-fluid">
         <h1>Capture sales</h1>
@@ -35,42 +36,49 @@
                     </table>
                 </div>
             </form>
-            <div class="modal fade" id="myModal">
+            {% for item in items %}
+            <div class="modal fade" id="myModal{{ item.stockItemid }}">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <form class="form-horizontal" method="post">
+                    <form class="form" method="post">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                            <h4 class="modal-title">Place order for "</h4>
+                            <h4 class="modal-title">Place order for {{ item.stockItemName }}</h4>
                         </div>
+
                         <div class="modal-body"><br>
-                            <p>
-                                <label for="salesCountNum">Quantity </label>
-                                <input name="salesCountNum" id="salesCountNum" type="number" min="1" max="9999" />
-                            </p>
-                            <p>
-                                <label for="saleTrackNo">Tracking no.</label>
-                                <input type="text" name="saleTrackNo" id="saleTrackNo" />
-                            </p>
-                            <p>
-                                <label for="salesETA">ETA</label>
-                            <div id="datetimepicker" class="input-append date">
-                                <input type="text">
-                                <span class="add-on">
-                                <i data-time-icon="icon-time" data-date-icon="icon-calendar glyphicon glyphicon-user"></i>
-                                </span>
-                                </input>
+                            <div class="form-group">
+                                <div class="input-group">
+                                <label for="salesCountNum" class="input-group-addon">Quantity </label>
+                                <input name="salesCountNum" class="form-control" id="salesCountNum" type="number" min="1" max="9999" />
+                                </div>
                             </div>
-                            </p>
+                            <div class="form-group">
+                                <div class="input-group">
+                                <label for="saleTrackNo" class="input-group-addon">Tracking no.</label>
+                                <input type="text" name="saleTrackNo" class="form-control" id="saleTrackNo" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="hidden" name="saleProduct" class="form-control" id="saleProduct"
+                                    value = "{{ item.stockItemName }}"/>
+                                    <input type="hidden" name="saleItemId" class="form-control" id="saleItemId"
+                                           value = "{{ item.stockItemid }}"/>
+                                </div>
+                            </div>
+
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                             <button type="submit" class="btn btn-primary">Place order</button>
                         </div>
                     </form>
+                    <!--/form-->
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->";
+        </div><!-- /.modal -->
+        {% endfor %}
         </div>
         </div>
         <div class="col-sm-12">
@@ -88,6 +96,15 @@
                             </tr>
                             </thead>
                             <tbody>
+                            {% for order in orders %}
+                                <tr>
+                                    <td>{{ order.salesPrdt }}</td>
+                                    <td>{{ order.saleQunty }}</td>
+                                    <td>{{ order.salesETA|date('Y-m-d') }}</td>
+                                    <td>{{ order.salesTrkNo }}</td>
+                                    <td>?</td>
+                                </tr>
+                            {% endfor %}
                             <tr>
                                 <td></td>
                             </tr>
@@ -137,7 +154,7 @@
                     cell1.innerHTML = itemCount.toString();
                     cell2.innerHTML = '{{ item.stockItemName }}';
                     cell3.innerHTML = "<button type=\"button\" class=\"btn btn-primary btn-sm\" " +
-                            "data-toggle=\"modal\" data-target=\"#myModal\">Place order</button>";
+                            "data-toggle=\"modal\" data-target=\"#myModal{{ item.stockItemid }}\">Place order</button>";
 
                 }
             {% endfor %}

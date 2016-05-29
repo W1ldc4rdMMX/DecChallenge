@@ -20,8 +20,8 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_fdceb2152e4e4a9d7106768ad52bf56fba5c9b42c6391db03286eaeb42003804 = $this->env->getExtension("native_profiler");
-        $__internal_fdceb2152e4e4a9d7106768ad52bf56fba5c9b42c6391db03286eaeb42003804->enter($__internal_fdceb2152e4e4a9d7106768ad52bf56fba5c9b42c6391db03286eaeb42003804_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
+        $__internal_90698957583f6355fa29da70a3dea7c382be67534bb7b22188838a470a8ab955 = $this->env->getExtension("native_profiler");
+        $__internal_90698957583f6355fa29da70a3dea7c382be67534bb7b22188838a470a8ab955->enter($__internal_90698957583f6355fa29da70a3dea7c382be67534bb7b22188838a470a8ab955_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -31,9 +31,19 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
         <link rel=\"stylesheet\" href=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css\">
 
-        <!--link href=\"http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css\" rel=\"stylesheet\"-->
-        <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\"
-              href=\"http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css\">
+        <link rel=\"stylesheet\" href=\"";
+        // line 8
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("css/jquery-ui-timepicker-addon.css"), "html", null, true);
+        echo "\">
+        <link rel=\"stylesheet\" href=\"";
+        // line 9
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/jasmine-1.3.1/jasmine.css"), "html", null, true);
+        echo "\">
+        <link rel=\"stylesheet\" href=\"";
+        // line 10
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("css/jquery-ui-timepicker-addon.min.css"), "html", null, true);
+        echo "\">
+
         <nav class=\"navbar navbar-default navbar-fixed-top\">
             <div class=\"container-fluid\">
                 <div class=\"navbar-header\">
@@ -76,13 +86,13 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
 
 
         <title>";
-        // line 52
+        // line 53
         $this->displayBlock('title', $context, $blocks);
         echo "</title>
         ";
-        // line 53
+        // line 54
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 56
+        // line 57
         echo "        <link rel=\"icon\" type=\"image/x-icon\" href=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("favicon.ico"), "html", null, true);
         echo "\" />
@@ -90,58 +100,58 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
 
     <body>
     ";
-        // line 60
+        // line 61
         $this->displayBlock('loginModal', $context, $blocks);
-        // line 106
-        echo "        ";
-        $this->displayBlock('body', $context, $blocks);
         // line 107
         echo "        ";
+        $this->displayBlock('body', $context, $blocks);
+        // line 108
+        echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 130
+        // line 126
         echo "    </body>
 </html>
 ";
         
-        $__internal_fdceb2152e4e4a9d7106768ad52bf56fba5c9b42c6391db03286eaeb42003804->leave($__internal_fdceb2152e4e4a9d7106768ad52bf56fba5c9b42c6391db03286eaeb42003804_prof);
-
-    }
-
-    // line 52
-    public function block_title($context, array $blocks = array())
-    {
-        $__internal_7871acb5b0f28cf11709e7498dec8cdfe975a000dd7192eeb6cf6466e820e1ea = $this->env->getExtension("native_profiler");
-        $__internal_7871acb5b0f28cf11709e7498dec8cdfe975a000dd7192eeb6cf6466e820e1ea->enter($__internal_7871acb5b0f28cf11709e7498dec8cdfe975a000dd7192eeb6cf6466e820e1ea_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
-
-        echo "Welcome!";
-        
-        $__internal_7871acb5b0f28cf11709e7498dec8cdfe975a000dd7192eeb6cf6466e820e1ea->leave($__internal_7871acb5b0f28cf11709e7498dec8cdfe975a000dd7192eeb6cf6466e820e1ea_prof);
+        $__internal_90698957583f6355fa29da70a3dea7c382be67534bb7b22188838a470a8ab955->leave($__internal_90698957583f6355fa29da70a3dea7c382be67534bb7b22188838a470a8ab955_prof);
 
     }
 
     // line 53
+    public function block_title($context, array $blocks = array())
+    {
+        $__internal_d1e1b2e17342aee8639e44c8e5034635fc16260d726237c727895ac4008f3b71 = $this->env->getExtension("native_profiler");
+        $__internal_d1e1b2e17342aee8639e44c8e5034635fc16260d726237c727895ac4008f3b71->enter($__internal_d1e1b2e17342aee8639e44c8e5034635fc16260d726237c727895ac4008f3b71_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+
+        echo "Welcome!";
+        
+        $__internal_d1e1b2e17342aee8639e44c8e5034635fc16260d726237c727895ac4008f3b71->leave($__internal_d1e1b2e17342aee8639e44c8e5034635fc16260d726237c727895ac4008f3b71_prof);
+
+    }
+
+    // line 54
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_d83dbb0ecb7619c80969225ea3cb2ca0ce1d80e2767a41cf02ac1dfc55163c42 = $this->env->getExtension("native_profiler");
-        $__internal_d83dbb0ecb7619c80969225ea3cb2ca0ce1d80e2767a41cf02ac1dfc55163c42->enter($__internal_d83dbb0ecb7619c80969225ea3cb2ca0ce1d80e2767a41cf02ac1dfc55163c42_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_5902fe53a25c01a9acf461588962a203f39c9884a95494ec70618450fcf8365f = $this->env->getExtension("native_profiler");
+        $__internal_5902fe53a25c01a9acf461588962a203f39c9884a95494ec70618450fcf8365f->enter($__internal_5902fe53a25c01a9acf461588962a203f39c9884a95494ec70618450fcf8365f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        // line 54
+        // line 55
         echo "            <link rel=\"stylesheet\" href=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("css/myStyles.css"), "html", null, true);
         echo "\">
         ";
         
-        $__internal_d83dbb0ecb7619c80969225ea3cb2ca0ce1d80e2767a41cf02ac1dfc55163c42->leave($__internal_d83dbb0ecb7619c80969225ea3cb2ca0ce1d80e2767a41cf02ac1dfc55163c42_prof);
+        $__internal_5902fe53a25c01a9acf461588962a203f39c9884a95494ec70618450fcf8365f->leave($__internal_5902fe53a25c01a9acf461588962a203f39c9884a95494ec70618450fcf8365f_prof);
 
     }
 
-    // line 60
+    // line 61
     public function block_loginModal($context, array $blocks = array())
     {
-        $__internal_48538d6b9e20f18d8af72136e9ef28906f93c3179c19460146b0549f861797f3 = $this->env->getExtension("native_profiler");
-        $__internal_48538d6b9e20f18d8af72136e9ef28906f93c3179c19460146b0549f861797f3->enter($__internal_48538d6b9e20f18d8af72136e9ef28906f93c3179c19460146b0549f861797f3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "loginModal"));
+        $__internal_6919aedc684562ab522ffe573ee36a2b837010322f9a81415808e43e7f94bfaa = $this->env->getExtension("native_profiler");
+        $__internal_6919aedc684562ab522ffe573ee36a2b837010322f9a81415808e43e7f94bfaa->enter($__internal_6919aedc684562ab522ffe573ee36a2b837010322f9a81415808e43e7f94bfaa_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "loginModal"));
 
-        // line 61
+        // line 62
         echo "    <div class=\"modal fade\" id=\"loginModal\">
         <div class=\"modal-dialog\">
             <div class=\"modal-content\">
@@ -188,52 +198,59 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
         </div><!-- /.modal -->
         ";
         
-        $__internal_48538d6b9e20f18d8af72136e9ef28906f93c3179c19460146b0549f861797f3->leave($__internal_48538d6b9e20f18d8af72136e9ef28906f93c3179c19460146b0549f861797f3_prof);
-
-    }
-
-    // line 106
-    public function block_body($context, array $blocks = array())
-    {
-        $__internal_d2f9d35ffe48cc8a7934245ecf98667545a5d8adc9fffcc6f6b273001be815b6 = $this->env->getExtension("native_profiler");
-        $__internal_d2f9d35ffe48cc8a7934245ecf98667545a5d8adc9fffcc6f6b273001be815b6->enter($__internal_d2f9d35ffe48cc8a7934245ecf98667545a5d8adc9fffcc6f6b273001be815b6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
-
-        
-        $__internal_d2f9d35ffe48cc8a7934245ecf98667545a5d8adc9fffcc6f6b273001be815b6->leave($__internal_d2f9d35ffe48cc8a7934245ecf98667545a5d8adc9fffcc6f6b273001be815b6_prof);
+        $__internal_6919aedc684562ab522ffe573ee36a2b837010322f9a81415808e43e7f94bfaa->leave($__internal_6919aedc684562ab522ffe573ee36a2b837010322f9a81415808e43e7f94bfaa_prof);
 
     }
 
     // line 107
+    public function block_body($context, array $blocks = array())
+    {
+        $__internal_03fa5bbe495b3afe35538ba0be35ddf949d272460faad9c8a19c7f9940b9e63c = $this->env->getExtension("native_profiler");
+        $__internal_03fa5bbe495b3afe35538ba0be35ddf949d272460faad9c8a19c7f9940b9e63c->enter($__internal_03fa5bbe495b3afe35538ba0be35ddf949d272460faad9c8a19c7f9940b9e63c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+
+        
+        $__internal_03fa5bbe495b3afe35538ba0be35ddf949d272460faad9c8a19c7f9940b9e63c->leave($__internal_03fa5bbe495b3afe35538ba0be35ddf949d272460faad9c8a19c7f9940b9e63c_prof);
+
+    }
+
+    // line 108
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_260391d72d4f6942cf8d196f8c6e543d8fa7e4b9f41bff20e44e08f8dd133c5a = $this->env->getExtension("native_profiler");
-        $__internal_260391d72d4f6942cf8d196f8c6e543d8fa7e4b9f41bff20e44e08f8dd133c5a->enter($__internal_260391d72d4f6942cf8d196f8c6e543d8fa7e4b9f41bff20e44e08f8dd133c5a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_312d521de1e0e15297dac5680aa85ab0f52b1616383b5a8167ff1453bc84bd09 = $this->env->getExtension("native_profiler");
+        $__internal_312d521de1e0e15297dac5680aa85ab0f52b1616383b5a8167ff1453bc84bd09->enter($__internal_312d521de1e0e15297dac5680aa85ab0f52b1616383b5a8167ff1453bc84bd09_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 108
+        // line 109
         echo "            <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js\"></script>
             <script src=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js\"></script>
+            <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js\"></script>
 
-            <!--script type=\"text/javascript\"
-                    src=\"http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js\">
-            </script>
-            <script type=\"text/javascript\"
-                    src=\"http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js\">
-            </script-->
-            <script type=\"text/javascript\"
-                    src=\"http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js\">
-            </script>
-            <script type=\"text/javascript\"
-                    src=\"http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js\">
-            </script>
+            <script src=\"";
+        // line 113
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/jasmine-1.3.1/jasmine.js"), "html", null, true);
+        echo "\"></script>
+            <script src=\"";
+        // line 114
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/jasmine-1.3.1/jasmine-html.js"), "html", null, true);
+        echo "\"></script>
+            <script type=\"text/javascript\" src=\"http://github.com/searls/jasmine-fixture/releases/1.0.5/1737/jasmine-fixture.js\"></script>
+            <script type=\"text/javascript\" src=\"http://code.jquery.com/ui/1.11.1/jquery-ui.min.js\"></script>
+            <script type=\"text/javascript\" src=\"";
+        // line 117
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/jquery-ui-timepicker-addon.js"), "html", null, true);
+        echo "\"></script>
+            <script type=\"text/javascript\" src=\"";
+        // line 118
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/jquery-ui-sliderAccess.js"), "html", null, true);
+        echo "\"></script>
             <script type=\"text/javascript\">
-                \$('#datetimepicker').datetimepicker({
-                    format: 'dd/MM/yyyy hh:mm:ss'
-                    //language: 'pt-BR'
+                \$(function() {
+                    \$( \"#datepicker\" ).datetimepicker();
                 });
             </script>
+
         ";
         
-        $__internal_260391d72d4f6942cf8d196f8c6e543d8fa7e4b9f41bff20e44e08f8dd133c5a->leave($__internal_260391d72d4f6942cf8d196f8c6e543d8fa7e4b9f41bff20e44e08f8dd133c5a_prof);
+        $__internal_312d521de1e0e15297dac5680aa85ab0f52b1616383b5a8167ff1453bc84bd09->leave($__internal_312d521de1e0e15297dac5680aa85ab0f52b1616383b5a8167ff1453bc84bd09_prof);
 
     }
 
@@ -249,7 +266,7 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
 
     public function getDebugInfo()
     {
-        return array (  213 => 108,  207 => 107,  196 => 106,  145 => 61,  139 => 60,  129 => 54,  123 => 53,  111 => 52,  102 => 130,  99 => 107,  96 => 106,  94 => 60,  86 => 56,  84 => 53,  80 => 52,  27 => 1,);
+        return array (  243 => 118,  239 => 117,  233 => 114,  229 => 113,  223 => 109,  217 => 108,  206 => 107,  155 => 62,  149 => 61,  139 => 55,  133 => 54,  121 => 53,  112 => 126,  109 => 108,  106 => 107,  104 => 61,  96 => 57,  94 => 54,  90 => 53,  44 => 10,  40 => 9,  36 => 8,  27 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -259,9 +276,10 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
 /*         <meta name="viewport" content="width=device-width, initial-scale=1">*/
 /*         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">*/
 /* */
-/*         <!--link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet"-->*/
-/*         <link rel="stylesheet" type="text/css" media="screen"*/
-/*               href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">*/
+/*         <link rel="stylesheet" href="{{ asset('css/jquery-ui-timepicker-addon.css') }}">*/
+/*         <link rel="stylesheet" href="{{ asset('js/jasmine-1.3.1/jasmine.css') }}">*/
+/*         <link rel="stylesheet" href="{{ asset('css/jquery-ui-timepicker-addon.min.css') }}">*/
+/* */
 /*         <nav class="navbar navbar-default navbar-fixed-top">*/
 /*             <div class="container-fluid">*/
 /*                 <div class="navbar-header">*/
@@ -361,25 +379,20 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
 /*         {% block javascripts %}*/
 /*             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>*/
 /*             <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>*/
+/*             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>*/
 /* */
-/*             <!--script type="text/javascript"*/
-/*                     src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js">*/
-/*             </script>*/
-/*             <script type="text/javascript"*/
-/*                     src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js">*/
-/*             </script-->*/
-/*             <script type="text/javascript"*/
-/*                     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">*/
-/*             </script>*/
-/*             <script type="text/javascript"*/
-/*                     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js">*/
-/*             </script>*/
+/*             <script src="{{ asset('js/jasmine-1.3.1/jasmine.js') }}"></script>*/
+/*             <script src="{{ asset('js/jasmine-1.3.1/jasmine-html.js') }}"></script>*/
+/*             <script type="text/javascript" src="http://github.com/searls/jasmine-fixture/releases/1.0.5/1737/jasmine-fixture.js"></script>*/
+/*             <script type="text/javascript" src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>*/
+/*             <script type="text/javascript" src="{{ asset('js/jquery-ui-timepicker-addon.js') }}"></script>*/
+/*             <script type="text/javascript" src="{{ asset('js/jquery-ui-sliderAccess.js') }}"></script>*/
 /*             <script type="text/javascript">*/
-/*                 $('#datetimepicker').datetimepicker({*/
-/*                     format: 'dd/MM/yyyy hh:mm:ss'*/
-/*                     //language: 'pt-BR'*/
+/*                 $(function() {*/
+/*                     $( "#datepicker" ).datetimepicker();*/
 /*                 });*/
 /*             </script>*/
+/* */
 /*         {% endblock %}*/
 /*     </body>*/
 /* </html>*/

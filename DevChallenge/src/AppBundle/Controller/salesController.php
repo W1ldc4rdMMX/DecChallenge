@@ -9,11 +9,52 @@
 namespace AppBundle\Controller;
 
 
+use AppBundle\Entity\stockSales;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\Validator\Constraints\Date;
+use Symfony\Component\HttpFoundation\Response;
+
 
 class salesController extends Controller
 {
+
+    /**
+     * @Route("sales")
+     * @Method("POST")
+     */
+    public function updateSales()
+    {
+        $sale = new stockSales();
+        $date = date('Y-m-d');
+        //return new Response("<html><body>".$date->format('Y-m-d H:i:s')."</body></html>");
+        $sale->setSaleQunty($_POST['salesCountNum']);
+        $sale->setSalesTrkNo($_POST['saleTrackNo']);
+        $eta = date_add(new \DateTime($date), date_interval_create_from_date_string('5 days'));
+        $sale->setSalesETA($eta);
+        $sale->setSalesDateOrd(new \DateTime($date));
+        $dispatch = date_add(new \DateTime($date), date_interval_create_from_date_string('3 days'));
+        $sale->setSalesDateDis($dispatch);
+        $sale->setSalesPrdt($_POST['saleProduct']);
+        
+        $em = $this->getDoctrine()->getManager();
+        $stockItem = $em->getRepository('AppBundle:stockItems')->find($_POST['saleItemId']);
+        $sale->setStockItems($stockItem);
+
+        $em->persist($sale);
+        $em->flush();
+        $_POST = array();
+        return $this->render("catalogue/sales.html.twig", [
+            'types' => $this->getTypes(),
+            'items' => $this->getItems(),
+            'serials' => $this->getItemSerials(),
+            'orders' => $this->getPendingOrders()
+        ]);
+        
+    }
+    
+    
     /**
      * @Route("sales")
      */
@@ -23,7 +64,8 @@ class salesController extends Controller
         return $this->render("catalogue/sales.html.twig", [
             'types' => $this->getTypes(),
             'items' => $this->getItems(),
-            'serials' => $this->getItemSerials()
+            'serials' => $this->getItemSerials(),
+            'orders' => $this->getPendingOrders()
         ]);
     }
 
@@ -46,6 +88,13 @@ class salesController extends Controller
         $em = $this->getDoctrine()->getManager();
         $serials = $em->getRepository('AppBundle:stockSerials')->findAll();
         return $serials;
+    }
+
+    public function getPendingOrders()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $orders = $em->getRepository('AppBundle:stockSales')->findAll();
+        return $orders;
     }
 }
         
