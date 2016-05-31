@@ -7,9 +7,9 @@
     <div class="container-fluid">
     <h1>About App</h1>
     <p>Details and description of App here</p>
-        {% for user in users %}
-            <h2>Welcome back {{ user.username }}</h2>
-        {% endfor %}
+    {% if is_granted("ROLE_USER") %}
+        <h2>Logged in as {{ app.user.username }}</h2>
+    {% endif %}
     </div>
 
 {% endblock %}

@@ -25,6 +25,16 @@ security:
               form_login:
                              login_path: login
                              check_path: login
+              logout:
+                            path: logout
+                            #target: /
+                            success_handler: ~
+                            invalidate_session: false
+                            delete_cookies:
+                                name:
+                                    path: null
+                                    domain: null
+                            handlers: []
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
@@ -54,4 +64,5 @@ security:
         - { path: ^/view, roles: ROLE_USER }
         - { path: ^/reports, roles: ROLE_USER }
         - { path: ^/sales, roles: ROLE_USER }
-        - { path: ^/, roles: ROLE_USER }
+        - { path: ^/update, roles: ROLE_USER }
+        #- { path: ^/, roles: ROLE_USER }
