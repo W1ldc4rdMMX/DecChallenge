@@ -42,6 +42,11 @@ class stockUsers implements UserInterface, \Serializable
     private $email;
 
     /**
+     * @ORM\Column(type="json_array")
+     */
+    private $roles;
+
+    /**
      * @ORM\Column(type="boolean")
      */
     private $isActive;
@@ -118,17 +123,40 @@ class stockUsers implements UserInterface, \Serializable
         $this->isActive = $isActive;
     }
 
-    public function getRoles()
+
+
+    /*public function getRoles()
     {
         // TODO: Implement getRoles() method.
         return array('ROLE_USER');
-    }
+    }*/
+    
+    
 
     public function getSalt()
     {
         // you *may* need a real salt depending on your encoder
         // see section on salt below
         return null;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getRoles()
+    {
+        $roles = $this->roles;
+        $roles[] = 'ROLE_USER';
+
+        return array_unique($roles);
+    }
+
+    /**
+     * @param mixed $roles
+     */
+    public function setRoles($roles)
+    {
+        $this->roles = $roles;
     }
 
        public function eraseCredentials()

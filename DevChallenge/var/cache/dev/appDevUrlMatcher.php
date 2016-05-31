@@ -148,6 +148,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
+        // logout
+        if ($pathinfo === '/logout') {
+            return array (  '_controller' => 'AppBundle\\Controller\\securityController::logoutAction',  '_route' => 'logout',);
+        }
+
         if (0 === strpos($pathinfo, '/update')) {
             // app_update_doupdate
             if ($pathinfo === '/update') {

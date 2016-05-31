@@ -59,20 +59,7 @@ class aboutContorller extends Controller
     public function showAction()
     {
 
-        $user = new stockUsers();
-        $user->setUsername('lear.pather');
-        $user->setEmail('lear.pather@gmail.com');
-        $plainpass='w1ldc4rd';
-        $encoder = $this->container->get('security.password_encoder');
-        $encoder = $encoder->encodePassword($user,$plainpass);
-        $user->setPassword($encoder);
-        $user->setIsActive(true);
-        $em =  $em = $this->getDoctrine()->getManager();
-
-        $em->persist($user);
-        $em->flush();
-
-        return $this->render('catalogue/about.html.twig',[
+       return $this->render('catalogue/about.html.twig',[
             'users' => $this->showUser()
         ]);
     }

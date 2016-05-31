@@ -23,6 +23,9 @@ class adminContoller extends Controller
     {
         $user = $this->getUser();
         
-        return new Response("<html><body>Admin Page - Welcome ".$user->getUsername()."</body></html>");
+        return $this->render(':catalogue:admin.html.twig',[
+            'user' => $user
+        ]);
+        //return new Response("<html><body>Admin Page - Welcome ".$user->getUsername()."</body></html>");
     }
 }

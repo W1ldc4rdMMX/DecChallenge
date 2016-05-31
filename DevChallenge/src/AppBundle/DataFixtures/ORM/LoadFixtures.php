@@ -13,7 +13,7 @@ use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 use AppBundle\Entity\stockUsers;
 use Nelmio\Alice\Fixtures;
-
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 
 class LoadFixtures implements FixtureInterface
 {
@@ -29,78 +29,25 @@ class LoadFixtures implements FixtureInterface
         );
     }
 
-    public function usersFName()
+    /*public function loadUsers()
     {
-        $names = [
-            'Lear',
-            'Harry',
-            'Ichigo',
-            'Bruce',
-            'Clark',
-            'Steve',
-            'Tony',
-            'Peter'
-        ];
+        $user = new stockUsers();
 
-        $key = array_rand($names);
+        $user->setUsername('lear.pather');
+        $user->setEmail('lear.pather@gmail.com');
+        $plainpass = 'w1ldc4rd';
+        
+        $encoder = $this->container->get('security.password_encoder');
+        $encoder = $encoder->encodePassword($user, $plainpass);
+        $user->setPassword($encoder);
+        $user->setIsActive(true);
+        $user->setRoles(array('ROLE_ADMIN'));
+        $em = $em = $this->getDoctrine()->getManager();
 
-        return $names[$key];
-    }
-
-    public function usersLName()
-    {
-        $names = [
-            'Pather',
-            'Potter',
-            'Kurosaki',
-            'Wayne',
-            'Kent',
-            'Rodgers',
-            'Stark',
-            'Parker'
-        ];
-
-        $key = array_rand($names);
-
-        return $names[$key];
-    }
-
-    public function usersEmail()
-    {
-        $emails = [
-            'lear.pather@gmail.com',
-            'user@hotmail.com',
-            'user@yahoo.com',
-            'user@waynetech.com',
-            'user@dailyplanet.com',
-            'user@avengers.com',
-            'user@starktech.com',
-            'user@dailybugle.com'
-        ];
-
-        $key = array_rand($emails);
-
-        return $emails[$key];
-    }
-
-    public function usersPass()
-    {
-        $emails = [
-            'P@$$.123',
-            'W1ldc4rd',
-            'B@nk4i',
-            'b@tM4n',
-            '5up3rm@n',
-            '4veng3rs',
-            '1r0n/\/\4n',
-            'Sp1d3r-m4n'
-        ];
-
-        $key = array_rand($emails);
-
-        return $emails[$key];
-    }
-
+        $em->persist($user);
+        $em->flush();
+    }*/
+    
     public function stocktypes()
     {
         $types = [

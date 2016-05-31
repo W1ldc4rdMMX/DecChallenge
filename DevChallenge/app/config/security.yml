@@ -30,6 +30,19 @@ security:
             pattern: ^/
             http_basic: ~
             provider: our_db_provider
+            form_login:
+              login_path: login
+            logout:
+              path: logout
+              target: /
+              #success_handler: ~
+              invalidate_session: false
+              #delete_cookies:
+               #   name:
+                #      path: null
+                 #     domain: null
+              #handlers: []
+
             #anonymous: ~
             # activate different ways to authenticate
 

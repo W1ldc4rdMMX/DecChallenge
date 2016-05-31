@@ -12,6 +12,7 @@ namespace AppBundle\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Response;
 
 
 class securityController extends Controller
@@ -37,6 +38,14 @@ class securityController extends Controller
                 'error' => $error
             )
         );
+    }
+
+    /**
+     * @Route("/logout", name="logout")
+     */
+    public function logoutAction()
+    {
+        return new Response("<html><body><h1>Logged off!</h1></body></html>");
     }
 
 }

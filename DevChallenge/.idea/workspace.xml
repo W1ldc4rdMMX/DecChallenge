@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f80a4fc-4950-4953-9611-c3654dd5835d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160529184641.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/adminContoller.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160530181831.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160530184119.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/catalogue/admin.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/aboutContorller.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/aboutContorller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/fixtures.yml" afterPath="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/fixtures.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/adminContoller.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/adminContoller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/securityController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/securityController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/LoadFixtures.php" afterPath="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/LoadFixtures.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/stockUsers.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/stockUsers.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/16/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c61626f7574436f6e746f726c6c65722373686f7755736572405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/16/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c61626f7574436f6e746f726c6c65722373686f7755736572405b416e6e6f745d5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/38/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c61626f7574436f6e746f726c6c65722373686f77416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/38/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c61626f7574436f6e746f726c6c65722373686f77416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
@@ -19,41 +23,35 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevUrlGenerator.php" afterPath="$PROJECT_DIR$/var/cache/dev/appDevUrlGenerator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevUrlGenerator.php.meta" afterPath="$PROJECT_DIR$/var/cache/dev/appDevUrlGenerator.php.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevUrlMatcher.php" afterPath="$PROJECT_DIR$/var/cache/dev/appDevUrlMatcher.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevUrlMatcher.php.meta" afterPath="$PROJECT_DIR$/var/cache/dev/appDevUrlMatcher.php.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/classes.php" afterPath="$PROJECT_DIR$/var/cache/dev/classes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/classes.php.meta" afterPath="$PROJECT_DIR$/var/cache/dev/classes.php.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/03/0397882cdcbe8cf453dbdf0cc7aef100eff266932e658fae571b6871fc19f78f.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/03/0397882cdcbe8cf453dbdf0cc7aef100eff266932e658fae571b6871fc19f78f.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/0f/0fe74f303869f0b087abbdd6c105be46123612b3b969dd308da9ae664095252c.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/0f/0fe74f303869f0b087abbdd6c105be46123612b3b969dd308da9ae664095252c.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/12/121f22703bffdf81cd9003333e197dc7e65b8efe6c09a05ae822a30a47378284.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/12/121f22703bffdf81cd9003333e197dc7e65b8efe6c09a05ae822a30a47378284.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/13/135762edac2c3ecd4e5f5030fcbbcef5486217f751a8818a2367da10fe78baf1.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/13/135762edac2c3ecd4e5f5030fcbbcef5486217f751a8818a2367da10fe78baf1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/17/17a1a09bc3ecd4115e6e0535b1241ca094932d7f3149ab8a7f0c76c5c3c7acc2.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/17/17a1a09bc3ecd4115e6e0535b1241ca094932d7f3149ab8a7f0c76c5c3c7acc2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/1c/1c6ae087fe66cacbdf4c5d0fb4ea16464f8b22da71cb0fe37b7e087d25009e81.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/1c/1c6ae087fe66cacbdf4c5d0fb4ea16464f8b22da71cb0fe37b7e087d25009e81.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/1d/1de5df75beefa5bca78725f362a9f7ae1e6a43c3bf8e8abeb51457d687a404cf.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/1d/1de5df75beefa5bca78725f362a9f7ae1e6a43c3bf8e8abeb51457d687a404cf.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/1f/1f18b41406c9c432c02b33a242286468bc966aad27ff3792c7e0cf38bfe9e1ad.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/1f/1f18b41406c9c432c02b33a242286468bc966aad27ff3792c7e0cf38bfe9e1ad.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/29/2922d3765ccbc6f244ff59a9c59744fea491c74837c6764400b0993bbd6eac5f.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/29/2922d3765ccbc6f244ff59a9c59744fea491c74837c6764400b0993bbd6eac5f.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/56/5635a0b73936e1000dffa189dd214255ce56b729a68b8907830b27cc02c59211.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/56/5635a0b73936e1000dffa189dd214255ce56b729a68b8907830b27cc02c59211.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/5c/5cd50e5937e718d70787aa1279a5bed64e951f701bccd49d4d9ffbcffb0b18ba.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/5c/5cd50e5937e718d70787aa1279a5bed64e951f701bccd49d4d9ffbcffb0b18ba.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/61/611002c62f23161c1f62a21620dae0c3074524af73526a2c8cc386ee357987ae.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/61/611002c62f23161c1f62a21620dae0c3074524af73526a2c8cc386ee357987ae.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/65/65615b1d8ed592ec07c028d8e019f20566353dc0d74e6ba07a1ccaccd31e4e8f.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/65/65615b1d8ed592ec07c028d8e019f20566353dc0d74e6ba07a1ccaccd31e4e8f.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/8c/8c4e514fc694719014259d744ee0e2e8342351d7e42f43626f7128dbbd17e1b8.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/8c/8c4e514fc694719014259d744ee0e2e8342351d7e42f43626f7128dbbd17e1b8.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/97/9769a346395f260363de14024f50976ab96b470ffd059a5a6b6218e2db49b50d.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/97/9769a346395f260363de14024f50976ab96b470ffd059a5a6b6218e2db49b50d.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/9e/9e3ade01292c495e32f7e638d55e1d748bbb519ec0444e69a5fa5bb9c8a6d5d4.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/9e/9e3ade01292c495e32f7e638d55e1d748bbb519ec0444e69a5fa5bb9c8a6d5d4.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/a1/a1f8274f1a67e28d21af7a6218055fce93225ba940c82edc7559d1f380f7d59b.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/a1/a1f8274f1a67e28d21af7a6218055fce93225ba940c82edc7559d1f380f7d59b.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/a6/a650165850fe60a8d33ae31c5778c0086a4e64eb8c2c2cc4d0d293874336bd14.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/a6/a650165850fe60a8d33ae31c5778c0086a4e64eb8c2c2cc4d0d293874336bd14.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/b0/b0d3f939b667a9151556a0600b8f3899ee83af25da9645f770c5205ec592c3e8.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/b0/b0d3f939b667a9151556a0600b8f3899ee83af25da9645f770c5205ec592c3e8.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/b1/b13cf716dad827b889a362e38d90fd85aa228b7bd92dc1cdff869f25a2700658.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/b1/b13cf716dad827b889a362e38d90fd85aa228b7bd92dc1cdff869f25a2700658.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/be/becb2be9d4ddf3cfcaf92f98e995e6f9e6c7f054389e9535b5b60c859366f7e2.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/be/becb2be9d4ddf3cfcaf92f98e995e6f9e6c7f054389e9535b5b60c859366f7e2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/c6/c655855a1972511b89e646a171150c1a7aaaef770137148963b33e853d9d4c40.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/c6/c655855a1972511b89e646a171150c1a7aaaef770137148963b33e853d9d4c40.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/c9/c9edd5681267c129972c489c920b72e5acdae99981808262a0eeb228da168d0c.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/c9/c9edd5681267c129972c489c920b72e5acdae99981808262a0eeb228da168d0c.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/d0/d041475855a81e0b2f0e2bce7903cc0cf8389e586bcc56d85dd76fc182ddd220.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/d0/d041475855a81e0b2f0e2bce7903cc0cf8389e586bcc56d85dd76fc182ddd220.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/da/dacbb1d67e31687ff22b5f9f99502b9858d997fb380f0efcb34d2c3e0e883f3c.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/da/dacbb1d67e31687ff22b5f9f99502b9858d997fb380f0efcb34d2c3e0e883f3c.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/e7/e77ff845b4dd2b55808e218d8da36e2e9224d283fbd9f96273cc66f2deab8997.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/e7/e77ff845b4dd2b55808e218d8da36e2e9224d283fbd9f96273cc66f2deab8997.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/f1/f13104ee2a5b61fc744710969bd879461ca7b1077570f18e895b200c060440df.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/f1/f13104ee2a5b61fc744710969bd879461ca7b1077570f18e895b200c060440df.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/fa/fadb270e1edf5069a3b57366abcc224455b55707507347283445ea01e6cce7a4.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/fa/fadb270e1edf5069a3b57366abcc224455b55707507347283445ea01e6cce7a4.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/ff/ff6389b8e1a74bf9187ac8376366d22a728e511b00f26ecc904d17abed950ef9.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/ff/ff6389b8e1a74bf9187ac8376366d22a728e511b00f26ecc904d17abed950ef9.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/0a/0a7ccde332f12fec1fe27ccb0d5448d1e9aee9f658d1430f6b9d45839aa1797a.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/0a/0a7ccde332f12fec1fe27ccb0d5448d1e9aee9f658d1430f6b9d45839aa1797a.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/0f/0f75cfbc50da78e2a2a607cb0d59ad9b1c1020ab044d6ced05b446884dc531a0.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/0f/0f75cfbc50da78e2a2a607cb0d59ad9b1c1020ab044d6ced05b446884dc531a0.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/16/1669eb176cee1de5cc33d1b214e62820c58bb4c918c7a56be048beed0b3b1fe9.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/16/1669eb176cee1de5cc33d1b214e62820c58bb4c918c7a56be048beed0b3b1fe9.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/1d/1d757380d0b74a8e152b93fe3866f3d75294f6fd316431f3da96ae694cf4864b.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/1d/1d757380d0b74a8e152b93fe3866f3d75294f6fd316431f3da96ae694cf4864b.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/32/32cd05f774aa0f10df6a3d87fc9d4f3679fc11115820cdd2b8975652da32c5ab.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/32/32cd05f774aa0f10df6a3d87fc9d4f3679fc11115820cdd2b8975652da32c5ab.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/3a/3ae91c6fd6b22533dab9e0cdb9e45a612880c228edf84c1bce37a91ddaf7ddef.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/3a/3ae91c6fd6b22533dab9e0cdb9e45a612880c228edf84c1bce37a91ddaf7ddef.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/42/4216b6fff78baa46a555f9c1a5ddcafe50fcb880cd61097847ae7fcd8f6ecd58.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/42/4216b6fff78baa46a555f9c1a5ddcafe50fcb880cd61097847ae7fcd8f6ecd58.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/49/49e6eee61d4dc80ac2c03d37c8601993830f95a55a7dc9534d42e82520956c5d.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/49/49e6eee61d4dc80ac2c03d37c8601993830f95a55a7dc9534d42e82520956c5d.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/4c/4c9c9c738a19964e7cdd1ca957413045060e200701a38f4375530e7bdd18f48d.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/4c/4c9c9c738a19964e7cdd1ca957413045060e200701a38f4375530e7bdd18f48d.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/54/54d379f53a5949958cabf1dee270431bb9c7f9e16a0c5f014f97c03b881e59ce.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/54/54d379f53a5949958cabf1dee270431bb9c7f9e16a0c5f014f97c03b881e59ce.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/63/63d64a270d4e739a22525d739105517542be96c7dca980336c19a6a55df7f43a.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/63/63d64a270d4e739a22525d739105517542be96c7dca980336c19a6a55df7f43a.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/68/682c36f2d8d29c02cf50d72fc834436f2920f6bfaca6e7b7023ea90e4d2418d5.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/68/682c36f2d8d29c02cf50d72fc834436f2920f6bfaca6e7b7023ea90e4d2418d5.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/6a/6a2558530a7c207fe2a4b7d91e3e79189e4b43dab60efac6bbd9a1377a1bf7e8.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/6a/6a2558530a7c207fe2a4b7d91e3e79189e4b43dab60efac6bbd9a1377a1bf7e8.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/6f/6fa915ee9082f9a48300521d45904949fa032bfad4ee73c85f857e504cff0399.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/6f/6fa915ee9082f9a48300521d45904949fa032bfad4ee73c85f857e504cff0399.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/74/748105e9ce0364d5c10b42ff39e011124535374247adab5037d410a8e009ae4e.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/74/748105e9ce0364d5c10b42ff39e011124535374247adab5037d410a8e009ae4e.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/75/75cc09c148fde325714e7fa40925eb91acee7ee79633ab230b9042f1462663d1.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/75/75cc09c148fde325714e7fa40925eb91acee7ee79633ab230b9042f1462663d1.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/76/764efc615935dc48b873cf9c1c9d5721650ec4ec5337055c8cf679e6ec655f65.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/76/764efc615935dc48b873cf9c1c9d5721650ec4ec5337055c8cf679e6ec655f65.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/78/78043cb7797db6e2124a97d1d49c356fbff5f662e9405d259e887bb4e5e8f2e7.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/78/78043cb7797db6e2124a97d1d49c356fbff5f662e9405d259e887bb4e5e8f2e7.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/7d/7d30c021cc0c66e3287a04d047d05880a266067299fb74ae5140f2c951c76b97.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/7d/7d30c021cc0c66e3287a04d047d05880a266067299fb74ae5140f2c951c76b97.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/83/83175511035570a1629c562c8f38d70a7741c7f7e8c0945fec9e91b694879a70.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/83/83175511035570a1629c562c8f38d70a7741c7f7e8c0945fec9e91b694879a70.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/8b/8b04c632facf089d8b89ae17061dd3b6ce27bb2f5888301bffe77b418a16843b.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/8b/8b04c632facf089d8b89ae17061dd3b6ce27bb2f5888301bffe77b418a16843b.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/9c/9cc37d465479c2e143991a3b0b0284643ab405d4cb3e005d37d07958efa854b6.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/9c/9cc37d465479c2e143991a3b0b0284643ab405d4cb3e005d37d07958efa854b6.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/b5/b5108edab287993d37ed5f8751907cb3680497c6824c5bc85868f24057b3ac10.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/b5/b5108edab287993d37ed5f8751907cb3680497c6824c5bc85868f24057b3ac10.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/b8/b82d1653e138a88e7e7940144c4d65eb0a4c1f0ea7b9e7bf1195afc2e0578286.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/b8/b82d1653e138a88e7e7940144c4d65eb0a4c1f0ea7b9e7bf1195afc2e0578286.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/ba/badd9d491daa6157a80d5170190e520f8e3a1dc28f7303f28f2b507e96877114.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/ba/badd9d491daa6157a80d5170190e520f8e3a1dc28f7303f28f2b507e96877114.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/bb/bb8419f0afd9bb16e5dbbf5999b8c0c960e61bfc06855d77df9cfcaf8116d65e.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/bb/bb8419f0afd9bb16e5dbbf5999b8c0c960e61bfc06855d77df9cfcaf8116d65e.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/f2/f24b428be17c257723cd8defa4139e5f5c5cbb7be31379eb3c11d5b0423fadf5.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/f2/f24b428be17c257723cd8defa4139e5f5c5cbb7be31379eb3c11d5b0423fadf5.php" />
     </list>
     <ignored path="DevChallenge.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -82,46 +80,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="updateController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/updateController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="49" column="57" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="57" />
-              <folding>
-                <element signature="e#125#157#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sales.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/catalogue/sales.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2193">
-              <caret line="129" column="17" selection-start-line="129" selection-start-column="17" selection-end-line="129" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="security.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/security.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
+            <state relative-caret-position="561">
+              <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fixtures.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/fixtures.yml">
+      <file leaf-file-name="securityController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/securityController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-              <folding>
-                <marker date="1464550334405" expanded="true" signature="156:164" ph="..." />
-              </folding>
+            <state relative-caret-position="408">
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider editor-type-id="MarkdownFxPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="323">
+                <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -129,10 +119,42 @@
       <file leaf-file-name="stockUsers.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/stockUsers.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1309">
-              <caret line="121" column="5" selection-start-line="121" selection-start-column="5" selection-end-line="121" selection-end-column="5" />
+            <state relative-caret-position="2482">
+              <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
               <folding>
                 <element signature="e#119#151#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/catalogue/admin.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/catalogue/about.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="aboutContorller.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/aboutContorller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="47" column="71" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="71" />
+              <folding>
+                <element signature="e#124#162#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -141,8 +163,8 @@
       <file leaf-file-name="adminContoller.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/adminContoller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+            <state relative-caret-position="204">
+              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
               <folding>
                 <element signature="e#124#183#0#PHP" expanded="true" />
               </folding>
@@ -150,23 +172,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="65" selection-start-line="33" selection-start-column="65" selection-end-line="33" selection-end-column="65" />
+            <state relative-caret-position="850">
+              <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="salesController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/salesController.php">
+      <file leaf-file-name="LoadFixtures.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/LoadFixtures.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="51" column="49" selection-start-line="51" selection-start-column="49" selection-end-line="51" selection-end-column="49" />
+            <state relative-caret-position="85">
+              <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
               <folding>
-                <element signature="e#124#156#0#PHP" expanded="true" />
+                <element signature="e#6#89#0#PHP" expanded="false" />
+                <element signature="e#130#168#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -184,11 +207,6 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="php bin/console doctrine:migrations:diff" />
-      <command text="php bin/console doctrine:migrations:migrate" />
-      <command text="php bin/console doctrine:fixtures:load" />
-      <command text="php bin/console server:run" />
-      <command text="php bin/console doctrine:migrations:diff" />
       <command text="php bin/console doctrine:migrations:migrate" />
       <command text="php bin/console server:run" />
       <command text="php bin/console doctrine:fixtures:load" />
@@ -209,6 +227,11 @@
       <command text="php bin/console server:run" />
       <command text="php bin/console doctrine:schema:update --force" />
       <command text="php bin/console server:run" />
+      <command text="php bin/console doctrine:migration:diff" />
+      <command text="php bin/console doctrine:migration:migrate" />
+      <command text="php bin/console server:run" />
+      <command text="php bin/console doctrine:migration:diff" />
+      <command text="php bin/console doctrine:migration:migrate" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -221,14 +244,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="FORCE_PUSH_ALLOWED" value="true" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Resources/views/catalouge/home.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/myStyles.css" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/addItem.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/catalogueController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/reportsController.php" />
@@ -243,12 +261,10 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/StockTypes.php" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/stockPermissions.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/LoadFixtures.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/userRepository.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/security/login.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/itemsRepository.php" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/securityController.php" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/stockMeta.php" />
@@ -272,12 +288,16 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/stockSales.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/salesController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/catalogue/sales.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/aboutContorller.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/stockUsers.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/fixtures.yml" />
+        <option value="$PROJECT_DIR$/app/Resources/views/catalogue/admin.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/adminContoller.php" />
-        <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/stockUsers.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/aboutContorller.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/LoadFixtures.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/securityController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -322,6 +342,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -351,92 +372,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DevChallenge" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DevChallenge" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DevChallenge" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DevChallenge" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jasmine-1.3.1" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DevChallenge" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DevChallenge" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DevChallenge" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DevChallenge" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="var" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DevChallenge" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DevChallenge" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -456,210 +391,11 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="AppBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DevChallenge" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DevChallenge" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Repository" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DevChallenge" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DevChallenge" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Entity" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DevChallenge" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DevChallenge" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataFixtures" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ORM" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DevChallenge" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DevChallenge" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DevChallenge" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DevChallenge" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DevChallenge" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DevChallenge" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DevChallenge" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DevChallenge" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="security" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DevChallenge" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DevChallenge" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="catalogue" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DevChallenge" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DevChallenge" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -759,7 +495,10 @@
       <workItem from="1464456079901" duration="213000" />
       <workItem from="1464506785663" duration="12172000" />
       <workItem from="1464529144612" duration="32000" />
-      <workItem from="1464529367933" duration="10653000" />
+      <workItem from="1464529367933" duration="11002000" />
+      <workItem from="1464624854163" duration="5068000" />
+      <workItem from="1464713306882" duration="904000" />
+      <workItem from="1464714963278" duration="734000" />
     </task>
     <task id="LOCAL-00001" summary="Added item capture page">
       <created>1463306918284</created>
@@ -880,11 +619,18 @@
       <option name="project" value="LOCAL" />
       <updated>1464522184578</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="added login function">
+      <created>1464551949456</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1464551949457</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="225274000" />
+    <option name="totallyTimeSpent" value="232329000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -897,13 +643,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17609255" sideWeight="0.49304175" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1818766" sideWeight="0.49304175" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33916554" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32166892" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839838" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3230148" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -913,6 +658,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32166892" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839838" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -966,7 +712,9 @@
     <MESSAGE value="updated save and update functions" />
     <MESSAGE value="added dtp, needs editing" />
     <MESSAGE value="added sales save function" />
-    <option name="LAST_COMMIT_MESSAGE" value="added sales save function" />
+    <MESSAGE value="added login function" />
+    <MESSAGE value="attempted to add logout&#10; function, update Readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="attempted to add logout&#10; function, update Readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -975,27 +723,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/viewController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/stockSerials.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/catalogue/view.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/doc/overriding_templates.rst">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1069,13 +796,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/LoadFixtures.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/catalogueController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1125,7 +845,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1182,15 +901,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="78" selection-start-line="7" selection-start-column="78" selection-end-line="7" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/catalogue/about.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1198,9 +908,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4199">
           <caret line="265" column="0" selection-start-line="265" selection-start-column="0" selection-end-line="265" selection-end-column="0" />
-          <folding>
-            <element signature="e#10974#11862#0#Twig" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1215,9 +922,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
           <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
-          <folding>
-            <element signature="e#296#378#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1225,7 +929,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2124">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1233,22 +936,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
           <caret line="42" column="68" selection-start-line="42" selection-start-column="68" selection-end-line="42" selection-end-column="68" />
-          <folding>
-            <element signature="e#7#236#0#PHP" expanded="true" />
-            <element signature="e#331#397#0#PHP" expanded="true" />
-            <element signature="e#1192#1231#0#PHP" expanded="true" />
-            <element signature="e#1536#1581#1#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/salesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
+        <state relative-caret-position="697">
           <caret line="51" column="49" selection-start-line="51" selection-start-column="49" selection-end-line="51" selection-end-column="49" />
-          <folding>
-            <element signature="e#124#156#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1256,81 +950,127 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="30" column="65" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/aboutContorller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="69" column="56" selection-start-line="69" selection-start-column="56" selection-end-line="69" selection-end-column="56" />
-          <folding>
-            <element signature="e#124#162#0#PHP" expanded="true" />
-            <element signature="e#2053#2075#1#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/fixtures.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="289">
           <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding>
-            <marker date="1464550334405" expanded="true" signature="156:164" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/catalogue/sales.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2193">
-          <caret line="129" column="17" selection-start-line="129" selection-start-column="17" selection-end-line="129" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/updateController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="49" column="57" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/adminContoller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        <state relative-caret-position="204">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
           <folding>
             <element signature="e#124#183#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/LoadFixtures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
+          <folding>
+            <element signature="e#6#89#0#PHP" expanded="false" />
+            <element signature="e#130#168#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/stockUsers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="121" column="5" selection-start-line="121" selection-start-column="5" selection-end-line="121" selection-end-column="5" />
+        <state relative-caret-position="2482">
+          <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
           <folding>
             <element signature="e#119#151#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/updateController.php">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/catalogue/admin.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="49" column="57" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="57" />
-          <folding>
-            <element signature="e#125#157#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/catalogue/about.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
+        <state relative-caret-position="68">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/aboutContorller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="47" column="71" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="71" />
+          <folding>
+            <element signature="e#124#162#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
-          <caret line="33" column="65" selection-start-line="33" selection-start-column="65" selection-end-line="33" selection-end-column="65" />
+          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/securityController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="323">
+            <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
