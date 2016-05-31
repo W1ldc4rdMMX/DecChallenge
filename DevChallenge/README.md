@@ -17,3 +17,5 @@ record the details of the products in stock, purchases as well
 as report on stock movement.
 Meta data would have been stored about the user who logged in, 
 orders they processed, edits made etc.
+
+Note: "/new" to create a user

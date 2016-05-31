@@ -20,8 +20,8 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_90ccbb9a180011ae18aee0871b7ffc20ef39bef621fe1f668a89cf78c9c075fc = $this->env->getExtension("native_profiler");
-        $__internal_90ccbb9a180011ae18aee0871b7ffc20ef39bef621fe1f668a89cf78c9c075fc->enter($__internal_90ccbb9a180011ae18aee0871b7ffc20ef39bef621fe1f668a89cf78c9c075fc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
+        $__internal_2ca449d5ed48a4087d81030787f675c1d61a3da9a44bdedfa41f81ca99f27501 = $this->env->getExtension("native_profiler");
+        $__internal_2ca449d5ed48a4087d81030787f675c1d61a3da9a44bdedfa41f81ca99f27501->enter($__internal_2ca449d5ed48a4087d81030787f675c1d61a3da9a44bdedfa41f81ca99f27501_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -111,38 +111,38 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
     ";
         // line 67
         $this->displayBlock('loginModal', $context, $blocks);
-        // line 113
+        // line 95
         echo "        ";
         $this->displayBlock('body', $context, $blocks);
-        // line 114
+        // line 96
         echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 132
+        // line 114
         echo "    </body>
 </html>
 ";
         
-        $__internal_90ccbb9a180011ae18aee0871b7ffc20ef39bef621fe1f668a89cf78c9c075fc->leave($__internal_90ccbb9a180011ae18aee0871b7ffc20ef39bef621fe1f668a89cf78c9c075fc_prof);
+        $__internal_2ca449d5ed48a4087d81030787f675c1d61a3da9a44bdedfa41f81ca99f27501->leave($__internal_2ca449d5ed48a4087d81030787f675c1d61a3da9a44bdedfa41f81ca99f27501_prof);
 
     }
 
     // line 59
     public function block_title($context, array $blocks = array())
     {
-        $__internal_06de058d959eade8a5b125d40df7799af448381fa89f0d502f03048842d89761 = $this->env->getExtension("native_profiler");
-        $__internal_06de058d959eade8a5b125d40df7799af448381fa89f0d502f03048842d89761->enter($__internal_06de058d959eade8a5b125d40df7799af448381fa89f0d502f03048842d89761_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_eff4ce797e337f564581b4c1b14df40a25332d8fb8e7722aef59fdab26f1c93d = $this->env->getExtension("native_profiler");
+        $__internal_eff4ce797e337f564581b4c1b14df40a25332d8fb8e7722aef59fdab26f1c93d->enter($__internal_eff4ce797e337f564581b4c1b14df40a25332d8fb8e7722aef59fdab26f1c93d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Welcome!";
         
-        $__internal_06de058d959eade8a5b125d40df7799af448381fa89f0d502f03048842d89761->leave($__internal_06de058d959eade8a5b125d40df7799af448381fa89f0d502f03048842d89761_prof);
+        $__internal_eff4ce797e337f564581b4c1b14df40a25332d8fb8e7722aef59fdab26f1c93d->leave($__internal_eff4ce797e337f564581b4c1b14df40a25332d8fb8e7722aef59fdab26f1c93d_prof);
 
     }
 
     // line 60
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_7e7210c529a4c681577b105a0f212e18adfd8a04220c94863770672699fdbe8b = $this->env->getExtension("native_profiler");
-        $__internal_7e7210c529a4c681577b105a0f212e18adfd8a04220c94863770672699fdbe8b->enter($__internal_7e7210c529a4c681577b105a0f212e18adfd8a04220c94863770672699fdbe8b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_250c657a622d2b57c8fdab46c92dea360066a3ab32225306c0b093438faa5a4a = $this->env->getExtension("native_profiler");
+        $__internal_250c657a622d2b57c8fdab46c92dea360066a3ab32225306c0b093438faa5a4a->enter($__internal_250c657a622d2b57c8fdab46c92dea360066a3ab32225306c0b093438faa5a4a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 61
         echo "            <link rel=\"stylesheet\" href=\"";
@@ -150,15 +150,15 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
         echo "\">
         ";
         
-        $__internal_7e7210c529a4c681577b105a0f212e18adfd8a04220c94863770672699fdbe8b->leave($__internal_7e7210c529a4c681577b105a0f212e18adfd8a04220c94863770672699fdbe8b_prof);
+        $__internal_250c657a622d2b57c8fdab46c92dea360066a3ab32225306c0b093438faa5a4a->leave($__internal_250c657a622d2b57c8fdab46c92dea360066a3ab32225306c0b093438faa5a4a_prof);
 
     }
 
     // line 67
     public function block_loginModal($context, array $blocks = array())
     {
-        $__internal_af47869c7d8b71f6cad97cec449ae03a7eda75c381a3154110cc10d7ec6f08b5 = $this->env->getExtension("native_profiler");
-        $__internal_af47869c7d8b71f6cad97cec449ae03a7eda75c381a3154110cc10d7ec6f08b5->enter($__internal_af47869c7d8b71f6cad97cec449ae03a7eda75c381a3154110cc10d7ec6f08b5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "loginModal"));
+        $__internal_626f171ae2638f5640146f044393330098c7a5654d413009868a28c38074c0a2 = $this->env->getExtension("native_profiler");
+        $__internal_626f171ae2638f5640146f044393330098c7a5654d413009868a28c38074c0a2->enter($__internal_626f171ae2638f5640146f044393330098c7a5654d413009868a28c38074c0a2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "loginModal"));
 
         // line 68
         echo "    <div class=\"modal fade\" id=\"loginModal\">
@@ -177,25 +177,7 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
                     <br>
                     <label for=\"pass\">Password</label>
                     <input type=\"password\" name=\"pass\" id=\"pass\" placeholder=\"Password\"-->
-                    <div class=\"form-group\">
-                        <div class=\"input-group\">
-                            <input type=\"text\" class=\"form-control\" id=\"uLogin\" placeholder=\"Login\">
-                            <label for=\"uLogin\" class=\"input-group-addon glyphicon glyphicon-user\"></label>
-                        </div>
-                    </div> <!-- /.form-group -->
 
-                    <div class=\"form-group\">
-                        <div class=\"input-group\">
-                            <input type=\"password\" class=\"form-control\" id=\"uPassword\" placeholder=\"Password\">
-                            <label for=\"uPassword\" class=\"input-group-addon glyphicon glyphicon-lock\"></label>
-                        </div> <!-- /.input-group -->
-                    </div> <!-- /.form-group -->
-
-                    <div class=\"checkbox\">
-                        <label>
-                            <input type=\"checkbox\"> Remember me
-                        </label>
-                    </div> <!-- /.checkbox -->
                 </div>
                 <div class=\"modal-footer\">
                     <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>
@@ -207,48 +189,48 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
         </div><!-- /.modal -->
         ";
         
-        $__internal_af47869c7d8b71f6cad97cec449ae03a7eda75c381a3154110cc10d7ec6f08b5->leave($__internal_af47869c7d8b71f6cad97cec449ae03a7eda75c381a3154110cc10d7ec6f08b5_prof);
+        $__internal_626f171ae2638f5640146f044393330098c7a5654d413009868a28c38074c0a2->leave($__internal_626f171ae2638f5640146f044393330098c7a5654d413009868a28c38074c0a2_prof);
 
     }
 
-    // line 113
+    // line 95
     public function block_body($context, array $blocks = array())
     {
-        $__internal_87ce7c11dff4b0f1438288dca41da94a31084fbe5aa0855d6c471b0be49cd6d7 = $this->env->getExtension("native_profiler");
-        $__internal_87ce7c11dff4b0f1438288dca41da94a31084fbe5aa0855d6c471b0be49cd6d7->enter($__internal_87ce7c11dff4b0f1438288dca41da94a31084fbe5aa0855d6c471b0be49cd6d7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_2d729a6fad5812273aec39a521b914ae7840b8d9e2cdbab1ab3509d53861d1c1 = $this->env->getExtension("native_profiler");
+        $__internal_2d729a6fad5812273aec39a521b914ae7840b8d9e2cdbab1ab3509d53861d1c1->enter($__internal_2d729a6fad5812273aec39a521b914ae7840b8d9e2cdbab1ab3509d53861d1c1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         
-        $__internal_87ce7c11dff4b0f1438288dca41da94a31084fbe5aa0855d6c471b0be49cd6d7->leave($__internal_87ce7c11dff4b0f1438288dca41da94a31084fbe5aa0855d6c471b0be49cd6d7_prof);
+        $__internal_2d729a6fad5812273aec39a521b914ae7840b8d9e2cdbab1ab3509d53861d1c1->leave($__internal_2d729a6fad5812273aec39a521b914ae7840b8d9e2cdbab1ab3509d53861d1c1_prof);
 
     }
 
-    // line 114
+    // line 96
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_b1f380cdb37d29e3aea6a6611a3aee560f33b7770ab6f6f6bd82c36deffaaf7e = $this->env->getExtension("native_profiler");
-        $__internal_b1f380cdb37d29e3aea6a6611a3aee560f33b7770ab6f6f6bd82c36deffaaf7e->enter($__internal_b1f380cdb37d29e3aea6a6611a3aee560f33b7770ab6f6f6bd82c36deffaaf7e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_8e53494c75939cebeca4ba97b72a1265463020db966d34d7fa0ac730f35cf0ef = $this->env->getExtension("native_profiler");
+        $__internal_8e53494c75939cebeca4ba97b72a1265463020db966d34d7fa0ac730f35cf0ef->enter($__internal_8e53494c75939cebeca4ba97b72a1265463020db966d34d7fa0ac730f35cf0ef_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 115
+        // line 97
         echo "            <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js\"></script>
             <script src=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js\"></script>
             <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js\"></script>
 
             <script src=\"";
-        // line 119
+        // line 101
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/jasmine-1.3.1/jasmine.js"), "html", null, true);
         echo "\"></script>
             <script src=\"";
-        // line 120
+        // line 102
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/jasmine-1.3.1/jasmine-html.js"), "html", null, true);
         echo "\"></script>
             <script type=\"text/javascript\" src=\"http://github.com/searls/jasmine-fixture/releases/1.0.5/1737/jasmine-fixture.js\"></script>
             <script type=\"text/javascript\" src=\"http://code.jquery.com/ui/1.11.1/jquery-ui.min.js\"></script>
             <script type=\"text/javascript\" src=\"";
-        // line 123
+        // line 105
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/jquery-ui-timepicker-addon.js"), "html", null, true);
         echo "\"></script>
             <script type=\"text/javascript\" src=\"";
-        // line 124
+        // line 106
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/jquery-ui-sliderAccess.js"), "html", null, true);
         echo "\"></script>
             <script type=\"text/javascript\">
@@ -259,7 +241,7 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
 
         ";
         
-        $__internal_b1f380cdb37d29e3aea6a6611a3aee560f33b7770ab6f6f6bd82c36deffaaf7e->leave($__internal_b1f380cdb37d29e3aea6a6611a3aee560f33b7770ab6f6f6bd82c36deffaaf7e_prof);
+        $__internal_8e53494c75939cebeca4ba97b72a1265463020db966d34d7fa0ac730f35cf0ef->leave($__internal_8e53494c75939cebeca4ba97b72a1265463020db966d34d7fa0ac730f35cf0ef_prof);
 
     }
 
@@ -275,7 +257,7 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
 
     public function getDebugInfo()
     {
-        return array (  252 => 124,  248 => 123,  242 => 120,  238 => 119,  232 => 115,  226 => 114,  215 => 113,  164 => 68,  158 => 67,  148 => 61,  142 => 60,  130 => 59,  121 => 132,  118 => 114,  115 => 113,  113 => 67,  105 => 63,  103 => 60,  99 => 59,  86 => 49,  44 => 10,  40 => 9,  36 => 8,  27 => 1,);
+        return array (  234 => 106,  230 => 105,  224 => 102,  220 => 101,  214 => 97,  208 => 96,  197 => 95,  164 => 68,  158 => 67,  148 => 61,  142 => 60,  130 => 59,  121 => 114,  118 => 96,  115 => 95,  113 => 67,  105 => 63,  103 => 60,  99 => 59,  86 => 49,  44 => 10,  40 => 9,  36 => 8,  27 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -361,25 +343,7 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
 /*                     <br>*/
 /*                     <label for="pass">Password</label>*/
 /*                     <input type="password" name="pass" id="pass" placeholder="Password"-->*/
-/*                     <div class="form-group">*/
-/*                         <div class="input-group">*/
-/*                             <input type="text" class="form-control" id="uLogin" placeholder="Login">*/
-/*                             <label for="uLogin" class="input-group-addon glyphicon glyphicon-user"></label>*/
-/*                         </div>*/
-/*                     </div> <!-- /.form-group -->*/
 /* */
-/*                     <div class="form-group">*/
-/*                         <div class="input-group">*/
-/*                             <input type="password" class="form-control" id="uPassword" placeholder="Password">*/
-/*                             <label for="uPassword" class="input-group-addon glyphicon glyphicon-lock"></label>*/
-/*                         </div> <!-- /.input-group -->*/
-/*                     </div> <!-- /.form-group -->*/
-/* */
-/*                     <div class="checkbox">*/
-/*                         <label>*/
-/*                             <input type="checkbox"> Remember me*/
-/*                         </label>*/
-/*                     </div> <!-- /.checkbox -->*/
 /*                 </div>*/
 /*                 <div class="modal-footer">*/
 /*                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>*/

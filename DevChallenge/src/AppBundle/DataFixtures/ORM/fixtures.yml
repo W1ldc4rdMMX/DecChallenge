@@ -20,7 +20,7 @@ AppBundle\Entity\stockTypes:
         stockTypeName: <stocktypes()>
 
 AppBundle\Entity\stockItems:
-    stockItems_{1..20}:
+    stockItems_{1..7}:
         stockItemName: <itemName()>
         stockItemBase: <itemBase()>
         stockItemSpec: <itemSpec()>

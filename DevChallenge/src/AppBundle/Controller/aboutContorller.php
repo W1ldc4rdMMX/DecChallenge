@@ -24,28 +24,24 @@ class aboutContorller extends Controller
      */
     public function newAction()
     {
-        /*
+        
          $user = new stockUsers();
-        $user->setUserFName("Lear");
-        $user->setUserLName("Pather");
-        $user->setUserEmail("lear.pather@gmail.com");
-        $user->setUserPass("b00nD0ck5");
 
-        $perm = new stockPermissions();
-        $perm->setPermAdd(true);
-        $perm->setPermDel(true);
-        $perm->setPermEdit(true);
-        $perm->setPermDel(true);
-        $perm->setPermOrder(true);
-        $perm->setPermSU(true);
-        $perm->setStockUsers($user);
+        $user->setUsername('lear.pather');
+        $user->setEmail('lear.pather@gmail.com');
+        $plainpass = 'w1ldc4rd';
+        
+        $encoder = $this->container->get('security.password_encoder');
+        $encoder = $encoder->encodePassword($user, $plainpass);
+        $user->setPassword($encoder);
+        $user->setIsActive(true);
+        $user->setRoles(array('ROLE_ADMIN'));
+        $em = $em = $this->getDoctrine()->getManager();
 
-        $em =$this->getDoctrine()->getManager();
         $em->persist($user);
-        $em->persist($perm);
         $em->flush();
 
-        return new Response("<html><body>User created!</body></html>");*/
+        return new Response("<html><body>User created!</body></html>");
 
     }
 
