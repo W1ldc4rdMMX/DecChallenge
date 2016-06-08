@@ -29,7 +29,13 @@
                                         <label for="productAddType">Product Type </label>
                                         <select name="productAddType" id="productAddType" onchange="getStockID()">
                                             {% for type in types %}
-                                                <option value="{{ type.stockTypeName }}" id="{{ type.id }}">{{ type.stockTypeName }}</option>
+                                                {% if loop.index == 1 %}
+                                                    <option value="{{ type.stockTypeName }}" id="{{ type.id }}"
+                                                            selected="selected">{{ type.stockTypeName }}</option>
+                                                {% else %}
+                                                    <option value="{{ type.stockTypeName }}" id="{{ type.id }}">
+                                                {{ type.stockTypeName }}</option>
+                                                {% endif %}
                                             {%  endfor %}
                                         </select>
                                     </p>
@@ -82,9 +88,10 @@
                                             {% if loop.index == 1 %}
                                                 <option value="{{ item.stockItemName }}" selected="selected" >{{ item.stockItemName }}</option>
                                                 {{ item.stockItemSpec }}
+                                            {% else %}
+                                                <option value="{{ item.stockItemName }}" >{{ item.stockItemName }}</option>
+                                                {{ item.stockItemSpec }}
                                             {% endif %}
-                                            <option value="{{ item.stockItemName }}" >{{ item.stockItemName }}</option>
-                                            {{ item.stockItemSpec }}
                                         {%  endfor %}
                                     </select>
                                 </p>
@@ -135,14 +142,8 @@
                                 <label for="productCountName">Product Type </label>
                                 <select name="productCountName" id="productCountName">
                                     {% for item in currentItems %}
-                                        {#% set isFirst = {{ loop.first }} %}
-                                        {% if isFirst  %}
-                                            <option value="{{ item.stockItemName }}" selected="selected" >{{ item.stockItemName }}</option>
-                                            {{ item.stockItemSpec }}
-                                        {% elseif %#}
-                                            <option value="{{ item.stockItemName }}" selected="selected">{{ item.stockItemName }}</option>
-                                            {{ item.stockItemSpec }}
-                                        {#% endif %#}
+                                        <option value="{{ item.stockItemName }}" selected="selected">
+                                            {{ item.stockItemName }}</option>{{ item.stockItemSpec }}
                                     {%  endfor %}
                                 </select>
                             </p>
@@ -168,14 +169,21 @@
             {% endfor %}
             <div class="col-sm-4">
                 <div class="well">
-                    <legend class="scheduler-border">Stock Pending serial no. <span class="badge">{{ serialCount }}</span></legend>
+                    <legend class="scheduler-border">Stock Pending serial no. <span class="badge">{{ serialCount }}
+                        </span></legend>
                     <div class="row">
                         <form>
                             <p>
                                 <label for="productSerialType">Product Type </label>
                                 <select name="productSerialType" id="productSerialType" onchange="loadSerialItems()">
                                     {% for type in types %}
-                                        <option value="{{ type.stockTypeName }}" id="{{ type.id }}">{{ type.stockTypeName }}</option>
+                                        {% if loop.index == 2 %}
+                                            <option value="{{ type.stockTypeName }}" id="{{ type.id }}" selected="selected">
+                                                {{ type.stockTypeName }}</option>
+                                        {% else %}
+                                            <option value="{{ type.stockTypeName }}" id="{{ type.id }}" selected="selected">
+                                                {{ type.stockTypeName }}</option>
+                                        {% endif %}
                                     {%  endfor %}
                                 </select>
                             </p>
@@ -200,7 +208,8 @@
         {% block botBoxRight %}
             <div class="col-sm-4">
                 <div class="well">
-                    <legend class="scheduler-border">Negative Stock <span class="label label-pill label-danger">10</span></legend>
+                    <legend class="scheduler-border">Negative Stock <span class="label label-pill label-danger">10
+                        </span></legend>
                     <div class="row">
                         <form>
                             <p>
@@ -223,48 +232,57 @@
 {% block javascripts %}
     {{ parent() }}
     <script>
-    function loadItemData()
-    {
+        document.getElementById("productAddType").addEventListener("load", getStockID);
+        document.getElementById("productUpName").addEventListener("load",loadItemData);
+        document.getElementById("productSerialType").addEventListener("load",loadSerialItems);
 
-        var opt = document.getElementById('productUpName');
-        var selVal = opt.options[opt.selectedIndex].value;
-        {% for items in currentItems %}
-        if(selVal == '{{ items.stockItemName }}')
+        function populateData()
         {
-            document.getElementById('productUpBase').value = {{ items.stockItemBase|json_encode|raw  }};
-            document.getElementById('productUpSpecs').value = {{ items.stockItemSpec|json_encode|raw }};
-            document.getElementById('productUpContent').value = {{ items.stockItemCont|json_encode|raw }};
-            document.getElementById('productUpSysReq').innerHTML = {{ items.stockItemReq|json_encode|raw }};
+            loadItemData();
+            getStockID();
+            loadSerialItems();
         }
-        {% endfor %}
-    }
 
-    function getStockID()
-    {
+        function loadItemData()
+        {
 
-        var opt = document.getElementById('productAddType');
-        var selVal = opt.options[opt.selectedIndex].id;
+            var opt = document.getElementById('productUpName');
+            var selVal = opt.options[opt.selectedIndex].value;
+            {% for items in currentItems %}
+            if(selVal == '{{ items.stockItemName }}')
+            {
+                document.getElementById('productUpBase').value = {{ items.stockItemBase|json_encode|raw  }};
+                document.getElementById('productUpSpecs').value = {{ items.stockItemSpec|json_encode|raw }};
+                document.getElementById('productUpContent').value = {{ items.stockItemCont|json_encode|raw }};
+                document.getElementById('productUpSysReq').innerHTML = {{ items.stockItemReq|json_encode|raw }};
+            }
+            {% endfor %}
+        }
+
+        function getStockID()
+        {
+
+            var opt = document.getElementById('productAddType');
+            var selVal = opt.options[opt.selectedIndex].id;
         //window.alert(selVal);
-        document.getElementById('productAddStockId').value=selVal;
-    }
-
-    function loadSerialItems()
-    {
-        document.getElementById('productSerialItem').options.length = 0;
-        var opt = document.getElementById('productSerialType');
-        var selID =  opt.options[opt.selectedIndex].id;
-        var select = document.getElementById('productSerialItem');
-        {% for items in currentItems %}
-        if(selID == {{ items.id }})
-        {
-            var itemOpts = document.createElement('option');
-            itemOpts.value = '{{ items.stockItemName }}';
-            itemOpts.textContent = '{{ items.stockItemName }}';
-            select.appendChild(itemOpts);
+            document.getElementById('productAddStockId').value=selVal;
         }
 
-
-        {% endfor %}
-    }
+        function loadSerialItems()
+        {
+            document.getElementById('productSerialItem').options.length = 0;
+            var opt = document.getElementById('productSerialType');
+            var selID =  opt.options[opt.selectedIndex].id;
+            var select = document.getElementById('productSerialItem');
+            {% for items in currentItems %}
+            if(selID == {{ items.id }})
+            {
+                var itemOpts = document.createElement('option');
+                itemOpts.value = '{{ items.stockItemName }}';
+                itemOpts.textContent = '{{ items.stockItemName }}';
+                select.appendChild(itemOpts);
+            }
+            {% endfor %}
+        }
     </script>
 {% endblock %}

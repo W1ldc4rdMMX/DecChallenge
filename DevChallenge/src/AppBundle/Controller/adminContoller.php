@@ -21,10 +21,11 @@ class adminContoller extends Controller
 
     public function showAction()
     {
-        $user = $this->getUser();
+        $em = $this->getDoctrine()->getManager();
+        $users = $em->getRepository("AppBundle:stockUsers")->findAll();
         
         return $this->render(':catalogue:admin.html.twig',[
-            'user' => $user
+            'users' => $users
         ]);
         //return new Response("<html><body>Admin Page - Welcome ".$user->getUsername()."</body></html>");
     }

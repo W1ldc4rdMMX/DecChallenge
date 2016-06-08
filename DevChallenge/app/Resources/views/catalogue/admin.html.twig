@@ -5,5 +5,89 @@
 
 
 {% block body %}
+    <div class="container-fluid">
+        {% block currentUsers %}
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" href="#currentUsers"> <span class="glyphicon glyphicon-collapse-down">
+                        </span> Current Users</a>
+                </h4>
+            </div>
+            <!--div id="collapse1" class="panel-collapse collapse">
+                <div class="panel-body">Panel Body</div>
+                <div class="panel-footer">Panel Footer</div>
+            </div>
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#currentUsers">
+                <span class="glyphicon glyphicon-collapse-down"></span> Current Users
+            </button-->
+            <div id="currentUsers" class="panel-collapse collapse">
+                <div class="container">
+                <div class="col-sm-3">
+                    <div class="well">
+                        <select size="10" style="max-width:90%;">
+                            {% for user in users %}
+                                <option value="{{ user.id }}">{{ user.username }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-9">
+                    <div class="well">
+                    username <br>
+                    password <br>
+                    email <br>
+                    role <br>
+                    Active <br>
+                    </div>
+                </div>
+                    </div>
+            </div>
+            <br><hr>
+        {% endblock %}
 
+        {% block addUsers %}
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#addUsers">
+                <span class="glyphicon glyphicon-collapse-down"></span> Current Users
+            </button>
+            <div id="addUsers" class="collapse">
+                <div class="col-sm-6">
+                    <div class="well">
+                        username <br>
+                        password <br>
+                        email <br>
+                        role <br>
+                        Active <br>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="well">
+                        username <br>
+                        password <br>
+                        email <br>
+                        role <br>
+                        Active <br>
+                    </div>
+                </div>
+            </div>
+            <br><hr>
+        {% endblock %}
+
+        {% block sysSettings %}
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#sysSettings">
+                <span class="glyphicon glyphicon-collapse-down"></span> Current Users
+            </button>
+            <div id="sysSettings" class="collapse">
+                <div class="col-sm-12">
+                    <div class="well">
+                        username <br>
+                        password <br>
+                        email <br>
+                        role <br>
+                        Active <br>
+                    </div>
+                </div>
+            </div>
+            <br><hr>
+        {% endblock %}
+    </div>
 {% endblock %}

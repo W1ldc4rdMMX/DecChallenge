@@ -42,13 +42,23 @@
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <!--li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li-->
-                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-log-in"></span> Log-off</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Admin Page</a></li>
-                            <li><a href="#">System Reports</a></li>
-                            <li><a href="{{ logout_path('main') }}">Logout</a></li>
-                        </ul>
-                        </li>
+                        {% if is_granted("ROLE_USER") %}
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <span class="glyphicon glyphicon-user"></span>  {{ app.user.username }}</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="admin"><span class="glyphicon glyphicon-th-list">
+                                        </span>  Admin Page</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-equalizer">
+                                        </span>  System Reports</a></li>
+                                <li><a href="{{ logout_path('main') }}"><span class="glyphicon glyphicon-log-out">
+                                        </span>  Logout</a></li>
+                            </ul>
+                            </li>
+                        {% else %}
+                           <li> <a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        {% endif %}
+
+
                     </ul>
                 </div>
             </div>
