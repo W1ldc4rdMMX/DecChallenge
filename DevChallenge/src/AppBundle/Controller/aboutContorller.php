@@ -24,21 +24,31 @@ class aboutContorller extends Controller
      */
     public function newAction()
     {
-        
-         $user = new stockUsers();
+        $user1 = new stockUsers();
+        $user2 = new stockUsers();
 
-        $user->setUsername('lear.pather');
-        $user->setEmail('lear.pather@gmail.com');
-        $plainpass = 'w1ldc4rd';
-        
+        $user1->setUsername('lear.pather');
+        $user1->setEmail('lear.pather@gmail.com');
+        $plainpass1 = 'w1ldc4rd';
         $encoder = $this->container->get('security.password_encoder');
-        $encoder = $encoder->encodePassword($user, $plainpass);
-        $user->setPassword($encoder);
-        $user->setIsActive(true);
-        $user->setRoles(array('ROLE_ADMIN'));
+        $encoder = $encoder->encodePassword($user1, $plainpass1);
+        $user1->setPassword($encoder);
+        $user1->setIsActive(true);
+        $user1->setRoles(array('ROLE_ADMIN'));
+
+        $user2->setUsername('ichigo.kurosaki');
+        $user2->setEmail('ichigo@kurosaki.com');
+        $plainpass2 = 'hellsBells';
+        $encoder = $this->container->get('security.password_encoder');
+        $encoder = $encoder->encodePassword($user2, $plainpass2);
+        $user2->setPassword($encoder);
+        $user2->setIsActive(true);
+        $user2->setRoles(array('ROLE_USER'));
+
         $em = $em = $this->getDoctrine()->getManager();
 
-        $em->persist($user);
+        $em->persist($user1);
+        $em->persist($user2);
         $em->flush();
 
         return new Response("<html><body>User created!</body></html>");

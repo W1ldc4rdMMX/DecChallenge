@@ -94,6 +94,14 @@ class stockUsers implements UserInterface, \Serializable
     /**
      * @return mixed
      */
+    public function getDecodedPassword()
+    {
+        
+        return $this->password;
+    }
+    /**
+     * @return mixed
+     */
     public function getEmail()
     {
         return $this->email;

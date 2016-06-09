@@ -9,6 +9,7 @@
 namespace AppBundle\Controller;
 
 
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
@@ -16,9 +17,17 @@ use Symfony\Component\HttpFoundation\Response;
 class adminContoller extends Controller
 {
     /**
+     * @Route("/admin")
+     * @Method("post")
+     */
+    public function saveAction()
+    {
+
+    }
+
+    /**
      *@Route("/admin")
      */
-
     public function showAction()
     {
         $em = $this->getDoctrine()->getManager();
@@ -28,5 +37,10 @@ class adminContoller extends Controller
             'users' => $users
         ]);
         //return new Response("<html><body>Admin Page - Welcome ".$user->getUsername()."</body></html>");
+    }
+
+    public function decodePass()
+    {
+        
     }
 }

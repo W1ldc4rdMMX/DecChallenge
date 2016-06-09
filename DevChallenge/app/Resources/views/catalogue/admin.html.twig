@@ -3,41 +3,59 @@
     Admin Page
 {% endblock %}
 
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset("css/formstyles.css") }}">
+{%  endblock %}
 
 {% block body %}
     <div class="container-fluid">
         {% block currentUsers %}
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" href="#currentUsers"> <span class="glyphicon glyphicon-collapse-down">
-                        </span> Current Users</a>
-                </h4>
-            </div>
-            <!--div id="collapse1" class="panel-collapse collapse">
-                <div class="panel-body">Panel Body</div>
-                <div class="panel-footer">Panel Footer</div>
-            </div>
             <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#currentUsers">
-                <span class="glyphicon glyphicon-collapse-down"></span> Current Users
-            </button-->
+                <span class="glyphicon glyphicon-collapse-down"></span> Edit Current Users
+            </button>
             <div id="currentUsers" class="panel-collapse collapse">
-                <div class="container">
-                <div class="col-sm-3">
+                <div class="table-responsive">
+                <div class="col-sm-2" >
                     <div class="well">
-                        <select size="10" style="max-width:90%;">
+                        <select name="selUser" id="selUser" size="10" style="max-width:90%;" onchange="loadUserDetails()">
                             {% for user in users %}
                                 <option value="{{ user.id }}">{{ user.username }}</option>
                             {% endfor %}
                         </select>
                     </div>
                 </div>
-                <div class="col-sm-9">
+                <div class="col-sm-4">
                     <div class="well">
-                    username <br>
-                    password <br>
-                    email <br>
-                    role <br>
-                    Active <br>
+                        <form method="post">
+                        <p>
+                            <label for="editUserName">Username </label>
+                            <input type="text" name="editUserName" id="editUserName" size="50" />
+                        </p>
+                        <p>
+                            <label for="editPassword">Password </label>
+                            <input type="password" name="editPassword" id="editPassword" size="50" />
+                        </p>
+                        <p>
+                            <label for="editEmail">Email </label>
+                            <input type="text" name="editEmail" id="editEmail" size="50" />
+                        </p>
+                        <p>
+                            <label for="editRole">Role </label>
+                            <select name="editRole" id="editRole">
+                                <option value="ROLE_ADMIN">Admin</option>
+                                <option value="ROLE_USER">User</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="editActive">Active </label>
+                            <select name="editActive" id="editActive">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </p>
+                        <button type="submit" class="btn btn-primary">Update User</button>
+                        </form>
                     </div>
                 </div>
                     </div>
@@ -47,16 +65,38 @@
 
         {% block addUsers %}
             <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#addUsers">
-                <span class="glyphicon glyphicon-collapse-down"></span> Current Users
+                <span class="glyphicon glyphicon-collapse-down"></span> Add/Remove Users
             </button>
             <div id="addUsers" class="collapse">
                 <div class="col-sm-6">
                     <div class="well">
-                        username <br>
-                        password <br>
-                        email <br>
-                        role <br>
-                        Active <br>
+                        <p>
+                            <label for="userName">Username </label>
+                            <input type="text" name="userName" id="userName" size="50" />
+                        </p>
+                        <p>
+                            <label for="password">Password </label>
+                            <input type="password" name="password" id="password" size="50" />
+                        </p>
+                        <p>
+                            <label for="email">Email </label>
+                            <input type="text" name="email" id="email" size="50" />
+                        </p>
+                        <p>
+                            <label for="role">Role </label>
+                            <select name="role" id="role">
+                                <option value="ROLE_ADMIN">Admin</option>
+                                <option value="ROLE_USER">User</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="active">Active </label>
+                            <select name="active" id="active">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </p>
+
                     </div>
                 </div>
                 <div class="col-sm-6">
@@ -74,7 +114,7 @@
 
         {% block sysSettings %}
             <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#sysSettings">
-                <span class="glyphicon glyphicon-collapse-down"></span> Current Users
+                <span class="glyphicon glyphicon-collapse-down"></span> System settings
             </button>
             <div id="sysSettings" class="collapse">
                 <div class="col-sm-12">
@@ -90,4 +130,44 @@
             <br><hr>
         {% endblock %}
     </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script>
+        function loadUserDetails()
+        {
+
+            var opt = document.getElementById('selUser');
+            var selVal = opt.options[opt.selectedIndex].value;
+
+            {% for user in users %}
+
+                if (selVal == {{ user.id }})
+                {
+                   //window.alert({#{ user.id }});
+                   //window.alert('{{ user.username }#}');
+                    document.getElementById('editUserName').value = '{{ user.username }}';
+                    document.getElementById('editPassword').value = '{{ user.password }}';
+                    document.getElementById('editEmail').value = '{{ user.email }}';
+                    var roles = '{{ user.roles|json_encode|raw }}';
+                    //window.alert(roles);
+                    if(roles.includes("ADMIN"))
+                    {
+                        document.getElementById('editRole').value='ROLE_ADMIN'
+                    }else
+                    {
+                        document.getElementById('editRole').value='ROLE_USER'
+                    }
+                    var isActive = '{{ user.isActive }}';
+                    if(isActive == '1')
+                    {
+                        document.getElementById('editActive').value="yes"
+                    }else{
+                        document.getElementById('editActive').value="no"
+                    }
+                }
+            {% endfor %}
+        }
+    </script>
 {% endblock %}

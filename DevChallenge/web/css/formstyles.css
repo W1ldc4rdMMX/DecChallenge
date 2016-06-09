@@ -1,5 +1,5 @@
 form  { display: table;      }
-p     { display: table-row;  }
+p     { display: table-row; line-height: 1.8; }
 select{ display: table-cell; }
 label { display: table-cell; vertical-align: top; }
 input { display: table-cell; }
