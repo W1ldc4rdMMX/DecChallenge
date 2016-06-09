@@ -34,7 +34,9 @@
                         </p>
                         <p>
                             <label for="editPassword">Password </label>
-                            <input type="password" name="editPassword" id="editPassword" size="50" />
+                            <input type="password" name="editPassword" id="editPassword" size="50"
+                                   onchange="isPassEdited()"/>
+                            <input type="hidden" name="didEditPassword" id="didEditPassword" value="no" size="50" />
                         </p>
                         <p>
                             <label for="editEmail">Email </label>
@@ -168,6 +170,11 @@
                     }
                 }
             {% endfor %}
+        }
+
+        function isPassEdited()
+        {
+            document.getElementById('didEditPassword').value = "yes";
         }
     </script>
 {% endblock %}

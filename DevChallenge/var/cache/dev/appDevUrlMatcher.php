@@ -114,9 +114,23 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'AppBundle\\Controller\\aboutContorller::showAction',  '_route' => 'app_aboutcontorller_show',);
         }
 
-        // app_admincontoller_show
-        if ($pathinfo === '/admin') {
-            return array (  '_controller' => 'AppBundle\\Controller\\adminContoller::showAction',  '_route' => 'app_admincontoller_show',);
+        if (0 === strpos($pathinfo, '/admin')) {
+            // app_admincontoller_save
+            if ($pathinfo === '/admin') {
+                if ($this->context->getMethod() != 'POST') {
+                    $allow[] = 'POST';
+                    goto not_app_admincontoller_save;
+                }
+
+                return array (  '_controller' => 'AppBundle\\Controller\\adminContoller::saveAction',  '_route' => 'app_admincontoller_save',);
+            }
+            not_app_admincontoller_save:
+
+            // app_admincontoller_show
+            if ($pathinfo === '/admin') {
+                return array (  '_controller' => 'AppBundle\\Controller\\adminContoller::showAction',  '_route' => 'app_admincontoller_show',);
+            }
+
         }
 
         // app_catalogue_show
