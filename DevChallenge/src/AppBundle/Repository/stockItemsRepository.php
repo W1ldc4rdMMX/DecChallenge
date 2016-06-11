@@ -22,6 +22,7 @@ class stockItemsRepository extends EntityRepository
         
         return $this->createQueryBuilder('stock_items')
             ->select('DISTINCT(stock_items.stockItemName) AS stockItemName')
+            ->addSelect('stock_items.id')
             ->addSelect('stock_items.stockItemBase')
             ->addSelect('stock_items.stockItemCont')
             ->addSelect('stock_items.stockItemReq')

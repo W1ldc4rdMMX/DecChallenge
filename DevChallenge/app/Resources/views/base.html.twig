@@ -20,6 +20,7 @@
                     <a class="navbar-brand" href="/"> Stock-Webs </a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
+                    {% if is_granted("ROLE_USER") %}
                     <ul class="nav navbar-nav">
                         <li><a href="home"><span class = "glyphicon glyphicon-home"></span> Home </a></li>
                         <li><a href="update"><span class = "glyphicon glyphicon-plus"></span> Add\Edit Stock </a></li>
@@ -40,14 +41,19 @@
                         </div>
                     </button>
                     </ul>
+                    {% endif %}
+
                     <ul class="nav navbar-nav navbar-right">
                         <!--li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li-->
                         {% if is_granted("ROLE_USER") %}
                             <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <span class="glyphicon glyphicon-user"></span>  {{ app.user.username }}</a>
+                                    <span class="glyphicon glyphicon-user"></span>  {{ app.user.username }}
+                                    <span class="glyphicon glyphicon-collapse-down"></span> </a>
                             <ul class="dropdown-menu">
+                                {% if is_granted("ROLE_ADMIN") %}
                                 <li><a href="admin"><span class="glyphicon glyphicon-th-list">
                                         </span>  Admin Page</a></li>
+                                {% endif %}
                                 <li><a href="#"><span class="glyphicon glyphicon-equalizer">
                                         </span>  System Reports</a></li>
                                 <li><a href="{{ logout_path('main') }}"><span class="glyphicon glyphicon-log-out">

@@ -6,6 +6,26 @@
 {% block stylesheets %}
     {{ parent() }}
     <link rel="stylesheet" href="{{ asset("css/graphstyles.css") }}">
+    <style>
+    .graph {
+    border: 1px solid #aeaeae; background-color: #eaeaea;/*"canvas" styling*/
+    float:left; /*should be clearfix'd instead, but this is OK for a demo*/
+    }
+    .graph li {
+    width:50px; height:50px; /*set a bar width and a full height*/
+    float:left; /*to have bars "left-aligned"*/
+    position:relative; /*needed for the actual bar fill element*/
+    margin:2px;
+    }
+    .graph li+li {
+    margin-left:0; /*avoid margin double-up between bars as they don't collapse*/
+    }
+    .graph span {
+    position:absolute;right:0;bottom:0;left:0; /*"bottom-align" the bars,
+    widths will be set inline*/
+    background-color: #aeaeae;
+    }
+    </style>
 {% endblock %}
 
 {% block body %}
@@ -46,215 +66,68 @@
         {% endblock %}
 
         {% block graph2 %}
-        <div class="col-sm-6">
+
+        <div class="col-sm-12">
             <div class="well">
                 <h3>Stock Sales (Monthly)</h3>
-                <!-- Graph HTML -->
-                <div id="graph-wrapper">
-                    <div class="graph-info">
-                        <a href="javascript:void(0)" class="visitors">Visitors</a>
-                        <a href="javascript:void(0)" class="returning">Returning Visitors</a>
-                        <a href="#" id="bars"><span></span></a>
-                        <a href="#" id="lines" class="active"><span></span></a>
-                    </div>
-                    <div class="graph-container">
-                        <div id="graph-lines"></div>
-                        <div id="graph-bars"></div>
-                    </div>
-                </div>
-                <!-- end Graph HTML -->
+                <div id="chart_div"></div>
             </div>
         </div>
         {% endblock %}
 
-        {#% block graph3 %}
-        <div class="col-sm-6">
-            <div class="well">
-                <h3>Stock Sales comparisons</h3>
-                <div id="chartdiv"></div>
-                <div class="container-fluid">
-                    <div class="row text-center" style="overflow:hidden;">
-                        <div class="col-sm-3" style="float: none !important;display: inline-block;">
-                            <label class="text-left">Angle:</label>
-                            <input class="chart-input" data-property="angle" type="range" min="0" max="60" value="30" step="1"/>
-                        </div>
 
-                        <div class="col-sm-3" style="float: none !important;display: inline-block;">
-                            <label class="text-left">Depth:</label>
-                            <input class="chart-input" data-property="depth3D" type="range" min="1" max="25" value="10" step="1"/>
-                        </div>
-                        <div class="col-sm-3" style="float: none !important;display: inline-block;">
-                            <label class="text-left">Inner-Radius:</label>
-                            <input class="chart-input" data-property="innerRadius" type="range" min="0" max="80" value="0" step="1"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        {% endblock %#}
 
     </div>
 {% endblock %}
 
 {% block javascripts %}
     {{ parent() }}
-    <script src="{{ asset("js/jquery.flot.min.js") }}"></script>
+    <script type="text/javascript" src="{{ asset('js/loader.js') }}"></script>
     <script>
-        $(document).ready(function () {
-            // Graph scripts here
-            var graphData = [{
-                // Visits
-                data: [ [6, 1300], [7, 1600], [8, 1900], [9, 2100], [10, 2500], [11, 2200], [12, 2000], [13, 1950], [14, 1900], [15, 2000] ],
-                color: '#71c73e'
-            }, {
-                // Returning Visits
-                data: [ [6, 500], [7, 600], [8, 550], [9, 600], [10, 800], [11, 900], [12, 800], [13, 850], [14, 830], [15, 1000] ],
-                color: '#77b7c5',
-                points: { radius: 4, fillColor: '#77b7c5' }
-            }
-            ];
-            // Lines
-            $.plot($('#graph-lines'), graphData, {
-                series: {
-                    points: {
-                        show: true,
-                        radius: 5
-                    },
-                    lines: {
-                        show: true
-                    },
-                    shadowSize: 0
+        google.charts.load('current', {packages: ['corechart', 'bar']});
+        google.charts.setOnLoadCallback(drawStacked);
+
+        function drawStacked() {
+            {#}% for sale in sales %}
+                window.alert({{ sale.saleQunty}});
+            {% endfor %#}
+            var data = google.visualization.arrayToDataTable([
+                ['Product', 'Stock on-hand', 'Sales'],
+                {% for item in stockItems %}
+                    {% set itemCount = 0 %}
+                    {% set salesCount = 0  %}
+                    {% for sn in serials %}
+                        {%if sn.stockItems.stockItemid == item.stockItemid %}
+                            {% set itemCount = itemCount + 1 %}
+                        {% endif %}
+                    {% endfor %}
+                    {% for sale in sales %}
+                        {%if sale.stockItems.stockItemid == item.stockItemid %}
+                            {% set salesCount = salesCount + sale.saleQunty %}
+                        {% endif %}
+                    {% endfor %}
+                    ['{{ item.stockItemName }}',{{ itemCount }},{{ salesCount }}]
+                        {% if not loop.last  %}
+                            ,
+                        {% endif %}
+                    {% endfor %}
+            ]);
+
+            var options = {
+                title: 'Stock on-hand vs Sales',
+                chartArea: {width: '50%'},
+                isStacked: true,
+                hAxis: {
+                    title: 'Total Stock & sales',
+                    minValue: 0,
                 },
-                grid: {
-                    color: '#646464',
-                    borderColor: 'transparent',
-                    borderWidth: 20,
-                    hoverable: true
-                },
-                xaxis: {
-                    tickColor: 'transparent',
-                    tickDecimals: 2
-                },
-                yaxis: {
-                    tickSize: 1000
+                vAxis: {
+                    title: 'Product'
                 }
-            });
-
-            // Bars
-            $.plot($('#graph-bars'), graphData, {
-                series: {
-                    bars: {
-                        show: true,
-                        barWidth: .9,
-                        align: 'center'
-                    },
-                    shadowSize: 0
-                },
-                grid: {
-                    color: '#646464',
-                    borderColor: 'transparent',
-                    borderWidth: 20,
-                    hoverable: true
-                },
-                xaxis: {
-                    tickColor: 'transparent',
-                    tickDecimals: 2
-                },
-                yaxis: {
-                    tickSize: 1000
-                }
-            });
-
-        });
-
-        $('#graph-bars').hide();
-
-        $('#lines').on('click', function (e) {
-            $('#bars').removeClass('active');
-            $('#graph-bars').fadeOut();
-            $(this).addClass('active');
-            $('#graph-lines').fadeIn();
-            e.preventDefault();
-        });
-
-        $('#bars').on('click', function (e) {
-            $('#lines').removeClass('active');
-            $('#graph-lines').fadeOut();
-            $(this).addClass('active');
-            $('#graph-bars').fadeIn().removeClass('hidden');
-            e.preventDefault();
-        });
-
-        function showTooltip(x, y, contents) {
-            $('<div id="tooltip">' + contents + '</div>').css({top: y - 16,left: x + 20}).appendTo('body').fadeIn();
+            };
+            var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
         }
-
-        var previousPoint = null;
-
-        $('#graph-lines, #graph-bars').bind('plothover', function (event, pos, item) {
-            if (item) {
-                if (previousPoint != item.dataIndex) {
-                    previousPoint = item.dataIndex;
-                    $('#tooltip').remove();
-                    var x = item.datapoint[0],
-                            y = item.datapoint[1];
-                    showTooltip(item.pageX, item.pageY, y + ' visitors at ' + x + '.00h');
-                }
-            } else {
-                $('#tooltip').remove();
-                previousPoint = null;
-            }
-        });
     </script>
 
-    <script src="{{ asset("js/amcharts.js") }}"></script>
-    <script src="{{ asset("js/pie.js") }}"></script>
-    <script src="{{ asset("js/light.js") }}"></script>
-    <script>
-        var chart = AmCharts.makeChart( "chartdiv", {
-            "type": "pie",
-            "theme": "light",
-            "dataProvider": [ {
-                "country": "Lithuania",
-                "value": 260
-            }, {
-                "country": "Ireland",
-                "value": 201
-            }, {
-                "country": "Germany",
-                "value": 65
-            }, {
-                "country": "Australia",
-                "value": 39
-            }, {
-                "country": "UK",
-                "value": 19
-            }, {
-                "country": "Latvia",
-                "value": 10
-            } ],
-            "valueField": "value",
-            "titleField": "country",
-            "outlineAlpha": 0.4,
-            "depth3D": 15,
-            "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
-            "angle": 30,
-            "export": {
-                "enabled": true
-            }
-        } );
-        jQuery( '.chart-input' ).off().on( 'input change', function() {
-            var property = jQuery( this ).data( 'property' );
-            var target = chart;
-            var value = Number( this.value );
-            chart.startDuration = 0;
-
-            if ( property == 'innerRadius' ) {
-                value += "%";
-            }
-
-            target[ property ] = value;
-            chart.validateNow();
-        } );
-    </script>
 {% endblock %}

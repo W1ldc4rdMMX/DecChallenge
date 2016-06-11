@@ -20,8 +20,8 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_20d279c4b655d564f5cd801c68ef8a9faf45c131083456b35bd33336eaefb56c = $this->env->getExtension("native_profiler");
-        $__internal_20d279c4b655d564f5cd801c68ef8a9faf45c131083456b35bd33336eaefb56c->enter($__internal_20d279c4b655d564f5cd801c68ef8a9faf45c131083456b35bd33336eaefb56c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
+        $__internal_2834661e1523fd16418194c94df2a0c237d6d843638597010ac5853cf0eb3601 = $this->env->getExtension("native_profiler");
+        $__internal_2834661e1523fd16418194c94df2a0c237d6d843638597010ac5853cf0eb3601->enter($__internal_2834661e1523fd16418194c94df2a0c237d6d843638597010ac5853cf0eb3601_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -55,7 +55,11 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
                     <a class=\"navbar-brand\" href=\"/\"> Stock-Webs </a>
                 </div>
                 <div class=\"collapse navbar-collapse\" id=\"myNavbar\">
-                    <ul class=\"nav navbar-nav\">
+                    ";
+        // line 23
+        if ($this->env->getExtension('security')->isGranted("ROLE_USER")) {
+            // line 24
+            echo "                    <ul class=\"nav navbar-nav\">
                         <li><a href=\"home\"><span class = \"glyphicon glyphicon-home\"></span> Home </a></li>
                         <li><a href=\"update\"><span class = \"glyphicon glyphicon-plus\"></span> Add\\Edit Stock </a></li>
                         <li><a href=\"view\"><span class = \"glyphicon glyphicon-list-alt\"></span> View Stock </a></li>
@@ -75,24 +79,36 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
                         </div>
                     </button>
                     </ul>
+                    ";
+        }
+        // line 45
+        echo "
                     <ul class=\"nav navbar-nav navbar-right\">
                         <!--li><a href=\"#\"><span class=\"glyphicon glyphicon-user\"></span> Sign Up</a></li-->
                         ";
-        // line 45
+        // line 48
         if ($this->env->getExtension('security')->isGranted("ROLE_USER")) {
-            // line 46
+            // line 49
             echo "                            <li><a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">
                                     <span class=\"glyphicon glyphicon-user\"></span>  ";
-            // line 47
+            // line 50
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()), "username", array()), "html", null, true);
-            echo "</a>
+            echo "
+                                    <span class=\"glyphicon glyphicon-collapse-down\"></span> </a>
                             <ul class=\"dropdown-menu\">
-                                <li><a href=\"admin\"><span class=\"glyphicon glyphicon-th-list\">
+                                ";
+            // line 53
+            if ($this->env->getExtension('security')->isGranted("ROLE_ADMIN")) {
+                // line 54
+                echo "                                <li><a href=\"admin\"><span class=\"glyphicon glyphicon-th-list\">
                                         </span>  Admin Page</a></li>
-                                <li><a href=\"#\"><span class=\"glyphicon glyphicon-equalizer\">
+                                ";
+            }
+            // line 57
+            echo "                                <li><a href=\"#\"><span class=\"glyphicon glyphicon-equalizer\">
                                         </span>  System Reports</a></li>
                                 <li><a href=\"";
-            // line 53
+            // line 59
             echo twig_escape_filter($this->env, $this->env->getExtension('logout_url')->getLogoutPath("main"), "html", null, true);
             echo "\"><span class=\"glyphicon glyphicon-log-out\">
                                         </span>  Logout</a></li>
@@ -100,11 +116,11 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
                             </li>
                         ";
         } else {
-            // line 58
+            // line 64
             echo "                           <li> <a href=\"login\"><span class=\"glyphicon glyphicon-log-in\"></span> Login</a></li>
                         ";
         }
-        // line 60
+        // line 66
         echo "
 
                     </ul>
@@ -115,13 +131,13 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
 
 
         <title>";
-        // line 69
+        // line 75
         $this->displayBlock('title', $context, $blocks);
         echo "</title>
         ";
-        // line 70
+        // line 76
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 73
+        // line 79
         echo "        <link rel=\"icon\" type=\"image/x-icon\" href=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("StockPlus.png"), "html", null, true);
         echo "\" />
@@ -129,58 +145,58 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
 
     <body>
     ";
-        // line 77
+        // line 83
         $this->displayBlock('loginModal', $context, $blocks);
-        // line 105
+        // line 111
         echo "        ";
         $this->displayBlock('body', $context, $blocks);
-        // line 106
+        // line 112
         echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 124
+        // line 130
         echo "    </body>
 </html>
 ";
         
-        $__internal_20d279c4b655d564f5cd801c68ef8a9faf45c131083456b35bd33336eaefb56c->leave($__internal_20d279c4b655d564f5cd801c68ef8a9faf45c131083456b35bd33336eaefb56c_prof);
+        $__internal_2834661e1523fd16418194c94df2a0c237d6d843638597010ac5853cf0eb3601->leave($__internal_2834661e1523fd16418194c94df2a0c237d6d843638597010ac5853cf0eb3601_prof);
 
     }
 
-    // line 69
+    // line 75
     public function block_title($context, array $blocks = array())
     {
-        $__internal_97b69b91b6998127e5b8a603e267b6d29f48c7d529c52b80d77f25dadd4600ec = $this->env->getExtension("native_profiler");
-        $__internal_97b69b91b6998127e5b8a603e267b6d29f48c7d529c52b80d77f25dadd4600ec->enter($__internal_97b69b91b6998127e5b8a603e267b6d29f48c7d529c52b80d77f25dadd4600ec_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_3344f62678afa46c5b87fb9cb5ca59a4cc07aa1c968854b497b8920d74194913 = $this->env->getExtension("native_profiler");
+        $__internal_3344f62678afa46c5b87fb9cb5ca59a4cc07aa1c968854b497b8920d74194913->enter($__internal_3344f62678afa46c5b87fb9cb5ca59a4cc07aa1c968854b497b8920d74194913_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Welcome!";
         
-        $__internal_97b69b91b6998127e5b8a603e267b6d29f48c7d529c52b80d77f25dadd4600ec->leave($__internal_97b69b91b6998127e5b8a603e267b6d29f48c7d529c52b80d77f25dadd4600ec_prof);
+        $__internal_3344f62678afa46c5b87fb9cb5ca59a4cc07aa1c968854b497b8920d74194913->leave($__internal_3344f62678afa46c5b87fb9cb5ca59a4cc07aa1c968854b497b8920d74194913_prof);
 
     }
 
-    // line 70
+    // line 76
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_bc6b13618a865b6b528908c9d55da52fe0edc7fd943b97bcbc52c1498327ef26 = $this->env->getExtension("native_profiler");
-        $__internal_bc6b13618a865b6b528908c9d55da52fe0edc7fd943b97bcbc52c1498327ef26->enter($__internal_bc6b13618a865b6b528908c9d55da52fe0edc7fd943b97bcbc52c1498327ef26_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_f0b193c697f5eda530746e6102d9ad687c8ae05b5bc70e73d0f4231b21ffb04c = $this->env->getExtension("native_profiler");
+        $__internal_f0b193c697f5eda530746e6102d9ad687c8ae05b5bc70e73d0f4231b21ffb04c->enter($__internal_f0b193c697f5eda530746e6102d9ad687c8ae05b5bc70e73d0f4231b21ffb04c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        // line 71
+        // line 77
         echo "            <link rel=\"stylesheet\" href=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("css/myStyles.css"), "html", null, true);
         echo "\">
         ";
         
-        $__internal_bc6b13618a865b6b528908c9d55da52fe0edc7fd943b97bcbc52c1498327ef26->leave($__internal_bc6b13618a865b6b528908c9d55da52fe0edc7fd943b97bcbc52c1498327ef26_prof);
+        $__internal_f0b193c697f5eda530746e6102d9ad687c8ae05b5bc70e73d0f4231b21ffb04c->leave($__internal_f0b193c697f5eda530746e6102d9ad687c8ae05b5bc70e73d0f4231b21ffb04c_prof);
 
     }
 
-    // line 77
+    // line 83
     public function block_loginModal($context, array $blocks = array())
     {
-        $__internal_d0d11d8f236c68fa558b159fc9e981f82341e23cb67c4017859618f089d83c41 = $this->env->getExtension("native_profiler");
-        $__internal_d0d11d8f236c68fa558b159fc9e981f82341e23cb67c4017859618f089d83c41->enter($__internal_d0d11d8f236c68fa558b159fc9e981f82341e23cb67c4017859618f089d83c41_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "loginModal"));
+        $__internal_430ce80cba89daf527ca2752874a86d4ba73f56b6a7f6380138d1be280397a95 = $this->env->getExtension("native_profiler");
+        $__internal_430ce80cba89daf527ca2752874a86d4ba73f56b6a7f6380138d1be280397a95->enter($__internal_430ce80cba89daf527ca2752874a86d4ba73f56b6a7f6380138d1be280397a95_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "loginModal"));
 
-        // line 78
+        // line 84
         echo "    <div class=\"modal fade\" id=\"loginModal\">
         <div class=\"modal-dialog\">
             <div class=\"modal-content\">
@@ -209,48 +225,48 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
         </div><!-- /.modal -->
         ";
         
-        $__internal_d0d11d8f236c68fa558b159fc9e981f82341e23cb67c4017859618f089d83c41->leave($__internal_d0d11d8f236c68fa558b159fc9e981f82341e23cb67c4017859618f089d83c41_prof);
+        $__internal_430ce80cba89daf527ca2752874a86d4ba73f56b6a7f6380138d1be280397a95->leave($__internal_430ce80cba89daf527ca2752874a86d4ba73f56b6a7f6380138d1be280397a95_prof);
 
     }
 
-    // line 105
+    // line 111
     public function block_body($context, array $blocks = array())
     {
-        $__internal_ce06e96f0f2074bc93ed7e7902895197ffbf5ce54e77acd848f36c1687459f66 = $this->env->getExtension("native_profiler");
-        $__internal_ce06e96f0f2074bc93ed7e7902895197ffbf5ce54e77acd848f36c1687459f66->enter($__internal_ce06e96f0f2074bc93ed7e7902895197ffbf5ce54e77acd848f36c1687459f66_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_c8ae6bf12a8ad80d77283d6337ae78414521226eee6ca03ba1f0e7cb6f98127e = $this->env->getExtension("native_profiler");
+        $__internal_c8ae6bf12a8ad80d77283d6337ae78414521226eee6ca03ba1f0e7cb6f98127e->enter($__internal_c8ae6bf12a8ad80d77283d6337ae78414521226eee6ca03ba1f0e7cb6f98127e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         
-        $__internal_ce06e96f0f2074bc93ed7e7902895197ffbf5ce54e77acd848f36c1687459f66->leave($__internal_ce06e96f0f2074bc93ed7e7902895197ffbf5ce54e77acd848f36c1687459f66_prof);
+        $__internal_c8ae6bf12a8ad80d77283d6337ae78414521226eee6ca03ba1f0e7cb6f98127e->leave($__internal_c8ae6bf12a8ad80d77283d6337ae78414521226eee6ca03ba1f0e7cb6f98127e_prof);
 
     }
 
-    // line 106
+    // line 112
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_859f90988d0276c6338cc14b4d08cb6d4b274e41fe568d32e397ec99367e47cf = $this->env->getExtension("native_profiler");
-        $__internal_859f90988d0276c6338cc14b4d08cb6d4b274e41fe568d32e397ec99367e47cf->enter($__internal_859f90988d0276c6338cc14b4d08cb6d4b274e41fe568d32e397ec99367e47cf_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_7ab541b7898c17f2deb71728e4313ba284a7442e837fe60891d17ef9e49371ca = $this->env->getExtension("native_profiler");
+        $__internal_7ab541b7898c17f2deb71728e4313ba284a7442e837fe60891d17ef9e49371ca->enter($__internal_7ab541b7898c17f2deb71728e4313ba284a7442e837fe60891d17ef9e49371ca_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 107
+        // line 113
         echo "            <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js\"></script>
             <script src=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js\"></script>
             <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js\"></script>
 
             <script src=\"";
-        // line 111
+        // line 117
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/jasmine-1.3.1/jasmine.js"), "html", null, true);
         echo "\"></script>
             <script src=\"";
-        // line 112
+        // line 118
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/jasmine-1.3.1/jasmine-html.js"), "html", null, true);
         echo "\"></script>
             <script type=\"text/javascript\" src=\"http://github.com/searls/jasmine-fixture/releases/1.0.5/1737/jasmine-fixture.js\"></script>
             <script type=\"text/javascript\" src=\"http://code.jquery.com/ui/1.11.1/jquery-ui.min.js\"></script>
             <script type=\"text/javascript\" src=\"";
-        // line 115
+        // line 121
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/jquery-ui-timepicker-addon.js"), "html", null, true);
         echo "\"></script>
             <script type=\"text/javascript\" src=\"";
-        // line 116
+        // line 122
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/jquery-ui-sliderAccess.js"), "html", null, true);
         echo "\"></script>
             <script type=\"text/javascript\">
@@ -261,7 +277,7 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
 
         ";
         
-        $__internal_859f90988d0276c6338cc14b4d08cb6d4b274e41fe568d32e397ec99367e47cf->leave($__internal_859f90988d0276c6338cc14b4d08cb6d4b274e41fe568d32e397ec99367e47cf_prof);
+        $__internal_7ab541b7898c17f2deb71728e4313ba284a7442e837fe60891d17ef9e49371ca->leave($__internal_7ab541b7898c17f2deb71728e4313ba284a7442e837fe60891d17ef9e49371ca_prof);
 
     }
 
@@ -277,7 +293,7 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
 
     public function getDebugInfo()
     {
-        return array (  254 => 116,  250 => 115,  244 => 112,  240 => 111,  234 => 107,  228 => 106,  217 => 105,  184 => 78,  178 => 77,  168 => 71,  162 => 70,  150 => 69,  141 => 124,  138 => 106,  135 => 105,  133 => 77,  125 => 73,  123 => 70,  119 => 69,  108 => 60,  104 => 58,  96 => 53,  87 => 47,  84 => 46,  82 => 45,  44 => 10,  40 => 9,  36 => 8,  27 => 1,);
+        return array (  270 => 122,  266 => 121,  260 => 118,  256 => 117,  250 => 113,  244 => 112,  233 => 111,  200 => 84,  194 => 83,  184 => 77,  178 => 76,  166 => 75,  157 => 130,  154 => 112,  151 => 111,  149 => 83,  141 => 79,  139 => 76,  135 => 75,  124 => 66,  120 => 64,  112 => 59,  108 => 57,  103 => 54,  101 => 53,  95 => 50,  92 => 49,  90 => 48,  85 => 45,  62 => 24,  60 => 23,  44 => 10,  40 => 9,  36 => 8,  27 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -302,6 +318,7 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
 /*                     <a class="navbar-brand" href="/"> Stock-Webs </a>*/
 /*                 </div>*/
 /*                 <div class="collapse navbar-collapse" id="myNavbar">*/
+/*                     {% if is_granted("ROLE_USER") %}*/
 /*                     <ul class="nav navbar-nav">*/
 /*                         <li><a href="home"><span class = "glyphicon glyphicon-home"></span> Home </a></li>*/
 /*                         <li><a href="update"><span class = "glyphicon glyphicon-plus"></span> Add\Edit Stock </a></li>*/
@@ -322,14 +339,19 @@ class __TwigTemplate_381fb0cbd96557ae797059320ae81cb8c6635c736ab098152b205068ada
 /*                         </div>*/
 /*                     </button>*/
 /*                     </ul>*/
+/*                     {% endif %}*/
+/* */
 /*                     <ul class="nav navbar-nav navbar-right">*/
 /*                         <!--li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li-->*/
 /*                         {% if is_granted("ROLE_USER") %}*/
 /*                             <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">*/
-/*                                     <span class="glyphicon glyphicon-user"></span>  {{ app.user.username }}</a>*/
+/*                                     <span class="glyphicon glyphicon-user"></span>  {{ app.user.username }}*/
+/*                                     <span class="glyphicon glyphicon-collapse-down"></span> </a>*/
 /*                             <ul class="dropdown-menu">*/
+/*                                 {% if is_granted("ROLE_ADMIN") %}*/
 /*                                 <li><a href="admin"><span class="glyphicon glyphicon-th-list">*/
 /*                                         </span>  Admin Page</a></li>*/
+/*                                 {% endif %}*/
 /*                                 <li><a href="#"><span class="glyphicon glyphicon-equalizer">*/
 /*                                         </span>  System Reports</a></li>*/
 /*                                 <li><a href="{{ logout_path('main') }}"><span class="glyphicon glyphicon-log-out">*/

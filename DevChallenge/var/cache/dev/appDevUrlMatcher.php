@@ -115,16 +115,16 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         }
 
         if (0 === strpos($pathinfo, '/admin')) {
-            // app_admincontoller_save
+            // app_admincontoller_savedel
             if ($pathinfo === '/admin') {
                 if ($this->context->getMethod() != 'POST') {
                     $allow[] = 'POST';
-                    goto not_app_admincontoller_save;
+                    goto not_app_admincontoller_savedel;
                 }
 
-                return array (  '_controller' => 'AppBundle\\Controller\\adminContoller::saveAction',  '_route' => 'app_admincontoller_save',);
+                return array (  '_controller' => 'AppBundle\\Controller\\adminContoller::saveDelAction',  '_route' => 'app_admincontoller_savedel',);
             }
-            not_app_admincontoller_save:
+            not_app_admincontoller_savedel:
 
             // app_admincontoller_show
             if ($pathinfo === '/admin') {
