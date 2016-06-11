@@ -45,7 +45,8 @@ class aboutContorller extends Controller
         $user2->setIsActive(true);
         $user2->setRoles(array('ROLE_USER'));
 
-        $em = $em = $this->getDoctrine()->getManager();
+
+        $em = $this->getDoctrine()->getManager();
 
         $em->persist($user1);
         $em->persist($user2);

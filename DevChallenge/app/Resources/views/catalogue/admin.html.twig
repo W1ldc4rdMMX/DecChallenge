@@ -31,10 +31,13 @@
                         <p>
                             <label for="editUserName">Username </label>
                             <input type="text" name="editUserName" id="editUserName" size="50" />
+                            <input type="hidden" name="editUserId" id="editUserId" />
                         </p>
                         <p>
                             <label for="editPassword">Password </label>
                             <input type="password" name="editPassword" id="editPassword" size="50"
+                                   onload="getElementById('didEditPassword').value = 'no'"
+                                   onclick="clearPass()"
                                    onchange="isPassEdited()"/>
                             <input type="hidden" name="didEditPassword" id="didEditPassword" value="no" size="50" />
                         </p>
@@ -60,56 +63,107 @@
                         </form>
                     </div>
                 </div>
-                    </div>
+                </div>
             </div>
             <br><hr>
         {% endblock %}
 
-        {% block addUsers %}
+        {% block addRemUsers %}
+
             <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#addUsers">
                 <span class="glyphicon glyphicon-collapse-down"></span> Add/Remove Users
             </button>
-            <div id="addUsers" class="collapse">
-                <div class="col-sm-6">
-                    <div class="well">
-                        <p>
-                            <label for="userName">Username </label>
-                            <input type="text" name="userName" id="userName" size="50" />
-                        </p>
-                        <p>
-                            <label for="password">Password </label>
-                            <input type="password" name="password" id="password" size="50" />
-                        </p>
-                        <p>
-                            <label for="email">Email </label>
-                            <input type="text" name="email" id="email" size="50" />
-                        </p>
-                        <p>
-                            <label for="role">Role </label>
-                            <select name="role" id="role">
-                                <option value="ROLE_ADMIN">Admin</option>
-                                <option value="ROLE_USER">User</option>
-                            </select>
-                        </p>
-                        <p>
-                            <label for="active">Active </label>
-                            <select name="active" id="active">
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                            </select>
-                        </p>
+            <div class="table-responsive">
+                <div id="addUsers" class="collapse">
+                    <div class="col-sm-6">
+                        <td>
+                        <div class="well">
+                            <form method="post">
+                                <p>
+                                    <label for="-">Username </label>
+                                    <input type="text" name="addUser" id="addUser" value="" size="50"
+                                    onclick="document.getElementById('addUser').value=''"/>
+                                </p>
+                                <p>
+                                    <label for="addPsswrd">Password </label>
+                                    <input type="password" name="addPsswrd" id="addPsswrd" value="" size="50"
+                                           onclick="document.getElementById('addPsswrd').value=''"/>
+                                </p>
+                                <p>
+                                    <label for="addEmail">Email </label>
+                                    <input type="text" name="addEmail" id="addEmail" value="" size="50" />
+                                </p>
+                                <p>
+                                    <label for="addRole">Role </label>
+                                    <select name="addRole" id="addRole">
+                                        <option value="ROLE_ADMIN">Admin</option>
+                                        <option value="ROLE_USER">User</option>
+                                    </select>
+                                </p>
+                                <p>
+                                    <label for="addActive">Active </label>
+                                    <select name="addActive" id="addActive">
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                </p>
+                                <p>
+                                    <button type="submit" class="btn btn-success">Add User</button>
+                                </p>
+                            </form>
+                    </div>
+                        </td>
+                </div>
+                    <td>
+                        <div class="col-sm-2" >
+                            <div class="well">
+                                <select name="selDelUser" id="selDelUser" size="10" style="max-width:90%;"
+                                        onchange="loadDelUserDets()">
+                                    {% for user in users %}
+                                        <option value="{{ user.id }}">{{ user.username }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="well">
+                                <form method="post">
+                                    <p>
+                                        <label for="delUserName">Username </label>
+                                        <input type="text" name="delUserName" id="delUserName" size="50"
+                                               disabled="disabled"/>
+                                        <input type="hidden" name="delUserId" id="delUserId" />
+                                    </p>
+                                    <p>
+                                        <label for="delPassword">Password </label>
+                                        <input type="password" name="delPassword" id="delPassword" size="50"
+                                               disabled="disabled"/>
 
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="well">
-                        username <br>
-                        password <br>
-                        email <br>
-                        role <br>
-                        Active <br>
-                    </div>
-                </div>
+                                    </p>
+                                    <p>
+                                        <label for="delEmail">Email </label>
+                                        <input type="text" name="delEmail" id="delEmail" size="50" disabled="disabled"/>
+                                    </p>
+                                    <p>
+                                        <label for="delRole">Role </label>
+                                        <select name="delRole" id="delRole" disabled="disabled">
+                                            <option value="ROLE_ADMIN">Admin</option>
+                                            <option value="ROLE_USER">User</option>
+                                        </select>
+                                    </p>
+                                    <p>
+                                        <label for="delActive">Active </label>
+                                        <select name="delActive" id="delActive" disabled="disabled">
+                                            <option value="yes">Yes</option>
+                                            <option value="no">No</option>
+                                        </select>
+                                    </p>
+                                    <button type="submit" class="btn btn-danger">Remove User</button>
+                                </form>
+                                </div>
+                            </div>
+                    </td>
+            </div>
             </div>
             <br><hr>
         {% endblock %}
@@ -139,7 +193,6 @@
     <script>
         function loadUserDetails()
         {
-
             var opt = document.getElementById('selUser');
             var selVal = opt.options[opt.selectedIndex].value;
 
@@ -152,6 +205,7 @@
                     document.getElementById('editUserName').value = '{{ user.username }}';
                     document.getElementById('editPassword').value = '{{ user.password }}';
                     document.getElementById('editEmail').value = '{{ user.email }}';
+                    document.getElementById('editUserId').value = selVal;
                     var roles = '{{ user.roles|json_encode|raw }}';
                     //window.alert(roles);
                     if(roles.includes("ADMIN"))
@@ -172,9 +226,49 @@
             {% endfor %}
         }
 
+        function loadDelUserDets()
+        {
+            var opt = document.getElementById('selDelUser');
+            var selVal = opt.options[opt.selectedIndex].value;
+
+            {% for user in users %}
+
+            if (selVal == {{ user.id }})
+            {
+                //window.alert({#{ user.id }});
+                   //window.alert('{{ user.username }#}');
+                document.getElementById('delUserName').value = '{{ user.username }}';
+                document.getElementById('delPassword').value = '{{ user.password }}';
+                document.getElementById('delEmail').value = '{{ user.email }}';
+                document.getElementById('delUserId').value = selVal;
+                var roles = '{{ user.roles|json_encode|raw }}';
+                //window.alert(roles);
+                if(roles.includes("ADMIN"))
+                {
+                    document.getElementById('delRole').value='ROLE_ADMIN'
+                }else
+                {
+                    document.getElementById('delRole').value='ROLE_USER'
+                }
+                var isActive = '{{ user.isActive }}';
+                if(isActive == '1')
+                {
+                    document.getElementById('delActive').value="yes"
+                }else{
+                    document.getElementById('delActive').value="no"
+                }
+            }
+            {% endfor %}
+        }
+        
         function isPassEdited()
         {
             document.getElementById('didEditPassword').value = "yes";
+        }
+
+        function clearPass()
+        {
+            document.getElementById('editPassword').value = "";
         }
     </script>
 {% endblock %}

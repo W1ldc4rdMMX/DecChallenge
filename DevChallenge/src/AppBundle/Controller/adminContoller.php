@@ -13,6 +13,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
+use AppBundle\Entity\stockUsers;
 
 class adminContoller extends Controller
 {
@@ -20,22 +21,71 @@ class adminContoller extends Controller
      * @Route("/admin")
      * @Method("post")
      */
-    public function saveAction()
+    public function saveDelAction()
     {
         $checkKeys = array_keys($_POST);
+        //return new Response("<html><body>".print_r($_POST)."</body></html>");
         switch ($checkKeys[0]) {
-            case 'editUserName':
-                return new Response("<html><body>".print_r($_POST)."</body></html>");
-                /*user = new stockUsers();                
+            case 'editUserName':               
+                $em = $this->getDoctrine()->getManager();
+                $user = $em->getRepository('AppBundle:stockUsers')->findOneBy(
+                    array('id' => $_POST['editUserId']));              
 
-                $user->setUsername('lear.pather');
-                $user->setEmail('lear.pather@gmail.com');
-                $plainpass = 'w1ldc4rd';
+                $user->setUsername($_POST['editUserName']);
+                $user->setEmail($_POST['editEmail']);
+                if (($_POST['editPassword'] != "") && $_POST['didEditPassword'] == "yes")
+                {
+                    $plainpass = $_POST['editPassword'];
+                    $encoder = $this->container->get('security.password_encoder');
+                    $encoder = $encoder->encodePassword($user, $plainpass);
+                    $user->setPassword($encoder);
+                }                
+                $user->setRoles(array($_POST['editRole']));
+                $isActive = false;
+                if ($_POST['editActive']=="yes")
+                {
+                    $isActive = true;
+                }
+                $user->setIsActive($isActive);
+                $em->persist($user);
+                $em->flush();
+                break;
+
+            case 'addUser':
+                //return new Response("<html><body>".print_r($_POST)."</body></html>");
+                /*[addUser] => test.add.user 
+                [addPsswrd] => test.pass 
+                [addEmail] => add.user@test.com 
+                [addRole] => ROLE_USER 
+                [addActive] => yes ) 1*/
+                $user = new stockUsers();
+                $user->setUsername($_POST['addUser']);
+                $user->setEmail($_POST['addEmail']);
+                $plainpass = $_POST['addPsswrd'];                 
                 $encoder = $this->container->get('security.password_encoder');
                 $encoder = $encoder->encodePassword($user, $plainpass);
                 $user->setPassword($encoder);
-                $user->setIsActive(true);
-                $user->setRoles(array('ROLE_ADMIN'));*/
+                
+                $user->setRoles(array($_POST['addRole']));
+                $isActive = false;
+                if ($_POST['addActive']=="yes")
+                {
+                    $isActive = true;
+                }
+                $user->setIsActive($isActive);
+                
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($user);
+                $em->flush();
+                break;
+
+            case 'delUserId':
+                //return new Response("<html><body>".print_r($_POST)."</body></html>");
+                $em = $this->getDoctrine()->getManager();
+                $user = $em->getRepository('AppBundle:stockUsers')->findOneBy(
+                    array('id' => $_POST['delUserId']));
+                $em->remove($user);
+                $em->flush();
                 break;
             default:
                 break;
@@ -48,6 +98,7 @@ class adminContoller extends Controller
         ]);
     }
 
+    
     /**
      *@Route("/admin")
      */
@@ -61,9 +112,5 @@ class adminContoller extends Controller
         ]);
         //return new Response("<html><body>Admin Page - Welcome ".$user->getUsername()."</body></html>");
     }
-
-    public function decodePass()
-    {
-        
-    }
+    
 }
