@@ -30,7 +30,7 @@ class stockMeta
     private $metaUser;
 
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="datetime")
      */
     private $metaDate;
 
@@ -40,7 +40,7 @@ class stockMeta
     private $metaAction;
 
     /**
-     * @ORM\Column(type="blob")
+     * @ORM\Column(type="text")
      */
     private $metaDesc;
 

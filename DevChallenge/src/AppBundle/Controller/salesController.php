@@ -9,6 +9,7 @@
 namespace AppBundle\Controller;
 
 
+use AppBundle\Entity\stockMeta;
 use AppBundle\Entity\stockSales;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -44,6 +45,7 @@ class salesController extends Controller
 
         $em->persist($sale);
         $em->flush();
+        $this->updateMeta("SALE",$_POST['saleProduct']);
         $_POST = array();
         return $this->render("catalogue/sales.html.twig", [
             'types' => $this->getTypes(),
@@ -95,6 +97,23 @@ class salesController extends Controller
         $em = $this->getDoctrine()->getManager();
         $orders = $em->getRepository('AppBundle:stockSales')->findAll();
         return $orders;
+    }
+
+    public function updateMeta($action, $desc)
+    {
+        $userMeta = new stockMeta();
+        $user = $this->getUser();
+        $date = date('Y-m-d');
+
+        $em = $this->getDoctrine()->getManager();
+        $userMeta->setMetaDate(new \DateTime($date));
+        $userMeta->setMetaUser($user->getUsername());
+        $userMeta->setMetaDesc($desc);
+        $userMeta->setMetaAction($action);
+        $userMeta->setStockUsers($user);
+
+        $em->persist($userMeta);
+        $em->flush();
     }
 }
         

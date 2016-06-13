@@ -11,6 +11,7 @@ namespace AppBundle\Controller;
 
 
 use AppBundle\Entity\stockItems;
+use AppBundle\Entity\stockMeta;
 use AppBundle\Entity\stockSerials;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -45,6 +46,7 @@ class updateController extends Controller
 
                 $em->persist($newItem);
                 $em->flush();
+                $this->updateMeta("ADD",$_POST['productAddName']);
                 break;
             case 'productUpName':
                 $em = $this->getDoctrine()->getManager();
@@ -59,6 +61,7 @@ class updateController extends Controller
 
                     $em->persist($item);
                     $em->flush();
+                    $this->updateMeta("UPDATED",$_POST['productUpName']);
                 }
                 break;
             case 'productCountName':
@@ -76,8 +79,9 @@ class updateController extends Controller
                     $stockSerial->setStockItems($stockItem);
 
                     $em->persist($stockSerial);
-                    $em->flush();
+                    $em->flush();                    
                 }
+                $this->updateMeta("ADDED",$_POST['productCountName']." x ".$x);
         }
         
         return $this->render("catalogue/add.html.twig",[
@@ -124,5 +128,22 @@ class updateController extends Controller
 
         $serials = $em->getRepository('AppBundle:stockSerials')->findAll();
         return $serials;
+    }
+    
+    public function updateMeta($action, $desc)
+    {
+        $userMeta = new stockMeta();
+        $user = $this->getUser();
+        $date = date('Y-m-d');
+        
+        $em = $this->getDoctrine()->getManager();
+        $userMeta->setMetaDate(new \DateTime($date));
+        $userMeta->setMetaUser($user->getUsername());
+        $userMeta->setMetaDesc($desc);
+        $userMeta->setMetaAction($action);
+        $userMeta->setStockUsers($user);
+
+        $em->persist($userMeta);
+        $em->flush();
     }
 }

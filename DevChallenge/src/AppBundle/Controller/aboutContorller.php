@@ -66,8 +66,10 @@ class aboutContorller extends Controller
     public function showAction()
     {
 
-       return $this->render('catalogue/about.html.twig',[
-            'users' => $this->showUser()
+        $user = $this->getUser();
+        //$userID = $user->getId();
+        return $this->render('catalogue/about.html.twig',[
+            'users' => $user
         ]);
     }
 

@@ -9,6 +9,7 @@
 namespace AppBundle\Controller;
 
 
+use AppBundle\Entity\stockMeta;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -49,6 +50,7 @@ class adminContoller extends Controller
                 $user->setIsActive($isActive);
                 $em->persist($user);
                 $em->flush();
+                $this->updateMeta("EDIt USER",$_POST['editUserId']."-".$_POST['editUserName']);
                 break;
 
             case 'addUser':
@@ -77,6 +79,7 @@ class adminContoller extends Controller
                 $em = $this->getDoctrine()->getManager();
                 $em->persist($user);
                 $em->flush();
+                $this->updateMeta("ADDED USER",$_POST['addUser']);
                 break;
 
             case 'delUserId':
@@ -84,8 +87,10 @@ class adminContoller extends Controller
                 $em = $this->getDoctrine()->getManager();
                 $user = $em->getRepository('AppBundle:stockUsers')->findOneBy(
                     array('id' => $_POST['delUserId']));
+                $username = $user->getUsername();
                 $em->remove($user);
                 $em->flush();
+                $this->updateMeta("REMOVED USER",$_POST['delUserId']."-".$username);
                 break;
             default:
                 break;
@@ -112,5 +117,21 @@ class adminContoller extends Controller
         ]);
         //return new Response("<html><body>Admin Page - Welcome ".$user->getUsername()."</body></html>");
     }
-    
+
+    public function updateMeta($action, $desc)
+    {
+        $userMeta = new stockMeta();
+        $user = $this->getUser();
+        $date = date('Y-m-d');
+
+        $em = $this->getDoctrine()->getManager();
+        $userMeta->setMetaDate(new \DateTime($date));
+        $userMeta->setMetaUser($user->getUsername());
+        $userMeta->setMetaDesc($desc);
+        $userMeta->setMetaAction($action);
+        $userMeta->setStockUsers($user);
+
+        $em->persist($userMeta);
+        $em->flush();
+    }
 }
