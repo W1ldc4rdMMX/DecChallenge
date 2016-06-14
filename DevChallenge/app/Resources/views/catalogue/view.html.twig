@@ -2,9 +2,15 @@
 {% block title %}
     Current Stock Items
 {% endblock %}
-
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/formstyles.css') }}" >
+ {% endblock %}
 {% block body %}
     <div class="container-fluid">
+    {% if msg %}
+        <div class="alert alert-success"> <strong>{{ msg }}</strong></div>
+    {% endif %}
         <h1>Current Stock</h1>
         {% for types in stockTypes%}
             {%  set itemCount = 0 %}
@@ -41,7 +47,7 @@
                         <tr>
                             <td>
                                 <button type="button" class="btn btn-primary btn-sm"
-                                        data-toggle="modal" data-target="#myModal">Edit data
+                                        data-toggle="modal" data-target="#Modal{{ items.stockItemid }}">Edit data
                                 </button>
                             </td>
                             <td>{{ items.stockItemName }}</td>
@@ -56,6 +62,61 @@
             </table>
             </div>
         </div>
+            {% for items in stockItems %}
+                <div class="modal fade" id="Modal{{ items.stockItemid }}">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <form method="post">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                <h4 class="modal-title">Product details</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    <label for="productViewUpName">Product Name </label>
+                                    <input type="text" name="productViewUpName" id="productViewUpName" size="50"
+                                           value="{{ items.stockItemName }}"/>
+                                </p>
+
+                                <p>
+                                    <label for="productViewUpBase">Base Features </label>
+                                <textarea name="productViewUpBase" id="productViewUpBase" rows="5" cols="47"
+                                >{{ items.stockItemBase }}
+                                </textarea>
+                                </p>
+                                <p>
+                                    <label for="productViewUpSpecs">Device Specifications </label>
+                                <textarea name="productViewUpSpecs" id="productViewUpSpecs" rows="5" cols="47"
+                                >{{ items.stockItemSpec }}
+                                </textarea>
+                                </p>
+                                <p>
+                                    <label for="productViewUpContent">Package Contents </label>
+                                <textarea name="productViewUpContent" id="productViewUpContent" rows="5" cols="47"
+                                >{{ items.stockItemCont }}
+                                </textarea>
+                                </p>
+                                <p>
+                                    <label for="productViewUpSysReq">System Requirements </label>
+                                <textarea name="productViewUpSysReq" id="productViewUpSysReq" rows="5" cols="47"
+                                >{{ items.stockItemReq }}
+                                </textarea>
+                                </p>
+                                <p>
+                                    <input type="hidden" name="productViewUpStockId" id="productViewUpStockId"
+                                           value="{{ items.stockItemid }}"/>
+                                </p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary">Update</button>
+                            </div>
+                            <form>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+            {% endfor %}
         <br><hr>
         {% endfor %}
 {% endblock %}
