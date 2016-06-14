@@ -31,6 +31,8 @@ class updateController extends Controller
     public function doUpdate()
     {
         $checkKeys = array_keys($_POST);
+        $msg="";
+
         switch ($checkKeys[0]) {
             case 'productAddType':
                 $newItem = new stockItems();
@@ -46,7 +48,8 @@ class updateController extends Controller
 
                 $em->persist($newItem);
                 $em->flush();
-                $this->updateMeta("ADD",$_POST['productAddName']);
+                $this->updateMeta("ADDED product",$_POST['productAddName']." added");
+                $msg = $_POST['productAddName']." has been added successfully";
                 break;
             case 'productUpName':
                 $em = $this->getDoctrine()->getManager();
@@ -61,8 +64,9 @@ class updateController extends Controller
 
                     $em->persist($item);
                     $em->flush();
-                    $this->updateMeta("UPDATED",$_POST['productUpName']);
+                    $this->updateMeta("UPDATED product",$_POST['productUpName']." updated");
                 }
+                $msg = $_POST['productUpName']." has been updated successfully";
                 break;
             case 'productCountName':
                 //return new Response("<html><body>".print_r($checkKeys)."</body></html>");
@@ -81,13 +85,34 @@ class updateController extends Controller
                     $em->persist($stockSerial);
                     $em->flush();                    
                 }
-                $this->updateMeta("ADDED",$_POST['productCountName']." x ".$x);
+                $this->updateMeta("ADDED stock",$_POST['productCountName']." x ".$x);
+                $msg = $x." items added for ".$_POST['productCountName'];
+                break;
+            case 'productSerialType':
+                $em = $this->getDoctrine()->getManager();
+                $stockItem = $em->getRepository('AppBundle:stockItems')->findOneBy(
+                    array('stockItemName' => $_POST['productSerialItem'])
+                );
+                $serialUpdate = $em->getRepository('AppBundle:stockSerials')->findOneBy(
+                   array('stockItems' => $stockItem->getStockItemid(),
+                       'stockSerial' => 'TBD'));
+                $serialUpdate->setStockSerial($_POST['productSerialNum']);
+
+                $em->persist($serialUpdate);
+                $em->flush();
+
+                $this->updateMeta("UPDATE serial",$_POST['productSerialNum']. " for ". $_POST['productSerialItem']);
+                $msg = "Add serial no. " . $_POST['productSerialNum']. " for ". $_POST['productSerialItem'];
+                //return new Response("<html><body>".print_r($_POST)." ".$serialUpdate->getStockSerial()."</body></html>");
+                break;
+                
         }
         
         return $this->render("catalogue/add.html.twig",[
             'types' => $this->getTypes(),
             'currentItems' => $this->getMainItems(),
-            'serials' => $this->getSerials()
+            'serials' => $this->getSerials(),
+            'msg' => $msg
         ]);
 
         //return new Response("<html><body>".$checkKeys[0]."</body></html>");
@@ -102,7 +127,8 @@ class updateController extends Controller
         return $this->render("catalogue/add.html.twig",[
             'types' => $this->getTypes(),
             'currentItems' => $this->getMainItems(),
-            'serials' => $this->getSerials()
+            'serials' => $this->getSerials(),
+            'msg' => null
         ]);
     }
 

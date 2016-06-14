@@ -12,6 +12,9 @@
     <div class="container-fluid">
     <div class="box_left">
         {% block boxLeft %}
+            {% if msg %}
+                <div class="alert alert-success"> <strong>{{ msg }}</strong></div>
+            {% endif %}
             <div class="col-sm-6">
                 <div class="well">
                     <legend class="scheduler-border">Stock Item details</legend>
@@ -172,7 +175,7 @@
                     <legend class="scheduler-border">Stock Pending serial no. <span class="badge">{{ serialCount }}
                         </span></legend>
                     <div class="row">
-                        <form>
+                        <form METHOD="post">
                             <p>
                                 <label for="productSerialType">Product Type </label>
                                 <select name="productSerialType" id="productSerialType" onchange="loadSerialItems()">
@@ -189,12 +192,13 @@
                             </p>
                             <p>
                                 <label for="productSerialItem">Product Name </label>
-                                <select name="productSerialItem" id="productSerialItem">
+                                <select name="productSerialItem" id="productSerialItem" onchange="storeSerialId()">
                                 </select>
                             </p>
                             <p>
                                 <label for="productSerialNum">Serial no. </label>
-                                <input type="text" name="productAddSerial" id="fn" size="50"/>
+                                <input type="hidden" name="productSerialId" id ="productSerialId" value=""/>
+                                <input type="text" name="productSerialNum" id="productSerialNum" size="50"/>
                             </p>
                             <button type="submit" class="btn btn-primary">Update</button>
                         </form>
@@ -283,6 +287,14 @@
                 select.appendChild(itemOpts);
             }
             {% endfor %}
+        }
+
+        function storeSerialId()
+        {
+            var opt = document.getElementById('productSerialItem');
+            var selID = opt.options[opt.selectedIndex].id;
+            //window.alert(selID);
+
         }
     </script>
 {% endblock %}

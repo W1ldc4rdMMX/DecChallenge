@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+{% block title %}
+    System log
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Date</th>
+                <th>User</th>
+                <th>Action</th>
+                <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for data in metaData %}
+                <tr>
+                    <td>{{ data.metaDate|date('d/m/y') }}</td>
+                    <td>{{ data.metaUser }}</td>
+                    <td>{{ data.metaAction }}</td>
+                    <td>{{ data.metaDesc }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+    </div>
+{% endblock %}

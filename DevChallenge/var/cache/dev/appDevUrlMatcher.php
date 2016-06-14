@@ -138,6 +138,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'AppBundle\\Controller\\catalogueController::showAction',  '_route' => 'app_catalogue_show',);
         }
 
+        // app_meta_show
+        if ($pathinfo === '/metaData') {
+            return array (  '_controller' => 'AppBundle\\Controller\\metaController::showAction',  '_route' => 'app_meta_show',);
+        }
+
         // app_reports_show
         if ($pathinfo === '/reports') {
             return array (  '_controller' => 'AppBundle\\Controller\\reportsController::showAction',  '_route' => 'app_reports_show',);
